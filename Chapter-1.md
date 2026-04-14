@@ -129,7 +129,7 @@
       Cuando las encuestas de satisfacción muestren que más del 85% de los usuarios consideran la información de la app como "altamente precisa".
       - **1.2.2.4. Lean UX Canvas**
       <br>A continuación, se presenta nuestro Lean UX Canvas de DispenXCore, la herramienta que utilizamos para alinear nuestros objetivos de negocio con las necesidades del usuario, definiendo las hipótesis clave y el plan para su validación iterativa.<br><br>
-      ![Lean UX Canvas](./feature/chapter1/Lean%20UX%20Canvas.png)
+      ![Lean UX Canvas](./feature/chapter-1/Gráfica%20modelo%20canvas%20.png)
 
         Link: https://acortar.link/q1C2B8
 
