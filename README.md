@@ -33,11 +33,11 @@
         </tr>
         <tr>
             <td>Cardenas Minaya, Ricardo Fernando</td>
-            <td>U202220219</td>
+            <td>U202310004</td>
         </tr>
         <tr>
             <td>Dominguez Vargas, Rafael Alexander</td>
-            <td>u202312318</td>
+            <td>U202312318</td>
         </tr>
         <tr>
             <td>Escobar Palomino, Sebastian Matias</td>
@@ -45,7 +45,7 @@
         </tr>
         <tr>
             <td>Muñiz Huayanca, Percy Alonso</td>
-            <td>u202319563</td>
+            <td>U202319563</td>
         </tr>
     </table>
     </div>
