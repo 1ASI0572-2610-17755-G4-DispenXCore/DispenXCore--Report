@@ -13,11 +13,11 @@
 
 |                       Photo                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |:-------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    ![Diego](./feature/chapter1/Diegopfp.jpeg)     | **Nombre y Apellido:** Diego Martin Bastidas Bastidas  <br> **Carrera:** Ingeniería de Software (8vo ciclo) <br> **Acerca de:** Decidí estudiar esta carrera porque desde pequeño me llamaba la atención el funcionamiento de las computadoras y los procesos que conllevan. Me apasiona practicar deportes de contacto, salir a pasear y, sobre todo, ser Groomer canino, ya que disfruto trabajar con mascotas.                                           |
-|     ![Ricardo](./feature/chapter1/fafa.jpeg)     | **Nombre y Apellido:** Ricardo Fernando Cardenas Minaya <br> **Carrera:** Ingeniería de Software (7mo ciclo) <br> **Acerca de:**                                                                                                            |
-|     ![Rafael](./feature/chapter1/rafael.jpg)      | **Nombre y Apellido:** Rafael Alexander Dominguez Vargas  <br> **Carrera:** Ingeniería de Software (6to ciclo) <br> **Acerca de:** Soy una persona responsable y empática. Poseo conocimientos en lenguajes de programación como C++, Java y Python, lo que me permite desarrollar soluciones diversas dentro de mi formación en Ingeniería de Software.                                                                                                    |
-| ![Sebastian](./feature/chapter1/Sebastianpfp.png) | **Nombre y Apellido:** Sebastian Escobar Palomino  <br> **Carrera:** Ingeniería de Software <br> **Acerca de:** Me comprometo a contribuir al máximo en el grupo y cumplir con las entregas dentro del plazo establecido. Busco mantener una comunicación efectiva con mis compañeros y aplicar mis habilidades para el desarrollo de las tareas asignadas en este proyecto.                                                                                |
-|     ![Alonso](./feature/chapter1/Alonso.png)      | **Nombre y Apellido:** Percy Alonso Muñiz Huayanca <br> **Carrera:** Ingeniería de Software <br> **Acerca de:** Soy una persona responsable, creativa y empática, cualidades que me permiten establecer buenas conexiones con quienes me rodean. Valoro el trabajo en equipo porque me da la oportunidad de compartir ideas y aprender de otras perspectivas. Tengo conocimientos en C++, HTML, CSS, entre otros, y me apasiona el Frontend y el Diseño UX. |
+|    ![Diego](./feature/chapter-1/Diegopfp.jpeg)     | **Nombre y Apellido:** Diego Martin Bastidas Bastidas  <br> **Carrera:** Ingeniería de Software (8vo ciclo) <br> **Acerca de:** Decidí estudiar esta carrera porque desde pequeño me llamaba la atención el funcionamiento de las computadoras y los procesos que conllevan. Me apasiona practicar deportes de contacto, salir a pasear y, sobre todo, ser Groomer canino, ya que disfruto trabajar con mascotas.                                           |
+|     ![Ricardo](./feature/chapter-1)     | **Nombre y Apellido:** Ricardo Fernando Cardenas Minaya <br> **Carrera:** Ingeniería de Software (7mo ciclo) <br> **Acerca de:**                                                                                                            |
+|     ![Rafael](./feature/chapter-1/rafael.jpg)      | **Nombre y Apellido:** Rafael Alexander Dominguez Vargas  <br> **Carrera:** Ingeniería de Software (6to ciclo) <br> **Acerca de:** Soy una persona responsable y empática. Poseo conocimientos en lenguajes de programación como C++, Java y Python, lo que me permite desarrollar soluciones diversas dentro de mi formación en Ingeniería de Software.                                                                                                    |
+| ![Sebastian](./feature/chapter-1/Sebastianpfp.png) | **Nombre y Apellido:** Sebastian Escobar Palomino  <br> **Carrera:** Ingeniería de Software <br> **Acerca de:** Me comprometo a contribuir al máximo en el grupo y cumplir con las entregas dentro del plazo establecido. Busco mantener una comunicación efectiva con mis compañeros y aplicar mis habilidades para el desarrollo de las tareas asignadas en este proyecto.                                                                                |
+|     ![Alonso](./feature/chapter-1/Alonso.png)      | **Nombre y Apellido:** Percy Alonso Muñiz Huayanca <br> **Carrera:** Ingeniería de Software <br> **Acerca de:** Soy una persona responsable, creativa y empática, cualidades que me permiten establecer buenas conexiones con quienes me rodean. Valoro el trabajo en equipo porque me da la oportunidad de compartir ideas y aprender de otras perspectivas. Tengo conocimientos en C++, HTML, CSS, entre otros, y me apasiona el Frontend y el Diseño UX. |
 
 <br>
 
@@ -109,22 +109,22 @@
       - **1.2.2.3. Lean UX Hypothesis Statements**
       <br> A continuación, detallamos las Declaraciones de Hipótesis Lean UX que guiarán el desarrollo de DispenXCore, identificando los resultados esperados y las métricas clave para validar nuestras suposiciones más críticas.<br><br> 
       **Hipótesis 1:**  
-      Creemos que al ofrecer un sistema de alertas preventivas basadas en el peso real del producto (celda de carga), para usuarios domésticos que suelen olvidar revisar su alacena, obtendremos una reducción drástica en los "quiebres de stock" y una mayor tranquilidad del usuario.
+      Creemos que al ofrecer un sistema de alertas preventivas basadas en el peso real del producto, para usuarios domésticos que suelen olvidar revisar su alacena, obtendremos una reducción drástica en los "quiebres de stock" y una mayor tranquilidad del usuario.<br>
       **Sabremos que esta hipótesis es cierta**  
       Cuando veamos que al menos el 70% de los usuarios que reciben la notificación realizan la compra o reposición del producto dentro de las siguientes 24 horas.<br>   
       
         **Hipótesis 2:**  
-      Creemos que mostrar el historial de consumo en un dashboard de Angular, para dueños de pequeños negocios (Dark Kitchens), permitirá una mejor planificación de compras y reducirá el gasto en suministros innecesarios.
+      Creemos que mostrar el historial de consumo en un dashboard de Angular, para dueños de pequeños negocios, permitirá una mejor planificación de compras y reducirá el gasto en suministros innecesarios.<br>
       **Sabremos que esta hipótesis es cierta**  
       Cuando veamos que los usuarios comerciales acceden al dashboard web al menos 3 veces por semana para revisar sus tendencias de inventario.<br> 
       
         **Hipótesis 3:**  
-      Creemos que la integración de notificaciones push en tiempo real mediante Flutter, para usuarios móviles, incrementará la relevancia del producto frente a contenedores tradicionales. 
+      Creemos que la integración de notificaciones push en tiempo real mediante Flutter, para usuarios móviles, incrementará la relevancia del producto frente a contenedores tradicionales.<br>
       **Sabremos que esta hipótesis es cierta**  
       Cuando la tasa de apertura de las notificaciones de "Stock Crítico" sea superior al 90% en los primeros 15 minutos de haber sido enviadas.<br>   
 
         **Hipótesis 4:**  
-      Creemos que al usar 3 sensores distintos (Ultrasonido, Peso e IR) para garantizar la veracidad del dato, los usuarios desarrollarán una confianza ciega en el sistema, eliminando la necesidad de verificación visual.
+      Creemos que al usar 3 sensores distintos (Ultrasonido, Peso e IR) para garantizar la veracidad del dato, los usuarios desarrollarán una confianza ciega en el sistema, eliminando la necesidad de verificación visual.<br>
       **Sabremos que esta hipótesis es cierta**  
       Cuando las encuestas de satisfacción muestren que más del 85% de los usuarios consideran la información de la app como "altamente precisa".
       - **1.2.2.4. Lean UX Canvas**
