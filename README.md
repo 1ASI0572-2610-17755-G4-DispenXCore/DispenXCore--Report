@@ -61,7 +61,7 @@
 
 | Versión | Fecha | Autor | Descripción de la modificación |
 |----|----|----|----|
-| TB1 | 17/09/2025 | Diego Bastidas, Fabrisio Belahonia, Rafael Dominguez, Sebastian Escobar, Alonso Muñiz | Redacción de los Capítulos I: Presentación, II: Requirements Development and Software Solution Design |
+| TB1 | 17/09/2025 | Diego Bastidas, Ricardo Cardenas, Rafael Dominguez, Sebastian Escobar, Alonso Muñiz | Redacción de los Capítulos I, II, III y IV |
 
 
 # Project Report Collaboration Insights
@@ -188,6 +188,10 @@ TB1:
         - [**6.3.2. Registro de Entrevistas**]()
         - [**6.3.3. Evaluaciones según heurísticas**]()
     - [**6.4. Video About-the-Product**]()
+- [**Conclusiones y recomendaciones**]()
+- [**Video About-the-Team**]()
+- [**Bibliografía**]()
+---
 
 # Student Outcome
 | Criterio específico | Acciones realizadas | Conclusiones |
