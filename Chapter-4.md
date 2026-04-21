@@ -29,8 +29,12 @@
     Para identificar los Bounded Contexts candidatos buscamos entender los elementos importantes del sistema, identificando hitos donde el estado del negocio cambia drásticamente y la responsabilidad pasa de un componente a otro.
 
     ![Event Storming DispenXCore4](/images/EventStorm4.png)
-        - **4.1.1.2. Domain Message Flows Modeling** 
-        - **4.1.1.3. Bounded Context Canvases** 
+    **4.1.1.2. Domain Message Flows Modeling**
+
+    Para analizar y diseñar la arquitectura de comunicación de DispenXCore, se utiliza el Modelado de Flujos de Mensajes de Dominio. Este método ilustra de manera detallada la transferencia de información entre los Bounded Contexts y los sistemas externos mediante el intercambio de mensajes (Comandos, Eventos y Consultas).
+
+    ![Domain Flow Message DispenXCore](/images/FlowMessage.png)     
+    **4.1.1.3. Bounded Context Canvases** 
     - **4.1.2. Context Mapping** 
     - **4.1.3. Software Architecture** 
         - **4.1.3.1. Software Architecture System Landscape Diagram** 
