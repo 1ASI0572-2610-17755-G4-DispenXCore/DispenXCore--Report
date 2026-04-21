@@ -1,22 +1,34 @@
 ## **Capítulo IV: Solution Software Design** 
 - **4.1. Strategic-Level Domain-Driven Design** 
     - **4.1.1. Design-Level EventStorming** 
-    Con el objetivo de comprender en profundidad el dominio y la lógica de funcionamiento de DispenXCore, se llevó a cabo una sesión de Event Storming. Esta dinámica permitió al equipo organizar el flujo de datos desde múltiples perspectivas: la interacción física del hardware, la gestión lógica del middleware y la experiencia del usuario final a través de las interfaces móviles y web.
-    Se abordaron los siguientes puntos durante la sesión:
-    * **Exploración del dominio y flujo de automatización:** Se analizó el ciclo de vida completo del producto, comenzando por el registro y vinculación del dispensador. Se puso especial énfasis en el flujo de telemetría: desde que los sensores capturan datos físicos de peso, nivel y flujo, hasta que el sistema procesa dicha información para determinar el estado del inventario en tiempo real.
-    * **Identificación de eventos y comandos de control activo:** Utilizamos notas naranjas para los eventos de dominio y notas azules para los comandos. Para esto se siguieron las user stories realizadas previamente.
-    * **Asignación de roles y actores del ecosistema:** Se diferenciaron claramente los actores: el **Usuario**, el **Hardware**, que actúa como un sistema autónomo que reporta telemetría.
-    * **Políticas y reglas de negocio:** Se establecieron reglas de negocio para definir umbrales de alerta. Esto garantiza que las notificaciones push se envíen solo cuando el sistema detecta que el recipiente de uso ha alcanzado niveles críticos, optimizando la relevancia de las alertas para el usuario.
+    
+      Con el objetivo de comprender en profundidad el dominio y la lógica de funcionamiento de DispenXCore, se llevó a cabo una sesión de Event Storming. Esta dinámica permitió al equipo organizar el flujo de datos desde múltiples perspectivas: la interacción física del hardware, la gestión lógica del middleware y la experiencia del usuario final a través de las interfaces móviles y web.
+    
+      Se abordaron los siguientes puntos durante la sesión:
+      
+      * **Exploración del dominio y flujo de automatización:** Se analizó el ciclo de vida completo del producto, comenzando por el registro y vinculación del dispensador. Se puso especial énfasis en el flujo de telemetría: desde que los sensores capturan datos físicos de peso, nivel y flujo, hasta que el sistema procesa dicha información para determinar el estado del inventario en tiempo real.
+      
+      * **Identificación de eventos y comandos de control activo:** Utilizamos notas naranjas para los eventos de dominio y notas azules para los comandos. Para esto se siguieron las user stories realizadas previamente.
+      
+      * **Asignación de roles y actores del ecosistema:** Se diferenciaron claramente los actores: el **Usuario**, el **Hardware**, que actúa como un sistema autónomo que reporta telemetría.
+      
+      * **Políticas y reglas de negocio:** Se establecieron reglas de negocio para definir umbrales de alerta. Esto garantiza que las notificaciones push se envíen solo cuando el sistema detecta que el recipiente de uso ha alcanzado niveles críticos, optimizando la relevancia de las alertas para el usuario.
+    
     **Evidencia de lo realizado en la reunión:**
+    
     Paso 1: Recopilación de Eventos de dominio
     ![Event Storming DispenXCore1](/images/EventStorm1.png)
+    
     Paso 2: Refinación de Eventos de dominio
     ![Event Storming DispenXCore2](/images/EventStorm2.png)
+    
     Paso 3: Hallando Causas
     ![Event Storming DispenXCore3](/images/EventStorm3.png)
-    Paso 4: Identificando Bounded Context y Reordenandolo
+    **4.1.1.1. Candidate Context Discovery**
+          
+    Para identificar los Bounded Contexts candidatos buscamos entender los elementos importantes del sistema, identificando hitos donde el estado del negocio cambia drásticamente y la responsabilidad pasa de un componente a otro.
+
     ![Event Storming DispenXCore4](/images/EventStorm4.png)
-        - **4.1.1.1. Candidate Context Discovery** 
         - **4.1.1.2. Domain Message Flows Modeling** 
         - **4.1.1.3. Bounded Context Canvases** 
     - **4.1.2. Context Mapping** 
