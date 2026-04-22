@@ -315,6 +315,8 @@
 
     ![Empathy Mapping Segmento 2](./feature/Chapter-2/Empathy-map-2.png)
 - **2.4. Big Picture EventStorming**
+
+    ![Big Picture EventStorming](./feature/Chapter-2/Big-Picture-EventStorming.jpg)
 - **2.5. Ubiquitous Language**<br>
   - Smart Dispenser (Dispensador Inteligente): Dispositivo físico encargado de almacenar, proteger y medir la cantidad de granos o insumos secos en su interior.
 
