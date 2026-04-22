@@ -126,7 +126,7 @@
 
       Con el propósito de identificar de manera más clara las necesidades, comportamientos y expectativas de nuestros usuarios potenciales, hemos elaborado un conjunto de entrevistas. Estas están enfocadas en evaluar la aceptación y el interés por el ecosistema que plantea DispenXCore, tanto desde la perspectiva de hogares que buscan automatización como desde la de familiares encargados del cuidado y abastecimiento de adultos mayores.
 
-      **Preguntas para el Segmento Objetivo 1: Hogares Inteligentes**
+      **Preguntas para el Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
         1. Actualmente, ¿cómo organizas y almacenas tus insumos a granel (arroz, azúcar, menestras, etc.)?
 
@@ -141,7 +141,7 @@
         10. ¿Qué esperas de un dispositivo IoT en términos de facilidad de configuración Wi-Fi y diseño para tu cocina?
         11. ¿Qué valorarías más en DispenXCore? (La precisión del peso, la comodidad de la app o el ahorro de tiempo en las compras).
 
-      **Preguntas para el Segmento Objetivo 2: Cuidadores de Adultos Mayores**
+      **Preguntas para el Segmento Objetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
         1. ¿Eres responsable de realizar las compras o supervisar el abastecimiento de alimentos en el hogar de un familiar adulto mayor?
 
         2. ¿Cómo te aseguras actualmente de que no les falten insumos básicos como arroz, azúcar o legumbres?
@@ -157,7 +157,7 @@
 - **2.2.2. Registro de entrevistas**
   <br> En esta sección se recopilan las entrevistas realizadas a los dos segmentos objetivo: Profesionales Técnicos y Clientes. Se registran las respuestas, observaciones y comentarios clave de cada participante, sirviendo como base para el análisis de necesidades y la posterior definición de requisitos del sistema.<br><br>
 
-  **Entrevistas Segmento Objetivo 1: Hogares Inteligentes**
+  **Entrevistas Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
   **Entrevista 1:**
   Datos del entrevistador:
@@ -204,7 +204,7 @@
 
   Resumen 3.
 
-  **Entrevistas Segmento Objetivo 2: Cuidadores de Adultos Mayores**
+  **Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
   **Entrevista 1:**
     Datos del entrevistador:
@@ -261,13 +261,51 @@
 
   Resumen 2.
 
-  ### Conclusión
+  ####   Conclusión
   Conclusión.
 
 - **2.3. Needfinding**
+  El Needfinding es una metodología cualitativa enfocada en recoger las opiniones y emociones de los usuarios. Su objetivo, como indica su nombre, es identificar, explorar, analizar, descubrir y evaluar de forma clara las necesidades que pueden guiar el desarrollo y diseño de cualquier proyecto.
+
+  En este proyecto, hemos decidido interactuar con posibles usuarios mediante entrevistas y cuestionarios. A continuación, se presentan diversos análisis obtenidos a partir de estas entrevistas en los siguientes documentos
     - **2.3.1. User Personas**
+    <br> En esta sección se presentan los perfiles representativos de los usuarios del sistema, permitiendo identificar características, motivaciones y necesidades de cada segmento para guiar el desarrollo de funcionalidades y la experiencia de usuario. <br><br>
+    **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+          ![User Persona Segmento 1](./feature/Chapter-2/User_persona_1.png)
+    **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+          ![User Persona Segmento 1](./feature/Chapter-2/User_persona_2.png)
+
     - **2.3.2. User Task Matrix**
+
+      Esta herramienta permite identificar y clasificar las actividades clave que realiza cada segmento dentro del ecosistema IoT, considerando la frecuencia con la que las llevan a cabo y el nivel de importancia que representan para cumplir sus objetivos de gestión de inventario.
+      | Tarea | Hogares Inteligentes (Frecuencia / Importancia) | Cuidadores (Frecuencia / Importancia) |
+      |---|---|---|
+      | Registrarse y configurar perfil de usuario | Baja / Alta | Baja / Alta |
+      | Vincular el dispensador físico a la red Wi-Fi | Baja / Alta | Baja / Alta |
+      | Consultar el estado del stock (Polling en App/Web) | Frecuente / Media | Frecuente / Alta |
+      | Recibir notificaciones push de "Stock Bajo" | Ocasional / Alta | Ocasional / Crítica |
+      | Configurar umbrales de alerta (ej: avisar al 15%) | Baja / Media | Baja / Alta |
+      | Revisar historial y gráficas de consumo | Frecuente / Alta | Baja / Media |
+      | Gestionar múltiples dispensadores (Arroz, Azúcar, etc.) | Media / Alta | Media / Alta |
+      | Verificar el estado de los sensores y batería | Baja / Media | Media / Alta |
+
+      Del análisis de esta matriz para el proyecto DispenXCore, se observa que:
+
+      - Para los Hogares Inteligentes, la tarea más relevante es la revisión de historiales y gráficas, ya que este perfil busca optimizar sus hábitos de consumo y disfruta de la interacción con los datos que provee el sistema en Angular.
+
+      - Para los Cuidadores, las tareas críticas son la recepción de notificaciones push y la configuración de umbrales, ya que su objetivo principal es la logística de reposición remota. Para ellos, una alerta a tiempo es la diferencia entre un familiar abastecido o desatendido.
+
+      - Finalmente, la capacidad de gestionar múltiples dispositivos es una tarea de importancia alta para ambos, permitiendo que la plataforma escale de un solo dispensador de arroz a un sistema completo de alacena inteligente.
     - **2.3.3. User Journey Mapping**
+    <br> En esta seccion describiremos visualmente las interacciones de los usuarios con el sistema, mostrando los pasos, emociones y puntos de contacto clave.<br><br>
+      **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+
+      ![User Journey Mapping Segmento 1](./feature/chapter02/User_Journey_Mapping_tecnico.png)
+
+      **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+
+      ![User Journey Mapping Segmento 2](./feature/chapter02/User_Journey_Mapping_Cliente.png)
+
     - **2.3.4. Empathy Mapping**
 - **2.4. Big Picture EventStorming**
 - **2.5. Ubiquitous Language**<br>
