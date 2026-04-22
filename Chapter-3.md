@@ -22,6 +22,11 @@
     | **EP04** | **Funcionalidad de Monitoreo Remoto para Cuidadores (Móvil/Flutter)** |
     | | Como cuidador de un adulto mayor, quiero ver el stock de granos y recibir alertas de nivel bajo en mi aplicación móvil cuando un grano baja de nivel para gestionar la reposición de forma proactiva en casa de mi familiar. |
 
+    | Epic ID | Título |
+    |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | **EP07** | **Presencia Digital y Captación de Usuarios** |
+    | | Como visitante, quiero acceder a una plataforma informativa para conocer la solución DispenXCore, ver testimonios de precisión y registrar mi interés en el producto. |
+
 ---
 
 ### Epic Story 1 | Integración de Hardware y Procesamiento de Datos de Sensores
@@ -71,6 +76,35 @@
 | **TS09** | Gestión de Permisos de Acceso Remoto (ACLs) | Implementar control de acceso a nivel de API para garantizar que los cuidadores solo puedan ver datos de los dispensadores que tienen legalmente vinculados. | **Escenario 1:** API endpoint funcional para gestión de permisos. Pruebas de permisos exitosas. | EP04 |
 | **TS10** | API de Backend para Gestión de Cuentas de Cuidadores | Desarrollar la lógica de backend en C# para gestionar cuentas de usuario específicas para cuidadores (registro, autenticación, vinculación). | **Escenario 1:** API endpoint funcional para gestión de cuentas de cuidadores. Pruebas de creación de cuenta exitosa. | EP04 |
 
+---
+
+### Epic Story 5 | Presencia Digital y Captación de Usuarios
+
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| **US12** | Landing Page del Proyecto | **Como** visitante,<br>**quiero** acceder a una landing page informativa cuando busco soluciones de domótica,<br>**para** conocer las funciones de DispenXCore y los beneficios de automatizar mi alacena. | **Escenario 1:** **Dado que** entro al enlace principal del proyecto, **cuando** navego por la sección de características, **entonces** visualizo claramente el beneficio de la triple validación de los sensores (peso, nivel y flujo).<br><br>**Escenario 2:** **Dado que** pertenezco al segmento de cuidadores, **cuando** accedo a la sección de beneficios, **entonces** puedo ver cómo el monitoreo remoto me ayuda a cuidar a mis familiares. | EP05 |
+| **US13** | Formulario de Pre-registro y Leads | Cuando estoy interesado en adquirir el dispensador, quiero completar un formulario de suscripción, para recibir noticias sobre el lanzamiento oficial y ofertas exclusivas. | Dado que estoy en la sección de "Próximamente", cuando ingreso un correo electrónico válido, entonces el sistema almacena el lead y me muestra un mensaje de agradecimiento.<br><br>Dado que ingreso un formato de correo inválido, cuando intento enviar el formulario, entonces el sistema resalta el error y no permite el envío. | EP05 |
+| **US14** | Sección de Testimonios y Casos de Éxito | Cuando evalúo la compra del dispositivo, quiero leer testimonios de otros usuarios (hogares y cuidadores), para confirmar la fiabilidad de la triple validación de los sensores. | Dado que navego por la landing page, cuando llego a la sección de testimonios, entonces puedo visualizar historias reales clasificadas por los dos segmentos objetivo.<br><br>Dado que los testimonios tienen imágenes, cuando hago clic en una, entonces se amplía para mostrar el dispositivo DispenXCore en un entorno real. | EP05 |
+| **US15** | Centro de Ayuda y Preguntas Frecuentes (FAQ) | Cuando tengo dudas técnicas sobre el hardware (ESP32), quiero acceder a una sección de preguntas frecuentes, para resolver mis inquietudes sobre la instalación y el Wi-Fi sin contactar a soporte. | Dado que tengo dudas sobre la conectividad, cuando selecciono una categoría en el FAQ, entonces el sistema despliega las respuestas correspondientes de forma clara.<br><br>Dado que no encuentro mi duda en la lista, cuando hago clic en "Contactar Soporte", entonces el sistema me redirige al canal de atención directa. | EP05 |
 
 - **3.2. Impact Mapping**
+
 - **3.3. Product Backlog**
+
+| # Orden | User Story Id | Título | Descripción | Story Points |
+| :---: | :--- | :--- | :--- | :---: |
+| 1 | US12 | Landing Page del Proyecto | Como visitante, quiero acceder a una landing page informativa cuando busco soluciones de domótica, para conocer las funciones de DispenXCore y los beneficios de automatizar mi alacena. | 3 |
+| 2 | US13 | Formulario de Pre-registro y Leads | Cuando estoy interesado en adquirir el dispensador, quiero completar un formulario de suscripción, para recibir noticias sobre el lanzamiento oficial y ofertas exclusivas. | 2 |
+| 3 | US06 | Visualización de Stock Actual en Panel Web | Como usuario del hogar, quiero ver el stock actual de todos mis granos en una interfaz web centralizada cuando accedo al dashboard, para tener una visión rápida y detallada de mi alacena. | 5 |
+| 4 | US05 | Recepción de Notificaciones Push de Stock Bajo | Como usuario del hogar, quiero recibir una notificación push instantánea en mi celular cuando un grano baja del umbral crítico, para no quedarme sin insumos básicos y gestionar las compras proactivamente. | 5 |
+| 5 | US09 | Visualización Remota de Stock para Cuidadores | Como cuidador de un adulto mayor, quiero ver el stock actual de granos en la casa de mi familiar cuando un grano baja de nivel, para asegurar que siempre tenga insumos básicos disponibles. | 8 |
+| 6 | US15 | Centro de Ayuda y Preguntas Frecuentes (FAQ) | Cuando tengo dudas técnicas sobre el hardware (ESP32), quiero acceder a una sección de preguntas frecuentes, para resolver mis inquietudes sobre la instalación y el Wi-Fi sin contactar a soporte. | 1 |
+| 7 | US10 | Recepción de Alertas de Familiar Monitoreado | Como cuidador de un adulto mayor, quiero recibir una alerta push en mi celular cuando el stock de un grano baja del umbral en casa de mi familiar, para gestionar la reposición de forma proactiva. | 3 |
+| 8 | US14 | Sección de Testimonios y Casos de Éxito | Cuando evalúo la compra del dispositivo, quiero leer testimonios de otros usuarios, para confirmar la fiabilidad de la triple validación de los sensores. | 1 |
+| 9 | US03 | Configuración de Umbral de Alerta | Como usuario del hogar, quiero configurar un umbral de stock bajo personalizado para cada grano, para recibir alertas preventivas antes del agotamiento total. | 2 |
+| 10 | US07 | Visualización de Gráficos de Consumo Histórico | Como usuario del hogar, quiero ver gráficos de mi historial de consumo de granos cuando accedo al dashboard, para identificar patrones y optimizar mis compras. | 5 |
+| 11 | US11 | Visualización de Confirmación de Flujo Granular | Como cuidador de un adulto mayor, quiero ver un registro de confirmación de flujo granular, para saber si mi familiar ha estado utilizando el dispensador últimamente. | 3 |
+| 12 | US08 | Gestión de Inventario (Añadir/Editar Granos) | Como usuario del hogar, quiero añadir nuevos tipos de granos y editar la información de los existentes en mi inventario, para mantener el registro preciso de mi alacena. | 3 |
+| 13 | US04 | Visualización de Alertas Activas en la App | Como usuario del hogar, quiero ver una lista de todas las alertas activas de stock bajo en la aplicación móvil, para saber qué granos comprar pronto. | 2 |
+| 14 | US01 | Visualización de Stock Crudo (Debug) | Como desarrollador de firmware, quiero ver los valores crudos de los sensores en tiempo real, para verificar la correcta calibración y funcionamiento del hardware durante la instalación inicial. | 2 |
+| 15 | US02 | Actualización de Firmware Remota (OTA) | Como administrador del sistema, quiero poder actualizar el firmware de los dispensadores de forma remota, para corregir errores e implementar mejoras sin intervención física en el hogar. | 8 |
