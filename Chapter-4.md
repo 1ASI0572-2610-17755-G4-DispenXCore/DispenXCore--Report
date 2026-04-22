@@ -35,12 +35,49 @@
 
     ![Domain Flow Message DispenXCore](/images/FlowMessage.png)     
     **4.1.1.3. Bounded Context Canvases** 
-    - **4.1.2. Context Mapping** 
-    - **4.1.3. Software Architecture** 
-        - **4.1.3.1. Software Architecture System Landscape Diagram** 
-        - **4.1.3.2. Software Architecture Context Level Diagrams** 
-        - **4.1.3.3. Software Architecture Container Level Diagrams** 
-        - **4.1.3.4. Software Architecture Deployment Diagrams** 
+    **4.1.2. Context Mapping**
+
+    En esta sección desarrollamos un conjunto de *context maps* para visualizar las relaciones estructurales entre los *bounded contexts* de **DispenXCore**. A partir de la lógica de dominio establecida, exploramos distintas alternativas de diseño, cuestionando cómo cambiaría la estabilidad del sistema si agrupamos o dividimos las responsabilidades de telemetría y gestión de usuarios. Evaluamos cada propuesta considerando patrones de DDD como *Anti-corruption Layer*, *Customer/Supplier* y *Shared Kernel* para definir la arquitectura más robusta.
+
+    **Opción 1: Estructura de Contextos Independientes**
+
+    En esta propuesta mantenemos los tres *bounded contexts* completamente separados, utilizando relaciones de tipo *Customer/Supplier*.
+
+    * **Descripción:** **Inventario y Telemetría** actúa como proveedor de datos para **Notificaciones y Alertas**. A su vez, **Usuarios y Accesos** provee la información de identidad necesaria para personalizar las alertas.
+    * **Ventaja:** Existe una separación total de responsabilidades. Los cambios en el hardware no afectan la lógica de seguridad de los usuarios.
+    * **Desventaja:** Requiere una alta coordinación y sincronización constante entre los tres contextos para que una alerta llegue al usuario correcto, aumentando la latencia en el procesamiento de mensajes.
+    ![Option1 DispenXCore3](/images/Option1.png)
+
+    **Opción 2: Arquitectura Basada en ACL y Shared Kernel**
+
+    Esta alternativa busca equilibrar la autonomía de los equipos con la integridad de los datos, utilizando patrones específicos para proteger el núcleo del sistema.
+
+    * **Inventario y Telemetría** se comunica con el hardware mediante una **Anti-corruption Layer (ACL)**. Esta capa traduce las señales crudas de los sensores de peso y nivel a un lenguaje que el dominio entienda, protegiendo al sistema de cambios en los protocolos del hardware.
+    * **Usuarios y Accesos** y **Notificaciones y Alertas** comparten un **Shared Kernel** que contiene los modelos de "Perfil de Usuario" y "Tokens de Dispositivo". Esto asegura que ambos contextos hablen el mismo idioma al momento de dirigir una notificación push.
+    * **Notificaciones y Alertas** mantiene una relación de **Customer/Supplier** con el contexto de Inventario, donde el contexto de Inventario es el proveedor de los eventos de stock crítico.
+    ![Option3 DispenXCore3](/images/Option3.png)
+
+    **Opción 3: Unificación de Core y Notificaciones**
+
+    Esta alternativa propone unir los contextos de **Inventario y Telemetría** con **Notificaciones y Alertas** en un solo *bounded context* de "Gestión de Stock".
+
+    * **Descripción:** Al estar en un mismo contexto, la detección de nivel crítico dispara la alerta de forma interna e inmediata sin necesidad de comunicación entre contextos.
+    * **Ventaja:** Simplifica la arquitectura al reducir la cantidad de contextos y elimina la latencia de red entre la detección y la generación de la alerta.
+    * **Desventaja:** Riesgo de crear un "Big Ball of Mud". Al combinar la infraestructura técnica de sensores con la lógica de mensajería (Firebase), el contexto asume demasiadas funciones, dificultando su mantenimiento y escalabilidad independiente.
+    ![Option2 DispenXCore3](/images/Option2.png)
+
+    **Elección**
+
+    Se eligio la **opción 2**, ya que proporciona el mejor equilibrio entre la separación de responsabilidades y la facilidad de implementación. Al implementar una **Anti-corruption Layer**, garantizamos que el software sea agnóstico a cambios en los sensores físicos, lo cual es vital para un proyecto IoT. Asimismo, el uso de un **Shared Kernel** para la identidad del usuario optimiza la entrega de alertas sin duplicar la lógica de seguridad, brindando una experiencia fluida tanto para el usuario doméstico como para el cuidador remoto.
+    
+    **4.1.3. Software Architecture** 
+
+    En esta sección, se explica la representación de la arquitectura de software para DispenXCore utilizando el C4 Model. Con estos diagramas se busca proporcionar una comprensión clara de la arquitectura, permitiendo a los miembros del equipo, stakeholders y futuros desarrolladores entiender cómo se organiza y comunica el sistema.
+
+    - **4.1.3.1. Software Architecture System Landscape Diagram** 
+    - **4.1.3.2. Software Architecture Context Level Diagrams** 
+    - **4.1.3.3. Software Architecture Container Level Diagrams** 
+    - **4.1.3.4. Software Architecture Deployment Diagrams** 
 - **4.2. Tactical-Level Domain-Driven Design** 
     - **4.2.1. Bounded Context: Inventory and Telemetry** 
         - **4.2.1.1. Domain Layer** 
