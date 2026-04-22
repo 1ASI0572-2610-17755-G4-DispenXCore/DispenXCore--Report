@@ -300,12 +300,44 @@
     <br> En esta seccion describiremos visualmente las interacciones de los usuarios con el sistema, mostrando los pasos, emociones y puntos de contacto clave.<br><br>
       **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
-      ![User Journey Mapping Segmento 1](./feature/chapter02/User_Journey_Mapping_tecnico.png)
+      ![User Journey Mapping Segmento 1](./feature/Chapter-2/Journey-Mapping-1.png)
 
       **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
-      ![User Journey Mapping Segmento 2](./feature/chapter02/User_Journey_Mapping_Cliente.png)
+      ![User Journey Mapping Segmento 2](./feature/Chapter-2/Journey-Mapping-2.png)
 
-    - **2.3.4. Empathy Mapping**
+    - **2.3.4. Empathy Mapping**<br><br>
+      **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+
+    ![Empathy Mapping Segmento 1](./feature/Chapter-2/Empathy-map-1.png)
+    
+    **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+
+    ![Empathy Mapping Segmento 2](./feature/Chapter-2/Empathy-map-2.png)
 - **2.4. Big Picture EventStorming**
 - **2.5. Ubiquitous Language**<br>
+  - Smart Dispenser (Dispensador Inteligente): Dispositivo físico encargado de almacenar, proteger y medir la cantidad de granos o insumos secos en su interior.
+
+  - Bulk Supplies (Insumos a Granel): Productos alimenticios secos y granulares (arroz, azúcar, lentejas, etc.) que se almacenan sin empaque individual dentro del dispositivo.
+
+  - Stock Level (Nivel de Existencias): Cantidad actual de insumo disponible dentro del dispensador, representada generalmente en porcentaje de volumen o peso en gramos.
+
+  - Alert Threshold (Umbral de Alerta): Límite mínimo de producto configurado por el usuario (ej. 15%) que, al ser alcanzado, activa una advertencia de necesidad de compra.
+
+  - Critical Low (Nivel Crítico Bajo): Estado en el que la cantidad de grano es insuficiente para una ración estándar, indicando un desabastecimiento inminente.
+
+  - Consumption Pattern (Patrón de Consumo): Comportamiento histórico de uso de un insumo específico que permite identificar con qué frecuencia y en qué cantidad se agotan los suministros.
+
+  - Remote Monitoring (Monitoreo Remoto): Capacidad de supervisar el estado de la alacena desde una ubicación distinta a donde se encuentra el dispositivo físico.
+
+  - Caregiver (Cuidador): Rol de usuario responsable de supervisar el abastecimiento de alimentos de un tercero, generalmente un adulto mayor o persona con movilidad reducida.
+
+  - Smart Pantry (Alacena Inteligente): Concepto de gestión del hogar donde los recipientes de comida están conectados y son capaces de reportar su estado de inventario.
+
+  - Out of Stock / Depletion (Agotamiento de Stock): Condición en la cual el dispensador se encuentra totalmente vacío, impidiendo la preparación de alimentos.
+
+  - Granular Flow (Flujo Granular): El movimiento físico de los granos al salir del dispensador, cuya detección confirma que el dispositivo está operando correctamente y no presenta obstrucciones.
+
+  - Replenishment (Reposición): Acción física de rellenar el dispensador con nuevo producto una vez que el nivel de existencias es bajo.
+
+  - Telemetry (Telemetría): El conjunto de mediciones físicas (peso, distancia y presencia) recolectadas por el dispositivo para determinar el estado real del inventario.
