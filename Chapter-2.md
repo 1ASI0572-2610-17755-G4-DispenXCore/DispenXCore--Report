@@ -160,23 +160,21 @@
   **Entrevistas Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
   **Entrevista 1:**
-  Datos del entrevistador:
-    - Nombre: 
 
   Datos del entrevistado:
-    - Nombre:
-    - Edad:
-    - Distrito de residencia: 
-    - Enlace: 
+    - Nombre: Sebastian Silva
+    - Edad:22 años
+    - Distrito de residencia: San Luis
+    - Enlace: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQDBoeaDO5d4Q6h935nZ5j4uAR0XPnDof0ebNHzwjx6sHuk?e=mecImR&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D 
 
-       <img src="">
-  **Resumen de la entrevista:**
+       <img src="https://i.imgur.com/NPYF8Qr.png">
+  **Resumen de la entrevista:** Sebastián Silva, de 22 años, gestiona sus insumos de cocina de forma manual, guiándose por observación. Con frecuencia (al menos una vez por semana) se queda sin ingredientes, lo que afecta su rutina, y a veces compra productos que ya tiene por falta de control.
 
-  Resumen 1.
+  No utiliza herramientas tecnológicas, pero ve con interés un sistema inteligente que le avise sobre niveles de insumos. Le gustaría que incluya historial, gráficos y predicciones de consumo. Valora la precisión del sistema y consideraría pagar una suscripción solo si demuestra un ahorro real. También espera que sea fácil de usar y funcione en tiempo real.
+
+ 
 
   **Entrevista 2:**
-    Datos del entrevistador:
-    - Nombre: 
 
   Datos del entrevistado:
     - Nombre:
@@ -187,11 +185,8 @@
        <img src="">
   **Resumen de la entrevista:**
 
-  Resumen 2.
 
   **Entrevista 3:**
-    Datos del entrevistador:
-    - Nombre: 
 
   Datos del entrevistado:
     - Nombre:
@@ -202,13 +197,10 @@
        <img src="">
   **Resumen de la entrevista:**
 
-  Resumen 3.
 
   **Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
   **Entrevista 1:**
-    Datos del entrevistador:
-    - Nombre: 
 
   Datos del entrevistado:
     - Nombre:
@@ -219,11 +211,8 @@
        <img src="">
   **Resumen de la entrevista:**
 
-  Resumen 1.
 
   **Entrevista 2:**
-    Datos del entrevistador:
-    - Nombre: 
 
   Datos del entrevistado:
     - Nombre:
@@ -233,12 +222,8 @@
 
        <img src="">
   **Resumen de la entrevista:**
-
-  Resumen 2.
 
   **Entrevista 3:**
-    Datos del entrevistador:
-    - Nombre: 
 
   Datos del entrevistado:
     - Nombre:
@@ -249,7 +234,6 @@
        <img src="">
   **Resumen de la entrevista:**
 
-  Resumen 3.
 
 - **2.2.3. Análisis de entrevistas**
   <br> En este apartado se documenta el análisis de las entrevistas realizadas a los dos segmentos objetivo: Hogares Tecnológicos y Cuidadores de Adultos Mayores. El propósito es identificar patrones, necesidades, frustraciones y expectativas de cada grupo para fundamentar el diseño del sistema y priorizar funcionalidades en el ecosistema de DispenXCore. <br><br>
