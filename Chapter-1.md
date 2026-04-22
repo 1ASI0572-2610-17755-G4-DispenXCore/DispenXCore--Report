@@ -42,9 +42,6 @@
         A través de un hardware basado en microcontroladores que procesa datos de tres sensores (ultrasonido, celda de carga e infrarrojo). Esta información se transmite vía Wi-Fi a un backend desarrollado en C#, que gestiona la lógica de alertas. El usuario interactúa mediante una Landing Page informativa, una aplicación web en Angular para estadísticas de consumo y una aplicación móvil en Flutter dedicada a la recepción de notificaciones push en tiempo real.
         - How much (¿Cuánto?)<br>
         El modelo de negocio se basa en la venta del dispositivo físico (hardware) con acceso vitalicio a las funciones básicas de notificación en la app móvil. Para el segmento comercial, se proyecta un modelo de suscripción opcional que ofrezca reportes avanzados de consumo y predicción de compras basada en datos. Este enfoque permite una entrada competitiva al mercado, asegurando la sostenibilidad del proyecto mediante la escalabilidad de servicios digitales.
-    <br>
-    ---
-    <br>
 
     - **1.2.2 Lean UX Process**
       <br>En esta sección presentaremos el Lean UX Process para DispenXCore, describiendo cómo se aplican iteraciones rápidas de diseño y validación con usuarios para mejorar la experiencia del producto mediante ciclos cortos de prueba y ajuste, asegurando que la solución de hardware y software responda a necesidades reales de inventario.<br><br>
@@ -133,9 +130,8 @@
 
         Link: https://acortar.link/q1C2B8
 
-<br>
+
 ---
-<br>
 
 - **1.3. Segmentos objetivo**
   <br>A continuación, se describen los dos segmentos objetivo principales que abordará la plataforma, detallando sus características, necesidades específicas y motivaciones de uso.<br><br>
@@ -145,7 +141,3 @@
 
   <b>Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida</b><br>
   Este grupo incluye a familiares (hijos o sobrinos de entre 35 y 60 años) que se encargan del abastecimiento de hogares de adultos mayores que viven de forma independiente. Su principal preocupación es asegurar que sus familiares siempre tengan suministros básicos disponibles sin que el adulto mayor tenga que cargar recipientes pesados para revisar el stock o ir al supermercado de urgencia. Valoran la aplicación móvil de DispenXCore porque les permite recibir alertas en sus propios celulares sobre el inventario en la casa de sus familiares, permitiéndoles gestionar la reposición de forma proactiva y remota.
-
-<br>
----
-<br>
