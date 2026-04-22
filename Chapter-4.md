@@ -74,7 +74,12 @@
 
     En esta sección, se explica la representación de la arquitectura de software para DispenXCore utilizando el C4 Model. Con estos diagramas se busca proporcionar una comprensión clara de la arquitectura, permitiendo a los miembros del equipo, stakeholders y futuros desarrolladores entiender cómo se organiza y comunica el sistema.
 
-    - **4.1.3.1. Software Architecture System Landscape Diagram** 
+    **4.1.3.1. Software Architecture System Landscape Diagram** 
+  
+    El ecosistema de DispenXCore está diseñado para servir a dos perfiles de usuario principales: el Usuario Doméstico, que busca automatización en su cocina, y el Cuidador, que supervisa el abastecimiento de forma remota. El sistema central, DispenXCore, actúa como el núcleo que procesa la información proveniente del Hardware IoT (Sensores). Además, se integra con Firebase Cloud Messaging (FCM) para la entrega de notificaciones en tiempo real.
+
+    ![SystemLandscape DispenXCore](/images/SystemLandscape.png)
+
     - **4.1.3.2. Software Architecture Context Level Diagrams** 
     - **4.1.3.3. Software Architecture Container Level Diagrams** 
     - **4.1.3.4. Software Architecture Deployment Diagrams** 
