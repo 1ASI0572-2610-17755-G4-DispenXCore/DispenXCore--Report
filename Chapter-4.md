@@ -89,7 +89,29 @@
             - **4.2.1.6.1. Bounded Context Domain Layer Class Diagrams** 
             - **4.2.1.6.2. Bounded Context Database Design Diagram**
     - **4.2.2. Bounded Context: Notifications and Alerts** 
+
+      Este Bounded Context es el corazón de la proactividad de DispenXCore. Su objetivo es procesar los eventos de telemetría provenientes del hardware, evaluarlos frente a reglas de negocio (umbrales) y despachar notificaciones multicanal (Push para Flutter y Web para Angular) tanto a dueños de casa como a cuidadores.
         - **4.2.2.1. Domain Layer** 
+        
+          Define la lógica pura de las alertas y la estructura de los mensajes, siendo agnóstico a si el mensaje se envía por Firebase o correo.
+
+          **Sub-capa Model:** 
+
+          | Tipo           | Nombre            | Descripción                                                                 | Responsabilidad Principal                                              | Relación                              |
+          |----------------|------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------|----------------------------------------|
+          | Aggregate      | Alert            | Entidad que representa la ocurrencia de un evento de stock bajo o crítico. | Controlar el ciclo de vida de una alerta (Generada, Atendida, Archivada). | Se vincula a un DispenserId.           |
+          | Aggregate      | Notification     | El mensaje físico enviado al usuario.                                      | Gestionar el contenido del mensaje y su estado de lectura.            | Asociada a un User.                    |
+          | Value Object   | Threshold        | Valor numérico (gramos o %) que dispara la alerta.                         | Validar que el umbral sea un valor lógico y no negativo.              | Parte de la configuración del usuario. |
+          | Value Object   | NotificationType | Enum: CRITICAL_STOCK, LOW_STOCK, SYSTEM_UPDATE.                            | Clasificar la severidad de la alerta.                                 | Atributo de Notification.              |
+          | Domain Event   | AlertTriggered   | Evento que ocurre cuando el stock cruza el umbral.                         | Notificar internamente que se debe preparar un mensaje.               | Disparado por la lógica de dominio.    |
+          | Domain Event   | NotificationSent | Registro de que el mensaje salió hacia el proveedor (FCM).                | Trazabilidad del despacho.                                            | Usado para auditoría.                  |
+
+          **Sub-capa Service:**
+          | Tipo            | Nombre                   | Descripción                                   | Responsabilidad Principal                                             |
+          |-----------------|--------------------------|-----------------------------------------------|------------------------------------------------------------------------|
+          | Interface       | PushNotificationService  | Contrato para el envío de mensajes.           | Definir el método SendPush(targetToken, message).                     |
+          | Domain Service  | AlertEvaluationService   | Compara telemetría vs umbrales.               | Lógica para decidir si una lectura de sensor merece una alerta.       |
+          
         - **4.2.2.2. Interface Layer** 
         - **4.2.2.3. Application Layer** 
         - **4.2.2.4. Infrastructure Layer** 
