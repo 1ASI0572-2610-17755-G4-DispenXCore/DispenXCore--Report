@@ -95,8 +95,33 @@
 
     - **4.1.3.4. Software Architecture Deployment Diagrams** 
 - **4.2. Tactical-Level Domain-Driven Design** 
-    - **4.2.1. Bounded Context: Inventory and Telemetry** 
-        - **4.2.1.1. Domain Layer** 
+- **4.2.1. Bounded Context: Inventory and Telemetry**
+
+  Este Bounded Context es el núcleo de captura de datos físicos de DispenXCore. Su responsabilidad es gestionar el ciclo de vida completo del dispensador, desde su registro y vinculación hasta la recepción, procesamiento y almacenamiento de las lecturas de los tres sensores (ultrasonido, celda de carga e infrarrojo). Actúa como el proveedor principal de eventos de telemetría hacia el contexto de Notificaciones y Alertas, siendo el punto de entrada de toda la información del mundo físico al sistema digital.
+
+    - **4.2.1.1. Domain Layer**
+
+      En la Domain Layer del bounded context Inventory and Telemetry se definen los modelos, eventos y servicios que encapsulan la lógica pura del monitoreo de insumos. Esta capa es agnóstica a cualquier tecnología externa; representa únicamente qué es un dispensador, qué significa una lectura de sensor y cómo se determina el estado del stock en un momento dado.
+
+      **Sub-capa Model:**
+
+      | Tipo         | Nombre             | Descripción                                                                                                                              | Responsabilidad Principal                                                                                      | Relación con otros elementos                                              |
+      |--------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+      | Aggregate    | Dispenser          | Entidad principal que representa el dispositivo físico registrado y vinculado a la cuenta de un usuario.                                 | Controlar el ciclo de vida del dispensador (ACTIVE, INACTIVE, OFFLINE) y centralizar sus lecturas asociadas.  | Se vincula a un `user_id` del contexto Users and Access.                 |
+      | Aggregate    | StockReading       | Entidad que representa una captura de datos realizada por los sensores en un instante específico.                                        | Almacenar y validar los valores crudos de peso, nivel y flujo reportados por el hardware en cada ciclo.       | Pertenece a un `Dispenser`. Genera el evento `TelemetryReceived`.        |
+      | Value Object | SensorData         | Encapsula los tres valores medidos simultáneamente: peso en gramos, nivel en porcentaje y flujo en g/s.                                  | Garantizar que los valores capturados sean coherentes y no negativos antes de ser persistidos.                | Atributo interno de `StockReading`.                                      |
+      | Value Object | DispenserStatus    | Enum que representa el estado operativo del dispositivo: `ONLINE`, `OFFLINE`, `LOW_BATTERY`, `SENSOR_ERROR`.                            | Representar el estado actual del hardware de forma inmutable para evitar estados inconsistentes.              | Atributo de `Dispenser`.                                                 |
+      | Value Object | GrainType          | Enum controlado que identifica el tipo de insumo contenido: `RICE`, `SUGAR`, `LEGUMES`, `OTHER`.                                        | Asegurar que solo se registren tipos de insumo válidos dentro del sistema.                                    | Atributo de `Dispenser`.                                                 |
+      | Domain Event | TelemetryReceived  | Evento publicado cada vez que el hardware envía una nueva lectura de sensores al backend y esta es validada correctamente.               | Notificar al contexto de Notifications and Alerts que hay datos nuevos disponibles para evaluación de umbral. | Disparado por `Dispenser`. Escuchado por `TelemetryReceivedSubscriber`.  |
+      | Domain Event | DispenserRegistered| Evento emitido cuando un usuario vincula exitosamente un nuevo dispensador a su cuenta por primera vez.                                  | Informar a otros contextos que existe un nuevo dispositivo activo en el ecosistema.                           | Publicado hacia el contexto Users and Access.                            |
+
+      **Sub-capa Service:**
+
+      | Tipo           | Nombre                       | Descripción                                                                                          | Responsabilidad Principal                                                                                                          | Relación con otros elementos                          |
+      |----------------|------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+      | Interface      | TelemetryIngestionService    | Contrato que define cómo el sistema recibe y procesa los datos crudos provenientes del hardware IoT. | Definir el método `ProcessReading(dispenserId, sensorData)` que desencadena el flujo completo de telemetría.                      | Implementado en la Infrastructure Layer.              |
+      | Domain Service | StockLevelCalculatorService  | Servicio que calcula el porcentaje de stock restante a partir del peso actual y la capacidad máxima configurada del dispensador. | Centralizar la lógica de conversión de gramos a porcentaje para que ninguna otra capa duplique este cálculo crítico. | Usado por los CommandHandlers de la Application Layer.|
+      
         - **4.2.1.2. Interface Layer** 
         - **4.2.1.3. Application Layer** 
         - **4.2.1.4. Infrastructure Layer** 
