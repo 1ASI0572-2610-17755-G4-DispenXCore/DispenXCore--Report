@@ -35,6 +35,15 @@
 
     ![Domain Flow Message DispenXCore](/images/FlowMessage.png)     
     **4.1.1.3. Bounded Context Canvases** 
+
+    **Users and Access**
+    ![Users Bounded Canvas DispenXCore](/images/UsersBoundedCanvas.png)     
+
+    **Inventory and Telemetry**
+    ![Inventory Bounded Canvas DispenXCore](/images/InventoryBoundedCanvas.png)     
+
+    **Notifications and Alerts**
+    ![Notifications Bounded Canvas DispenXCore](/images/NotificationBoundedCanvas.png)     
     
     **4.1.2. Context Mapping**
 
