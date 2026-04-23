@@ -93,7 +93,12 @@
 
     ![DiagramContainer DispenXCore](/images/ContainerDiagram.png)
 
-    - **4.1.3.4. Software Architecture Deployment Diagrams** 
+    **4.1.3.4. Software Architecture Deployment Diagrams** 
+
+    Este diagrama ilustra la topología física y la distribución de los componentes de DispenXCore en un ecosistema que integra la computación perimetral con servicios de nube de alta disponibilidad.
+
+    ![DiagramDeployment DispenXcore](/images/DeploymentDiagram.png)
+
 - **4.2. Tactical-Level Domain-Driven Design** 
 - **4.2.1. Bounded Context: Inventory and Telemetry**
 
