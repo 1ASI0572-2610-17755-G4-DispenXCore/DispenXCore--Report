@@ -208,13 +208,16 @@
   **Entrevista 1:**
 
   Datos del entrevistado:
-    - Nombre:
-    - Edad:
-    - Distrito de residencia: 
-    - Enlace: 
+    - Nombre: Fabrisio Belahonia
+    - Edad:25
+    - Distrito de residencia: Ate
+    - Enlace: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQBgCxzDiZTORYB3iyVK-GMwAa88j5g9Pd5x5erz5c4qldQ?e=uA5NcA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-       <img src="">
+       <img src="https://i.imgur.com/siuQnKr.png">
   **Resumen de la entrevista:**
+    Fabricio Belahonia, de 25 años, se encarga de las compras y el abastecimiento para un adulto mayor, gestionando los insumos de forma manual mediante revisiones y notas. Esto lo obliga a visitar la vivienda varias veces por semana y le genera incertidumbre por la falta de visibilidad remota.
+
+    Considera que un sistema con alertas en tiempo real le ayudaría a planificar mejor, evitar viajes innecesarios y reducir su carga mental. Además, valora funciones como historial de consumo, listas automáticas de compra y alta precisión en las mediciones.
 
 
   **Entrevista 2:**
