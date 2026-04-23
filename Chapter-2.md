@@ -177,25 +177,30 @@
   **Entrevista 2:**
 
   Datos del entrevistado:
-    - Nombre:
-    - Edad:
-    - Distrito de residencia: 
-    - Enlace: 
+    - Nombre: Sebastian Maguiña
+    - Edad:28
+    - Distrito de residencia: Miraflores
+    - Enlace: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc_edu_pe/IQAno2LYPzBtRqMwF7g9EtnnAbHtE-kGSv_R5orSmqNDFFA?e=L4HhKX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
-       <img src="">
-  **Resumen de la entrevista:**
+  <img src="https://imgur.com/hUsOfSn.png">
+
+  **Resumen de la entrevista:** Sebastián Maguiña es un usuario con afinidad por la tecnología y hogares inteligentes, que actualmente gestiona sus insumos de forma manual pese a tener dispositivos automatizados en casa. Ocasionalmente se queda sin ingredientes clave y esto interrumpe su rutina, además de que compra productos duplicados por falta de visibilidad del stock.
+
+  Utiliza asistentes y dispositivos inteligentes, pero identifica la ausencia de una solución integrada para inventario. Valora altamente un sistema con alertas predictivas, dashboards claros y automatización de compras. Considera fundamental la precisión de los sensores y estaría dispuesto a pagar una suscripción si realmente optimiza su tiempo. También espera una configuración sencilla, integración fluida y un diseño acorde a un ecosistema smart.
 
 
   **Entrevista 3:**
 
   Datos del entrevistado:
-    - Nombre:
-    - Edad:
-    - Distrito de residencia: 
+    - Nombre: Ricardo Ccahuana
+    - Edad: 25
+    - Distrito de residencia: Surco
     - Enlace: 
 
        <img src="">
-  **Resumen de la entrevista:**
+  **Resumen de la entrevista:** Ricardo es un usuario orientado a la organización y tecnología, que mantiene sus insumos en frascos etiquetados, pero con un control aún manual. Aunque no le ocurre con mucha frecuencia, a veces se queda sin ingredientes o compra de más por falta de visibilidad, lo que afecta su eficiencia y rompe la sensación de control en su hogar.
+
+  Utiliza varios dispositivos inteligentes, pero percibe una clara falta de integración en la gestión de inventario de alimentos. Valora especialmente las alertas anticipadas, la visualización clara de datos y la integración con otros dispositivos del hogar. Considera fundamental la precisión del sistema para poder confiar en la automatización y estaría dispuesto a pagar por una suscripción si las predicciones son realmente útiles. También espera que el dispositivo sea fácil de configurar  y tenga un diseño minimalista acorde a su entorno.
 
 
   **Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
