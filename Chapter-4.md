@@ -129,8 +129,48 @@
           | Domain Service  | AlertEvaluationService   | Compara telemetría vs umbrales.               | Lógica para decidir si una lectura de sensor merece una alerta.       |
           
         - **4.2.2.2. Interface Layer** 
+
+          Gestiona los endpoints para que el usuario configure sus alertas desde la App Móvil o Web.
+
+          **Sub-capa REST:**
+          | Tipo        | Nombre                  | Responsabilidad Principal                                                                 |
+          |-------------|--------------------------|--------------------------------------------------------------------------------------------|
+          | Controller  | AlertConfigController    | Endpoints para que el usuario defina sus umbrales (ej: "Avisame al 15%").                |
+          | Controller  | NotificationController  | Endpoints para listar notificaciones recibidas y marcarlas como leídas.                  |
+          | Resource    | AlertConfigResource     | Estructura JSON para enviar/recibir límites de stock.                                    |
+          | Resource    | NotificationResource    | Estructura JSON con el mensaje, fecha y estado de lectura.                               |
+          | Assembler   | AlertConfigAssembler    | Transforma DTOs de la API a comandos de configuración.                                   |
+          
         - **4.2.2.3. Application Layer** 
+
+          Coordina las acciones de respuesta ante eventos externos (telemetría).
+
+          **Sub-capa Internal:**
+
+          | Tipo             | Nombre                        | Responsabilidad Principal                                                                 | Relación                               |
+          |------------------|-------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------|
+          | CommandHandler   | CreateAlertConfigHandler      | Guarda la preferencia de umbral del usuario para un dispensador.                          | Usa AlertRepository.                   |
+          | CommandHandler   | MarkAsReadHandler             | Cambia el estado de una notificación a "leída".                                           | Usa NotificationRepository.            |
+          | EventSubscriber  | TelemetryReceivedSubscriber   | Crítico: Escucha eventos del contexto de Inventory y dispara la evaluación de alertas.    | Punto de unión entre contextos.        |
+
         - **4.2.2.4. Infrastructure Layer** 
+
+          Implementaciones técnicas y conexiones con servicios externos.
+
+          **Sub-capa External Services:**
+
+          | Tipo  | Nombre                           | Descripción                                                                 |
+          |-------|----------------------------------|-----------------------------------------------------------------------------|
+          | Class | FirebaseCloudMessagingProvider   | Implementación de PushNotificationService usando el SDK de Firebase para Flutter/Web. |
+          | Class | SignalRNotificationProvider      | (Opcional) Para actualizaciones en tiempo real en el Dashboard de Angular. |
+
+          **Sub-capa Repository:**
+
+          | Tipo  | Nombre                     | Responsabilidad                                                                 |
+          |-------|----------------------------|----------------------------------------------------------------------------------|
+          | Class | AlertRepositoryImpl        | Persistencia de las alertas históricas generadas en SQL Server/PostgreSQL.     |
+          | Class | NotificationRepositoryImpl | Gestión de la bandeja de entrada de mensajes del usuario.                      |
+
         - **4.2.2.5. Bounded Context Software Architecture Component Level Diagrams** 
         - **4.2.2.6. Bounded Context Software Architecture Code Level Diagrams** 
             - **4.2.2.6.1. Bounded Context Domain Layer Class Diagrams** 
