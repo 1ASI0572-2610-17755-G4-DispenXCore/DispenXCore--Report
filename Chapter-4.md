@@ -191,7 +191,7 @@
 
               En esta sección se presenta el diagrama de clases del bounded context Inventory and Telemetry. La clase `Dispenser` cumple el rol central como aggregate raíz, encapsulando el estado operativo del dispositivo físico y su relación con las lecturas de sensores. La clase `StockReading` registra cada captura de datos del ESP32, compuesta por el Value Object `SensorData` que agrupa los tres valores medidos: peso, nivel y flujo. Los Domain Events `TelemetryReceived` y `DispenserRegistered` son publicados por el aggregate `Dispenser` al detectar cambios de estado relevantes.
 
-              ![Domain Class Diagram Inventory and Telemetry](/images/ClassDiagramInventory.png)
+              ![Domain Class Diagram Inventory and Telemetry](/images/ComponentDiagramInventory.png)
 
             - **4.2.1.6.2. Bounded Context Database Design Diagram**
 
