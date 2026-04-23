@@ -171,10 +171,68 @@
           | Class | AlertRepositoryImpl        | Persistencia de las alertas históricas generadas en SQL Server/PostgreSQL.     |
           | Class | NotificationRepositoryImpl | Gestión de la bandeja de entrada de mensajes del usuario.                      |
 
-        - **4.2.2.5. Bounded Context Software Architecture Component Level Diagrams** 
+        - **4.2.2.5. Bounded Context Software Architecture Component Level Diagrams**   
+
+          A nivel de componentes, este contexto actúa como un Reactor. Recibe datos de telemetría (Input), los procesa contra las reglas de umbral en la base de datos (Logic) y genera una salida hacia Firebase Cloud Messaging (Output).
+
         - **4.2.2.6. Bounded Context Software Architecture Code Level Diagrams** 
             - **4.2.2.6.1. Bounded Context Domain Layer Class Diagrams** 
             - **4.2.2.6.2. Bounded Context Database Design Diagram**
+                     <img src="https://i.imgur.com/m4kiSSr.png">
+              **Tabla: alert_configurations**
+              | Columna                      | Tipo        | Descripción                                                                 |
+              |------------------------------|-------------|-----------------------------------------------------------------------------|
+              | id                           | UUID (PK)   | Identificador único de la configuración de alerta.                         |
+              | user_id                      | UUID (FK)   | ID del propietario del dispensador (Referencia al contexto Users).         |
+              | dispenser_id                 | UUID (FK)   | ID del dispositivo físico (Referencia al contexto Inventory).              |
+              | grain_type                   | VARCHAR(50) | Nombre del insumo (ej: "Arroz Extra", "Azúcar Rubia").                     |
+              | low_threshold_percentage     | FLOAT       | Porcentaje de stock para disparar alerta preventiva (Default: 15.0).       |
+              | critical_threshold_percentage| FLOAT       | Porcentaje de stock para disparar alerta de urgencia (Default: 5.0).       |
+              | is_enabled                   | BOOLEAN     | Define si el usuario desea recibir notificaciones para este grano.         |
+              | created_at                   | TIMESTAMP   | Fecha de creación del registro.                                            |
+
+              **Tabla: notifications**
+              | Columna         | Tipo        | Descripción                                                                                  |
+              |------------------|-------------|----------------------------------------------------------------------------------------------|
+              | id               | UUID (PK)   | Identificador único de la alerta generada.                                                   |
+              | user_id          | UUID (FK)   | Usuario que debe visualizar la notificación.                                                 |
+              | alert_config_id  | UUID (FK)   | Relación con la configuración que disparó la alerta.                                         |
+              | type             | ENUM        | Categoría de la alerta (LOW_STOCK, CRITICAL_STOCK, etc.).                                    |
+              | title            | VARCHAR(150)| Título corto de la notificación (ej: "¡Stock Crítico!").                                     |
+              | message_body     | TEXT        | Mensaje detallado enviado al usuario.                                                        |
+              | triggered_value  | FLOAT       | El valor exacto del sensor (gramos/%) detectado al momento del disparo.                     |
+              | created_at       | TIMESTAMP   | Fecha y hora exacta de la detección.                                                        |
+
+              **Tabla: user_push_tokens**
+              | Columna       | Tipo         | Descripción                                                                 |
+              |---------------|--------------|-----------------------------------------------------------------------------|
+              | id            | UUID (PK)    | Identificador único del registro de dispositivo.                           |
+              | user_id       | UUID (FK)    | ID del usuario dueño del dispositivo.                                      |
+              | device_token  | VARCHAR(255) | Token único generado por Firebase para este dispositivo móvil/web.         |
+              | device_os     | VARCHAR(20)  | Sistema operativo del dispositivo (Android, iOS, Web).                     |
+              | last_used_at  | TIMESTAMP    | Última vez que se envió una notificación con éxito a este token.           |
+              | is_active     | BOOLEAN      | Indica si el token sigue siendo válido para envíos.                        |
+
+              **Tabla: notification_deliveries**
+              | Columna              | Tipo         | Descripción                                                                                  |
+              |----------------------|--------------|----------------------------------------------------------------------------------------------|
+              | id                   | UUID (PK)    | Identificador único del intento de envío.                                                   |
+              | notification_id      | UUID (FK)    | Relación con la notificación lógica.                                                        |
+              | device_token_id      | UUID (FK)    | Dispositivo específico al que se intentó enviar.                                            |
+              | status               | ENUM         | Estado del envío (PENDING, SENT, DELIVERED, FAILED, READ).                                  |
+              | provider_response_id | VARCHAR(100) | ID de rastreo devuelto por el proveedor externo (FCM).                                      |
+              | sent_at              | TIMESTAMP    | Fecha y hora en que se despachó el mensaje.                                                 |
+              | error_message        | TEXT         | Descripción del error en caso de que el envío falle (ej: "Token expired").                  |
+
+              **Tabla: caregiver_subscriptions**
+              | Columna            | Tipo       | Descripción                                                                 |
+              |--------------------|------------|-----------------------------------------------------------------------------|
+              | id                 | UUID (PK)  | Identificador único de la suscripción de monitoreo.                        |
+              | caregiver_id       | UUID (FK)  | ID del usuario que actúa como cuidador.                                    |
+              | monitored_user_id  | UUID (FK)  | ID del familiar que está siendo monitoreado.                               |
+              | alert_config_id    | UUID (FK)  | Configuración específica del dispensador que el cuidador desea vigilar.    |
+              | is_active          | BOOLEAN    | Define si el cuidador tiene el permiso de monitoreo activo actualmente.    |
+                            
     - **4.2.3. Bounded Context: Users and Access**    
     <br> En el bounded context User se aborda la gestión de identidad y acceso de los usuarios dentro del sistema. Este módulo garantiza la autenticación, autorización y registro seguro, mediante el manejo de credenciales, roles, tokens JWT y auditoría de eventos críticos, asegurando la integridad y trazabilidad del acceso a los servicios. <br>
       
@@ -274,6 +332,7 @@
               - **4.2.3.6.2. Bounded Context Database Design Diagram**
               <br> En esta imagen se muestra el diseño de la base de datos correspondiente al bounded context Users and Access, donde se estructuran las tablas principales para la gestión de usuarios, roles y auditorías. Este diagrama garantiza la correcta relación entre las entidades y la trazabilidad de las operaciones dentro del sistema. <br>
               <img src="https://imgur.com/0kHDW5g.png">
+
               **Tabla: users**
 
               | Nombre          | Descripción                                                        |
