@@ -175,10 +175,71 @@
       |--------------|---------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
       | EventHandler | TelemetryReceivedEventHandler   | Procesa el evento `TelemetryReceived` publicado por el `DomainEventPublisher` de este contexto.     | Retransmitir el evento hacia el contexto Notifications and Alerts para que evalúe si corresponde generar una alerta de stock. | Consume eventos del `DomainEventPublisher`. Notifica al contexto Notifications and Alerts. |
       | EventHandler | DispenserRegisteredEventHandler | Procesa el evento `DispenserRegistered` publicado al vincular un nuevo dispositivo al sistema.      | Registrar en el log de auditoría la vinculación del nuevo dispensador y notificar al contexto Users and Access si corresponde. | Consume eventos del `DomainEventPublisher`.                    |
-        - **4.2.1.5. Bounded Context Software Architecture Component Level Diagrams** 
-        - **4.2.1.6. Bounded Context Software Architecture Code Level Diagrams** 
-            - **4.2.1.6.1. Bounded Context Domain Layer Class Diagrams** 
-            - **4.2.1.6.2. Bounded Context Database Design Diagram**
+     - **4.2.1.5. Bounded Context Software Architecture Component Level Diagrams**
+
+      A nivel de componentes, este contexto actúa como el punto de entrada del mundo físico al sistema digital. El ESP32 envía las lecturas de los sensores al backend mediante HTTP POST cada 1-2 segundos, donde la `SensorDataACL` traduce el payload JSON crudo al modelo del dominio, protegiendo al sistema de cambios en el formato de datos del hardware. Los controladores REST reciben tanto la telemetría del ESP32 como las solicitudes de la App Móvil y Web, delegando la lógica a los CommandHandlers correspondientes. El `ProcessTelemetryCommandHandler` orquesta el cálculo de porcentaje de stock mediante el `StockLevelCalculatorService`, persiste la lectura en el repositorio y finaliza publicando el evento `TelemetryReceived` hacia el contexto de Notifications and Alerts.
+
+      ![Component Diagram Inventory and Telemetry](/images/ComponentDiagramInventory.png)
+        - **4.2.1.6. Bounded Context Software Architecture Code Level Diagrams**
+          - **4.2.1.6.1. Bounded Context Domain Layer Class Diagrams**
+
+              En esta sección se presenta el diagrama de clases del bounded context Inventory and Telemetry. La clase `Dispenser` cumple el rol central como aggregate raíz, encapsulando el estado operativo del dispositivo físico y su relación con las lecturas de sensores. La clase `StockReading` registra cada captura de datos del ESP32, compuesta por el Value Object `SensorData` que agrupa los tres valores medidos: peso, nivel y flujo. Los Domain Events `TelemetryReceived` y `DispenserRegistered` son publicados por el aggregate `Dispenser` al detectar cambios de estado relevantes.
+
+              ![Domain Class Diagram Inventory and Telemetry](/images/ClassDiagramInventory.png)
+- **4.2.1.6.2. Bounded Context Database Design Diagram**
+
+              En esta sección se presenta el diseño de la base de datos correspondiente al bounded context Inventory and Telemetry, donde se estructuran las cuatro tablas principales para la gestión de dispensadores, el historial de lecturas de sensores, el registro de eventos de estado y la configuración de sensores editable desde la app. Este diagrama garantiza la correcta relación entre las entidades y la trazabilidad de cada captura de telemetría enviada por el ESP32.
+
+              ![Database Design Inventory and Telemetry](/images/DBDiagramInventory.png)
+
+              **Tabla: dispensers**
+
+              | Columna        | Tipo         | Descripción                                                                             |
+              |----------------|--------------|-----------------------------------------------------------------------------------------|
+              | id             | UUID (PK)    | Identificador único del dispensador.                                                    |
+              | user_id        | UUID (FK)    | ID del propietario del dispositivo (Referencia al contexto Users and Access).           |
+              | name           | VARCHAR(100) | Nombre descriptivo asignado por el usuario (ej: "Dispensador Cocina").                 |
+              | grain_type     | VARCHAR(50)  | Tipo de insumo contenido: RICE, SUGAR, LEGUMES, OTHER.                                 |
+              | max_capacity_g | FLOAT        | Capacidad máxima del recipiente en gramos, usada para calcular el porcentaje de stock. |
+              | status         | VARCHAR(20)  | Estado operativo del dispositivo: ONLINE, OFFLINE, LOW_BATTERY, SENSOR_ERROR.          |
+              | created_at     | TIMESTAMP    | Fecha y hora de registro del dispensador en el sistema.                                 |
+              | updated_at     | TIMESTAMP    | Fecha y hora de la última actualización del registro.                                   |
+
+              **Tabla: stock_readings**
+
+              | Columna           | Tipo      | Descripción                                                                                 |
+              |-------------------|-----------|---------------------------------------------------------------------------------------------|
+              | id                | UUID (PK) | Identificador único de la lectura de sensores.                                              |
+              | dispenser_id      | UUID (FK) | ID del dispensador que generó la lectura (Referencia a `dispensers`).                      |
+              | weight_grams      | FLOAT     | Peso del insumo en gramos capturado por la celda de carga.                                  |
+              | level_percentage  | FLOAT     | Porcentaje de stock calculado a partir del peso y la capacidad máxima del dispensador.      |
+              | flow_rate_gs      | FLOAT     | Flujo de salida del insumo en gramos por segundo, capturado por el sensor infrarrojo.       |
+              | raw_ultrasonic_cm | FLOAT     | Distancia cruda en centímetros reportada por el sensor ultrasonido antes de ser procesada.  |
+              | recorded_at       | TIMESTAMP | Fecha y hora exacta en que el ESP32 realizó y envió la lectura al backend.                  |
+
+              **Tabla: dispenser_events**
+
+              | Columna         | Tipo        | Descripción                                                                        |
+              |-----------------|-------------|------------------------------------------------------------------------------------|
+              | id              | UUID (PK)   | Identificador único del evento registrado.                                         |
+              | dispenser_id    | UUID (FK)   | ID del dispensador asociado al evento (Referencia a `dispensers`).                |
+              | event_type      | VARCHAR(50) | Tipo de evento ocurrido: REGISTERED, STATUS_CHANGED, SENSOR_ERROR, BACK_ONLINE.  |
+              | previous_status | VARCHAR(20) | Estado operativo del dispensador antes del cambio.                                 |
+              | new_status      | VARCHAR(20) | Estado operativo del dispensador después del cambio.                               |
+              | occurred_at     | TIMESTAMP   | Fecha y hora en que ocurrió el evento.                                             |
+              | details         | TEXT        | Descripción adicional del evento (ej: "Sensor ultrasonido sin respuesta por 10s"). |
+
+              **Tabla: dispenser_sensor_config**
+
+              | Columna                    | Tipo      | Descripción                                                                                        |
+              |----------------------------|-----------|----------------------------------------------------------------------------------------------------|
+              | id                         | UUID (PK) | Identificador único de la configuración.                                                           |
+              | dispenser_id               | UUID (FK) | ID del dispensador al que pertenece esta configuración, relación 1 a 1 (Referencia a `dispensers`). |
+              | polling_interval_ms        | INT       | Frecuencia de envío de datos del ESP32 en milisegundos (valor por defecto: 1000).                 |
+              | weight_calibration_factor  | FLOAT     | Factor de calibración aplicado a la celda de carga para corregir lecturas de peso.                |
+              | ultrasonic_offset_cm       | FLOAT     | Offset de corrección del sensor ultrasonido en centímetros.                                        |
+              | min_flow_threshold_gs      | FLOAT     | Flujo mínimo detectable en g/s antes de considerar que el insumo está siendo dispensado.          |
+              | updated_at                 | TIMESTAMP | Última vez que el usuario modificó la configuración desde la app.                                  |
     - **4.2.2. Bounded Context: Notifications and Alerts** 
 
       Este Bounded Context es el corazón de la proactividad de DispenXCore. Su objetivo es procesar los eventos de telemetría provenientes del hardware, evaluarlos frente a reglas de negocio (umbrales) y despachar notificaciones multicanal (Push para Flutter y Web para Angular) tanto a dueños de casa como a cuidadores.
