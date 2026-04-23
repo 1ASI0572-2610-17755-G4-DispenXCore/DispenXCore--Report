@@ -35,6 +35,7 @@
 
     ![Domain Flow Message DispenXCore](/images/FlowMessage.png)     
     **4.1.1.3. Bounded Context Canvases** 
+    
     **4.1.2. Context Mapping**
 
     En esta sección desarrollamos un conjunto de *context maps* para visualizar las relaciones estructurales entre los *bounded contexts* de **DispenXCore**. A partir de la lógica de dominio establecida, exploramos distintas alternativas de diseño, cuestionando cómo cambiaría la estabilidad del sistema si agrupamos o dividimos las responsabilidades de telemetría y gestión de usuarios. Evaluamos cada propuesta considerando patrones de DDD como *Anti-corruption Layer*, *Customer/Supplier* y *Shared Kernel* para definir la arquitectura más robusta.
@@ -80,8 +81,18 @@
 
     ![SystemLandscape DispenXCore](/images/SystemLandscape.png)
 
-    - **4.1.3.2. Software Architecture Context Level Diagrams** 
-    - **4.1.3.3. Software Architecture Container Level Diagrams** 
+    **4.1.3.2. Software Architecture Context Level Diagrams**
+
+    Este diagrama muestra que el sistema DispenXCore interactúa con dos tipos de usuarios: el Usuario Doméstico, que utiliza el sistema para digitalizar la gestión de su cocina, configurar umbrales de alerta y monitorear niveles de stock. Luego el Cuidador, que supervisa de forma remota el abastecimiento de sus familiares. DispenXCore también se comunica con dos sistemas externos: el Hardware DispenXCore, que mediante sensores y actuadores proporciona datos de telemetría y ejecuta el auto-rellenado, y el Firebase Cloud Messaging, encargado de distribuir las notificaciones preventivas a los dispositivos móviles de los usuarios. 
+
+    ![SystemContext DispenXCore](/images/SystemContext.png)
+
+    **4.1.3.3. Software Architecture Container Level Diagrams** 
+
+    Este diagrama muestra que el sistema DispenXCore está compuesto por diversos contenedores que trabajan en conjunto para ofrecer una solución integral. En el entorno del usuario, se dispone de una Landing Page informativa, una Aplicación Web y una Aplicación Móvil dedicada al monitoreo en tiempo real.
+
+    ![DiagramContainer DispenXCore](/images/ContainerDiagram.png)
+
     - **4.1.3.4. Software Architecture Deployment Diagrams** 
 - **4.2. Tactical-Level Domain-Driven Design** 
     - **4.2.1. Bounded Context: Inventory and Telemetry** 
