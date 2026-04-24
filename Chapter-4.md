@@ -205,7 +205,7 @@
 
               En esta sección se presenta el diseño de la base de datos correspondiente al bounded context Inventory and Telemetry, donde se estructuran las cuatro tablas principales para la gestión de dispensadores, el historial de lecturas de sensores, el registro de eventos de estado y la configuración de sensores editable desde la app. Este diagrama garantiza la correcta relación entre las entidades y la trazabilidad de cada captura de telemetría enviada por el ESP32.
 
-              ![Database Design Inventory and Telemetry](/images/DBDiagramInventory.png.png)
+              ![Database Design Inventory and Telemetry](/images/DBDiagramInventory.png)
 
               **Tabla: dispensers**
 
