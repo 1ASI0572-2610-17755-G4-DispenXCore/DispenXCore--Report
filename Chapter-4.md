@@ -326,10 +326,15 @@
         - **4.2.2.5. Bounded Context Software Architecture Component Level Diagrams**   
 
           A nivel de componentes, este contexto actúa como un Reactor. Recibe datos de telemetría (Input), los procesa contra las reglas de umbral en la base de datos (Logic) y genera una salida hacia Firebase Cloud Messaging (Output).
-
+                     <img src="https://i.imgur.com/iltVL9e.png">
         - **4.2.2.6. Bounded Context Software Architecture Code Level Diagrams** 
             - **4.2.2.6.1. Bounded Context Domain Layer Class Diagrams** 
+
+              Modela las reglas del negocio: cómo se validan los umbrales de cada grano y cómo se vinculan las alertas con los usuarios. Es el mapa que dicta quién debe ser notificado (propietario o cuidador) ante un nivel crítico.
+                     <img src="https://i.imgur.com/qGKbMLF.png">        
             - **4.2.2.6.2. Bounded Context Database Design Diagram**
+
+              Estructura el almacenamiento de configuraciones, tokens de Firebase y el historial de mensajes. Permite que la app recuerde tus límites personalizados y mantenga una bitácora de consumo para consultas futuras.
                      <img src="https://i.imgur.com/m4kiSSr.png">
               **Tabla: alert_configurations**
               | Columna                      | Tipo        | Descripción                                                                 |
