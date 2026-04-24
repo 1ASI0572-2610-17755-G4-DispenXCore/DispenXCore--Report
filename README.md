@@ -70,11 +70,11 @@ Enlace de la organización para el reporte del proyecto: [https://github.com/1AS
 
 TB1:
 
-<img src="./Collaboration-Insights/">
+<img src="./Collaboration-Insights/Insight1.png">
 
-<img src="./Collaboration-Insights/">
+<img src="./Collaboration-Insights/Insight2.png">
 
-<img src="./Collaboration-Insights/">
+<img src="./Collaboration-Insights/Insight3.png">
 
 
 
