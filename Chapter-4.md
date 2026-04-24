@@ -17,33 +17,33 @@
     **Evidencia de lo realizado en la reunión:**
     
     Paso 1: Recopilación de Eventos de dominio
-    ![Event Storming DispenXCore1](/assets/EventStorm1.png)
+    ![Event Storming DispenXCore1](./feature/chapter-4/EventStorm1.png)
     
     Paso 2: Refinación de Eventos de dominio
-    ![Event Storming DispenXCore2](/assets/EventStorm2.png)
+    ![Event Storming DispenXCore2](./feature/chapter-4/EventStorm2.png)
     
     Paso 3: Hallando Causas
-    ![Event Storming DispenXCore3](/assets/EventStorm3.png)
+    ![Event Storming DispenXCore3](./feature/chapter-4/EventStorm3.png)
     **4.1.1.1. Candidate Context Discovery**
           
     Para identificar los Bounded Contexts candidatos buscamos entender los elementos importantes del sistema, identificando hitos donde el estado del negocio cambia drásticamente y la responsabilidad pasa de un componente a otro.
 
-    ![Event Storming DispenXCore4](/assets/EventStorm4.png)
+    ![Event Storming DispenXCore4](./feature/chapter-4/EventStorm4.png)
     **4.1.1.2. Domain Message Flows Modeling**
 
     Para analizar y diseñar la arquitectura de comunicación de DispenXCore, se utiliza el Modelado de Flujos de Mensajes de Dominio. Este método ilustra de manera detallada la transferencia de información entre los Bounded Contexts y los sistemas externos mediante el intercambio de mensajes (Comandos, Eventos y Consultas).
 
-    ![Domain Flow Message DispenXCore](/assets/FlowMessage.png)     
+    ![Domain Flow Message DispenXCore](./feature/chapter-4/FlowMessage.png)     
     **4.1.1.3. Bounded Context Canvases** 
 
     **Users and Access**
-    ![Users Bounded Canvas DispenXCore](/assets/UsersBoundedCanvas.png)     
+    ![Users Bounded Canvas DispenXCore](./feature/chapter-4/UsersBoundedCanvas.png)     
 
     **Inventory and Telemetry**
-    ![Inventory Bounded Canvas DispenXCore](/assets/InventoryBoundedCanvas.png)     
+    ![Inventory Bounded Canvas DispenXCore](./feature/chapter-4/InventoryBoundedCanvas.png)     
 
     **Notifications and Alerts**
-    ![Notifications Bounded Canvas DispenXCore](/assets/NotificationBoundedCanvas.png)     
+    ![Notifications Bounded Canvas DispenXCore](./feature/chapter-4/NotificationBoundedCanvas.png)     
     
     **4.1.2. Context Mapping**
 
@@ -56,7 +56,7 @@
     * **Descripción:** **Inventario y Telemetría** actúa como proveedor de datos para **Notificaciones y Alertas**. A su vez, **Usuarios y Accesos** provee la información de identidad necesaria para personalizar las alertas.
     * **Ventaja:** Existe una separación total de responsabilidades. Los cambios en el hardware no afectan la lógica de seguridad de los usuarios.
     * **Desventaja:** Requiere una alta coordinación y sincronización constante entre los tres contextos para que una alerta llegue al usuario correcto, aumentando la latencia en el procesamiento de mensajes.
-    ![Option1 DispenXCore3](/assets/Option1.png)
+    ![Option1 DispenXCore3](./feature/chapter-4/Option1.png)
 
     **Opción 2: Arquitectura Basada en ACL y Shared Kernel**
 
@@ -65,7 +65,7 @@
     * **Inventario y Telemetría** se comunica con el hardware mediante una **Anti-corruption Layer (ACL)**. Esta capa traduce las señales crudas de los sensores de peso y nivel a un lenguaje que el dominio entienda, protegiendo al sistema de cambios en los protocolos del hardware.
     * **Usuarios y Accesos** y **Notificaciones y Alertas** comparten un **Shared Kernel** que contiene los modelos de "Perfil de Usuario" y "Tokens de Dispositivo". Esto asegura que ambos contextos hablen el mismo idioma al momento de dirigir una notificación push.
     * **Notificaciones y Alertas** mantiene una relación de **Customer/Supplier** con el contexto de Inventario, donde el contexto de Inventario es el proveedor de los eventos de stock crítico.
-    ![Option3 DispenXCore3](/assets/Option3.png)
+    ![Option3 DispenXCore3](./feature/chapter-4/Option3.png)
 
     **Opción 3: Unificación de Core y Notificaciones**
 
@@ -74,7 +74,7 @@
     * **Descripción:** Al estar en un mismo contexto, la detección de nivel crítico dispara la alerta de forma interna e inmediata sin necesidad de comunicación entre contextos.
     * **Ventaja:** Simplifica la arquitectura al reducir la cantidad de contextos y elimina la latencia de red entre la detección y la generación de la alerta.
     * **Desventaja:** Riesgo de crear un "Big Ball of Mud". Al combinar la infraestructura técnica de sensores con la lógica de mensajería (Firebase), el contexto asume demasiadas funciones, dificultando su mantenimiento y escalabilidad independiente.
-    ![Option2 DispenXCore3](/assets/Option2.png)
+    ![Option2 DispenXCore3](./feature/chapter-4/Option2.png)
 
     **Elección**
 
@@ -88,25 +88,25 @@
   
     El ecosistema de DispenXCore está diseñado para servir a dos perfiles de usuario principales: el Usuario Doméstico, que busca automatización en su cocina, y el Cuidador, que supervisa el abastecimiento de forma remota. El sistema central, DispenXCore, actúa como el núcleo que procesa la información proveniente del Hardware IoT (Sensores). Además, se integra con Firebase Cloud Messaging (FCM) para la entrega de notificaciones en tiempo real.
 
-    ![SystemLandscape DispenXCore](/assets/SystemLandscape.png)
+    ![SystemLandscape DispenXCore](./feature/chapter-4/SystemLandscape.png)
 
     **4.1.3.2. Software Architecture Context Level Diagrams**
 
     Este diagrama muestra que el sistema DispenXCore interactúa con dos tipos de usuarios: el Usuario Doméstico, que utiliza el sistema para digitalizar la gestión de su cocina, configurar umbrales de alerta y monitorear niveles de stock. Luego el Cuidador, que supervisa de forma remota el abastecimiento de sus familiares. DispenXCore también se comunica con dos sistemas externos: el Hardware DispenXCore, que mediante sensores y actuadores proporciona datos de telemetría y ejecuta el auto-rellenado, y el Firebase Cloud Messaging, encargado de distribuir las notificaciones preventivas a los dispositivos móviles de los usuarios. 
 
-    ![SystemContext DispenXCore](/assets/SystemContext.png)
+    ![SystemContext DispenXCore](./feature/chapter-4/SystemContext.png)
 
     **4.1.3.3. Software Architecture Container Level Diagrams** 
 
     Este diagrama muestra que el sistema DispenXCore está compuesto por diversos contenedores que trabajan en conjunto para ofrecer una solución integral. En el entorno del usuario, se dispone de una Landing Page informativa, una Aplicación Web y una Aplicación Móvil dedicada al monitoreo en tiempo real.
 
-    ![DiagramContainer DispenXCore](/assets/ContainerDiagram.png)
+    ![DiagramContainer DispenXCore](./feature/chapter-4/ContainerDiagram.png)
 
     **4.1.3.4. Software Architecture Deployment Diagrams** 
 
     Este diagrama ilustra la topología física y la distribución de los componentes de DispenXCore en un ecosistema que integra la computación perimetral con servicios de nube de alta disponibilidad.
 
-    ![DiagramDeployment DispenXcore](/assets/DeploymentDiagram.png)
+    ![DiagramDeployment DispenXcore](./feature/chapter-4/DeploymentDiagram.png)
 
 - **4.2. Tactical-Level Domain-Driven Design** 
 - **4.2.1. Bounded Context: Inventory and Telemetry**
@@ -196,16 +196,16 @@
     - **4.2.1.5. Bounded Context Software Architecture Component Level Diagrams**
 
       A nivel de componentes, este contexto actúa como el punto de entrada del mundo físico al sistema digital. El ESP32 envía las lecturas de los sensores al backend mediante HTTP POST cada 1-2 segundos, donde la `SensorDataACL` traduce el payload JSON crudo al modelo del dominio, protegiendo al sistema de cambios en el formato de datos del hardware. Los controladores REST reciben tanto la telemetría del ESP32 como las solicitudes de la App Móvil y Web, delegando la lógica a los CommandHandlers correspondientes. El `ProcessTelemetryCommandHandler` orquesta el cálculo de porcentaje de stock mediante el `StockLevelCalculatorService`, persiste la lectura en el repositorio y finaliza publicando el evento `TelemetryReceived` hacia el contexto de Notifications and Alerts.
-      ![Domain Class Diagram Inventory and Telemetry](/assets/ComponentDiagramInventory.png)
+      ![Domain Class Diagram Inventory and Telemetry](./feature/chapter-4/ComponentDiagramInventory.png)
         - **4.2.1.6. Bounded Context Software Architecture Code Level Diagrams**
             - **4.2.1.6.1. Bounded Context Domain Layer Class Diagrams**
               En esta sección se presenta el diagrama de clases del bounded context Inventory and Telemetry. La clase `Dispenser` cumple el rol central como aggregate raíz, encapsulando el estado operativo del dispositivo físico y su relación con las lecturas de sensores. La clase `StockReading` registra cada captura de datos del ESP32, compuesta por el Value Object `SensorData` que agrupa los tres valores medidos: peso, nivel y flujo. Los Domain Events `TelemetryReceived` y `DispenserRegistered` son publicados por el aggregate `Dispenser` al detectar cambios de estado relevantes.
-              ![Domain Class Diagram Inventory and Telemetry](/assets/ClassDiagramInventory.png)
+              ![Domain Class Diagram Inventory and Telemetry](./feature/chapter-4/ClassDiagramInventory.png)
             - **4.2.1.6.2. Bounded Context Database Design Diagram**
 
               En esta sección se presenta el diseño de la base de datos correspondiente al bounded context Inventory and Telemetry, donde se estructuran las cuatro tablas principales para la gestión de dispensadores, el historial de lecturas de sensores, el registro de eventos de estado y la configuración de sensores editable desde la app. Este diagrama garantiza la correcta relación entre las entidades y la trazabilidad de cada captura de telemetría enviada por el ESP32.
 
-              ![Database Design Inventory and Telemetry](/assets/DBDiagramInventory.png)
+              ![Database Design Inventory and Telemetry](./feature/chapter-4/DBDiagramInventory.png)
 
               **Tabla: dispensers**
 
