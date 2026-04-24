@@ -24,7 +24,7 @@
 
     | Epic ID | Título |
     |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | **EP07** | **Presencia Digital y Captación de Usuarios** |
+    | **EP05** | **Presencia Digital y Captación de Usuarios** |
     | | Como visitante, quiero acceder a una plataforma informativa para conocer la solución DispenXCore, ver testimonios de precisión y registrar mi interés en el producto. |
 
 ---
