@@ -195,9 +195,10 @@
     - Nombre: Ricardo Ccahuana
     - Edad: 25
     - Distrito de residencia: Surco
-    - Enlace: 
+    - Enlace: https://1drv.ms/v/c/eda58eff0e2d577b/IQDtT8YwgL2KS6-KvyP3IEsmAYpRGCphq5fD0edBczPHJmc?e=1pXqIl
+       
+    <img src="https://imgur.com/bRM5mgt.png">
 
-       <img src="">
   **Resumen de la entrevista:** Ricardo es un usuario orientado a la organización y tecnología, que mantiene sus insumos en frascos etiquetados, pero con un control aún manual. Aunque no le ocurre con mucha frecuencia, a veces se queda sin ingredientes o compra de más por falta de visibilidad, lo que afecta su eficiencia y rompe la sensación de control en su hogar.
 
   Utiliza varios dispositivos inteligentes, pero percibe una clara falta de integración en la gestión de inventario de alimentos. Valora especialmente las alertas anticipadas, la visualización clara de datos y la integración con otros dispositivos del hogar. Considera fundamental la precisión del sistema para poder confiar en la automatización y estaría dispuesto a pagar por una suscripción si las predicciones son realmente útiles. También espera que el dispositivo sea fácil de configurar  y tenga un diseño minimalista acorde a su entorno.
