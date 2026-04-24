@@ -165,7 +165,7 @@
     - Nombre: Sebastian Silva
     - Edad:22 años
     - Distrito de residencia: San Luis
-    - Enlace: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQDBoeaDO5d4Q6h935nZ5j4uAR0XPnDof0ebNHzwjx6sHuk?e=mecImR&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D 
+    - Enlace: https://acortar.link/2NdAES 
 
        <img src="https://i.imgur.com/NPYF8Qr.png">
   **Resumen de la entrevista:** Sebastián Silva, de 22 años, gestiona sus insumos de cocina de forma manual, guiándose por observación. Con frecuencia (al menos una vez por semana) se queda sin ingredientes, lo que afecta su rutina, y a veces compra productos que ya tiene por falta de control.
@@ -177,10 +177,10 @@
   **Entrevista 2:**
 
   Datos del entrevistado:
-    - Nombre: Sebastian Maguiña
-    - Edad:28
-    - Distrito de residencia: Miraflores
-    - Enlace: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc_edu_pe/IQAno2LYPzBtRqMwF7g9EtnnAbHtE-kGSv_R5orSmqNDFFA?e=L4HhKX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+  - Nombre: Sebastian Maguiña
+  - Edad: 28
+  - Distrito de residencia: Miraflores
+  - Enlace: https://acortar.link/AiDurB
 
   <img src="https://imgur.com/hUsOfSn.png">
 
@@ -188,74 +188,121 @@
 
   Utiliza asistentes y dispositivos inteligentes, pero identifica la ausencia de una solución integrada para inventario. Valora altamente un sistema con alertas predictivas, dashboards claros y automatización de compras. Considera fundamental la precisión de los sensores y estaría dispuesto a pagar una suscripción si realmente optimiza su tiempo. También espera una configuración sencilla, integración fluida y un diseño acorde a un ecosistema smart.
 
-
   **Entrevista 3:**
 
   Datos del entrevistado:
-    - Nombre: Ricardo Ccahuana
-    - Edad: 25
-    - Distrito de residencia: Surco
-    - Enlace: https://1drv.ms/v/c/eda58eff0e2d577b/IQDtT8YwgL2KS6-KvyP3IEsmAYpRGCphq5fD0edBczPHJmc?e=1pXqIl
-       
-    <img src="https://imgur.com/bRM5mgt.png">
+  - Nombre: Ricardo Ccahuana
+  - Edad: 25
+  - Distrito de residencia: Surco
+  - Enlace: https://acortar.link/5uaVa5
+
+  <img src="https://imgur.com/bRM5mgt.png">
 
   **Resumen de la entrevista:** Ricardo es un usuario orientado a la organización y tecnología, que mantiene sus insumos en frascos etiquetados, pero con un control aún manual. Aunque no le ocurre con mucha frecuencia, a veces se queda sin ingredientes o compra de más por falta de visibilidad, lo que afecta su eficiencia y rompe la sensación de control en su hogar.
 
-  Utiliza varios dispositivos inteligentes, pero percibe una clara falta de integración en la gestión de inventario de alimentos. Valora especialmente las alertas anticipadas, la visualización clara de datos y la integración con otros dispositivos del hogar. Considera fundamental la precisión del sistema para poder confiar en la automatización y estaría dispuesto a pagar por una suscripción si las predicciones son realmente útiles. También espera que el dispositivo sea fácil de configurar  y tenga un diseño minimalista acorde a su entorno.
-
+  Utiliza varios dispositivos inteligentes, pero percibe una clara falta de integración en la gestión de inventario de alimentos. Valora especialmente las alertas anticipadas, la visualización clara de datos y la integración con otros dispositivos del hogar. Considera fundamental la precisión del sistema para poder confiar en la automatización y estaría dispuesto a pagar por una suscripción si las predicciones son realmente útiles. También espera que el dispositivo sea fácil de configurar y tenga un diseño minimalista acorde a su entorno.
 
   **Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
   **Entrevista 1:**
 
   Datos del entrevistado:
-    - Nombre: Fabrisio Belahonia
-    - Edad:25
-    - Distrito de residencia: Ate
-    - Enlace: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQBgCxzDiZTORYB3iyVK-GMwAa88j5g9Pd5x5erz5c4qldQ?e=uA5NcA&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+  - Nombre: Fabrisio Belahonia
+  - Edad: 25
+  - Distrito de residencia: Ate
+  - Enlace: https://acortar.link/SoOFqN
 
-       <img src="https://i.imgur.com/siuQnKr.png">
-  **Resumen de la entrevista:**
-    Fabricio Belahonia, de 25 años, se encarga de las compras y el abastecimiento para un adulto mayor, gestionando los insumos de forma manual mediante revisiones y notas. Esto lo obliga a visitar la vivienda varias veces por semana y le genera incertidumbre por la falta de visibilidad remota.
+  <img src="https://i.imgur.com/siuQnKr.png">
 
-    Considera que un sistema con alertas en tiempo real le ayudaría a planificar mejor, evitar viajes innecesarios y reducir su carga mental. Además, valora funciones como historial de consumo, listas automáticas de compra y alta precisión en las mediciones.
+  **Resumen de la entrevista:** Fabrisio Belahonia, de 25 años, se encarga de las compras y el abastecimiento para un adulto mayor, gestionando los insumos de forma manual mediante revisiones y notas. Esto lo obliga a visitar la vivienda varias veces por semana y le genera incertidumbre por la falta de visibilidad remota.
 
+  Considera que un sistema con alertas en tiempo real le ayudaría a planificar mejor, evitar viajes innecesarios y reducir su carga mental. Además, valora funciones como historial de consumo, listas automáticas de compra y alta precisión en las mediciones.
 
   **Entrevista 2:**
 
   Datos del entrevistado:
-    - Nombre:
-    - Edad:
-    - Distrito de residencia: 
-    - Enlace: 
+  - Nombre: María Fernanda Rojas
+  - Edad: 34
+  - Distrito de residencia: Los Olivos
+  - Enlace: https://acortar.link/w9K2Lm
 
-       <img src="">
-  **Resumen de la entrevista:**
+  <img src="./feature/chapter-2/interview-seg2-2.png">
+
+  **Resumen de la entrevista:** María Fernanda supervisa el abastecimiento de su madre adulta mayor y actualmente se apoya en llamadas, fotos por WhatsApp y visitas presenciales para validar el estado de la despensa. Señala que este proceso le consume tiempo y le genera preocupación constante por no tener información confiable en tiempo real.
+
+  Indica que una alerta automática al 15% y al 10% de stock cambiaría su organización semanal, permitiéndole comprar con anticipación y evitar urgencias. Prioriza funcionalidades como notificaciones críticas, historial de reposición y una lista de compras sugerida. También considera clave que el sistema sea preciso y fácil de usar para generar confianza en el monitoreo remoto.
 
   **Entrevista 3:**
 
   Datos del entrevistado:
-    - Nombre:
-    - Edad:
-    - Distrito de residencia: 
-    - Enlace: 
+  - Nombre: Jorge Luis Paredes
+  - Edad: 41
+  - Distrito de residencia: San Borja
+  - Enlace: https://acortar.link/3mQvRx
 
-       <img src="">
-  **Resumen de la entrevista:**
+  <img src="./feature/chapter-2/interview-seg2-3.png">
+
+  **Resumen de la entrevista:** Jorge Luis administra los suministros de su tío con movilidad reducida y, hasta ahora, usa un registro manual en notas y visitas periódicas para verificar faltantes. Menciona que, cuando hay quiebres de stock, debe resolver compras de emergencia, afectando su rutina laboral y aumentando su estrés.
+
+  Valora especialmente recibir alertas remotas confiables, visualizar tendencias de consumo y poder configurar umbrales por producto. Considera que la validación con múltiples sensores aportaría tranquilidad y reduciría errores en la toma de decisiones. Afirma que una solución como DispenXCore le permitiría mantener el abastecimiento de forma preventiva y disminuir su carga mental como cuidador.
 
 
 - **2.2.3. Análisis de entrevistas**
   <br> En este apartado se documenta el análisis de las entrevistas realizadas a los dos segmentos objetivo: Hogares Tecnológicos y Cuidadores de Adultos Mayores. El propósito es identificar patrones, necesidades, frustraciones y expectativas de cada grupo para fundamentar el diseño del sistema y priorizar funcionalidades en el ecosistema de DispenXCore. <br><br>
-  **Análisis Segmento Objetivo 1: Profesionales Tecnicos**
 
-  Resumen 1.
+  **Análisis Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
-  **Analisis Segmento Objetivo 2: Cuidadores de Adultos Mayores**
+  A partir de las entrevistas (Sebastián Silva, Sebastián Maguiña y Ricardo Ccahuana), se identifican los siguientes hallazgos:
 
-  Resumen 2.
+  - **Patrones de comportamiento**
+    - Gestionan insumos de forma mayormente manual (observación, frascos etiquetados, memoria).
+    - Presentan quiebres de stock ocasionales y compras duplicadas por falta de visibilidad.
+    - Ya usan tecnología en casa, pero no cuentan con una solución integrada para inventario de cocina.
 
-  ####   Conclusión
-  Conclusión.
+  - **Frustraciones principales**
+    - Interrupción de la rutina cuando falta un ingrediente clave.
+    - Pérdida de tiempo por compras innecesarias o no planificadas.
+    - Falta de datos en tiempo real para decidir compras con anticipación.
+
+  - **Necesidades y expectativas**
+    - Alertas predictivas y personalizadas antes del agotamiento.
+    - Dashboard claro con historial y gráficas de consumo.
+    - Alta precisión en la medición para confiar en la automatización.
+    - Configuración simple (Wi-Fi/app) e integración con ecosistema smart home.
+    - Interés en suscripción premium **solo si** demuestra ahorro real de tiempo y dinero.
+
+  - **Implicancias para el producto**
+    - Priorizar notificaciones inteligentes, visualización de consumo y confiabilidad de sensores.
+    - Diseñar onboarding rápido y UX simple.
+    - Sustentar propuesta premium con métricas de valor tangible.
+
+  **Análisis Segmento Objetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+
+  Con base en las entrevistas (Fabrisio Belahonia, María Fernanda Rojas y Jorge Luis Paredes), se evidencian estos hallazgos:
+
+  - **Patrones de comportamiento**
+    - Supervisan abastecimiento mediante llamadas, notas, fotos por WhatsApp y visitas presenciales.
+    - Deben desplazarse con frecuencia para validar faltantes.
+    - Actúan de forma reactiva ante quiebres de stock, con compras de emergencia.
+
+  - **Frustraciones principales**
+    - Alta carga mental por no tener visibilidad remota confiable.
+    - Estrés e incertidumbre por posible desabastecimiento de familiares.
+    - Impacto en tiempo personal/laboral por traslados y reposiciones urgentes.
+
+  - **Necesidades y expectativas**
+    - Alertas remotas oportunas (por ejemplo al 15% y 10%).
+    - Configuración de umbrales por producto.
+    - Historial de consumo y reposición para planificación preventiva.
+    - Lista de compras sugerida y notificaciones críticas.
+    - Precisión alta y validación multisensor para reducir falsos avisos.
+
+  - **Implicancias para el producto**
+    - Priorizar confiabilidad de alertas, monitoreo remoto y configuración flexible de umbrales.
+    - Enfocar UX en reducción de ansiedad y toma de decisiones rápida.
+    - Reforzar funciones orientadas a cuidado preventivo y autonomía del familiar.
+
+
 
 - **2.3. Needfinding**
   El Needfinding es una metodología cualitativa enfocada en recoger las opiniones y emociones de los usuarios. Su objetivo, como indica su nombre, es identificar, explorar, analizar, descubrir y evaluar de forma clara las necesidades que pueden guiar el desarrollo y diseño de cualquier proyecto.
