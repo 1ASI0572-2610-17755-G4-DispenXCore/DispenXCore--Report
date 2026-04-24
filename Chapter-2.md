@@ -4,9 +4,9 @@
 
   | Competidor                                                 | Descripción                                                                                                                          | Características                                                                   | Logo                                                                                                                                                                                                                                 
   |-|-|-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  | **Smart Pet Food Feeder (Xiaomi)**                                                  | Aunque enfocado en mascotas, es el referente más cercano en dispensadores conectados que monitorean stock y envían alertas al móvil.    | Canal de distribución: E-commerce, tiendas de tecnología y App Mi Home.           | <img src="./feature/Chapter-2/Xiaomi.svg"> |
-  | **PantryOn**    | Sistema de estantería inteligente con sensores de peso para monitoreo de despensa en tiempo real.  | Alertas de stock bajo, creación de listas de compras y visualización por app móvil. | <img src="./feature/Chapter-2/pantryon.webp"/>  |
-  | **Amazon Dash Smart Shelf**  | Balanza IoT de bajo perfil que automatiza la compra y reposición de suministros por peso.                 | Integración total con distribución/compras automáticas y notificaciones preventivas.                      | <img src="./feature/Chapter-2/amazon.jpg"/>  |
+  | **Smart Pet Food Feeder (Xiaomi)**                                                  | Aunque enfocado en mascotas, es el referente más cercano en dispensadores conectados que monitorean stock y envían alertas al móvil.    | Canal de distribución: E-commerce, tiendas de tecnología y App Mi Home.           | <img src="./feature/chapter-2/Xiaomi.svg"> |
+  | **PantryOn**    | Sistema de estantería inteligente con sensores de peso para monitoreo de despensa en tiempo real.  | Alertas de stock bajo, creación de listas de compras y visualización por app móvil. | <img src="./feature/chapter-2/pantryon.webp"/>  |
+  | **Amazon Dash Smart Shelf**  | Balanza IoT de bajo perfil que automatiza la compra y reposición de suministros por peso.                 | Integración total con distribución/compras automáticas y notificaciones preventivas.                      | <img src="./feature/chapter-2/amazon.jpg"/>  |
 
     - **2.1.1. Análisis competitivo**
       <br>En esta sección se identifica y compara a los principales competidores en el mercado de servicios técnicos, evaluando sus fortalezas, debilidades, alcance geográfico, estrategias de marketing y propuesta de valor.<br><br>
@@ -264,9 +264,9 @@
     - **2.3.1. User Personas**
     <br> En esta sección se presentan los perfiles representativos de los usuarios del sistema, permitiendo identificar características, motivaciones y necesidades de cada segmento para guiar el desarrollo de funcionalidades y la experiencia de usuario. <br><br>
     **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
-          ![User Persona Segmento 1](./feature/Chapter-2/User_persona_1.png)
+          ![User Persona Segmento 1](./feature/chapter-2/User_persona_1.png)
     **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
-          ![User Persona Segmento 1](./feature/Chapter-2/User_persona_2.png)
+          ![User Persona Segmento 1](./feature/chapter-2/User_persona_2.png)
 
     - **2.3.2. User Task Matrix**
 
@@ -293,23 +293,23 @@
     <br> En esta seccion describiremos visualmente las interacciones de los usuarios con el sistema, mostrando los pasos, emociones y puntos de contacto clave.<br><br>
       **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
-      ![User Journey Mapping Segmento 1](./feature/Chapter-2/Journey-Mapping-1.png)
+      ![User Journey Mapping Segmento 1](./feature/chapter-2/Journey-Mapping-1.png)
 
       **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
-      ![User Journey Mapping Segmento 2](./feature/Chapter-2/Journey-Mapping-2.png)
+      ![User Journey Mapping Segmento 2](./feature/chapter-2/Journey-Mapping-2.png)
 
     - **2.3.4. Empathy Mapping**<br><br>
       **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
-    ![Empathy Mapping Segmento 1](./feature/Chapter-2/Empathy-map-1.png)
+    ![Empathy Mapping Segmento 1](./feature/chapter-2/Empathy-map-1.png)
     
     **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
-    ![Empathy Mapping Segmento 2](./feature/Chapter-2/Empathy-map-2.png)
+    ![Empathy Mapping Segmento 2](./feature/chapter-2/Empathy-map-2.png)
 - **2.4. Big Picture EventStorming**
 
-    ![Big Picture EventStorming](./feature/Chapter-2/Big-Picture-EventStorming.jpg)
+    ![Big Picture EventStorming](./feature/chapter-2/Big-Picture-EventStorming.jpg)
 - **2.5. Ubiquitous Language**<br>
   - Smart Dispenser (Dispensador Inteligente): Dispositivo físico encargado de almacenar, proteger y medir la cantidad de granos o insumos secos en su interior.
 
