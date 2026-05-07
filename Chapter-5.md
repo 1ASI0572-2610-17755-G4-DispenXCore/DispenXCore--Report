@@ -17,7 +17,9 @@
     **Esquemas de categorización:**
     * **Por tópicos:** Secciones divididas en "Hardware" y "Software".
     * **Según audiencia:** Segmentación entre "Hogar Inteligente" y "Smart Business".
+    
     <br>
+    
     - **5.2.2. Labeling Systems**
 
     A continuación, se detallan las etiquetas del sistema diseñadas:
@@ -62,20 +64,20 @@
     - **5.2.4. Searching Systems**
     
     La navegación implementa un sistema de anclas directas en el header. Dado que el ecosistema incluye hardware y software, el sistema de búsqueda/navegación se enfoca en:
-    * **Navegación de Producto:** Acceso rápido a las especificaciones técnicas del dispensador.
-    * **Dashboard:** Un acceso directo para que el usuario visualice cómo se verían sus datos de consumo real.
-    * **Flujo Natural:** Propuesta de valor → Funcionamiento de sensores → Gestión en la App → Planes de suscripción.
+    1. **Navegación de Producto:** Acceso rápido a las especificaciones técnicas del dispensador.
+    2. **Dashboard:** Un acceso directo para que el usuario visualice cómo se verían sus datos de consumo real.
+    3. **Flujo Natural:** Propuesta de valor → Funcionamiento de sensores → Gestión en la App → Planes de suscripción.
 
     <br>
 
     - **5.2.5. Navigation Systems**
     
     La barra de navegación del header está diseñada para ser el centro de control de la información:
-    * **Inicio:** Propuesta general del ecosistema DispenXCore.
-    * **Dispositivo:** Detalle técnico del dispensador físico y sus sensores.
-    * **App:** Funcionalidades de la aplicación en Flutter/Angular (gráficos de consumo).
-    * **Planes:** Opciones de almacenamiento en la nube para el historial de inventario.
-    * **Soporte:** Ayuda técnica para la configuración del dispositivo IoT.
+    1. **Inicio:** Propuesta general del ecosistema DispenXCore.
+    2. **Dispositivo:** Detalle técnico del dispensador físico y sus sensores.
+    3. **App:** Funcionalidades de la aplicación en Flutter/Angular (gráficos de consumo).
+    4. **Planes:** Opciones de almacenamiento en la nube para el historial de inventario.
+    5. **Soporte:** Ayuda técnica para la configuración del dispositivo IoT.
 
 - **5.3. Landing Page UI Design**
     - **5.3.1. Landing Page Wireframe**
