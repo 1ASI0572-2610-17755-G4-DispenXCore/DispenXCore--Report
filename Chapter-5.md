@@ -47,6 +47,7 @@
     | `app-notif-description` | Alertas preventivas de stock bajo. |
 
     - 5.2.3. SEO Tags and Meta Tags
+    
     Para asegurar la accesibilidad en la gestión de insumos, se han definido los siguientes estándares:
 
     1.  **Jerarquía de Datos:** Uso de `h2` y `h3` para separar claramente las especificaciones técnicas del hardware de las funciones del software.
@@ -55,12 +56,14 @@
     4.  **Accesibilidad:** Contraste alto para facilitar el uso por parte de diversos perfiles de usuario en entornos de cocina o almacén.
 
     - 5.2.4. Searching Systems
+    
     La navegación implementa un sistema de anclas directas en el header. Dado que el ecosistema incluye hardware y software, el sistema de búsqueda/navegación se enfoca en:
     * **Navegación de Producto:** Acceso rápido a las especificaciones técnicas del dispensador.
     * **Dashboard:** Un acceso directo para que el usuario visualice cómo se verían sus datos de consumo real.
     * **Flujo Natural:** Propuesta de valor → Funcionamiento de sensores → Gestión en la App → Planes de suscripción.
 
     - 5.2.5. Navigation Systems
+    
     La barra de navegación del header está diseñada para ser el centro de control de la información:
     * **Inicio:** Propuesta general del ecosistema DispenXCore.
     * **Dispositivo:** Detalle técnico del dispensador físico y sus sensores.
