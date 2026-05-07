@@ -1,12 +1,12 @@
 ## **Capítulo V: Solution Software Design** 
 
-- 5.1. Style Guidelines
-    - 5.1.1. General Style Guidelines
-    - 5.1.2. Web, Mobile and IoT Style Guidelines
+- **5.1. Style Guidelines**
+    - **5.1.1. General Style Guidelines**
+    - **5.1.2. Web, Mobile and IoT Style Guidelines**
 
-- 5.2. Information Architecture
+- **5.2. Information Architecture**
 
-    - 5.2.1. Organization Systems
+    - **5.2.1. Organization Systems**
 
     En la landing page se han aplicado sistemas de organización para estructurar la solución IoT de manera clara, permitiendo que tanto usuarios domésticos como pequeños negocios comprendan la propuesta de valor:
 
@@ -17,8 +17,8 @@
     **Esquemas de categorización:**
     * **Por tópicos:** Secciones divididas en "Hardware" y "Software".
     * **Según audiencia:** Segmentación entre "Hogar Inteligente" y "Smart Business".
-
-    - 5.2.2. Labeling Systems
+    <br>
+    - **5.2.2. Labeling Systems**
 
     A continuación, se detallan las etiquetas del sistema diseñadas:
 
@@ -45,9 +45,10 @@
     | `iot-feature-loadcell` | Celda de Carga |
     | `app-predictive-title` | Analítica Predictiva |
     | `app-notif-description` | Alertas preventivas de stock bajo. |
-
-
-    - 5.2.3. SEO Tags and Meta Tags
+    
+    <br>
+    
+    - **5.2.3. SEO Tags and Meta Tags**
     
     Para asegurar la accesibilidad en la gestión de insumos, se han definido los siguientes estándares:
 
@@ -56,16 +57,18 @@
     3.  **Iconografía:** Integración de **Lucide Icons** para representar tipos de granos (arroz, azúcar, legumbres) y conectividad (wifi, nube).
     4.  **Accesibilidad:** Contraste alto para facilitar el uso por parte de diversos perfiles de usuario en entornos de cocina o almacén.
 
+    <br>
 
-    - 5.2.4. Searching Systems
+    - **5.2.4. Searching Systems**
     
     La navegación implementa un sistema de anclas directas en el header. Dado que el ecosistema incluye hardware y software, el sistema de búsqueda/navegación se enfoca en:
     * **Navegación de Producto:** Acceso rápido a las especificaciones técnicas del dispensador.
     * **Dashboard:** Un acceso directo para que el usuario visualice cómo se verían sus datos de consumo real.
     * **Flujo Natural:** Propuesta de valor → Funcionamiento de sensores → Gestión en la App → Planes de suscripción.
 
+    <br>
 
-    - 5.2.5. Navigation Systems
+    - **5.2.5. Navigation Systems**
     
     La barra de navegación del header está diseñada para ser el centro de control de la información:
     * **Inicio:** Propuesta general del ecosistema DispenXCore.
@@ -74,15 +77,15 @@
     * **Planes:** Opciones de almacenamiento en la nube para el historial de inventario.
     * **Soporte:** Ayuda técnica para la configuración del dispositivo IoT.
 
-- 5.3. Landing Page UI Design
-    - 5.3.1. Landing Page Wireframe
-    - 5.3.2. Landing Page Mock-up
+- **5.3. Landing Page UI Design**
+    - **5.3.1. Landing Page Wireframe**
+    - **5.3.2. Landing Page Mock-up**
 
-- 5.4. Applications UX/UI Design
-    - 5.4.1. Applications Wireframes
-    - 5.4.2. Applications Wireflow Diagrams
-    - 5.4.3. Applications Mock-ups
-    - 5.4.4. Applications User Flow Diagrams
+- **5.4. Applications UX/UI Design**
+    - **5.4.1. Applications Wireframes**
+    - **5.4.2. Applications Wireflow Diagrams**
+    - **5.4.3. Applications Mock-ups**
+    - **5.4.4. Applications User Flow Diagrams**
 
-- 5.5. Applications Prototyping
-- 5.6. IoT Device Design
+- **5.5. Applications Prototyping**
+- **5.6. IoT Device Design**
