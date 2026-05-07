@@ -46,6 +46,7 @@
     | `app-predictive-title` | Analítica Predictiva |
     | `app-notif-description` | Alertas preventivas de stock bajo. |
 
+
     - 5.2.3. SEO Tags and Meta Tags
     
     Para asegurar la accesibilidad en la gestión de insumos, se han definido los siguientes estándares:
@@ -55,12 +56,14 @@
     3.  **Iconografía:** Integración de **Lucide Icons** para representar tipos de granos (arroz, azúcar, legumbres) y conectividad (wifi, nube).
     4.  **Accesibilidad:** Contraste alto para facilitar el uso por parte de diversos perfiles de usuario en entornos de cocina o almacén.
 
+
     - 5.2.4. Searching Systems
     
     La navegación implementa un sistema de anclas directas en el header. Dado que el ecosistema incluye hardware y software, el sistema de búsqueda/navegación se enfoca en:
     * **Navegación de Producto:** Acceso rápido a las especificaciones técnicas del dispensador.
     * **Dashboard:** Un acceso directo para que el usuario visualice cómo se verían sus datos de consumo real.
     * **Flujo Natural:** Propuesta de valor → Funcionamiento de sensores → Gestión en la App → Planes de suscripción.
+
 
     - 5.2.5. Navigation Systems
     
