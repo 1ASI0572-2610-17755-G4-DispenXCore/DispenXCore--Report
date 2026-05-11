@@ -123,31 +123,81 @@
 
         ##### Register
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/1_Register.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/1_Register.png)
 
         ##### Login
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/2_Login.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/2_Login.png)
 
         ##### Schedule
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/3_Schedule.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/3_Schedule.png)
 
         ##### History
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/4_History.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/4_History.png)
 
         ##### Settings
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/5_Settings.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/5_Settings.png)
 
         ##### Support
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/6_Support.png)
-
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/6_Support.png)
 
 
     - **5.4.3. Applications Mock-ups**
+
+        #### Web Application
+
+        ##### Login
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/1_Login.png)
+
+        ##### Register
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/2_Register.png)
+
+        ##### Dashboard
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/3_DashBoard_1.png)
+
+        ##### Schedule
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/4_Schedule.png)
+
+        ##### Schedule Create
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/5_ScheduleCrear.png)
+
+        ##### History
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/6_History.png)
+
+        ##### Settings
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/7_Settings.png)
+
+        ##### Support
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/8_Support.png)
+
+        ##### Support Asked Questions
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/9_Support_2.png)
+
+        ##### Searching Box
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/10_Buscador.png)
+
+        ##### Perfil Configuration
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/11_ConfiguracionPerfil.png)
+
+        ##### Notifications List
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/12_NotificacionesLista.png)
+
     - **5.4.4. Applications User Flow Diagrams**
 
 - **5.5. Applications Prototyping**
