@@ -54,11 +54,3 @@
 <br>
 
 ---
-
-# Registro de Versiones del Informe
-
-| Versión | Fecha | Autor | Descripción de la modificación |
-|----|----|----|----|
-| TB1 | 22/04/2026 | Diego Bastidas, Ricardo Cardenas, Rafael Dominguez, Sebastian Escobar, Alonso Muñiz | Redacción de los Capítulos I, II, III y IV |
-
-
