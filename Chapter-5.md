@@ -103,37 +103,37 @@
 
         ##### Login
 
-        ![Wireframe2](./feature/chapter-5/applications-uxui-design/applications_wireframes/1_login.png)
+        ![Wireframe2](./feature/chapter5/Applications_Wireframes/1_Login.png)
 
         ##### Register
 
-        ![Wireframe3](./feature/chapter-5/applications-uxui-design/applications_wireframes/2_register.png)
+        ![Wireframe3](./feature/chapter5/Applications_Wireframes/2_Register.png)
 
         <hr class="page-break">
 
         ##### Dashboard
 
-        ![Wireframe4](./feature/chapter-5/applications-uxui-design/applications_wireframes/3_dashboard_1.png)
+        ![Wireframe4](./feature/chapter5/Applications_Wireframes/3_DashBoard_1.png)
 
         ##### Schedule
 
-        ![Wireframe5](./feature/chapter-5/applications-uxui-design/applications_wireframes/4_schedule.png)
+        ![Wireframe5](./feature/chapter5/Applications_Wireframes/4_Schedule.png)
 
         <hr class="page-break">
 
         ##### History
 
-        ![Wireframe6](./feature/chapter-5/applications-uxui-design/applications_wireframes/5_history.png)
+        ![Wireframe6](./feature/chapter5/Applications_Wireframes/5_History.png)
 
         ##### Settings
 
-        ![Wireframe7](./feature/chapter-5/applications-uxui-design/applications_wireframes/6_settings.png)
+        ![Wireframe7](./feature/chapter5/Applications_Wireframes/6_Settings.png)
 
         <hr class="page-break">
 
         ##### Support
 
-        ![Wireframe8](./feature/chapter-5/applications-uxui-design/applications_wireframes/7_support.png)
+        ![Wireframe8](./feature/chapter5/Applications_Wireframes/7_Support.png)
 
     <hr class="page-break">
 
@@ -143,29 +143,29 @@
 
         ##### Register
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_wireflow_diagrams/1_register.png)
+        ![WireflowRegister](./feature/chapter5/Applications_Wireflow_Diagrams/1_Register.png)
 
         ##### Login
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_wireflow_diagrams/2_login.png)
+        ![WireflowLogin](./feature/chapter5/Applications_Wireflow_Diagrams/2_Login.png)
 
         ##### Schedule
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_wireflow_diagrams/3_schedule.png)
+        ![WireflowSchedule](./feature/chapter5/Applications_Wireflow_Diagrams/3_Schedule.png)
 
         ##### History
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_wireflow_diagrams/4_history.png)
+        ![WireflowHistory](./feature/chapter5/Applications_Wireflow_Diagrams/4_History.png)
 
         <hr class="page-break">
 
         ##### Settings
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_wireflow_diagrams/5_settings.png)
+        ![WireflowSettings](./feature/chapter5/Applications_Wireflow_Diagrams/5_Settings.png)
 
         ##### Support
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_wireflow_diagrams/6_support.png)
+        ![WireflowSupport](./feature/chapter5/Applications_Wireflow_Diagrams/6_Support.png)
 
     <hr class="page-break">
 
@@ -175,63 +175,63 @@
 
         ##### Login
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/1_login.png)
+        ![MockupLogin](./feature/chapter5/Applications_Mock-ups/1_Login.png)
 
         ##### Register
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/2_register.png)
+        ![MockupRegister](./feature/chapter5/Applications_Mock-ups/2_Register.png)
 
         <hr class="page-break">
 
         ##### Dashboard
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/3_dashboard_1.png)
+        ![MockupDashboard](./feature/chapter5/Applications_Mock-ups/3_DashBoard_1.png)
 
         ##### Schedule
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/4_schedule.png)
+        ![MockupSchedule](./feature/chapter5/Applications_Mock-ups/4_Schedule.png)
 
         <hr class="page-break">
 
         ##### Schedule Create
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/5_schedulecrear.png)
+        ![MockupScheduleCreate](./feature/chapter5/Applications_Mock-ups/5_ScheduleCrear.png)
 
         ##### History
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/6_history.png)
+        ![MockupHistory](./feature/chapter5/Applications_Mock-ups/6_History.png)
 
         <hr class="page-break">
 
         ##### Settings
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/7_settings.png)
+        ![MockupSettings](./feature/chapter5/Applications_Mock-ups/7_Settings.png)
 
         ##### Support
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/8_support.png)
+        ![MockupSupport](./feature/chapter5/Applications_Mock-ups/8_Support.png)
 
         <hr class="page-break">
 
         ##### Support Asked Questions
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/9_support_2.png)
+        ![MockupSupportFAQ](./feature/chapter5/Applications_Mock-ups/9_Support_2.png)
 
         ##### Searching Box
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/10_buscador.png)
+        ![MockupSearchBox](./feature/chapter5/Applications_Mock-ups/10_Buscador.png)
 
         <hr class="page-break">
 
         ##### Perfil Configuration
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/11_configuracionperfil.png)
+        ![MockupProfileConfig](./feature/chapter5/Applications_Mock-ups/11_ConfiguracionPerfil.png)
 
         ##### Notifications List
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_mock-ups/12_notificacioneslista.png)
+        ![MockupNotifications](./feature/chapter5/Applications_Mock-ups/12_NotificacionesLista.png)
 
-        <hr class="page-break">
+    <hr class="page-break">
 
     - **5.4.4. Applications User Flow Diagrams**
 
@@ -239,35 +239,36 @@
 
         ##### Register
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/1_register.png)
+        ![UserFlowRegister](./feature/chapter5/applications_user_flow_diagrams/1_Register.png)
 
         ##### Login
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/2_login.png)
+        ![UserFlowLogin](./feature/chapter5/applications_user_flow_diagrams/2_Login.png)
 
         ##### US002 Actualizacion de Firmware Remote
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/7_us02-actualizacion_de_firmware_remota_(ota).png)
+        ![UserFlowUS002](./feature/chapter5/applications_user_flow_diagrams/7_US02-Actualización_de_Firmware_Remota_(OTA).png)
 
         ##### US003 Configuracion de Umbral de Alerta de Stock Bajo
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/5_us03-configuracion_de_umbral_de_alerta_de_stock_bajo.png)
+        ![UserFlowUS003](./feature/chapter5/applications_user_flow_diagrams/5_US03-Configuración_de_Umbral_de_Alerta_de_Stock_Bajo.png)
 
         <hr class="page-break">
 
         ##### US006 Visualizacion de Stock Actual en Panel Web
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/3_us06-visualizacion_de_stock_actual_en_panel_web.png)
+        ![UserFlowUS006](./feature/chapter5/applications_user_flow_diagrams/3_US06-Visualización_de_Stock_Actual_en_Panel_Web.png)
 
         ##### US007 Visualizacion de Graficos de Consumo Historico
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/4_us07-visualizacion_de_graficos_de_consumo_historico.png)
+        ![UserFlowUS007](./feature/chapter5/applications_user_flow_diagrams/4_US07-Visualización_de_Gráficos_de_Consumo_Histórico.png)
 
         ##### US015 Centro de Ayuda y Preguntas Frecuentes (FAQ)
 
-        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/6_us15-centro_de_ayuda_y_preguntas_frecuentes_(faq).png)
+        ![UserFlowUS015](./feature/chapter5/applications_user_flow_diagrams/6_US15-Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
 
 <hr class="page-break">
+
 - **5.5. Applications Prototyping**
 
 #### Web Application
