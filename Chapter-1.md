@@ -7,8 +7,8 @@
    - <p><strong>Misión:</strong> Facilitar la gestión de suministros básicos mediante el uso de tecnología IoT, proporcionando herramientas precisas y accesibles que automaticen el monitoreo de inventarios para evitar el desabastecimiento y mejorar la eficiencia en el consumo de insumos tanto en hogares como en comercios.</p>
 
    - <p><strong>Visión:</strong> Consolidarnos como la solución líder en la digitalización de suministros a granel, transformando las alacenas tradicionales en un ecosistema inteligente y conectado que anticipe las necesidades del usuario a través de un control de inventario predictivo y multiplataforma.</p>
+   <hr class="page-break">
 
-<hr class="page-break">
 
     - **1.1.2. Perfiles de integrantes del equipo**
       <br>A continuación, se detallan los perfiles de los integrantes del equipo que llevarán a cabo este proyecto, resaltando sus roles clave y sus respectivas áreas de experiencia.<br><br>
@@ -23,7 +23,7 @@
 
 <br>
 
----
+
 <br>
 
 <hr class="page-break">
@@ -46,8 +46,9 @@
         A través de un hardware basado en microcontroladores que procesa datos de tres sensores (ultrasonido, celda de carga e infrarrojo). Esta información se transmite vía Wi-Fi a un backend desarrollado en C#, que gestiona la lógica de alertas. El usuario interactúa mediante una Landing Page informativa, una aplicación web en Angular para estadísticas de consumo y una aplicación móvil en Flutter dedicada a la recepción de notificaciones push en tiempo real.
         - How much (¿Cuánto?)<br>
         El modelo de negocio se basa en la venta del dispositivo físico (hardware) con acceso vitalicio a las funciones básicas de notificación en la app móvil. Para el segmento comercial, se proyecta un modelo de suscripción opcional que ofrezca reportes avanzados de consumo y predicción de compras basada en datos. Este enfoque permite una entrada competitiva al mercado, asegurando la sostenibilidad del proyecto mediante la escalabilidad de servicios digitales.
+  <hr class="page-break">
 
-<hr class="page-break">
+
 
     - **1.2.2 Lean UX Process**
       <br>En esta sección presentaremos el Lean UX Process para DispenXCore, describiendo cómo se aplican iteraciones rápidas de diseño y validación con usuarios para mejorar la experiencia del producto mediante ciclos cortos de prueba y ajuste, asegurando que la solución de hardware y software responda a necesidades reales de inventario.<br><br>
@@ -131,7 +132,7 @@
       **Sabremos que esta hipótesis es cierta**  
       Cuando las encuestas de satisfacción muestren que más del 85% de los usuarios consideran la información de la app como "altamente precisa".
 
-<hr class="page-break">
+      <hr class="page-break">
 
       - **1.2.2.4. Lean UX Canvas**
       <br>A continuación, se presenta nuestro Lean UX Canvas de DispenXCore, la herramienta que utilizamos para alinear nuestros objetivos de negocio con las necesidades del usuario, definiendo las hipótesis clave y el plan para su validación iterativa.<br><br>
@@ -140,7 +141,7 @@
         Link: https://acortar.link/q1C2B8
 
 
----
+
 
 <hr class="page-break">
 
