@@ -121,33 +121,30 @@
 
         #### Web Application
 
-        ##### Login
+        ##### Register
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/1_Register.png)
 
-        ##### Register
+        ##### Login
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/2_Login.png)
 
-        ##### Dashboard
+        ##### Schedule
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/3_Schedule.png)
 
-        ##### Schedule
-
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/4_Schedule.png)
-
         ##### History
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/5_History.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/4_History.png)
 
         ##### Settings
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/6_Settings.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/5_Settings.png)
 
         ##### Support
 
-        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/7_Support.png)
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/6_Support.png)
+
 
 
     - **5.4.3. Applications Mock-ups**
