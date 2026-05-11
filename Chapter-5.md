@@ -85,7 +85,71 @@
 
 - **5.4. Applications UX/UI Design**
     - **5.4.1. Applications Wireframes**
+
+        #### Web Application
+
+        ##### Login
+
+        ![Wireframe2] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/1_Login.png)
+
+        ##### Register
+
+        ![Wireframe3] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/2_Register.png)
+
+        ##### Dashboard
+
+        ![Wireframe4] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/3_DashBoard_1.png)
+
+        ##### Schedule
+
+        ![Wireframe5] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/4_Schedule.png)
+
+        ##### History
+
+        ![Wireframe6] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/5_History.png)
+
+        ##### Settings
+
+        ![Wireframe7] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/6_Settings.png)
+
+        ##### Support
+
+        ![Wireframe8] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/7_Support.png)
+
+
     - **5.4.2. Applications Wireflow Diagrams**
+
+        #### Web Application
+
+        ##### Login
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/1_Register.png)
+
+        ##### Register
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/2_Login.png)
+
+        ##### Dashboard
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/3_Schedule.png)
+
+        ##### Schedule
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/4_Schedule.png)
+
+        ##### History
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/5_History.png)
+
+        ##### Settings
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/6_Settings.png)
+
+        ##### Support
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/7_Support.png)
+
+
     - **5.4.3. Applications Mock-ups**
     - **5.4.4. Applications User Flow Diagrams**
 
