@@ -4,6 +4,8 @@
     - **5.1.1. General Style Guidelines**
     - **5.1.2. Web, Mobile and IoT Style Guidelines**
 
+<hr class="page-break">
+
 - **5.2. Information Architecture**
 
     - **5.2.1. Organization Systems**
@@ -20,6 +22,8 @@
     
     <br>
     
+    <hr class="page-break">
+
     - **5.2.2. Labeling Systems**
 
     A continuación, se detallan las etiquetas del sistema diseñadas:
@@ -50,6 +54,8 @@
     
     <br>
     
+    <hr class="page-break">
+
     - **5.2.3. SEO Tags and Meta Tags**
     
     Para asegurar la accesibilidad en la gestión de insumos, se han definido los siguientes estándares:
@@ -79,9 +85,16 @@
     4. **Planes:** Opciones de almacenamiento en la nube para el historial de inventario.
     5. **Soporte:** Ayuda técnica para la configuración del dispositivo IoT.
 
+    <hr class="page-break">
+
 - **5.3. Landing Page UI Design**
     - **5.3.1. Landing Page Wireframe**
+
+    <hr class="page-break">
+
     - **5.3.2. Landing Page Mock-up**
+
+<hr class="page-break">
 
 - **5.4. Applications UX/UI Design**
     - **5.4.1. Applications Wireframes**
@@ -96,6 +109,8 @@
 
         ![Wireframe3] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/2_Register.png)
 
+        <hr class="page-break">
+
         ##### Dashboard
 
         ![Wireframe4] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/3_DashBoard_1.png)
@@ -103,6 +118,8 @@
         ##### Schedule
 
         ![Wireframe5] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/4_Schedule.png)
+
+        <hr class="page-break">
 
         ##### History
 
@@ -112,9 +129,13 @@
 
         ![Wireframe7] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/6_Settings.png)
 
+        <hr class="page-break">
+
         ##### Support
 
         ![Wireframe8] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireframes/7_Support.png)
+
+    <hr class="page-break">
 
 
     - **5.4.2. Applications Wireflow Diagrams**
@@ -129,6 +150,7 @@
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/2_Login.png)
 
+
         ##### Schedule
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/3_Schedule.png)
@@ -136,6 +158,8 @@
         ##### History
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/4_History.png)
+
+        <hr class="page-break">
 
         ##### Settings
 
@@ -145,6 +169,7 @@
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Wireflow_Diagrams/6_Support.png)
 
+    <hr class="page-break">
 
     - **5.4.3. Applications Mock-ups**
 
@@ -158,6 +183,8 @@
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/2_Register.png)
 
+        <hr class="page-break">
+
         ##### Dashboard
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/3_DashBoard_1.png)
@@ -165,6 +192,8 @@
         ##### Schedule
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/4_Schedule.png)
+
+        <hr class="page-break">
 
         ##### Schedule Create
 
@@ -174,6 +203,8 @@
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/6_History.png)
 
+        <hr class="page-break">
+
         ##### Settings
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/7_Settings.png)
@@ -181,6 +212,8 @@
         ##### Support
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/8_Support.png)
+
+        <hr class="page-break">
 
         ##### Support Asked Questions
 
@@ -190,6 +223,8 @@
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/10_Buscador.png)
 
+        <hr class="page-break">
+
         ##### Perfil Configuration
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/11_ConfiguracionPerfil.png)
@@ -197,6 +232,8 @@
         ##### Notifications List
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/12_NotificacionesLista.png)
+
+        <hr class="page-break">
 
     - **5.4.4. Applications User Flow Diagrams**
 
@@ -218,6 +255,8 @@
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/5_US03-Configuración_de_Umbral_de_Alerta_de_Stock_Bajo.png)
 
+        <hr class="page-break">
+
         ##### US006 Visualizacion de Stock Actual en Panel Web
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/3_US06-Visualización_de_Stock_Actual_en_Panel_Web.png)
@@ -230,8 +269,14 @@
 
         ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/6_US15-Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
 
+<hr class="page-break">
 
 - **5.5. Applications Prototyping**
 
+#### Web Application
+
+A continuación, se presenta el video demostrativo donde se evidencia el prototipo interactivo de las aplicaciones móviles, mostrando el flujo de usuario y la experiencia de interacción final.
+
+Link del video: 
 
 - **5.6. IoT Device Design**
