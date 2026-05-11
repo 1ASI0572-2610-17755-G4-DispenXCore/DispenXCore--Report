@@ -200,5 +200,38 @@
 
     - **5.4.4. Applications User Flow Diagrams**
 
+        #### Web Application
+
+        ##### Register
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/1_Register.png)
+
+        ##### Login
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/2_Login.png)
+
+        ##### US002 Actualizacion de Firmware Remote
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/7_US02-Actualización_de_Firmware_Remota_(OTA).png)
+
+        ##### US003 Configuracion de Umbral de Alerta de Stock Bajo
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/5_US03-Configuración_de_Umbral_de_Alerta_de_Stock_Bajo.png)
+
+        ##### US006 Visualizacion de Stock Actual en Panel Web
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/3_US06-Visualización_de_Stock_Actual_en_Panel_Web.png)
+
+        ##### US007 Visualizacion de Graficos de Consumo Historico
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/4_US07-Visualización_de_Gráficos_de_Consumo_Histórico.png)
+
+        ##### US015 Centro de Ayuda y Preguntas Frecuentas (FAQ)
+
+        ![Wireflow1] (feature/chapter-5/Applications-UXUI-Design/Applications_Mock-ups/6_US15-Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
+
+
 - **5.5. Applications Prototyping**
+
+
 - **5.6. IoT Device Design**
