@@ -239,33 +239,33 @@
 
         ##### Register
 
-        ![UserFlowRegister](./feature/chapter5/applications_user_flow_diagrams/1_Register.png)
+        ![UserFlowRegister](./feature/chapter5/Applications_User_Flow_Diagrams/1_Register.png)
 
         ##### Login
 
-        ![UserFlowLogin](./feature/chapter5/applications_user_flow_diagrams/2_Login.png)
+        ![UserFlowLogin](./feature/chapter5/Applications_User_Flow_Diagrams/2_Login.png)
 
         ##### US002 Actualizacion de Firmware Remote
 
-        ![UserFlowUS002](./feature/chapter5/applications_user_flow_diagrams/7_US02_Actualización_de_Firmware_Remota_(OTA).png)
+        ![UserFlowUS002](./feature/chapter5/Applications_User_Flow_Diagrams/7_US02_Actualización_de_Firmware_Remota_(OTA).png)
 
         ##### US003 Configuracion de Umbral de Alerta de Stock Bajo
 
-        ![UserFlowUS003](./feature/chapter5/applications_user_flow_diagrams/5_US03_Configuración_de_Umbral_de_Alerta_de_Stock_Bajo.png)
+        ![UserFlowUS003](./feature/chapter5/Applications_User_Flow_Diagrams/5_US03_Configuración_de_Umbral_de_Alerta_de_Stock_Bajo.png)
 
         <hr class="page-break">
 
         ##### US006 Visualizacion de Stock Actual en Panel Web
 
-        ![UserFlowUS006](./feature/chapter5/applications_user_flow_diagrams/3_US06_Visualización_de_Stock_Actual_en_Panel_Web.png)
+        ![UserFlowUS006](./feature/chapter5/Applications_User_Flow_Diagrams/3_US06_Visualización_de_Stock_Actual_en_Panel_Web.png)
 
         ##### US007 Visualizacion de Graficos de Consumo Historico
 
-        ![UserFlowUS007](./feature/chapter5/applications_user_flow_diagrams/4_US07_Visualización_de_Gráficos_de_Consumo_Histórico.png)
+        ![UserFlowUS007](./feature/chapter5/Applications_User_Flow_Diagrams/4_US07_Visualización_de_Gráficos_de_Consumo_Histórico.png)
 
         ##### US015 Centro de Ayuda y Preguntas Frecuentes (FAQ)
 
-        ![UserFlowUS015](./feature/chapter5/applications_user_flow_diagrams/6_US15_Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
+        ![UserFlowUS015](./feature/chapter5/Applications_User_Flow_Diagrams/6_US15_Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
 
 <hr class="page-break">
 
