@@ -267,7 +267,7 @@
 
         ##### US015 Centro de Ayuda y Preguntas Frecuentas (FAQ)
 
-        ![Wireflow1](./feature/chapter-5/Applications-UXUI-Design/Applications_User_Flow_Diagrams/6_US15-Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
+        ![Wireflow1](./feature/chapter-5/applications-uxui-design/applications_user_flow_diagrams/6_US15-Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
 
 <hr class="page-break">
 
