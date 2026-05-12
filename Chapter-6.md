@@ -119,10 +119,6 @@
       **Landing Page:**<br>
       Para el despliegue de la Landing Page, utilizaremos **Github Pages**, usando el servico integrado de enlace con GitHub.
 
-El problema es que estás dejando el guion suelto (-) en la línea siguiente al texto — en Markdown eso convierte el texto anterior en un encabezado H2, y los H2 reinician la numeración o se renderizan raros. Por eso el "1." se ve como "a" o se descuadra.
-Te lo dejo limpio, con espaciado correcto y sin esos guiones sueltos:
-markdown### Despliegue del Landing Page en Netlify
-
 A continuación se detalla el proceso paso a paso para desplegar la landing page de DispenXCore en Netlify, integrándola con el repositorio de GitHub del proyecto.
 
 **Paso 1.** Ingresamos a Netlify y seleccionamos la opción **Import from Git**.
@@ -194,7 +190,6 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
 <p align="center">
   <img src="feature/chapter-6/steps/paso9.png" alt="Paso 9: Verificación de la landing page" width="600"/>
 </p>
-
       **Enlace del Landing Page:** []()
 - **6.2. Landing Page & Mobile Application Implementation**
   <br>En esta sección se describe la implementación técnica de la Landing Page y de las aplicaciones móviles, incluyendo las herramientas, tecnologías y la metodología ágil aplicada mediante sprints en cada entrega del producto.<br><br>
