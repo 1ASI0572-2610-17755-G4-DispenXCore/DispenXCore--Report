@@ -1,125 +1,174 @@
-## **Capítulo VI: Product Implementation & Validation**
-- **6.1. Software Configuration Management**<br>
-  En esta sección definimos las reglas que permiten mantener la cohesión del proyecto de principio a fin.
+## Capítulo VI: Product Implementation & Validation
 
-    - **6.1.1. Software Development Environment Configuration**
-      Para garantizar la eficiencia en el desarrollo de DispenXCore, nos apoyamos en este conjunto de herramientas:
-      #### Requirements Management:
-        - **UxPressia**<br>
-          Esta plataforma, dedicada a la gestión de componentes de UX, fue el eje para el desarrollo de la etapa de descubrimiento. En ella se diseñaron los entregables clave: User Personas, Journey Maps, Empathy Maps e Impact Maps, fundamentales para el análisis de necesidades.
-          <br><br>
-        <div align="center">
-        <img src="https://uxpressia.com/blog/wp-content/uploads/2022/08/2.png" width="150">
-        <br>
+---
 
+### 6.1. Software Configuration Management
 
-      #### Product UX/UI Design:
+En esta sección definimos las reglas que permiten mantener la cohesión del proyecto de principio a fin, abarcando la configuración del entorno de desarrollo, la gestión del código fuente, las convenciones de estilo y el proceso de despliegue.
 
-        - **Figma**<br>
-          Para la construcción de la capa de presentación y prototipos dinámicos, empleamos una herramienta de trabajo compartido. Su capacidad de simulación fue fundamental para verificar la efectividad de la navegación y asegurar una experiencia de usuario fluida.
-          <br><br>
-        <div align="center">
-        <img src="https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png?w=540&h=540&q=75&fit=max&auto=format" width="150">
-        </div>
+<br>
 
-      #### Software Development
+#### 6.1.1. Software Development Environment Configuration
 
-        - **Visual Studio Code**<br>
-          La arquitectura del frontend de la landing page se desarrolló utilizando el editor de código de Microsoft, integrando HTML, CSS y JS para consolidar la interfaz del usuario.
-          Utilizamos el editor de Microsoft como herramienta principal de programación para materializar la landing page, gestionando todo el desarrollo de HTML, CSS y JavaScript desde este entorno.
-          <br><br>
-        <div align="center">
-        <img src="./feature/chapter-6/vsc.png" width="300">
-        </div>
-        <br>
+Para garantizar la eficiencia en el desarrollo de DispenXCore, nos apoyamos en el siguiente conjunto de herramientas, organizadas según su propósito dentro del ciclo de vida del proyecto.
 
-        - **Rider**<br>
-          Entorno de desarrollo oficial para Rider, basado en C#. Empleado para el desarrollo nativo de la aplicación de C# propuesta en el proyecto.
-          <br><br>
-        <div align="center">
-        <img src="./feature/chapter-6/rider.png" width="150">
-        </div>
-        <br>
+<br>
 
-      #### Software Deployment
+##### Requirements Management
 
-        - **Git**
-          Esta herramienta de gestión de versiones descentralizada garantiza la trazabilidad total de los cambios, optimizando la integración del trabajo realizado por los distintos desarrolladores Se implementó un sistema distribuido para salvaguardar el historial evolutivo del código, permitiendo una sincronización fluida y segura entre todos los colaboradores.
-          <br><br>
-        <div align="center">
-        <img src="https://git-scm.com/images/logos/downloads/Git-Logo-1788C.svg" width="180">
-        </div>
-        <br>
+- **UxPressia**
 
-        - **GitHub**
-          Este servicio de alojamiento potencia la sinergia del equipo mediante flujos de integración continua y una gestión estructurada de ramas. Asimismo, se vincula con un sistema de despliegue automático para mantener la landing page siempre actualizada. Se utiliza esta infraestructura para centralizar el código, facilitando el desarrollo paralelo y la validación mediante CI. Adicionalmente, se aprovechan sus capacidades de hosting estático para automatizar la publicación del sitio web.
-          <br><br>
-        <div align="center">
-        <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" width="180">
-        </div>
-    - **6.1.2. Source Code Management**
-      La gestión del proyecto de la aplicación móvil, landing page y aplicación Backend, siguen los principios del modelo "Git Branch Model" en la cual se define como una estrategia para administrar y organizar un trabajo en un repositorio de Github mediante la creación de ramas con distintas funcionalidades. Uno de los modelos que usaremos es el "Git Flow", la cual define como crear ramas para mantener el control del ciclo de vida del desarrollo del software.
-   ---   
-  **Repositorio de Landing Page:** [https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Landing](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Landing)
+  Esta plataforma, dedicada a la gestión de componentes de UX, fue el eje para el desarrollo de la etapa de descubrimiento. En ella se diseñaron los entregables clave: User Personas, Journey Maps, Empathy Maps e Impact Maps, fundamentales para el análisis de necesidades.
 
-  **Repositorio del Frontend:** [https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Web-FrontEnd](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Web-FrontEnd)
+  <p align="center">
+    <img src="https://uxpressia.com/blog/wp-content/uploads/2022/08/2.png" width="150" alt="UxPressia logo"/>
+  </p>
 
-  **Repositorio del Backend:** [https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Web-Backend](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Web-Backend)
+<br>
 
-   ---
+##### Product UX/UI Design
 
-  **Estructura de ramas**
+- **Figma**
 
-    1. Rama main (rama principal): Esta rama resguarda las versiones finales del código. Todo cambio debe validarse y probarse primero en otras ramas antes de integrarse.<br><br>
+  Para la construcción de la capa de presentación y prototipos dinámicos, empleamos una herramienta de trabajo compartido. Su capacidad de simulación fue fundamental para verificar la efectividad de la navegación y asegurar una experiencia de usuario fluida.
 
-    1. Rama develop (rama de desarrollo): En esta rama se concentra el trabajo colaborativo, incorporando gradualmente cada funcionalidad hasta que se estabilice y pueda fusionarse con main.<br><br>
+  <p align="center">
+    <img src="https://cdn.sanity.io/images/599r6htc/regionalized/5094051dac77593d0f0978bdcbabaf79e5bb855c-1080x1080.png?w=540&h=540&q=75&fit=max&auto=format" width="150" alt="Figma logo"/>
+  </p>
 
-    1. Rama feature (rama de características): Estas ramas, derivadas de `develop`, se usan únicamente para crear nuevas funcionalidades. Cuando se implementan y validan, vuelven a integrarse en la rama de desarrollo. Aunque suelen ser temporales, en el caso de la Landing Page se conservarán con fines documentales.<br><br>
+<br>
 
-    4. Convenciones de commits: Para los mensajes de commit, seguimos la especificación Conventional Commits con la siguiente estructura:
+##### Software Development
 
-              "(tipo):(titulo)" y "(descripcion)"
+- **Visual Studio Code**
 
-    - **6.1.3. Source Code Style Guide & Conventions**
+  La arquitectura del frontend de la landing page se desarrolló utilizando el editor de código de Microsoft, integrando HTML, CSS y JavaScript para consolidar la interfaz del usuario. Utilizamos el editor de Microsoft como herramienta principal de programación para materializar la landing page, gestionando todo el desarrollo desde este entorno.
 
-        Para construir DispenXCore, utilizamos los siguientes lenguajes y tecnologías:
+  <p align="center">
+    <img src="./feature/chapter-6/vsc.png" width="300" alt="Visual Studio Code logo"/>
+  </p>
 
-        **Angular**<br>
-        Como framework full-stack se trabajó con Next.js, aplicando estas prácticas:
+- **Rider**
 
-        - **Estructura del proyecto:**
-            Se mantuvo una organización estándar con los directorios app/ para enrutamiento, components/ para elementos reutilizables y lib/ para utilidades y configuración.
+  Entorno de desarrollo oficial de JetBrains basado en C#. Empleado para el desarrollo nativo de la aplicación backend en .NET propuesta en el proyecto.
 
-        - **Renderizado híbrido:**
-            Se combinó Server-Side Rendering (SSR) para contenido dinámico con Static Site Generation (SSG) para páginas estáticas, mejorando SEO y rendimiento.
+  <p align="center">
+    <img src="./feature/chapter-6/rider.png" width="150" alt="JetBrains Rider logo"/>
+  </p>
 
-        **CSS**<br>
-        Se siguió la metodología BEM junto con guías de estilo definidas:
+<br>
 
-        - **Nomenclatura descriptiva:**
-            Las clases se escriben en formato "kebab-case" en inglés para identificar claramente su función.
+##### Software Deployment
 
-        - **Mejoras en la experiencia de usuario:**
-            Se incorporaron transiciones suaves en las interacciones y efectos en botones.
+- **Git**
 
-        - **Recursos tipográficos:**
-            Se optimizó la carga de tipografías personalizadas mediante `@font-face`, respetando buenas prácticas de rendimiento.
+  Esta herramienta de gestión de versiones descentralizada garantiza la trazabilidad total de los cambios, optimizando la integración del trabajo realizado por los distintos desarrolladores. Se implementó un sistema distribuido para salvaguardar el historial evolutivo del código, permitiendo una sincronización fluida y segura entre todos los colaboradores.
 
-        **.NET**<br>
-        En el desarrollo de la API RESTful se aplicaron las convenciones recomendadas por Microsoft:
+  <p align="center">
+    <img src="https://git-scm.com/images/logos/downloads/Git-Logo-1788C.svg" width="180" alt="Git logo"/>
+  </p>
 
-        - **Convenciones de nomenclatura:**
-            Se emplea PascalCase en clases y métodos, y lowerCamelCase en parámetros y variables.
+- **GitHub**
 
-        - **Arquitectura limpia:**
-            Se implementó Clean Architecture junto con principios de Domain-Driven Design, estructurando el proyecto en capas separadas (Aplicación, Infraestructura, Dominio y Presentación).
+  Este servicio de alojamiento potencia la sinergia del equipo mediante flujos de integración continua y una gestión estructurada de ramas. Asimismo, se vincula con un sistema de despliegue automático para mantener la landing page siempre actualizada. Se utiliza esta infraestructura para centralizar el código, facilitando el desarrollo paralelo y la validación mediante CI. Adicionalmente, se aprovechan sus capacidades de hosting estático para automatizar la publicación del sitio web.
 
-    - **6.1.4. Software Deployment Configuration**
+  <p align="center">
+    <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" width="180" alt="GitHub logo"/>
+  </p>
 
-      **Landing Page:**<br>
-      Para el despliegue de la Landing Page, utilizaremos **Github Pages**, usando el servico integrado de enlace con GitHub.
+- **Netlify**
+
+  Plataforma de despliegue continuo utilizada para publicar la landing page de DispenXCore. Permite la integración automática con el repositorio de GitHub, generando un enlace público accesible desde cualquier dispositivo y manteniendo el sitio actualizado tras cada cambio en la rama principal.
+
+<br>
+
+---
+
+<br>
+
+#### 6.1.2. Source Code Management
+
+La gestión del proyecto de la aplicación móvil, landing page y aplicación backend siguen los principios del modelo **Git Branch Model**, una estrategia para administrar y organizar el trabajo en un repositorio de GitHub mediante la creación de ramas con distintas funcionalidades. Adicionalmente, aplicamos **Git Flow**, que define cómo crear ramas para mantener el control del ciclo de vida del desarrollo del software.
+
+<br>
+
+##### Repositorios del proyecto
+
+- **Repositorio del Reporte:** [DispenXCore--Report](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report)
+- **Repositorio del Landing Page:** [DispenXCore-Landing](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Landing)
+- **Repositorio del Frontend:** [DispenXCore-Web-FrontEnd](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Web-FrontEnd)
+- **Repositorio del Backend:** [DispenXCore-Web-Backend](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore-Web-Backend)
+
+<br>
+
+##### Estructura de ramas
+
+**1. Rama `main` (rama principal).** Esta rama resguarda las versiones finales del código. Todo cambio debe validarse y probarse primero en otras ramas antes de integrarse.
+
+**2. Rama `develop` (rama de desarrollo).** En esta rama se concentra el trabajo colaborativo, incorporando gradualmente cada funcionalidad hasta que se estabilice y pueda fusionarse con `main`.
+
+**3. Rama `feature/*` (ramas de características).** Estas ramas, derivadas de `develop`, se usan únicamente para crear nuevas funcionalidades. Cuando se implementan y validan, vuelven a integrarse en la rama de desarrollo. Aunque suelen ser temporales, en el caso de la Landing Page se conservarán con fines documentales.
+
+**4. Convenciones de commits.** Para los mensajes de commit, seguimos la especificación **Conventional Commits** con la siguiente estructura:
+
+```
+(tipo): (título)
+
+(descripción)
+```
+
+<br>
+
+---
+
+<br>
+
+#### 6.1.3. Source Code Style Guide & Conventions
+
+Para construir DispenXCore, utilizamos los siguientes lenguajes y tecnologías, cada uno con sus respectivas guías de estilo y convenciones.
+
+<br>
+
+##### Angular
+
+Como framework para el desarrollo del frontend web, se aplicaron estas prácticas:
+
+- **Estructura del proyecto:** se mantuvo una organización modular con directorios `app/` para componentes principales, `shared/` para elementos reutilizables y `core/` para servicios y configuración global.
+- **Componentes reutilizables:** se aplicó el principio de separación de responsabilidades, dividiendo la lógica entre componentes presentacionales y contenedores.
+- **Lazy loading:** se implementó carga diferida de módulos para optimizar el rendimiento inicial de la aplicación.
+
+<br>
+
+##### CSS
+
+Se siguió la metodología **BEM** junto con guías de estilo definidas:
+
+- **Nomenclatura descriptiva:** las clases se escriben en formato `kebab-case` en inglés para identificar claramente su función.
+- **Mejoras en la experiencia de usuario:** se incorporaron transiciones suaves en las interacciones y efectos en botones.
+- **Recursos tipográficos:** se optimizó la carga de tipografías personalizadas mediante `@font-face`, respetando buenas prácticas de rendimiento.
+
+<br>
+
+##### .NET
+
+En el desarrollo de la API RESTful se aplicaron las convenciones recomendadas por Microsoft:
+
+- **Convenciones de nomenclatura:** se emplea `PascalCase` en clases y métodos, y `lowerCamelCase` en parámetros y variables.
+- **Arquitectura limpia:** se implementó Clean Architecture junto con principios de Domain-Driven Design, estructurando el proyecto en capas separadas (Aplicación, Infraestructura, Dominio y Presentación).
+
+<br>
+
+---
+
+<br>
+
+#### 6.1.4. Software Deployment Configuration
+
+Para el despliegue de la Landing Page utilizamos **Netlify**, aprovechando su servicio de integración continua con GitHub para mantener el sitio actualizado automáticamente con cada push a la rama principal.
 
 A continuación se detalla el proceso paso a paso para desplegar la landing page de DispenXCore en Netlify, integrándola con el repositorio de GitHub del proyecto.
+
+<br>
 
 **Paso 1.** Ingresamos a Netlify y seleccionamos la opción **Import from Git**.
 
@@ -127,7 +176,7 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso1.png" alt="Paso 1: Import from Git en Netlify" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 2.** Elegimos importar un proyecto desde **GitHub**.
 
@@ -135,7 +184,7 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso2.png" alt="Paso 2: Selección de GitHub como origen" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 3.** Configuramos o enlazamos Netlify con nuestra cuenta de GitHub.
 
@@ -143,7 +192,7 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso3.png" alt="Paso 3: Autorización de Netlify con GitHub" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 4.** Seleccionamos la organización donde se encuentra nuestro repositorio.
 
@@ -151,7 +200,7 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso4.png" alt="Paso 4: Selección de la organización" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 5.** Seleccionamos el repositorio correspondiente al landing page de DispenXCore.
 
@@ -159,7 +208,7 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso5.png" alt="Paso 5: Selección del repositorio del landing page" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 6.** Definimos el nombre del subdominio que tendrá nuestro sitio publicado.
 
@@ -167,7 +216,7 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso6.png" alt="Paso 6: Definición del nombre del sitio" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 7.** Configuramos las variables de entorno necesarias y presionamos **Deploy**.
 
@@ -175,7 +224,7 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso7.png" alt="Paso 7: Configuración de variables y despliegue" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 8.** Una vez finalizado el despliegue, ingresamos al enlace generado por Netlify.
 
@@ -183,465 +232,451 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="feature/chapter-6/steps/paso8.png" alt="Paso 8: Acceso al enlace generado" width="600"/>
 </p>
 
-&nbsp;
+<br>
 
 **Paso 9.** Verificamos el funcionamiento correcto de la landing page publicada.
 
 <p align="center">
   <img src="feature/chapter-6/steps/paso9.png" alt="Paso 9: Verificación de la landing page" width="600"/>
 </p>
-      **Enlace del Landing Page:** []()
-- **6.2. Landing Page & Mobile Application Implementation**
-  <br>En esta sección se describe la implementación técnica de la Landing Page y de las aplicaciones móviles, incluyendo las herramientas, tecnologías y la metodología ágil aplicada mediante sprints en cada entrega del producto.<br><br>
-    - **6.2.1. Sprint 1**<br>
-      Este apartado presenta los resultados del Sprint #1, correspondiente a la primera entrega del proyecto. Se incluyen los avances organizativos, la asignación del trabajo y los entregables desarrollados: una landing page funcional, el avance del Web Service y una versión inicial de la Mobile Application.
-        - **6.2.1.1. Sprint Planning 1**<br>
-          <br>Seguidamente, se expone la planificación del Sprint 1, en la que se establecieron los objetivos iniciales, se priorizaron las tareas del backlog y se definieron las responsabilidades del equipo para este primer ciclo de desarrollo.<br><br>
-      
-          <table>
-            <tr>
-              <th> Sprint # </th>
-              <th> Sprint 1 </th>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;" colspan="2"> Contexto de Planificación del Sprint </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Fecha </td>
-              <td> 08/05/2026 </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Hora </td>
-              <td> 22:38 horas (GMT-5) </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Lugar </td>
-                        <td> Reunión virtual (Discord) </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Elaborado por </td>
-              <td> Bastidas Bastidas, Diego Martin </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Participantes (reunión de planificación) </td>
-              <td>
-                Bastidas Bastidas, Diego Martin<br>
-                Cardenas Minaya, Ricardo Fernando<br>
-                Dominguez Vargas, Rafael Alexander<br>
-                Escobar Palomino, Sebastian Matias<br>
-                Muñiz Huayanca, Percy Alonso	
-              </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Resumen de la Sprint Review 1 </td>
-                        <td> Al tratarse del primer sprint de desarrollo, no existe un resumen de revisión anterior. </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Resumen de la Retrospectiva del Sprint 1 </td>
-                        <td> Como este es el sprint inicial, todavía no se han detectado oportunidades de mejora concretas en el proceso. </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;" colspan="2"> Objetivo del Sprint e Historias de Usuario </td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Objetivo del Sprint 1 </td>
-                        <td>Buscamos desarrollar una landing page que comunique de forma visual y comprensible las funcionalidades y beneficios de DispenXCore, generando en los visitantes una percepción inicial sólida sobre la plataforma y su propuesta de valor. Esta página facilitará la exploración de sus secciones para que los usuarios entiendan cómo nuestra solución vincula eficazmente a empresas con profesionales. Además, se pondrá en valor la app web por su uso práctico y accesible, permitiendo la interacción con la plataforma desde cualquier ubicación. Validaremos este enfoque analizando la navegación de los visitantes en la landing page y su uso de la integración con la app web.</td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Velocidad del Sprint 1 </td>
-              <td>20</td>
-            </tr>
-            <tr>
-                        <td style="font-weight: bold;"> Total de Story Points </td>
-              <td>  20</td>
-            </tr>
-          </table>
-        - **6.2.1.2. Sprint Backlog 1**
-          <br> En el primer sprint, el equipo enfocó su trabajo en crear una landing page que fuera tanto funcional como atractiva, asignando las tareas en el tablero de Sprint según las habilidades de cada miembro.
-
-          | **ID** | **Title**                      | **Description**                                                                                                                                            | **Estimation (Hours)** | **Assigned To**                 | **Status (To-do / In Process / To Review / Done)** |
-          | ------ | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------------------------------- | -------------------------------------------------- |
-          | LPS01  | Navigation                     | Implementación de la barra de navegación con enlaces a las secciones “¿Cómo funciona?”, “Casos de éxito”, “Planes” y “Contactos”.                          | 4                      | Bastidas Bastidas, Diego Martín | Done                                               |
-          | LPS02  | Hero Section                   | Implementación de la sección “Hero Section”, diseñada para captar la atención de los usuarios y presentar brevemente la aplicación móvil.                  | 2                      | Bastidas Bastidas, Diego Martín | Done                                               |
-          | LPS03  | About the Product              | Desarrollo de la sección “About the Product”, donde se describen brevemente el producto y sus principales beneficios.                                      | 2                      | Bastidas Bastidas, Diego Martín | Done                                               |
-          | LPS04  | Services and Technical Workers | Desarrollo de la sección “Services and Technical Workers”, donde se muestran los servicios ofrecidos por los técnicos calificados.                         | 3                      | Bastidas Bastidas, Diego Martín | Done                                               |
-          | LPS05  | Testimonials                   | Desarrollo de la sección “Testimonials”, donde se presentan los comentarios y experiencias de usuarios que han utilizado la aplicación.                    | 3                      | Bastidas Bastidas, Diego Martín | Done                                               |
-          | LPS06  | Contact                        | Desarrollo de la sección “Contact”, donde se detalla la forma en que los usuarios pueden comunicarse con el equipo detrás de *AlguienDijoChamba*.          | 2                      | Bastidas Bastidas, Diego Martín | Done                                               |
-          | LPS07  | Footer                         | Desarrollo de la sección “Footer”, que incluye enlaces de navegación, redes sociales del equipo y accesos rápidos a las distintas secciones del sitio web. | 2                      | Bastidas Bastidas, Diego Martín | Done                                               |
-
-
-
-
-        - **6.2.1.3. Development Evidence for Sprint Review**
-          <br>Esta sección se presenta la Evidencia de Desarrollo completada durante el sprint, demostrando el trabajo funcional realizado y los incrementos del producto listos para ser inspeccionados y validados en la Sprint Review.
-
-          | *Repository*                                                             | *Branch*      | *Commit Id*                               | *Commit Message*                                                                                                                         | *Committed By*    | *Committed On* |
-          |--------------------------------------------------------------------------|---------------|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------|
-          | Repositorio | chapter-1     | commit  | nombre del commit                                                                                                                           | usuario  | fecha   |
-          | Repositorio | chapter-1     | commit  | nombre del commit                                                                                                                           | usuario  | fecha   |
-          |             
-
-        - **6.2.1.4. Testing Suite Evidence for Sprint Review**
-
-          <br> En este primer Sprint, veremos los archivos .feature relacionados a los user tasks que hemos desarrollado, subidos en el repositorio.
-
-          <table><thead>
-          <tr>
-            <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
-            <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
-            <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
-            <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
-            <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
-            <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
-          </tr></thead>
-          <tbody>
-          <tr>
-          <td rowspan="10"><a href="hhttps://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Reports" target="_blank" rel="noopener noreferrer">https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report</a></td>
-            <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>numero de commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>nombre del commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>mensaje del commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>fecha del commit</td>
-          </tr>
 
-          <tr>
-            <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>numero de commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>nombre del commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>mensaje del commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>fecha del commit</td>
-          </tr>
+<br>
+
+##### Enlace del Landing Page
+
+🔗 **[https://comforting-pony-e834fe.netlify.app/](https://comforting-pony-e834fe.netlify.app/)**
+
+<br>
+
+---
+
+<br>
+
+### 6.2. Landing Page & Mobile Application Implementation
+
+En esta sección se describe la implementación técnica de la Landing Page y de las aplicaciones móviles, incluyendo las herramientas, tecnologías y la metodología ágil aplicada mediante sprints en cada entrega del producto.
+
+<br>
+
+#### 6.2.1. Sprint 1
+
+Este apartado presenta los resultados del **Sprint #1**, correspondiente a la primera entrega del proyecto. Se incluyen los avances organizativos, la asignación del trabajo y los entregables desarrollados: una landing page funcional, el avance del Web Service y una versión inicial de la Mobile Application.
+
+<br>
+
+##### 6.2.1.1. Sprint Planning 1
+
+Seguidamente, se expone la planificación del Sprint 1, en la que se establecieron los objetivos iniciales, se priorizaron las tareas del backlog y se definieron las responsabilidades del equipo para este primer ciclo de desarrollo.
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 1</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Contexto de Planificación del Sprint</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Fecha</td>
+    <td>08/05/2026</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Hora</td>
+    <td>22:38 horas (GMT-5)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Lugar</td>
+    <td>Reunión virtual (Discord)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Elaborado por</td>
+    <td>Bastidas Bastidas, Diego Martin</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Participantes</td>
+    <td>
+      Bastidas Bastidas, Diego Martin<br>
+      Cardenas Minaya, Ricardo Fernando<br>
+      Dominguez Vargas, Rafael Alexander<br>
+      Escobar Palomino, Sebastian Matias<br>
+      Muñiz Huayanca, Percy Alonso
+    </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Sprint Review 1</td>
+    <td>Al tratarse del primer sprint de desarrollo, no existe un resumen de revisión anterior.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Retrospectiva del Sprint 1</td>
+    <td>Como este es el sprint inicial, todavía no se han detectado oportunidades de mejora concretas en el proceso.</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Objetivo del Sprint e Historias de Usuario</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Objetivo del Sprint 1</td>
+    <td>Buscamos desarrollar una landing page que comunique de forma visual y comprensible las funcionalidades y beneficios de DispenXCore, generando en los visitantes una percepción inicial sólida sobre la plataforma y su propuesta de valor. Esta página facilitará la exploración de sus secciones para que los usuarios entiendan cómo nuestra solución vincula eficazmente la gestión inteligente de suministros con sus hogares. Además, se pondrá en valor la app web por su uso práctico y accesible, permitiendo la interacción con la plataforma desde cualquier ubicación. Validaremos este enfoque analizando la navegación de los visitantes en la landing page y su uso de la integración con la app web.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Velocidad del Sprint 1</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Total de Story Points</td>
+    <td>20</td>
+  </tr>
+</table>
+
+<br>
+
+##### 6.2.1.2. Sprint Backlog 1
+
+En el primer sprint, el equipo enfocó su trabajo en crear una landing page que fuera tanto funcional como atractiva, asignando las tareas en el tablero de Sprint según las habilidades de cada miembro.
+
+| ID    | Title                          | Description                                                                                                                                                | Estimation (Hours) | Assigned To                     | Status |
+| ----- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------- | ------ |
+| LPS01 | Navigation                     | Implementación de la barra de navegación con enlaces a las secciones "¿Cómo funciona?", "Casos de éxito", "Planes" y "Contactos".                          | 4                  | Bastidas Bastidas, Diego Martín | Done   |
+| LPS02 | Hero Section                   | Implementación de la sección "Hero Section", diseñada para captar la atención de los usuarios y presentar brevemente la aplicación.                        | 2                  | Bastidas Bastidas, Diego Martín | Done   |
+| LPS03 | About the Product              | Desarrollo de la sección "About the Product", donde se describen brevemente el producto y sus principales beneficios.                                      | 2                  | Bastidas Bastidas, Diego Martín | Done   |
+| LPS04 | Services and Features          | Desarrollo de la sección "Services and Features", donde se muestran las funcionalidades clave de DispenXCore.                                              | 3                  | Bastidas Bastidas, Diego Martín | Done   |
+| LPS05 | Testimonials                   | Desarrollo de la sección "Testimonials", donde se presentan los comentarios y experiencias de usuarios que han utilizado la aplicación.                    | 3                  | Bastidas Bastidas, Diego Martín | Done   |
+| LPS06 | Contact                        | Desarrollo de la sección "Contact", donde se detalla la forma en que los usuarios pueden comunicarse con el equipo detrás de **DispenXCore**.              | 2                  | Bastidas Bastidas, Diego Martín | Done   |
+| LPS07 | Footer                         | Desarrollo de la sección "Footer", que incluye enlaces de navegación, redes sociales del equipo y accesos rápidos a las distintas secciones del sitio web. | 2                  | Bastidas Bastidas, Diego Martín | Done   |
+
+<br>
+
+##### 6.2.1.3. Development Evidence for Sprint Review
 
-          <tr>
-            <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>numero de commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>nombre del commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>mensaje del commit</td>
-            <td>&nbsp;&nbsp;&nbsp;<br>fecha del commit</td>
-          </tr>
+En esta sección se presenta la Evidencia de Desarrollo completada durante el sprint, demostrando el trabajo funcional realizado y los incrementos del producto listos para ser inspeccionados y validados en la Sprint Review.
 
-          </tbody></table>
+| Repository  | Branch    | Commit Id | Commit Message     | Committed By | Committed On |
+| ----------- | --------- | --------- | ------------------ | ------------ | ------------ |
+| Repositorio | chapter-1 | commit    | nombre del commit  | usuario      | fecha        |
+| Repositorio | chapter-1 | commit    | nombre del commit  | usuario      | fecha        |
 
-    - **6.2.1.5. Execution Evidence for Sprint Review**
-      <br>Esta sección expone la Evidencia de Ejecución del sprint, donde se aprecia el producto operativo o el incremento de valor implementado, preparado para su revisión y validación en la Sprint Review.<br><br>
-
-      ### LANDING PAGE:
-
-      A continuación, se presentan las evidencias de la implementación de la landing page desarrollada en HTML, CSS y JS con la biblioteca Bootstrap.
-
-      #### LPS 01:
-
-      Ver Hero Section
-
-      <div align="center">
-      <img src="">
-      </div>
-
-      #### LPS 02:
-
-      Ver sección sobre el producto
-
-      <div align="center">
-      <img src="" alt="About us">
-      </div>
-
-      #### LPS 03:
-
-      Ver sección de servicios y características
-
-      <div align="center">
-      <img src="" alt="Services">
-      </div>
-
-
-      #### LPS 04:
-
-      Ver testimonios de usuarios
-
-      <div align="center">
-      <img src="">
-      </div>
-
-      #### LPS 05:
-
-      Acceder a sección de contacto
-
-      <div align="center">
-      <img src="" alt="Contacts">
-      </div>
-
-      #### LPS 07:
-
-      Ver sección Footer con enlaces útiles
-
-      <div align="center">
-      <img src="" alt="Footer">
-      </div>
-
-      ### WEB APPLICATION:
-      <div align="center">
-      <img src="">
-       </div>
-
-      <div align="center">
-       <img src="">
-      </div>
-
-      <div align="center">
-      <img src="">
-       </div>
-
-      <div align="center">
-      <img src="">
-      </div>
-
-      <div align="center">
-       <img src="">
-      </div>
-
-      <div align="center">
-       <img src="">
-       </div>
-
-      <div align="center">
-      <img src="">
-      </div>
-
-       <div align="center">
-      <img src="">
-       </div>
- 
-       <div align="center">
-       <img src="">
-       </div>
-    
-       <div align="center">
-       <img src="">
-       </div>
-    
-       <div align="center">
-       <img src="">
-       </div>
-    
-       <div align="center">
-       <img src="">
-       </div>
-    
-       <div align="center">
-       <img src="">
-       </div>
-    
-       <div align="center">
-       <img src="">
-       </div>
-    
-       <div align="center">
-       <img src="">
-       </div>
-
-
-        - **6.2.1.6. Services Documentation Evidence for Sprint Review**
-          <br> En este Sprint se logró documentar con OpenAPI los endpoints correspondientes a las funcionalidades implementadas. La documentación incluye detalles técnicos de los servicios consumidos por la aplicación móvil, como los verbos HTTP, parámetros de entrada y respuestas esperadas, permitiendo una mejor comprensión e integración de la app con la API.
-
-  | *Endpoint*                          | *Accion*                            | *Verbo HTTP* | *Sintaxis de llamada*              | *Parámetros o Peticiones*                                                                                                                             | *Ejemplo de Response*                                                                                                                                                                             | *URL de Documentacion*                                   |
-  |-------------------------------------|-------------------------------------|--------------|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------| 
-  | /api/auth/login                     | Autenticación                       | POST         | api/auth/login                     | {"email": "string", "password": "string"}                                                                                                             | {"accessToken": "string", "refreshToken": "string"}                                                                                                                                               | http://localhost:8080/api/auth/login                     |
-  | /api/auth/register                  | Registro de usuario                 | POST         | api/auth/register                  | {"email": "string", "firstName": "string", "lastName": "string", "password": "string"}                                                                | {"userId": "string", "message": "Usuario registrado exitosamente"}                                                                                                                                | http://localhost:8080/api/auth/register                  |
-  | /api/v1/workers                     | Registrar Worker                    | POST         | api/v1/workers                     | {"name": "string", "email": "string", "phone": "string", "location": "string", "experience": "string", "categoryId": "integer", "skills": ["string"]} | {"workerId": "string", "message": "Worker registrado"}                                                                                                                                            | http://localhost:8080/api/v1/workers                     |
-  | /api/v1/workers/{id}                | Actualizar perfil de Worker         | PUT          | api/v1/workers/{id}                | {"name": "string", "email": "string", "phone": "string", "location": "string", "experience": "string"}                                                | {"workerId": "string", "message": "Perfil actualizado"}                                                                                                                                           | http://localhost:8080/api/v1/workers/{id}                |
-  | /api/v1/workers/{id}                | Obtener perfil de Worker por ID     | GET          | api/v1/workers/{id}                | none                                                                                                                                                  | {"name": "string", "email": "string", "phone": "string", "location": "string", "experience": "string", "ratingAvg": "decimal", "status": "string", "skills": ["string"], "categoryId": "integer"} | http://localhost:8080/api/v1/workers/{id}                |
-  | /api/v1/workers                     | Obtener Workers por categoría       | GET          | api/v1/workers                     | none (query params: ?category=string)                                                                                                                 | [{"workerId": "string", "name": "string", "ratingAvg": "decimal", "skills": ["string"]}]                                                                                                          | http://localhost:8080/api/v1/workers                     |
-  | /api/v1/workers/{id}/skills         | Añadir skill a Worker               | POST         | api/v1/workers/{id}/skills         | {"skillName": "string"}                                                                                                                               | {"message": "Skill añadido"}                                                                                                                                                                      | http://localhost:8080/api/v1/workers/{id}/skills         |
-  | /api/v1/workers/{id}/ratings        | Calificar Worker                    | POST         | api/v1/workers/{id}/ratings        | {"score": "integer", "comment": "string"}                                                                                                             | {"message": "Calificación registrada"}                                                                                                                                                            | http://localhost:8080/api/v1/workers/{id}/ratings        |
-  | /api/v1/categories                  | Crear categoría                     | POST         | api/v1/categories                  | {"name": "string", "description": "string"}                                                                                                           | {"categoryId": "integer", "message": "Categoría creada"}                                                                                                                                          | http://localhost:8080/api/v1/categories                  |
-  | /api/v1/categories                  | Listar categorías                   | GET          | api/v1/categories                  | none                                                                                                                                                  | [{"categoryId": "integer", "name": "string", "description": "string"}]                                                                                                                            | http://localhost:8080/api/v1/categories                  |
-  | /api/v1/categories/{id}             | Obtener categoría por ID            | GET          | api/v1/categories/{id}             | none                                                                                                                                                  | {"categoryId": "integer", "name": "string", "description": "string"}                                                                                                                              | http://localhost:8080/api/v1/categories/{id}             |
-  | /api/v1/payments                    | Crear pago                          | POST         | api/v1/payments                    | {"orderId": "string", "amount": "decimal", "method": "string"}                                                                                        | {"paymentId": "string", "status": "string"}                                                                                                                                                       | http://localhost:8080/api/v1/payments                    |
-  | /api/v1/payments/{id}               | Obtener pago por ID                 | GET          | api/v1/payments/{id}               | none                                                                                                                                                  | {"paymentId": "string", "amount": "decimal", "status": "string", "date": "datetime"}                                                                                                              | http://localhost:8080/api/v1/payments/{id}               |
-  | /api/v1/refunds                     | Solicitar reembolso                 | POST         | api/v1/refunds                     | {"paymentId": "string", "reason": "string"}                                                                                                           | {"refundId": "string", "status": "string"}                                                                                                                                                        | http://localhost:8080/api/v1/refunds                     |
-  | /api/v1/alerts                      | Crear alerta                        | POST         | api/v1/alerts                      | {"type": "string", "title": "string", "message": "string", "customerId": "integer", "workerId": "integer"}                                            | {"alertId": "integer", "message": "Alerta creada"}                                                                                                                                                | http://localhost:8080/api/v1/alerts                      |
-  | /api/v1/alerts/{id}                 | Eliminar alerta                     | DELETE       | api/v1/alerts/{id}                 | none                                                                                                                                                  | {"message": "Alerta eliminada"}                                                                                                                                                                   | http://localhost:8080/api/v1/alerts/{id}                 |
-  | /api/v1/alerts/{id}/accept          | Aceptar alerta                      | PUT          | api/v1/alerts/{id}/accept          | none                                                                                                                                                  | {"message": "Alerta aceptada"}                                                                                                                                                                    | http://localhost:8080/api/v1/alerts/{id}/accept          |
-  | /api/v1/alerts/{id}/decline         | Rechazar alerta                     | PUT          | api/v1/alerts/{id}/decline         | none                                                                                                                                                  | {"message": "Alerta rechazada"}                                                                                                                                                                   | http://localhost:8080/api/v1/alerts/{id}/decline         |
-  | /api/v1/alerts                      | Obtener alertas por Customer        | GET          | api/v1/alerts                      | none (query params: ?customerId=integer)                                                                                                              | [{"alertId": "integer", "type": "string", "title": "string", "message": "string"}]                                                                                                                | http://localhost:8080/api/v1/alerts                      |
-  | /api/v1/alerts                      | Obtener alertas por Worker          | GET          | api/v1/alerts                      | none (query params: ?workerId=integer)                                                                                                                | [{"alertId": "integer", "type": "string", "title": "string", "message": "string"}]                                                                                                                | http://localhost:8080/api/v1/alerts                      |
-  | /api/v1/work-requests               | Crear solicitud de trabajo          | POST         | api/v1/work-requests               | {"title": "string", "description": "string", "date": "datetime", "time": "string", "address": "string", "category": "string"}                         | {"requestId": "string", "message": "Solicitud creada"}                                                                                                                                            | http://localhost:8080/api/v1/work-requests               |
-  | /api/v1/work-requests/{id}          | Actualizar solicitud de trabajo     | PUT          | api/v1/work-requests/{id}          | {"title": "string", "description": "string", "date": "datetime", "time": "string", "address": "string"}                                               | {"requestId": "string", "message": "Solicitud actualizada"}                                                                                                                                       | http://localhost:8080/api/v1/work-requests/{id}          |
-  | /api/v1/work-requests/{id}/accept   | Aceptar solicitud de trabajo        | PUT          | api/v1/work-requests/{id}/accept   | none                                                                                                                                                  | {"message": "Solicitud aceptada"}                                                                                                                                                                 | http://localhost:8080/api/v1/work-requests/{id}/accept   |
-  | /api/v1/work-requests/{id}/complete | Completar solicitud de trabajo      | PUT          | api/v1/work-requests/{id}/complete | {"finalAmount": "decimal", "finalWorkDescription": "string"}                                                                                          | {"message": "Solicitud completada"}                                                                                                                                                               | http://localhost:8080/api/v1/work-requests/{id}/complete |
-  | /api/v1/work-requests               | Obtener solicitudes por Worker      | GET          | api/v1/work-requests               | none (query params: ?workerId=integer)                                                                                                                | [{"requestId": "string", "title": "string", "status": "string"}]                                                                                                                                  | http://localhost:8080/api/v1/work-requests               |
-  | /api/v1/work-requests               | Obtener solicitudes por Customer    | GET          | api/v1/work-requests               | none (query params: ?customerId=integer)                                                                                                              | [{"requestId": "string", "title": "string", "status": "string"}]                                                                                                                                  | http://localhost:8080/api/v1/work-requests               |
-  | /api/v1/work-requests/{id}          | Obtener solicitud de trabajo por ID | GET          | api/v1/work-requests/{id}          | none                                                                                                                                                  | {"title": "string", "description": "string", "date": "datetime", "status": "string", "workerId": "integer"}                                                                                       | http://localhost:8080/api/v1/work-requests/{id}          |
-
-    - **6.2.1.7. Software Deployment Evidence for Sprint Review**
-      <br>En esta sección se presenta la Evidencia de Despliegue del Software, verificando que el incremento desarrollado durante el sprint ha sido implementado y se encuentra accesible en el entorno de destino para su revisión final.<br><br>
-
-      ### LANDING PAGE:
-
-      A continuación, se muestran las evidencias del despliegue del landing page hecha en HTML, CSS y JS usando la biblioteca Bootstrap usando funcionalidades de GitHubPage.
-
-      #### Hero Section:
-
-      Vista representativa que busca llamar la atencion al usuario
-
-        <div align="center">
-        <img src="" alt="Hero Section">
-        </div>
-
-      #### SERVICES:
-
-      Seccion donde se veran los servicios que ofrecen nuestros tecnicos cualificados
-
-        <div align="center">
-        <img src="">
-        </div>
-
-      #### TESTIMONIALS:
-
-      Seccion donde se veran testimonios de usuarios reales
-
-        <div align="center">
-        <img src="">
-        </div>
-
-      #### CONTACT:
-
-      Seccion en la cual el usuario puede contactar con el equipo de AlguienDijoChamba
-
-        <div align="center">
-        <img src="">
-        </div>
+<br>
 
-      #### FOOTER:
+##### 6.2.1.4. Testing Suite Evidence for Sprint Review
 
-      Seccion donde se veran enlaces rapidos y redes sociales
-
-        <div align="center">
-        <img src="">
-        </div>
+En este primer Sprint, veremos los archivos `.feature` relacionados a los user tasks que hemos desarrollado, subidos en el repositorio.
 
-      ### WEB APPLICATION:
-      A continuación, se muestran las evidencias de la ejecución de la aplicación móvil desarrollada en Android Studio.
+<table>
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit ID</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">
+        <a href="https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report" target="_blank" rel="noopener noreferrer">
+          DispenXCore--Report
+        </a>
+      </td>
+      <td>main</td>
+      <td>número de commit</td>
+      <td>nombre del commit</td>
+      <td>mensaje del commit</td>
+      <td>fecha del commit</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>número de commit</td>
+      <td>nombre del commit</td>
+      <td>mensaje del commit</td>
+      <td>fecha del commit</td>
+    </tr>
+    <tr>
+      <td>main</td>
+      <td>número de commit</td>
+      <td>nombre del commit</td>
+      <td>mensaje del commit</td>
+      <td>fecha del commit</td>
+    </tr>
+  </tbody>
+</table>
 
-        <div align="center">
-        <img src="">
-        </div>
+<br>
 
-        <div align="center">
-        <img src="">
-        </div>
+##### 6.2.1.5. Execution Evidence for Sprint Review
 
-        <div align="center">
-        <img src="">
-        </div>
+Esta sección expone la Evidencia de Ejecución del sprint, donde se aprecia el producto operativo o el incremento de valor implementado, preparado para su revisión y validación en la Sprint Review.
 
-        <div align="center">
-        <img src="">
-        </div>
+<br>
 
-        <div align="center">
-        <img src="">
-        </div>
+###### Landing Page
 
-        <div align="center">
-        <img src="">
-        </div>
+A continuación, se presentan las evidencias de la implementación de la landing page desarrollada en HTML, CSS y JS con la biblioteca Bootstrap.
 
-        <div align="center">
-        <img src="">
-        </div>
+**LPS 01 — Hero Section**
 
-        <div align="center">
-        <img src="">
-        </div>
+<p align="center">
+  <img src="" alt="Hero Section"/>
+</p>
 
-    - **6.2.1.8. Team Collaboration Insights during Sprint**
-          <br>En esta sección se exponen las Reflexiones sobre la Colaboración del Equipo durante el sprint, detallando las dinámicas de trabajo y las lecciones clave identificadas para la mejora continua del proceso.<br><br>
+<br>
 
-      | *Alumno*                            | *Actividad*                                |
-      |-------------------------------------|--------------------------------------------|
-      | Bastidas Bastidas, Diego Martin     | Figma Design, Backend           |
-      | Cardenas Minaya, Ricardo Fernando         | Figma Design, Prototyping, Frontend        |
-      | Dominguez Vargas, Rafael Alexander  | Figma Design, Frontend  |
-      | Escobar Palomino, Sebastian Matias  | Figma Design, Frontend                                   |
-      | Muñiz Huayanca, Percy Alonso        | Landing Page Deployment, Figma Design Backend                                    |
+**LPS 02 — Sección Sobre el Producto**
 
-      ## Report:
+<p align="center">
+  <img src="" alt="About the product"/>
+</p>
 
-      <div align="center">
-          <img src="">
-          </div>
+<br>
 
-      <div align="center">
-          <img src="">
-          </div>
+**LPS 03 — Servicios y Características**
 
-      <div align="center">
-          <img src="">
-          </div>
+<p align="center">
+  <img src="" alt="Services"/>
+</p>
 
-      ## Landing Page:
+<br>
 
-      <div align="center">
-          <img src=""
-          </div>
+**LPS 04 — Testimonios de Usuarios**
 
-      <div align="center">
-          <img src="">
-          </div>
+<p align="center">
+  <img src="" alt="Testimonials"/>
+</p>
 
-      <div align="center">
-          <img src="">
-          </div>
+<br>
 
-      ## Web Application:
+**LPS 05 — Sección de Contacto**
 
-     <div align="center">
-          <img src="">
-          </div>
+<p align="center">
+  <img src="" alt="Contact"/>
+</p>
 
-     <div align="center">
-          <img src="">
-          </div>
+<br>
 
-     <div align="center">
-          <img src="">
-          </div>
+**LPS 07 — Footer con Enlaces Útiles**
 
+<p align="center">
+  <img src="" alt="Footer"/>
+</p>
 
+<br>
 
+###### Web Application
 
-## Bibliografia
-    
-- Gartner, Inc. (2025). *Forecast: Internet of Things — Endpoints and spending*. Gartner.  
-  https://www.gartner.com/en/information-technology/insights/internet-of-things  
+<p align="center">
+  <img src="" alt="Web app screen 1"/>
+</p>
 
-- Statista. (2024). *Smart home - Worldwide*.  
-  https://www.statista.com/outlook/dmo/smart-home/worldwide  
+<p align="center">
+  <img src="" alt="Web app screen 2"/>
+</p>
 
-- International Data Corporation (IDC). (2024). *Worldwide Internet of Things forecast*. IDC.  
-  https://www.idc.com/getdoc.jsp?containerId=prUS  
+<p align="center">
+  <img src="" alt="Web app screen 3"/>
+</p>
 
-- McKinsey & Company. (2023). *The state of smart homes*.  
-  https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights  
+<p align="center">
+  <img src="" alt="Web app screen 4"/>
+</p>
 
-- Deloitte. (2024). *Connected consumer survey*. Deloitte Insights.  
-  https://www2.deloitte.com/global/en/insights/industry/technology/connected-consumer-survey.html  
+<p align="center">
+  <img src="" alt="Web app screen 5"/>
+</p>
 
-- Food and Agriculture Organization of the United Nations (FAO). (2023). *Food loss and waste database*.  
-  https://www.fao.org/platform-food-loss-waste  
+<br>
 
-- World Bank. (2023). *Urban consumption patterns*.  
-  https://www.worldbank.org/en/topic/urbandevelopment  
+##### 6.2.1.6. Services Documentation Evidence for Sprint Review
 
-- Google. (2023). *Material design guidelines*.  
-  https://material.io/design  
+En este Sprint se logró documentar con **OpenAPI** los endpoints correspondientes a las funcionalidades implementadas. La documentación incluye detalles técnicos de los servicios consumidos por la aplicación móvil, como los verbos HTTP, parámetros de entrada y respuestas esperadas, permitiendo una mejor comprensión e integración de la app con la API.
 
-- Nielsen Norman Group. (2022). *Mobile UX and notification behavior*.  
-  https://www.nngroup.com/articles/mobile-notifications  
+| Endpoint                            | Acción                              | Verbo HTTP | Sintaxis de llamada                | Parámetros o Peticiones                                                                                                                              | Ejemplo de Response                                                                                                                                                                              | URL de Documentación                                     |
+| ----------------------------------- | ----------------------------------- | ---------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- |
+| /api/auth/login                     | Autenticación                       | POST       | api/auth/login                     | `{"email": "string", "password": "string"}`                                                                                                          | `{"accessToken": "string", "refreshToken": "string"}`                                                                                                                                            | http://localhost:8080/api/auth/login                     |
+| /api/auth/register                  | Registro de usuario                 | POST       | api/auth/register                  | `{"email": "string", "firstName": "string", "lastName": "string", "password": "string"}`                                                             | `{"userId": "string", "message": "Usuario registrado exitosamente"}`                                                                                                                             | http://localhost:8080/api/auth/register                  |
+| /api/v1/dispensers                  | Registrar dispensador               | POST       | api/v1/dispensers                  | `{"name": "string", "userId": "string", "grainType": "string", "maxCapacityG": "float"}`                                                             | `{"dispenserId": "string", "message": "Dispensador registrado"}`                                                                                                                                 | http://localhost:8080/api/v1/dispensers                  |
+| /api/v1/dispensers/{id}             | Actualizar dispensador              | PUT        | api/v1/dispensers/{id}             | `{"name": "string", "grainType": "string", "maxCapacityG": "float"}`                                                                                 | `{"dispenserId": "string", "message": "Dispensador actualizado"}`                                                                                                                                | http://localhost:8080/api/v1/dispensers/{id}             |
+| /api/v1/dispensers/{id}             | Obtener dispensador por ID          | GET        | api/v1/dispensers/{id}             | none                                                                                                                                                 | `{"id": "string", "name": "string", "grainType": "string", "status": "string", "maxCapacityG": "float"}`                                                                                         | http://localhost:8080/api/v1/dispensers/{id}             |
+| /api/v1/dispensers                  | Listar dispensadores por usuario    | GET        | api/v1/dispensers                  | query params: `?userId=string`                                                                                                                       | `[{"id": "string", "name": "string", "grainType": "string", "status": "string"}]`                                                                                                                | http://localhost:8080/api/v1/dispensers                  |
+| /api/v1/telemetry                   | Recibir lectura de sensores         | POST       | api/v1/telemetry                   | `{"dispenserId": "string", "weightGrams": "float", "levelPercentage": "float", "flowRateGs": "float", "rawUltrasonicCm": "float"}`                   | `{"readingId": "string", "message": "Lectura registrada"}`                                                                                                                                       | http://localhost:8080/api/v1/telemetry                   |
+| /api/v1/stock-readings              | Obtener historial de stock          | GET        | api/v1/stock-readings              | query params: `?dispenserId=string`                                                                                                                  | `[{"id": "string", "weightGrams": "float", "levelPercentage": "float", "recordedAt": "datetime"}]`                                                                                               | http://localhost:8080/api/v1/stock-readings              |
+| /api/v1/alert-configurations        | Crear configuración de alerta       | POST       | api/v1/alert-configurations        | `{"dispenserId": "string", "lowThresholdPercentage": "float", "criticalThresholdPercentage": "float"}`                                               | `{"configId": "string", "message": "Configuración creada"}`                                                                                                                                      | http://localhost:8080/api/v1/alert-configurations        |
+| /api/v1/alert-configurations/{id}   | Actualizar umbrales de alerta       | PUT        | api/v1/alert-configurations/{id}   | `{"lowThresholdPercentage": "float", "criticalThresholdPercentage": "float", "isEnabled": "boolean"}`                                                | `{"message": "Configuración actualizada"}`                                                                                                                                                       | http://localhost:8080/api/v1/alert-configurations/{id}   |
+| /api/v1/notifications               | Listar notificaciones del usuario   | GET        | api/v1/notifications               | query params: `?userId=string`                                                                                                                       | `[{"id": "string", "type": "string", "title": "string", "messageBody": "string", "isRead": "boolean"}]`                                                                                          | http://localhost:8080/api/v1/notifications               |
+| /api/v1/notifications/{id}/read     | Marcar notificación como leída      | PUT        | api/v1/notifications/{id}/read     | none                                                                                                                                                 | `{"message": "Notificación marcada como leída"}`                                                                                                                                                 | http://localhost:8080/api/v1/notifications/{id}/read     |
+| /api/v1/caregiver-subscriptions     | Vincular cuidador a familiar        | POST       | api/v1/caregiver-subscriptions     | `{"caregiverId": "string", "monitoredUserId": "string", "alertConfigId": "string"}`                                                                  | `{"subscriptionId": "string", "message": "Suscripción creada"}`                                                                                                                                  | http://localhost:8080/api/v1/caregiver-subscriptions     |
+| /api/v1/caregiver-subscriptions/{id}| Desactivar suscripción de cuidador  | DELETE     | api/v1/caregiver-subscriptions/{id}| none                                                                                                                                                 | `{"message": "Suscripción desactivada"}`                                                                                                                                                         | http://localhost:8080/api/v1/caregiver-subscriptions/{id}|
 
-- Institute of Electrical and Electronics Engineers (IEEE). (2023). *IoT systems and sensor integration*.  
-  https://ieeexplore.ieee.org  
+<br>
 
-- Microsoft. (2024). *IoT architecture guide*.  
-  https://learn.microsoft.com/en-us/azure/architecture/iot  
+##### 6.2.1.7. Software Deployment Evidence for Sprint Review
+
+En esta sección se presenta la Evidencia de Despliegue del Software, verificando que el incremento desarrollado durante el sprint ha sido implementado y se encuentra accesible en el entorno de destino para su revisión final.
+
+<br>
+
+###### Landing Page
+
+A continuación, se muestran las evidencias del despliegue del landing page hecho en HTML, CSS y JS usando la biblioteca Bootstrap y publicado mediante Netlify.
+
+🔗 **Enlace en vivo:** [https://comforting-pony-e834fe.netlify.app/](https://comforting-pony-e834fe.netlify.app/)
+
+<br>
+
+**Hero Section** — Vista representativa que busca llamar la atención del usuario.
+
+<p align="center">
+  <img src="" alt="Hero Section desplegada"/>
+</p>
+
+<br>
+
+**Services** — Sección donde se muestran las funcionalidades clave de DispenXCore.
+
+<p align="center">
+  <img src="" alt="Services desplegada"/>
+</p>
+
+<br>
+
+**Testimonials** — Sección donde se muestran testimonios de usuarios reales.
+
+<p align="center">
+  <img src="" alt="Testimonials desplegada"/>
+</p>
+
+<br>
+
+**Contact** — Sección en la cual el usuario puede contactar con el equipo de **DispenXCore**.
+
+<p align="center">
+  <img src="" alt="Contact desplegada"/>
+</p>
+
+<br>
+
+**Footer** — Sección donde se ven los enlaces rápidos y las redes sociales.
+
+<p align="center">
+  <img src="" alt="Footer desplegada"/>
+</p>
+
+<br>
+
+###### Web Application
+
+A continuación, se muestran las evidencias del despliegue de la aplicación web desarrollada en Angular.
+
+<p align="center">
+  <img src="" alt="Web app deploy 1"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Web app deploy 2"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Web app deploy 3"/>
+</p>
+
+<br>
+
+##### 6.2.1.8. Team Collaboration Insights during Sprint
+
+En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo** durante el sprint, detallando las dinámicas de trabajo y las lecciones clave identificadas para la mejora continua del proceso.
+
+| Alumno                              | Actividad                                     |
+| ----------------------------------- | --------------------------------------------- |
+| Bastidas Bastidas, Diego Martin     | Figma Design, Backend                         |
+| Cardenas Minaya, Ricardo Fernando   | Figma Design, Prototyping, Frontend           |
+| Dominguez Vargas, Rafael Alexander  | Figma Design, Frontend                        |
+| Escobar Palomino, Sebastian Matias  | Figma Design, Frontend                        |
+| Muñiz Huayanca, Percy Alonso        | Landing Page Deployment, Figma Design, Backend|
+
+<br>
+
+###### Evidencias de colaboración — Report
+
+<p align="center">
+  <img src="" alt="Collaboration report 1"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Collaboration report 2"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Collaboration report 3"/>
+</p>
+
+<br>
+
+###### Evidencias de colaboración — Landing Page
+
+<p align="center">
+  <img src="" alt="Collaboration landing 1"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Collaboration landing 2"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Collaboration landing 3"/>
+</p>
+
+<br>
+
+###### Evidencias de colaboración — Web Application
+
+<p align="center">
+  <img src="" alt="Collaboration web 1"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Collaboration web 2"/>
+</p>
+
+<p align="center">
+  <img src="" alt="Collaboration web 3"/>
+</p>
+
+<br>
+
+---
+
+<br>
+
+## Bibliografía
+
+- Gartner, Inc. (2025). *Forecast: Internet of Things — Endpoints and spending*. Gartner.
+  https://www.gartner.com/en/information-technology/insights/internet-of-things
+
+- Statista. (2024). *Smart home — Worldwide*.
+  https://www.statista.com/outlook/dmo/smart-home/worldwide
+
+- International Data Corporation (IDC). (2024). *Worldwide Internet of Things forecast*. IDC.
+  https://www.idc.com/getdoc.jsp?containerId=prUS
+
+- McKinsey & Company. (2023). *The state of smart homes*.
+  https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights
+
+- Deloitte. (2024). *Connected consumer survey*. Deloitte Insights.
+  https://www2.deloitte.com/global/en/insights/industry/technology/connected-consumer-survey.html
+
+- Food and Agriculture Organization of the United Nations (FAO). (2023). *Food loss and waste database*.
+  https://www.fao.org/platform-food-loss-waste
+
+- World Bank. (2023). *Urban consumption patterns*.
+  https://www.worldbank.org/en/topic/urbandevelopment
+
+- Google. (2023). *Material design guidelines*.
+  https://material.io/design
+
+- Nielsen Norman Group. (2022). *Mobile UX and notification behavior*.
+  https://www.nngroup.com/articles/mobile-notifications
+
+- Institute of Electrical and Electronics Engineers (IEEE). (2023). *IoT systems and sensor integration*.
+  https://ieeexplore.ieee.org
+
+- Microsoft. (2024). *IoT architecture guide*.
+  https://learn.microsoft.com/en-us/azure/architecture/iot
