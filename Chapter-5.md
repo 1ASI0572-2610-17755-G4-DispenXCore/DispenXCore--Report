@@ -1,7 +1,98 @@
 ## **Capítulo V: Solution Software Design** 
 
-- **5.1. Style Guidelines**
-    - **5.1.1. General Style Guidelines**
+
+### 5.1. Style Guidelines
+
+En esta sección se definen los lineamientos visuales y de comunicación que guían el diseño de la solución DispenXCore. Estas guías garantizan una identidad coherente, accesible y reconocible en todos los entornos donde se manifiesta el producto: la landing page informativa, la aplicación web en Angular, la aplicación móvil en Flutter y la interfaz embebida del dispositivo IoT. El propósito es transmitir confianza tecnológica, precisión y cercanía con el usuario, alineando la experiencia visual con la misión de la startup: facilitar la gestión inteligente de suministros mediante el Internet de las Cosas.
+
+#### 5.1.1. General Style Guidelines
+
+**Nombre y Logotipo**
+
+El nombre DispenXCore transmite precisión, tecnología y control central, reflejando la propuesta de la startup Los Guerreros Z de digitalizar la gestión de suministros a granel mediante IoT. La palabra se compone de tres conceptos clave: *Dispen* hace referencia al dispensador físico, *X* representa la triple validación de sensores (peso, nivel y flujo) que diferencia al producto, y *Core* alude al núcleo inteligente que centraliza la información del ecosistema. El logotipo de DispenXCore está compuesto por un símbolo y un logotipo tipográfico, donde el ícono combina elementos de tecnología y gestión de inventario, representando la conectividad IoT y el monitoreo de stock en tiempo real.
+
+El diseño general es limpio, minimalista y moderno, asegurando una identidad visual fácil de reconocer y adaptable a distintos entornos digitales, como aplicaciones móviles, dashboards web y dispositivos embebidos. El conjunto visual busca inspirar confianza, precisión y tranquilidad, alineado con la misión de la marca: transformar la alacena tradicional en un sistema inteligente y conectado que anticipe las necesidades del usuario.
+
+<p align="center">
+  <img src="assets/logo-dispenxcore.png" alt="Logotipo DispenXCore" width="400"/>
+</p>
+
+**Tono de Comunicación**
+
+El tono de comunicación de DispenXCore será humano, confiable, técnico y cercano. Se evita el lenguaje excesivamente complejo o frío, priorizando una comunicación clara y accesible para usuarios de distintos perfiles, desde entusiastas de la domótica hasta cuidadores de adultos mayores. El mensaje de la marca debe proyectar control, anticipación y tranquilidad, actuando como un asistente inteligente que acompaña al usuario en la gestión cotidiana de sus suministros sin perder la calidez del trato humano.
+
+**Colors**
+
+La identidad visual de DispenXCore se basa en una paleta de azules oscuros, teal y celestes, que representa confianza, tecnología y precisión, al mismo tiempo que evoca una sensación de modernidad y bienestar. El uso del contraste entre el azul profundo (Primary) y el teal vibrante (Secondary) simboliza la integración entre lo estructurado y lo dinámico, mostrando la conexión entre el hardware preciso y la experiencia digital fluida. Los colores secundarios neutros aportan claridad, equilibrio visual y legibilidad en interfaces densas en datos como dashboards de consumo.
+
+| Rol | Hex | Uso principal |
+|-----|-----|----------------|
+| Primary | `#1E293B` | Cabeceras, navegación principal, textos destacados |
+| Secondary | `#14B8A6` | Acciones positivas, confirmaciones, indicadores de stock saludable |
+| Tertiary | `#38BDF8` | Elementos interactivos, enlaces, gráficos de telemetría |
+| Neutral | `#F8FAFC` | Fondos, superficies, contenedores |
+| Alert Critical | `#EF4444` | Alertas de stock crítico, errores |
+| Alert Warning | `#F59E0B` | Alertas preventivas de stock bajo |
+
+<p align="center">
+  <img src="assets/paleta-colores.png" alt="Paleta de colores DispenXCore" width="600"/>
+</p>
+
+**Typography**
+
+La tipografía principal de DispenXCore es **Inter**, elegida por su claridad, modernidad y excelente legibilidad en pantallas de distintos tamaños y resoluciones. Su estructura geométrica y limpia refleja la precisión tecnológica del proyecto, mientras que su amplia variedad de pesos permite establecer jerarquías visuales claras tanto en dashboards de datos como en notificaciones móviles. Los títulos usan un peso bold o semibold, los subtítulos un peso medium, y el texto regular se mantiene ligero y cómodo de leer.
+
+<p align="center">
+  <img src="assets/typography.png" alt="Paleta de colores DispenXCore" width="600"/>
+</p>
+
+**Spacing**
+
+El sistema de espaciado en la interfaz de DispenXCore prioriza la legibilidad y la claridad visual, especialmente importante en dashboards donde se muestran múltiples indicadores de stock simultáneamente. Se aplican márgenes amplios (20 px) entre secciones principales, padding de 16–18 px en botones y elementos interactivos, y un interlineado de 1.5x en textos largos. Este enfoque garantiza una experiencia ordenada y fluida, evitando la saturación visual cuando el usuario monitorea varios dispensadores a la vez.
+
+**Íconos de la aplicación**
+
+Los íconos de DispenXCore son minimalistas, coherentes y de trazo redondeado, alineados con la identidad tecnológica y cercana del logotipo. Su diseño utiliza la paleta azul-teal-celeste para mantener una apariencia homogénea en toda la interfaz. Cada ícono tiene un propósito funcional claro dentro del ecosistema: gestión de dispensadores, monitoreo de stock, alertas, telemetría y administración de cuidadores. Su consistencia visual refuerza la confianza del usuario y facilita la comprensión inmediata de las acciones disponibles dentro de la app.
+
+| Ícono | Significado |
+|-------|-------------|
+| 🏠 | Inicio / Dashboard |
+| 📦 | Dispensador |
+| 🌾 | Tipo de grano (arroz, azúcar, legumbres) |
+| 📊 | Estadísticas de consumo |
+| 🔔 | Notificaciones |
+| ⚠️ | Alerta de stock bajo |
+| 🚨 | Alerta crítica / agotamiento |
+| 📡 | Telemetría / sensores |
+| ⚖️ | Peso (celda de carga) |
+| 📏 | Nivel (sensor ultrasónico) |
+| 💧 | Flujo granular (sensor IR) |
+| 👤 | Usuario / perfil |
+| 👨‍👩‍👧 | Familiar monitoreado (cuidador) |
+| ➕ | Añadir dispensador |
+| ⚙️ | Configuración / umbrales |
+| ✏️ | Editar |
+| ✅ | Confirmación / stock saludable |
+| 🔋 | Estado de batería del dispositivo |
+| 📶 | Conectividad Wi-Fi |
+
+**Lenguaje aplicado**
+
+El lenguaje de DispenXCore es claro, directo y orientado a la acción, diseñado para inspirar confianza tanto en usuarios tecnológicos como en cuidadores con menor familiaridad digital. Se evita el uso excesivo de tecnicismos del dominio IoT, priorizando frases cortas que comuniquen estado e intención: *"Arroz al 15%"*, *"Reponer pronto"*, *"Todo en orden"*. La app y la web comunican con una voz que acompaña y anticipa, reflejando la visión de la startup: transformar la gestión manual de la alacena en una experiencia inteligente y preventiva.
+
+**Consistencia**
+
+DispenXCore mantiene consistencia visual y comunicativa en todas sus plataformas: landing page, aplicación web en Angular, aplicación móvil en Flutter y la interfaz embebida del dispositivo IoT. El uso uniforme del contraste azul oscuro–teal, la tipografía Inter y los íconos minimalistas crea una identidad reconocible y confiable. Esta coherencia asegura que el usuario, ya sea que esté configurando un umbral desde el celular o revisando un gráfico de consumo en el navegador, perciba el mismo ecosistema tecnológico, sólido y empático.
+
+**Simplicidad**
+
+El diseño prioriza la simplicidad y funcionalidad, eliminando elementos innecesarios y destacando solo la información relevante para la toma de decisiones: nivel actual de stock, alertas activas y próximas acciones recomendadas. El objetivo es que cualquier usuario, independientemente de su edad o experiencia tecnológica, pueda comprender el estado de su alacena en menos de cinco segundos. La simplicidad refuerza la misión de DispenXCore: hacer que la tecnología del cuidado doméstico sea accesible y proactiva.
+
+**Comunicación**
+
+El sistema de comunicación visual de DispenXCore incluye confirmaciones visuales y auditivas al realizar acciones importantes, como vincular un nuevo dispensador, configurar un umbral de alerta o recibir una notificación de stock crítico. Estos elementos generan confianza y seguridad operativa, garantizando que el usuario siempre sepa que el sistema está activo, midiendo y atento al estado real de sus suministros. Cada interacción busca transmitir control, anticipación y tranquilidad.
+
+---
     - **5.1.2. Web, Mobile and IoT Style Guidelines**
 
 <hr class="page-break">
