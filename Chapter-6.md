@@ -121,11 +121,11 @@
 
         1. Ingresamos a netlify, y seleccionamos import git
 <p align="center">
-  <img src="assets/paso1.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso1.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
         2. Elegimos importar de github un proyecto
 <p align="center">
-  <img src="assets/paso2.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso2.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
         3. Configuramos o enlazamos netlify con github
 <p align="center">
@@ -133,27 +133,27 @@
 </p>
         4. Seleccionamos nuestro repositorio
 <p align="center">
-  <img src="assets/paso4.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso4.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
         5  . Seleccionamos el repositorio del landing page
 <p align="center">
-  <img src="assets/paso5.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso5.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
         6. Definimos el nombre de nuestro link
 <p align="center">
-  <img src="assets/paso6.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso6.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
         7. Definimos variables y le damos a deploy
 <p align="center">
-  <img src="assets/paso7.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso7.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
         8. Ingresamos a nuestro link
 <p align="center">
-  <img src="assets/paso8.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso8.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
         9. Ingresamos a nuestra pag
 <p align="center">
-  <img src="assets/paso9.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso9.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
 
       **Enlace del Landing Page:** []()
