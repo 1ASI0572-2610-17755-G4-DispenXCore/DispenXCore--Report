@@ -92,8 +92,72 @@ El diseño prioriza la simplicidad y funcionalidad, eliminando elementos inneces
 
 El sistema de comunicación visual de DispenXCore incluye confirmaciones visuales y auditivas al realizar acciones importantes, como vincular un nuevo dispensador, configurar un umbral de alerta o recibir una notificación de stock crítico. Estos elementos generan confianza y seguridad operativa, garantizando que el usuario siempre sepa que el sistema está activo, midiendo y atento al estado real de sus suministros. Cada interacción busca transmitir control, anticipación y tranquilidad.
 
----
+--
     - **5.1.2. Web, Mobile and IoT Style Guidelines**
+    **Diseño general**
+
+El diseño en los entornos web, móvil e IoT de DispenXCore mantiene una identidad visual uniforme, priorizando la claridad, accesibilidad y consistencia. Todos los componentes siguen la misma línea estética basada en la paleta azul oscuro, teal y celeste, acompañada de tonos neutros (blanco, gris y negro suave) para garantizar una presentación limpia, moderna y profesional, ideal para la visualización de datos de telemetría.
+
+El objetivo es que la experiencia del usuario sea fluida y coherente, sin importar el dispositivo o entorno desde el cual interactúe con la plataforma: navegador web (Angular), aplicación móvil (Flutter) o el propio dispositivo IoT (ESP32) en la alacena.
+
+**Colores y degradados**
+
+La paleta principal de DispenXCore se centra en azules oscuros y tonos teal/celeste para reflejar confianza, tecnología y precisión. El uso de contrastes entre el `#1E293B` y los acentos `#14B8A6` / `#38BDF8` crea una apariencia dinámica y moderna, sin perder sobriedad ni legibilidad. Los colores semánticos (rojo para crítico, ámbar para advertencia) están reservados exclusivamente para estados del sistema, evitando su uso decorativo.
+<p align="center">
+  <img src="feature/chapter5/styles/paleta-colores.png" alt="Paleta de colores DispenXCore" width="600"/>
+</p>
+
+**Aplicación por entorno:**
+
+- **Web (Angular):** uso de tonos planos con acentos teal en cabeceras, botones de acción y secciones destacadas del dashboard de telemetría. Fondos neutros para resaltar gráficos de consumo.
+- **Móvil (Flutter):** colores planos con acentos teal y celeste para mejorar contraste y legibilidad en pantallas pequeñas. Las notificaciones push de stock crítico usan el rojo como ícono distintivo.
+- **IoT (ESP32 / display embebido):** uso del azul principal y blanco para retroiluminación o pantallas LED, complementado por celeste para indicadores de estado, manteniendo una lectura clara incluso en entornos con poca luz como la cocina.
+
+**Tipografía**
+
+Se utiliza la tipografía **Inter** en todos los entornos, asegurando una experiencia legible y moderna en cualquier dispositivo. Su diseño geométrico y limpio transmite precisión y profesionalismo, ideal para productos tecnológicos enfocados en el monitoreo de datos en tiempo real. En la web se aprovechan los pesos mayores para encabezados de dashboards, mientras que en el móvil se priorizan los pesos regular y medium para reducir la carga visual en pantallas reducidas.
+
+<p align="center">
+  <img src="feature/chapter5/styles/typography.png" alt="Paleta de colores DispenXCore" width="600"/>
+</p>
+
+**Componentes visuales**
+
+Los elementos visuales de DispenXCore comparten una estética minimalista y funcional. Se prioriza la simplicidad para facilitar la interacción, especialmente en usuarios cuidadores que necesitan reaccionar rápido ante alertas críticas.
+
+Principales componentes:
+
+- **Botones:** bordes redondeados, fondo teal (`#14B8A6`) para acciones primarias y azul oscuro (`#1E293B`) para acciones secundarias. Texto blanco.
+- **Tarjetas de stock:** fondo blanco o gris claro, sombras suaves, barra de progreso lateral que indica el nivel actual del dispensador.
+- **Alertas y notificaciones:** color teal para confirmaciones, ámbar para alertas preventivas y rojo para alertas críticas de agotamiento.
+- **Gráficos de consumo:** líneas finas en teal o celeste sobre fondo neutro, con tooltips claros que muestran el peso exacto en gramos y la fecha de la lectura.
+- **Inputs y formularios:** bordes redondeados, foco en celeste (`#38BDF8`), validación inline para configuración de umbrales.
+
+
+<p align="center">
+  <img src="feature/chapter5/styles/buttons.png" alt="Paleta de colores DispenXCore" width="600"/>
+</p>
+
+**Diseño responsivo**
+
+El diseño es completamente adaptable y mantiene su coherencia visual en todos los dispositivos. Los elementos se ajustan según el entorno:
+
+- **Web:** estructura modular con grid de tarjetas, sidebar de navegación y secciones amplias para gráficos detallados de consumo histórico.
+- **Móvil:** diseño vertical, tarjetas apiladas, botones amplios y navegación táctil optimizada para el monitoreo rápido y la atención inmediata de notificaciones push.
+- **IoT:** interfaz reducida con elementos esenciales (porcentaje de stock, estado de conexión, tipo de grano), priorizando claridad y reacción inmediata ante alertas de nivel crítico.
+
+**Interacción y usabilidad**
+
+El sistema de diseño de DispenXCore se centra en la experiencia del usuario. Cada interacción debe generar claridad, confianza y sensación de control sobre el inventario.
+
+Principios de interacción:
+
+- **Retroalimentación inmediata:** cambios de color o microanimaciones al interactuar con botones, sliders de umbral o íconos del dashboard.
+- **Estados visuales claros:** diferenciación inequívoca entre stock saludable (teal), stock bajo (ámbar) y stock crítico (rojo).
+- **Animaciones suaves:** transiciones ligeras entre pantallas y actualizaciones de stock para dar sensación de fluidez y tiempo real.
+- **Iconografía uniforme:** íconos redondeados, minimalistas, en azul oscuro o teal sobre fondo blanco o neutro.
+- **Accesibilidad:** contrastes que cumplen WCAG AA, tamaños de toque mínimos de 44 px en móvil, soporte para lectores de pantalla en la app de cuidadores.
+    
 
 <hr class="page-break">
 
