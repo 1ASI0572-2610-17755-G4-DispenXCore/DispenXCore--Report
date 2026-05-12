@@ -92,8 +92,9 @@ El diseño prioriza la simplicidad y funcionalidad, eliminando elementos inneces
 
 El sistema de comunicación visual de DispenXCore incluye confirmaciones visuales y auditivas al realizar acciones importantes, como vincular un nuevo dispensador, configurar un umbral de alerta o recibir una notificación de stock crítico. Estos elementos generan confianza y seguridad operativa, garantizando que el usuario siempre sepa que el sistema está activo, midiendo y atento al estado real de sus suministros. Cada interacción busca transmitir control, anticipación y tranquilidad.
 
---
-    - **5.1.2. Web, Mobile and IoT Style Guidelines**
+    
+    
+  - **5.1.2. Web, Mobile and IoT Style Guidelines**
     **Diseño general**
 
 El diseño en los entornos web, móvil e IoT de DispenXCore mantiene una identidad visual uniforme, priorizando la claridad, accesibilidad y consistencia. Todos los componentes siguen la misma línea estética basada en la paleta azul oscuro, teal y celeste, acompañada de tonos neutros (blanco, gris y negro suave) para garantizar una presentación limpia, moderna y profesional, ideal para la visualización de datos de telemetría.
