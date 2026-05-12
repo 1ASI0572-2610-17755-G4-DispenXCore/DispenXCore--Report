@@ -14,7 +14,7 @@ El nombre DispenXCore transmite precisión, tecnología y control central, refle
 El diseño general es limpio, minimalista y moderno, asegurando una identidad visual fácil de reconocer y adaptable a distintos entornos digitales, como aplicaciones móviles, dashboards web y dispositivos embebidos. El conjunto visual busca inspirar confianza, precisión y tranquilidad, alineado con la misión de la marca: transformar la alacena tradicional en un sistema inteligente y conectado que anticipe las necesidades del usuario.
 
 <p align="center">
-  <img src="assets/logo-dispenxcore.png" alt="Logotipo DispenXCore" width="400"/>
+  <img src="feature/chapter5/styles/logo-dispenxcore.png" alt="Logotipo DispenXCore" width="400"/>
 </p>
 
 **Tono de Comunicación**
@@ -35,7 +35,7 @@ La identidad visual de DispenXCore se basa en una paleta de azules oscuros, teal
 | Alert Warning | `#F59E0B` | Alertas preventivas de stock bajo |
 
 <p align="center">
-  <img src="assets/paleta-colores.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter5/styles/paleta-colores.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
 
 **Typography**
@@ -43,7 +43,7 @@ La identidad visual de DispenXCore se basa en una paleta de azules oscuros, teal
 La tipografía principal de DispenXCore es **Inter**, elegida por su claridad, modernidad y excelente legibilidad en pantallas de distintos tamaños y resoluciones. Su estructura geométrica y limpia refleja la precisión tecnológica del proyecto, mientras que su amplia variedad de pesos permite establecer jerarquías visuales claras tanto en dashboards de datos como en notificaciones móviles. Los títulos usan un peso bold o semibold, los subtítulos un peso medium, y el texto regular se mantiene ligero y cómodo de leer.
 
 <p align="center">
-  <img src="assets/typography.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter5/styles/typography.png" alt="Paleta de colores DispenXCore" width="600"/>
 </p>
 
 **Spacing**
