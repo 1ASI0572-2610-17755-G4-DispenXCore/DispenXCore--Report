@@ -119,49 +119,80 @@
       **Landing Page:**<br>
       Para el despliegue de la Landing Page, utilizaremos **Github Pages**, usando el servico integrado de enlace con GitHub.
 
-        1. Ingresamos a netlify, y seleccionamos import git
-     
-<p align="center">
-  <img src="feature/chapter-6/steps/paso1.png" alt="Paleta de colores DispenXCore" width="600"/>
-</p>
-        2. Elegimos importar de github un proyecto
-        
-<p align="center">
-  <img src="feature/chapter-6/steps/paso2.png" alt="Paleta de colores DispenXCore" width="600"/>
-</p>
-        3. Configuramos o enlazamos netlify con github
+El problema es que estás dejando el guion suelto (-) en la línea siguiente al texto — en Markdown eso convierte el texto anterior en un encabezado H2, y los H2 reinician la numeración o se renderizan raros. Por eso el "1." se ve como "a" o se descuadra.
+Te lo dejo limpio, con espaciado correcto y sin esos guiones sueltos:
+markdown### Despliegue del Landing Page en Netlify
+
+A continuación se detalla el proceso paso a paso para desplegar la landing page de DispenXCore en Netlify, integrándola con el repositorio de GitHub del proyecto.
+
+**Paso 1.** Ingresamos a Netlify y seleccionamos la opción **Import from Git**.
 
 <p align="center">
-  <img src="feature/chapter-6/steps/paso3.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso1.png" alt="Paso 1: Import from Git en Netlify" width="600"/>
 </p>
-        4. Seleccionamos nuestro repositorio
-        
-<p align="center">
-  <img src="feature/chapter-6/steps/paso4.png" alt="Paleta de colores DispenXCore" width="600"/>
-</p>
-        5  . Seleccionamos el repositorio del landing page
-        
-<p align="center">
-  <img src="feature/chapter-6/steps/paso5.png" alt="Paleta de colores DispenXCore" width="600"/>
-</p>
-        6. Definimos el nombre de nuestro link
-        
-<p align="center">
-  <img src="feature/chapter-6/steps/paso6.png" alt="Paleta de colores DispenXCore" width="600"/>
-</p>
-        7. Definimos variables y le damos a deploy
-<p align="center">
-  <img src="feature/chapter-6/steps/paso7.png" alt="Paleta de colores DispenXCore" width="600"/>
-</p>
-        8. Ingresamos a nuestro link
+
+&nbsp;
+
+**Paso 2.** Elegimos importar un proyecto desde **GitHub**.
 
 <p align="center">
-  <img src="feature/chapter-6/steps/paso8.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso2.png" alt="Paso 2: Selección de GitHub como origen" width="600"/>
 </p>
-        9. Ingresamos a nuestra pag
-        
+
+&nbsp;
+
+**Paso 3.** Configuramos o enlazamos Netlify con nuestra cuenta de GitHub.
+
 <p align="center">
-  <img src="feature/chapter-6/steps/paso9.png" alt="Paleta de colores DispenXCore" width="600"/>
+  <img src="feature/chapter-6/steps/paso3.png" alt="Paso 3: Autorización de Netlify con GitHub" width="600"/>
+</p>
+
+&nbsp;
+
+**Paso 4.** Seleccionamos la organización donde se encuentra nuestro repositorio.
+
+<p align="center">
+  <img src="feature/chapter-6/steps/paso4.png" alt="Paso 4: Selección de la organización" width="600"/>
+</p>
+
+&nbsp;
+
+**Paso 5.** Seleccionamos el repositorio correspondiente al landing page de DispenXCore.
+
+<p align="center">
+  <img src="feature/chapter-6/steps/paso5.png" alt="Paso 5: Selección del repositorio del landing page" width="600"/>
+</p>
+
+&nbsp;
+
+**Paso 6.** Definimos el nombre del subdominio que tendrá nuestro sitio publicado.
+
+<p align="center">
+  <img src="feature/chapter-6/steps/paso6.png" alt="Paso 6: Definición del nombre del sitio" width="600"/>
+</p>
+
+&nbsp;
+
+**Paso 7.** Configuramos las variables de entorno necesarias y presionamos **Deploy**.
+
+<p align="center">
+  <img src="feature/chapter-6/steps/paso7.png" alt="Paso 7: Configuración de variables y despliegue" width="600"/>
+</p>
+
+&nbsp;
+
+**Paso 8.** Una vez finalizado el despliegue, ingresamos al enlace generado por Netlify.
+
+<p align="center">
+  <img src="feature/chapter-6/steps/paso8.png" alt="Paso 8: Acceso al enlace generado" width="600"/>
+</p>
+
+&nbsp;
+
+**Paso 9.** Verificamos el funcionamiento correcto de la landing page publicada.
+
+<p align="center">
+  <img src="feature/chapter-6/steps/paso9.png" alt="Paso 9: Verificación de la landing page" width="600"/>
 </p>
 
       **Enlace del Landing Page:** []()
