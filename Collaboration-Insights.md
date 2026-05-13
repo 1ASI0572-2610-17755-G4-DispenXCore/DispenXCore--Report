@@ -2,7 +2,7 @@
 
 Enlace de la organización para el reporte del proyecto: [https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report)
 
-TB1:
+AV1:
 
 <img src="./Collaboration-Insights/Insight1.png">
 
