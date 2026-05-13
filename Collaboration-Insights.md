@@ -12,8 +12,8 @@ AV1:
 
 TB1:
 
-<img src="https://i.imgur.com/GayLv6c.png">
+<img src="./Collaboration-Insights/Insight4.png">
 
-<img src="https://i.imgur.com/EbthsH4.png">
+<img src="./Collaboration-Insights/Insight5.png">
 
-<img src="https://i.imgur.com/XGaIT1e.png">
+<img src="./Collaboration-Insights/Insight6.png">
