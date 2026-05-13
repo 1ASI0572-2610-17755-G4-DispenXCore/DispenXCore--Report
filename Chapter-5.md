@@ -510,11 +510,15 @@ Prototyping: https://www.figma.com/proto/9zfoLcEEgnm15cXfdElAv6/Prototyping?node
 
 Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc_edu_pe/IQD95BReG4PVTIdWSt4Xts5IATR2tJSg7a6IYBVbzCr34Po?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OwGYah
 
+ <hr class="page-break">
+
 - **5.6. IoT Device Design**
 
     En esta sección presentamos el diseño y la implementación del dispositivo IoT desarrollado en Wokwi para DispenXCore. El sistema integra cuatro sensores principales: un sensor de temperatura y humedad DHT22, una celda de carga con módulo HX711 para medición de peso, y un sensor ultrasónico HC-SR04 para medición de nivel. Los datos son visualizados en tiempo real a través de una pantalla LCD 20x4. <br>
     El sistema cuenta con un módulo de alertas mediante buzzer que se activa en dos condiciones críticas: cuando el peso desciende por debajo de 0.5 kg, indicando que el dispensador está casi vacío, y cuando la humedad supera el 70%, lo que podría comprometer la calidad del producto almacenado. <br>
     La simulación fue desarrollada en Wokwi con un ESP32, permitiendo validar el comportamiento del firmware antes de pasar a la implementación física del dispositivo.
+
+     <hr class="page-break">
 
     ##### Prototipo en funcionamiento
     ![MockupScheduleCreate](./feature/chapter5/wokwi_1.png)
@@ -523,9 +527,13 @@ Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc
 
     ![MockupScheduleCreate](./feature/chapter5/wokwi_2.png)
 
+     <hr class="page-break">
+
     ##### Cuando el peso es menor a 0.5 kg
 
     ![MockupScheduleCreate](./feature/chapter5/wokwi_3.png)
+
+    <hr class="page-break">
 
     ##### Codigo de wokwi
 
