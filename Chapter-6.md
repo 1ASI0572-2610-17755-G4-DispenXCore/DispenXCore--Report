@@ -248,7 +248,50 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
 
 <br>
 
----
+**Paso 1.** Iniciar la creación del proyecto.
+
+<p align="center">
+  <img src="https://i.imgur.com/qOO3Jdk.png" alt="Paso 1: Import from Git en Netlify" width="600"/>
+</p>
+
+<br>
+
+**Paso 2.** Autorizar y seleccionar la organización
+
+<p align="center">
+  <img src="https://i.imgur.com/OiIGt1p.png" alt="Paso 2: Selección de GitHub como origen" width="600"/>
+</p>
+
+<br>
+
+**Paso 3.** Configurar el acceso a los repositorios
+
+<p align="center">
+  <img src="https://i.imgur.com/5VcU1jt.png" alt="Paso 3: Autorización de Netlify con GitHub" width="600"/>
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/oHvqYHU.png" alt="Paso 3: Autorización de Netlify con GitHub" width="600"/>
+</p>
+
+<br>
+
+**Paso 4.** Configurar parámetros de despliegue
+
+<p align="center">
+  <img src="https://i.imgur.com/3ceaHLi.png" alt="Paso 4: Selección de la organización" width="600"/>
+</p>
+
+<br>
+
+**Paso 5.** Verificación final
+<p align="center">
+  <img src="https://i.imgur.com/tUAibBX.png" alt="Paso 5: Selección del repositorio del landing page" width="600"/>
+</p>
+
+<br>
+
+<br>
 
 <br>
 
