@@ -437,3 +437,118 @@ Prototyping: https://www.figma.com/proto/9zfoLcEEgnm15cXfdElAv6/Prototyping?node
 Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc_edu_pe/IQD95BReG4PVTIdWSt4Xts5IATR2tJSg7a6IYBVbzCr34Po?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OwGYah
 
 - **5.6. IoT Device Design**
+
+    En esta sección presentamos el diseño y la implementación del dispositivo IoT desarrollado en Wokwi para DispenXCore. El sistema integra cuatro sensores principales: un sensor de temperatura y humedad DHT22, una celda de carga con módulo HX711 para medición de peso, y un sensor ultrasónico HC-SR04 para medición de nivel. Los datos son visualizados en tiempo real a través de una pantalla LCD 20x4. <br>
+    El sistema cuenta con un módulo de alertas mediante buzzer que se activa en dos condiciones críticas: cuando el peso desciende por debajo de 0.5 kg, indicando que el dispensador está casi vacío, y cuando la humedad supera el 70%, lo que podría comprometer la calidad del producto almacenado. <br>
+    La simulación fue desarrollada en Wokwi con un ESP32, permitiendo validar el comportamiento del firmware antes de pasar a la implementación física del dispositivo.
+
+    ##### Prototipo en funcionamiento
+    ![MockupScheduleCreate](./feature/chapter5/wokwi_1.png)
+
+    ##### Cuando la humedad es mayor a 70
+
+    ![MockupScheduleCreate](./feature/chapter5/wokwi_2.png)
+
+    ##### Cuando el peso es menor a 0.5 kg
+
+    ![MockupScheduleCreate](./feature/chapter5/wokwi_3.png)
+
+    ##### Codigo de wokwi
+
+    ```cpp
+    #include <DHT.h>
+    #include <HX711.h>
+    #include <Wire.h>
+    #include <LiquidCrystal_I2C.h>
+
+    #define DHTPIN 13
+    #define DHTTYPE DHT22
+    #define BUZZER_PIN 19
+    #define TRIG_PIN 26
+    #define ECHO_PIN 27
+    #define HX_DT 4
+    #define HX_SCK 5
+
+    DHT dht(DHTPIN, DHTTYPE);
+    HX711 scale;
+    LiquidCrystal_I2C lcd(0x27, 20, 4);
+
+    #define PESO_MINIMO    0.5 
+    #define HUMEDAD_MAXIMA 70.0
+
+    void setup() {
+    Serial.begin(115200);
+    delay(1000);
+
+    pinMode(BUZZER_PIN, OUTPUT);
+    pinMode(TRIG_PIN, OUTPUT);
+    pinMode(ECHO_PIN, INPUT);
+
+    dht.begin();
+
+    scale.begin(HX_DT, HX_SCK);
+    scale.set_scale(420);
+    scale.tare();
+
+    lcd.init();
+    lcd.backlight();
+    lcd.setCursor(0, 0);
+    lcd.print("Dispenser Ready");
+    delay(2000);
+    lcd.clear();
+    }
+
+    float readDistance() {
+    digitalWrite(TRIG_PIN, LOW);
+    delayMicroseconds(2);
+    digitalWrite(TRIG_PIN, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TRIG_PIN, LOW);
+    long duration = pulseIn(ECHO_PIN, HIGH);
+    return duration * 0.034 / 2;
+    }
+
+    void loop() {
+    float weight      = scale.get_units(10);
+    float humidity    = dht.readHumidity();
+    float temperature = dht.readTemperature();
+    float distance    = readDistance();
+
+    if (isnan(humidity) || isnan(temperature)) {
+        Serial.println("ERROR: DHT no responde");
+        return;
+    }
+
+    Serial.println("==========");
+    Serial.print("Temperatura: "); Serial.print(temperature); Serial.println(" C");
+    Serial.print("Humedad: ");     Serial.print(humidity);    Serial.println(" %");
+    Serial.print("Peso: ");        Serial.print(weight, 2);   Serial.println(" kg");
+    Serial.print("Distancia: ");   Serial.print(distance);    Serial.println(" cm");
+
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print("Temp:"); lcd.print(temperature, 1); lcd.print(" C");
+    lcd.setCursor(0, 1);
+    lcd.print("Hum:"); lcd.print(humidity, 1); lcd.print(" %");
+    lcd.setCursor(0, 2);
+    lcd.print("Peso:"); lcd.print(weight, 2); lcd.print(" kg");
+    lcd.setCursor(0, 3);
+    lcd.print("Nivel:"); lcd.print(distance, 1); lcd.print(" cm");
+
+    if (humidity > 70.0) {
+        tone(BUZZER_PIN, 1000);
+        Serial.println("ALERTA: HUMEDAD ALTA");
+    } else if (weight < 0.5) {
+        tone(BUZZER_PIN, 1500);
+        Serial.println("ALERTA: PESO BAJO");
+    } else {
+        noTone(BUZZER_PIN);
+    }
+
+    delay(2000);
+    }
+    ```
+
+    ##### Wokwi link: 
+
+    https://wokwi.com/projects/463881485998547969
