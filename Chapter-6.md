@@ -385,43 +385,59 @@ En este primer Sprint, veremos los archivos `.feature` relacionados a los user t
 <table>
   <thead>
     <tr>
-      <th>Repository</th>
-      <th>Branch</th>
-      <th>Commit ID</th>
-      <th>Commit Message</th>
-      <th>Commit Message Body</th>
-      <th>Committed on (Date)</th>
+      <th>&nbsp;&nbsp;&nbsp;<br>Repository&nbsp;&nbsp;&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;<br>Branch&nbsp;&nbsp;&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;<br>Commit ID&nbsp;&nbsp;&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message&nbsp;&nbsp;&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;<br>Commit<br>&nbsp;&nbsp;&nbsp;<br>Message Body&nbsp;&nbsp;&nbsp;</th>
+      <th>&nbsp;&nbsp;&nbsp;<br>Committed on&nbsp;&nbsp;&nbsp;(Date)&nbsp;&nbsp;&nbsp;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">
-        <a href="https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report" target="_blank" rel="noopener noreferrer">
-          DispenXCore--Report
+      <td rowspan="7">
+        <a href="https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features" target="_blank" rel="noopener noreferrer">
+          https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features
         </a>
       </td>
-      <td>main</td>
-      <td>número de commit</td>
-      <td>nombre del commit</td>
-      <td>mensaje del commit</td>
-      <td>fecha del commit</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>d8b5cca</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>feat: add epic story 05</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>Add epic story 05</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>13/05/2026</td>
     </tr>
     <tr>
-      <td>main</td>
-      <td>número de commit</td>
-      <td>nombre del commit</td>
-      <td>mensaje del commit</td>
-      <td>fecha del commit</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>673a263</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>feat: add epic story 04</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>Add epic story 04</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>13/05/2026</td>
     </tr>
     <tr>
-      <td>main</td>
-      <td>número de commit</td>
-      <td>nombre del commit</td>
-      <td>mensaje del commit</td>
-      <td>fecha del commit</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>c71ee8d</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>feat: add epic story 03</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>Add epic story 03</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>13/05/2026</td>
     </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>893bf09</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>feat: add epic story 02</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>Add epic story 02</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>13/05/2026</td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;<br>main&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>cfd73e5</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>feat: add epic story 01</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>Add epic story 01</td>
+      <td>&nbsp;&nbsp;&nbsp;<br>13/05/2026</td>
+    </tr>
+
   </tbody>
 </table>
+
 
 <br>
 
@@ -677,3 +693,14 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
 
 - Microsoft. (2024). *IoT architecture guide*.
   https://learn.microsoft.com/en-us/azure/architecture/iot
+
+
+## **Anexos**
+
+  **LANDING PAGE:** [LANDING PAGE](https://comforting-pony-e834fe.netlify.app/)
+
+  **PPT DEL PROYECTO:** [PPT](https://www.canva.com/design/DAGzQEpBtMs/zjEr8_HDH_y-mSaGu_7O3A/edit) 
+
+  **VIDEO DEL PROYECTO:** [VIDEO](https://acortar.link/se3cmV)
+
+  **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
