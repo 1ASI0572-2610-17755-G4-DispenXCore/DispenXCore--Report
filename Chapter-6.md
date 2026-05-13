@@ -349,10 +349,32 @@ En el primer sprint, el equipo enfocó su trabajo en crear una landing page que 
 
 En esta sección se presenta la Evidencia de Desarrollo completada durante el sprint, demostrando el trabajo funcional realizado y los incrementos del producto listos para ser inspeccionados y validados en la Sprint Review.
 
-| Repository  | Branch    | Commit Id | Commit Message     | Committed By | Committed On |
-| ----------- | --------- | --------- | ------------------ | ------------ | ------------ |
-| Repositorio | chapter-1 | commit    | nombre del commit  | usuario      | fecha        |
-| Repositorio | chapter-1 | commit    | nombre del commit  | usuario      | fecha        |
+| Repository | Branch | Commit Id | Commit Message | Committed By | Committed On |
+|---|---|---|---|---|---|
+| 1ASI0572-2610-17755-G4-DispenXCore | main | e0722ca | Initial commit | alomsoo | May 07, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | b1de01f | added message to read.me | alomsoo | May 07, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 0c9186c | feat: landing page DispenXCore | alomsoo | May 07, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 4c7916f | Merge pull request #1 from 1ASI0572-2610-17755-G4-DispenXCore/feature/landing-page | alomsoo | May 07, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 5b9d73e | feat: add support | sebasepe | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | d6ab4df | feat: add settings | sebasepe | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | a2482c5 | Merge pull request #2 from 1ASI0572-2610-17755-G4-DispenXCore/feature/Support-Dashboard-Settings | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | db582de | feat(iamUser): Add user conection and | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 3072183 | Merge pull request #3 from 1ASI0572-2610-17755-G4-DispenXCore/feature/iam-user | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 99e0d68 | Merge pull request #4 from 1ASI0572-2610-17755-G4-DispenXCore/develop | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 858d82e | feat(iamUser): Add json-server dependency and update db.json structure | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 2f2b504 | Merge pull request #5 from 1ASI0572-2610-17755-G4-DispenXCore/feature/iam-user | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 4237f05 | Merge pull request #6 from 1ASI0572-2610-17755-G4-DispenXCore/develop | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 806d0c0 | feat(iamUser): Update environment configurations and budget limits | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 9f711c5 | Merge pull request #7 from 1ASI0572-2610-17755-G4-DispenXCore/feature/iam-user | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 9d6ef65 | Merge pull request #8 from 1ASI0572-2610-17755-G4-DispenXCore/develop | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | eeef321 | feat(iamUser): Add package.json with json-server configuration | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 30be5d6 | Merge pull request #9 from 1ASI0572-2610-17755-G4-DispenXCore/feature/iam-user | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 43557e4 | Merge pull request #10 from 1ASI0572-2610-17755-G4-DispenXCore/develop | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | c7ba0e1 | feat(iamUser): Update supply types to uppercase and modify db.json structure | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 63fabe7 | feat(iamUser): Refactor components and implement NotFound and Support pages | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | 996e9a5 | Merge pull request #11 from 1ASI0572-2610-17755-G4-DispenXCore/feature/iam-user | Radv2005 | May 12, 2026 |
+| 1ASI0572-2610-17755-G4-DispenXCore | main | fa6ee40 | Merge pull request #12 from 1ASI0572-2610-17755-G4-DispenXCore/develop | Radv2005 | May 12, 2026 |
+|
 
 <br>
 
