@@ -289,6 +289,9 @@ A continuación se detalla el proceso paso a paso para desplegar la landing page
   <img src="https://i.imgur.com/tUAibBX.png" alt="Paso 5: Selección del repositorio del landing page" width="600"/>
 </p>
 
+##### Enlace del Web Applicationm
+
+🔗 **[https://dispenxcore.netlify.app/](https://dispenxcore.netlify.app/)**
 <br>
 
 <br>
