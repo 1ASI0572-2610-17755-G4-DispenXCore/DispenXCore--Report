@@ -416,73 +416,102 @@ A continuación, se presentan las evidencias de la implementación de la landing
 **LPS 01 — Hero Section**
 
 <p align="center">
-  <img src="" alt="Hero Section"/>
+  <img src="https://i.imgur.com/zotNqEo.png" alt="Hero Section"/>
 </p>
 
 <br>
 
-**LPS 02 — Sección Sobre el Producto**
+**LPS 02 — Problema**
 
 <p align="center">
-  <img src="" alt="About the product"/>
+  <img src="https://i.imgur.com/UJQGp0F.png" alt="About the product"/>
 </p>
 
 <br>
 
-**LPS 03 — Servicios y Características**
+**LPS 03 — Solución al problema**
 
 <p align="center">
-  <img src="" alt="Services"/>
+  <img src="https://i.imgur.com/mIUbX7Y.png" alt="Services"/>
 </p>
 
 <br>
 
-**LPS 04 — Testimonios de Usuarios**
+**LPS 04 — Características**
 
 <p align="center">
-  <img src="" alt="Testimonials"/>
+  <img src="https://i.imgur.com/6WnoumP.png" alt="Testimonials"/>
 </p>
 
 <br>
 
-**LPS 05 — Sección de Contacto**
+**LPS 05 — Para quien es?**
 
 <p align="center">
-  <img src="" alt="Contact"/>
+  <img src="https://i.imgur.com/DPbgwpQ.png" alt="Contact"/>
 </p>
 
 <br>
 
-**LPS 07 — Footer con Enlaces Útiles**
+**LPS 07 — Nuestro Equipo**
 
 <p align="center">
-  <img src="" alt="Footer"/>
+  <img src="https://i.imgur.com/0kgTgFw.png" alt="Footer"/>
+</p>
+
+<br>
+
+**LPS 08 — Preguntas Frecuentes**
+
+<p align="center">
+  <img src="https://i.imgur.com/TmqTwZf.png" alt="Footer"/>
+</p>
+
+<br>
+
+**LPS 09 — Contactos**
+
+<p align="center">
+  <img src="https://i.imgur.com/nQjAJiu.png" alt="Footer"/>
 </p>
 
 <br>
 
 ###### Web Application
-
+**WA 01 — Sign In**
 <p align="center">
-  <img src="" alt="Web app screen 1"/>
+  <img src="https://i.imgur.com/RWyXGZp.png" alt="Web app screen 1"/>
 </p>
 
+**WA 02 — Sign Up**
 <p align="center">
-  <img src="" alt="Web app screen 2"/>
+  <img src="https://i.imgur.com/Sq2HXyg.png" alt="Web app screen 2"/>
 </p>
 
+**WA 03 — Dashboard**
 <p align="center">
-  <img src="" alt="Web app screen 3"/>
+  <img src="https://i.imgur.com/MsFNk7D.png" alt="Web app screen 3"/>
 </p>
 
+**WA 04 — Schedule**
 <p align="center">
-  <img src="" alt="Web app screen 4"/>
+  <img src="https://i.imgur.com/mIwQrFW.png" alt="Web app screen 4"/>
 </p>
 
+**WA 05 — History**
 <p align="center">
-  <img src="" alt="Web app screen 5"/>
+  <img src="https://i.imgur.com/s39boQc.png" alt="Web app screen 5"/>
 </p>
 
+**WA 06 — Settings**
+<p align="center">
+  <img src="https://i.imgur.com/AKIxkpG.png" alt="Web app screen 5"/>
+</p>
+
+**WA 07 — Support**
+<p align="center">
+  <img src="https://i.imgur.com/PJ3iBiY.png" alt="Web app screen 5"/>
+</p>
 <br>
 
 ##### 6.2.1.6. Services Documentation Evidence for Sprint Review
@@ -516,66 +545,27 @@ En esta sección se presenta la Evidencia de Despliegue del Software, verificand
 
 ###### Landing Page
 
-A continuación, se muestran las evidencias del despliegue del landing page hecho en HTML, CSS y JS usando la biblioteca Bootstrap y publicado mediante Netlify.
+A continuación, se proporcina el enlace del landing page
 
-🔗 **Enlace en vivo:** [https://comforting-pony-e834fe.netlify.app/](https://comforting-pony-e834fe.netlify.app/)
-
-<br>
-
-**Hero Section** — Vista representativa que busca llamar la atención del usuario.
-
-<p align="center">
-  <img src="" alt="Hero Section desplegada"/>
-</p>
+🔗 **Enlace:** [https://comforting-pony-e834fe.netlify.app/](https://comforting-pony-e834fe.netlify.app/)
 
 <br>
 
-**Services** — Sección donde se muestran las funcionalidades clave de DispenXCore.
-
 <p align="center">
-  <img src="" alt="Services desplegada"/>
-</p>
-
-<br>
-
-**Testimonials** — Sección donde se muestran testimonios de usuarios reales.
-
-<p align="center">
-  <img src="" alt="Testimonials desplegada"/>
-</p>
-
-<br>
-
-**Contact** — Sección en la cual el usuario puede contactar con el equipo de **DispenXCore**.
-
-<p align="center">
-  <img src="" alt="Contact desplegada"/>
-</p>
-
-<br>
-
-**Footer** — Sección donde se ven los enlaces rápidos y las redes sociales.
-
-<p align="center">
-  <img src="" alt="Footer desplegada"/>
+  <img src="https://i.imgur.com/rx1xRHY.png" alt="Hero Section desplegada"/>
 </p>
 
 <br>
 
 ###### Web Application
 
-A continuación, se muestran las evidencias del despliegue de la aplicación web desarrollada en Angular.
+A continuación, se proporcina el enlace de despliegue del web application  
 
-<p align="center">
-  <img src="" alt="Web app deploy 1"/>
-</p>
+🔗 **Enlace:** [https://dispenxcore.netlify.app/](https://dispenxcore.netlify.app/)
 
+<br>
 <p align="center">
-  <img src="" alt="Web app deploy 2"/>
-</p>
-
-<p align="center">
-  <img src="" alt="Web app deploy 3"/>
+  <img src="https://i.imgur.com/FHNG8jA.png" alt="Web app deploy 1"/>
 </p>
 
 <br>
@@ -597,31 +587,24 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
 ###### Evidencias de colaboración — Report
 
 <p align="center">
-  <img src="" alt="Collaboration report 1"/>
+  <img src="https://i.imgur.com/gkaUpXA.png" alt="Collaboration report 1"/>
 </p>
 
 <p align="center">
-  <img src="" alt="Collaboration report 2"/>
+  <img src="https://i.imgur.com/T3SeC3t.png" alt="Collaboration report 2"/>
 </p>
 
-<p align="center">
-  <img src="" alt="Collaboration report 3"/>
-</p>
 
 <br>
 
 ###### Evidencias de colaboración — Landing Page
 
 <p align="center">
-  <img src="" alt="Collaboration landing 1"/>
+  <img src="https://i.imgur.com/jyGDh2I.png" alt="Collaboration landing 1"/>
 </p>
 
 <p align="center">
-  <img src="" alt="Collaboration landing 2"/>
-</p>
-
-<p align="center">
-  <img src="" alt="Collaboration landing 3"/>
+  <img src="https://i.imgur.com/SzE4rtX.png" alt="Collaboration landing 2"/>
 </p>
 
 <br>
@@ -629,20 +612,12 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
 ###### Evidencias de colaboración — Web Application
 
 <p align="center">
-  <img src="" alt="Collaboration web 1"/>
+  <img src="https://i.imgur.com/GE7PYPi.png" alt="Collaboration web 1"/>
 </p>
 
 <p align="center">
-  <img src="" alt="Collaboration web 2"/>
+  <img src="https://i.imgur.com/ocP0ZIB.png" alt="Collaboration web 2"/>
 </p>
-
-<p align="center">
-  <img src="" alt="Collaboration web 3"/>
-</p>
-
-<br>
-
----
 
 <br>
 
