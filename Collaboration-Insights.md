@@ -12,12 +12,8 @@ AV1:
 
 TB1:
 
-<img src="">
+<img src="https://i.imgur.com/GayLv6c.png">
 
-<img src="">
+<img src="https://i.imgur.com/EbthsH4.png">
 
-<img src="">
-
-
-
-
+<img src="https://i.imgur.com/XGaIT1e.png">
