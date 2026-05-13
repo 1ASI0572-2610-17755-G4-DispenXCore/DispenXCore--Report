@@ -246,9 +246,83 @@ Principios de interacción:
 - **5.3. Landing Page UI Design**
     - **5.3.1. Landing Page Wireframe**
 
+        ##### Hero Banner Section
+
+        ![Hero Banner](./feature/chapter5/landing_page/wireframes/1_Hero_Section.png)
+
+        ##### Features Section
+
+        ![Features](./feature/chapter5/landing_page/wireframes/2_Section_Problem.png)
+
+        ##### Services Section
+
+        ![Services](./feature/chapter5/landing_page/wireframes/3_Section_Solution.png)
+
+        ##### Product Overview Section
+
+        ![Product Overview](./feature/chapter5/landing_page/wireframes/4_Section_Carac.png)
+
+        ##### Target Users Section
+
+        ![Target Users](./feature/chapter5/landing_page/wireframes/5_Section_Carac.png)
+
+        ##### Team Section
+
+        ![Team](./feature/chapter5/landing_page/wireframes/6_Section_Team.png)
+
+        ##### FAQ Section
+
+        ![FAQ](./feature/chapter5/landing_page/wireframes/7_Section_Faq.png)
+
+        ##### Contact Us Section
+
+        ![Contact Us](./feature/chapter5/landing_page/wireframes/8_Section_Contact.png)
+
+        ##### Footer Section
+
+        ![Footer](./feature/chapter5/landing_page/wireframes/10_Section_Footer.png)
+
+
+
     <hr class="page-break">
 
     - **5.3.2. Landing Page Mock-up**
+
+        ##### Hero Banner Section
+
+        ![Hero Banner](./feature/chapter5/landing_page/muckups/1_Hero_Section.png)
+
+        ##### Features Section
+
+        ![Features](./feature/chapter5/landing_page/muckups/2_Section_Problem.png)
+
+        ##### Services Section
+
+        ![Services](./feature/chapter5/landing_page/muckups/3_Section_Solution.png)
+
+        ##### Product Overview Section
+
+        ![Product Overview](./feature/chapter5/landing_page/muckups/4_Section_Carac.png)
+
+        ##### Target Users Section
+
+        ![Target Users](./feature/chapter5/landing_page/muckups/5_Section_Users.png)
+
+        ##### Team Section
+
+        ![Team](./feature/chapter5/landing_page/muckups/6_Section_Team.png)
+
+        ##### FAQ Section
+
+        ![FAQ](./feature/chapter5/landing_page/muckups/7_Section_Faq.png)
+
+        ##### Contact Us Section
+
+        ![Contact Us](./feature/chapter5/landing_page/muckups/8_Section_Contact.png)
+
+        ##### Footer Section
+
+        ![Footer](./feature/chapter5/landing_page/muckups/9_Section_Footer.png)
 
 <hr class="page-break">
 
