@@ -709,6 +709,67 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
 
 ##### 6.2.2.1. Sprint Planning 2
 
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 2</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Contexto de Planificación del Sprint</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Fecha</td>
+    <td>05/06/2026</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Hora</td>
+    <td>22:00 horas (GMT-5)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Lugar</td>
+    <td>Reunión virtual (Discord)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Elaborado por</td>
+    <td>Dominguez Vargas, Rafael Alexander</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Participantes</td>
+    <td>
+      Bastidas Bastidas, Diego Martin<br>
+      Cardenas Minaya, Ricardo Fernando<br>
+      Dominguez Vargas, Rafael Alexander<br>
+      Escobar Palomino, Sebastian Matias<br>
+      Muñiz Huayanca, Percy Alonso
+    </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Sprint Review 1</td>
+    <td>Al tratarse del primer sprint de desarrollo, no existe un resumen de revisión anterior.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Retrospectiva del Sprint 1</td>
+    <td>Como este es el sprint inicial, todavía no se han detectado oportunidades de mejora concretas en el proceso.</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Objetivo del Sprint e Historias de Usuario</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Objetivo del Sprint 1</td>
+    <td>Buscamos desarrollar una landing page que comunique de forma visual y comprensible las funcionalidades y beneficios de DispenXCore, generando en los visitantes una percepción inicial sólida sobre la plataforma y su propuesta de valor. Esta página facilitará la exploración de sus secciones para que los usuarios entiendan cómo nuestra solución vincula eficazmente la gestión inteligente de suministros con sus hogares. Además, se pondrá en valor la app web por su uso práctico y accesible, permitiendo la interacción con la plataforma desde cualquier ubicación. Validaremos este enfoque analizando la navegación de los visitantes en la landing page y su uso de la integración con la app web.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Velocidad del Sprint 1</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Total de Story Points</td>
+    <td>20</td>
+  </tr>
+</table>
+
+<br>
+
 ##### 6.2.2.2. Aspect Leaders and Collaborators
 
 ##### 6.2.2.3. Sprint Backlog 2
