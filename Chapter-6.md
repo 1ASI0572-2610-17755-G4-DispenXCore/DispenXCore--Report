@@ -745,21 +745,23 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
   </tr>
   <tr>
     <td style="font-weight: bold;">Resumen de la Sprint Review 1</td>
-    <td>Al tratarse del primer sprint de desarrollo, no existe un resumen de revisión anterior.</td>
+    <td>En el sprint anterior se desarrolló la landing page del proyecto, enfocada en la presentación visual y funcional de DispenXCore, permitiendo comunicar de manera clara su propuesta de valor. Asimismo, se avanzó parcialmente en la web application, implementando estructuras base de navegación y componentes iniciales. Como parte del progreso técnico del proyecto, también se incorporó el módulo de edge computing del sistema y se realizaron pruebas en Wokwi para la simulación del entorno IoT. Adicionalmente, se logró el despliegue del backend en un entorno funcional y su correcta integración con la aplicación web, permitiendo la comunicación entre servicios y validación de endpoints principales.</td>
   </tr>
   <tr>
-    <td style="font-weight: bold;">Resumen de la Retrospectiva del Sprint 1</td>
-    <td>Como este es el sprint inicial, todavía no se han detectado oportunidades de mejora concretas en el proceso.</td>
+    <td style="font-weight: bold;">Resumen de la Retrospectiva del Sprint 2</td>
+    <td> Durante este primer sprint, el equipo logró establecer una base funcional del sistema DispenXCore, completando el desarrollo de la landing page, avances iniciales en la web application, la integración del backend desplegado y la incorporación del entorno de simulación IoT mediante Wokwi, junto con el módulo edge del sistema. 
+A nivel de proceso, se identificó que la coordinación entre los componentes frontend, backend e IoT requiere una mayor sincronización para evitar retrabajos y asegurar una integración más fluida en futuras iteraciones. Asimismo, se evidenció la necesidad de mejorar la definición temprana de interfaces y contratos de API para reducir fricciones en la integración.
+Como mejora continua, se propone reforzar la planificación técnica del sprint, establecer puntos de integración más frecuentes y validar progresivamente los módulos (frontend, backend y edge) para garantizar estabilidad en cada incremento.</td>
   </tr>
   <tr>
     <td colspan="2" style="font-weight: bold;">Objetivo del Sprint e Historias de Usuario</td>
   </tr>
   <tr>
-    <td style="font-weight: bold;">Objetivo del Sprint 1</td>
-    <td>Buscamos desarrollar una landing page que comunique de forma visual y comprensible las funcionalidades y beneficios de DispenXCore, generando en los visitantes una percepción inicial sólida sobre la plataforma y su propuesta de valor. Esta página facilitará la exploración de sus secciones para que los usuarios entiendan cómo nuestra solución vincula eficazmente la gestión inteligente de suministros con sus hogares. Además, se pondrá en valor la app web por su uso práctico y accesible, permitiendo la interacción con la plataforma desde cualquier ubicación. Validaremos este enfoque analizando la navegación de los visitantes en la landing page y su uso de la integración con la app web.</td>
+    <td style="font-weight: bold;">Objetivo del Sprint 2</td>
+    <td>El objetivo de este sprint fue implementar la base funcional y visual del sistema DispenXCore, iniciando con el desarrollo de la landing page como punto de entrada informativo del proyecto y avanzando en la construcción de la aplicación web. Asimismo, se integró el backend desplegado para habilitar la comunicación entre los distintos módulos del sistema. Como parte de la arquitectura IoT, se incorporó la simulación del entorno mediante Wokwi y el componente edge del sistema, permitiendo validar el flujo de datos entre dispositivos y la plataforma. Este sprint sienta las bases de la arquitectura completa del sistema, asegurando conectividad, despliegue y validación inicial de los servicios..</td>
   </tr>
   <tr>
-    <td style="font-weight: bold;">Velocidad del Sprint 1</td>
+    <td style="font-weight: bold;">Velocidad del Sprint 2</td>
     <td>20</td>
   </tr>
   <tr>
