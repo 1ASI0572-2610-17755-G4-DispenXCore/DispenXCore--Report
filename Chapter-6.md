@@ -1084,10 +1084,14 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 ## **Anexos**
 
-  **LANDING PAGE:** [LANDING PAGE](https://comforting-pony-e834fe.netlify.app/)
+  **LANDING PAGE:** [LANDING PAGE](https://landing-dispenxcore.netlify.app/)
+
+  **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
+
+  **Backend:** [BACKEND](https://dispenxcore-backend-production.up.railway.app/swagger/index.html)
 
   **PPT DEL PROYECTO:** [PPT](https://www.canva.com/design/DAGzQEpBtMs/zjEr8_HDH_y-mSaGu_7O3A/edit) 
 
   **VIDEO DEL PROYECTO:** [VIDEO](https://acortar.link/se3cmV)
 
-  **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
+
