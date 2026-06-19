@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 ## **Capítulo I:  Presentación**
 - **1.1. Startup Profile**<br>
   Esta sección incluye la descripción del Startup y los perfiles de los integrantes del equipo.
@@ -7,7 +9,7 @@
    - <p><strong>Misión:</strong> Facilitar la gestión de suministros básicos mediante el uso de tecnología IoT, proporcionando herramientas precisas y accesibles que automaticen el monitoreo de inventarios para evitar el desabastecimiento y mejorar la eficiencia en el consumo de insumos tanto en hogares como en comercios.</p>
 
    - <p><strong>Visión:</strong> Consolidarnos como la solución líder en la digitalización de suministros a granel, transformando las alacenas tradicionales en un ecosistema inteligente y conectado que anticipe las necesidades del usuario a través de un control de inventario predictivo y multiplataforma.</p>
-   <hr class="page-break">
+   <div style="page-break-after: always;"></div>
 
 
     - **1.1.2. Perfiles de integrantes del equipo**
@@ -26,7 +28,7 @@
 
 <br>
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 - **1.2. Solution Profile**
   <br>En esta sección se describe de manera general la solución propuesta, detallando nuestros objetivos principales, funcionalidades clave y el valor que aportamos tanto a los usuarios finales como a los técnicos.<br><br>
@@ -46,8 +48,8 @@
         A través de un hardware basado en microcontroladores que procesa datos de tres sensores (ultrasonido, celda de carga e infrarrojo). Esta información se transmite vía Wi-Fi a un backend desarrollado en C#, que gestiona la lógica de alertas. El usuario interactúa mediante una Landing Page informativa, una aplicación web en Angular para estadísticas de consumo y una aplicación móvil en Flutter dedicada a la recepción de notificaciones push en tiempo real.
         - How much (¿Cuánto?)<br>
         El modelo de negocio se basa en la venta del dispositivo físico (hardware) con acceso vitalicio a las funciones básicas de notificación en la app móvil. Para el segmento comercial, se proyecta un modelo de suscripción opcional que ofrezca reportes avanzados de consumo y predicción de compras basada en datos. Este enfoque permite una entrada competitiva al mercado, asegurando la sostenibilidad del proyecto mediante la escalabilidad de servicios digitales.
-  <hr class="page-break">
 
+  <div style="page-break-after: always;"></div>
 
 
     - **1.2.2 Lean UX Process**
@@ -132,7 +134,7 @@
       **Sabremos que esta hipótesis es cierta**  
       Cuando las encuestas de satisfacción muestren que más del 85% de los usuarios consideran la información de la app como "altamente precisa".
 
-      <hr class="page-break">
+      <div style="page-break-after: always;"></div>
 
       - **1.2.2.4. Lean UX Canvas**
       <br>A continuación, se presenta nuestro Lean UX Canvas de DispenXCore, la herramienta que utilizamos para alinear nuestros objetivos de negocio con las necesidades del usuario, definiendo las hipótesis clave y el plan para su validación iterativa.<br><br>
@@ -143,7 +145,7 @@
 
 
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
 
 - **1.3. Segmentos objetivo**
   <br>A continuación, se describen los dos segmentos objetivo principales que abordará la plataforma, detallando sus características, necesidades específicas y motivaciones de uso.<br><br>
