@@ -19,3 +19,11 @@ TB1:
 <img src="./Collaboration-Insights/Insight5.png">
 
 <img src="./Collaboration-Insights/Insight6.png">
+
+AV2:
+
+<img src="https://i.imgur.com/yOuEdtE.png">
+
+<img src="https://i.imgur.com/khwejGs.png">
+
+<img src="https://i.imgur.com/wUitRjk.png">
