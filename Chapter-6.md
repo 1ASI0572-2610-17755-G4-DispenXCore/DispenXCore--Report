@@ -899,10 +899,128 @@ En esta sección se muestra la evidencia de desarrollo realizada durante el spri
 
 
 ##### 6.2.2.8. Software Deployment Evidence for Sprint Review
-<!-- Github -->
+<br>
+En esta sección se presenta la Evidencia de Despliegue del Software del sistema DispenXCore, detallando de forma secuencial cada etapa del proceso de despliegue en la plataforma Railway, así como la configuración de la base de datos y la validación del backend mediante Swagger.<br><br>
+
+<br>
+En esta sección se presenta la Evidencia de Despliegue del Software del sistema DispenXCore, mostrando el proceso completo de configuración y despliegue en la plataforma Railway, así como la validación del backend y la base de datos en entorno cloud.<br><br>
+
+---
+
+### **1. Creación del proyecto en Railway**
+
+Se observa la pantalla inicial de Railway donde se crea un nuevo proyecto. En esta etapa se selecciona el punto de inicio para el despliegue del sistema DispenXCore, habilitando la infraestructura cloud donde se alojarán los servicios del backend.
+
+
+<img src="https://i.imgur.com/NtLL49a.jpeg">
+
+---
+
+### **2. Selección del repositorio desde GitHub**
+
+Se muestra la conexión del proyecto Railway con el repositorio de GitHub del backend de DispenXCore.
+
+Esta integración permite habilitar el despliegue automático (CI/CD), asegurando que cada actualización del código se refleje en el entorno de producción.
+
+
+<img src="https://i.imgur.com/LiN7Lu7.jpeg">
+
+---
+
+### **3. Configuración del proyecto y servicios asociados**
+
+En esta etapa se visualiza la configuración del proyecto en Railway, incluyendo la selección del repositorio backend y la preparación del entorno de despliegue.
+
+Aquí se define la estructura inicial del servicio que será desplegado.
+
+
+<img src="https://i.imgur.com/hVqqud9.jpeg">
+
+---
+
+### **4. Configuración del backend (Variables y despliegue)**
+
+Se observa la configuración del backend del sistema DispenXCore, donde se definen variables de entorno y parámetros de ejecución.
+
+Esto permite la correcta comunicación entre el backend y la base de datos MySQL.
+
+
+<img src="https://i.imgur.com/HchhQA5.jpeg">
+
+---
+
+### **5. Configuración de MySQL (recursos del sistema)**
+
+Se evidencia la configuración del servicio MySQL dentro de Railway, donde se asignan recursos como CPU y memoria.
+
+Esta configuración garantiza el rendimiento adecuado del sistema en producción.
+
+
+<img src="https://i.imgur.com/P4WOdym.jpeg">
+
+---
+
+### **6. Configuración avanzada del servicio MySQL**
+
+Se muestra la configuración detallada del motor MySQL, incluyendo límites de recursos, parámetros de despliegue y opciones del contenedor.
+
+Esto asegura estabilidad en el almacenamiento de datos del sistema.
+
+
+<img src="https://i.imgur.com/W5C6sHg.jpeg">
+
+---
+
+### **7. Estado del despliegue del backend (Active)**
+
+Se observa el estado del backend desplegado en Railway, el cual se encuentra en estado **Active**, indicando que el servicio está correctamente funcionando.
+
+También se muestra la URL pública del backend, permitiendo el acceso externo a la API.
+
+
+<img src="https://i.imgur.com/RxdXVc0.jpeg">
+
+---
+
+### **8. Configuración de base de datos (MySQL Tables)**
+
+Se evidencia la estructura de la base de datos del sistema DispenXCore, donde se visualizan las principales tablas del sistema como usuarios, dispositivos, dispensadores, notificaciones y alertas.
+
+Esto confirma el correcto despliegue del modelo de datos.
+
+
+<img src="https://i.imgur.com/mw7e7an.jpeg">
+
+---
+
+### **9. Validación del backend mediante Swagger**
+
+Finalmente, se valida el despliegue del backend mediante Swagger UI, donde se exponen los endpoints del sistema DispenXCore.
+
+Se observan módulos como autenticación, dispositivos, alertas y dispensadores, confirmando que la API está completamente funcional y lista para consumo.
+
+
+<img src="https://i.imgur.com/JXTAE7k.jpeg">
+
+---
 
 ##### 6.2.2.9. Team Collaboration Insights during Sprint
-<!-- Github -->
+En esta sección se presentan las reflexiones sobre la colaboración del equipo durante el sprint, describiendo las formas de trabajo adoptadas y las principales lecciones aprendidas que contribuyen a la mejora continua del proceso.
+
+**WEB APPLICATION**
+<img src="https://i.imgur.com/SqOj5sL.png">
+
+<img src="https://i.imgur.com/lVwy9sP.png">
+
+**BACKEND**
+<img src="https://i.imgur.com/6SiUeNw.png">
+
+<img src="https://i.imgur.com/yv3tHI7.png">
+
+**MOBILE FRONTEND**
+<img src="https://i.imgur.com/cjPxPO6.png">
+
+<img src="https://i.imgur.com/tBAimS0.png">
 
 ### 6.3. Validation Interviews
 En esta sección, nos enfocamos en identificar los principales puntos de mejora de nuestra solución IoT, DispenXCore, para lograr una mayor efectividad en el monitoreo inteligente de suministros en los hogares. Esta fase crucial del proyecto implica un diálogo directo con nuestros usuarios principales (adultos mayores, cuidadores y administradores de suministros) para recopilar sus opiniones, experiencias y sugerencias a través de entrevistas de validación.
