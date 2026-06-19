@@ -14,7 +14,7 @@
       
       * **Políticas y reglas de negocio:** Se establecieron reglas de negocio para definir umbrales de alerta. Esto garantiza que las notificaciones push se envíen solo cuando el sistema detecta que el recipiente de uso ha alcanzado niveles críticos, optimizando la relevancia de las alertas para el usuario.
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **Evidencia de lo realizado en la reunión:**
     
@@ -27,7 +27,7 @@
     Paso 3: Hallando Causas
     ![Event Storming DispenXCore3](./feature/chapter-4/EventStorm3.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **4.1.1.1. Candidate Context Discovery**
           
@@ -35,7 +35,7 @@
 
     ![Event Storming DispenXCore4](./feature/chapter-4/EventStorm4.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **4.1.1.2. Domain Message Flows Modeling**
 
@@ -43,7 +43,7 @@
 
     ![Domain Flow Message DispenXCore](./feature/chapter-4/FlowMessage.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **4.1.1.3. Bounded Context Canvases** 
 
@@ -56,7 +56,7 @@
     **Notifications and Alerts**
     ![Notifications Bounded Canvas DispenXCore](./feature/chapter-4/NotificationBoundedCanvas.png)     
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
     
     **4.1.2. Context Mapping**
 
@@ -71,7 +71,7 @@
     * **Desventaja:** Requiere una alta coordinación y sincronización constante entre los tres contextos para que una alerta llegue al usuario correcto, aumentando la latencia en el procesamiento de mensajes.
     ![Option1 DispenXCore3](./feature/chapter-4/Option1.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **Opción 2: Arquitectura Basada en ACL y Shared Kernel**
 
@@ -82,7 +82,7 @@
     * **Notificaciones y Alertas** mantiene una relación de **Customer/Supplier** con el contexto de Inventario, donde el contexto de Inventario es el proveedor de los eventos de stock crítico.
     ![Option3 DispenXCore3](./feature/chapter-4/Option3.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **Opción 3: Unificación de Core y Notificaciones**
 
@@ -97,7 +97,7 @@
 
     Se eligio la **opción 2**, ya que proporciona el mejor equilibrio entre la separación de responsabilidades y la facilidad de implementación. Al implementar una **Anti-corruption Layer**, garantizamos que el software sea agnóstico a cambios en los sensores físicos, lo cual es vital para un proyecto IoT. Asimismo, el uso de un **Shared Kernel** para la identidad del usuario optimiza la entrega de alertas sin duplicar la lógica de seguridad, brindando una experiencia fluida tanto para el usuario doméstico como para el cuidador remoto.
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
     
     **4.1.3. Software Architecture** 
 
@@ -109,7 +109,7 @@
 
     ![SystemLandscape DispenXCore](./feature/chapter-4/SystemLandscape.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **4.1.3.2. Software Architecture Context Level Diagrams**
 
@@ -117,7 +117,7 @@
 
     ![SystemContext DispenXCore](./feature/chapter-4/SystemContext.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **4.1.3.3. Software Architecture Container Level Diagrams** 
 
@@ -125,7 +125,7 @@
 
     ![DiagramContainer DispenXCore](./feature/chapter-4/ContainerDiagram.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     **4.1.3.4. Software Architecture Deployment Diagrams** 
 
@@ -133,7 +133,7 @@
 
     ![DiagramDeployment DispenXcore](./feature/chapter-4/DeploymentDiagram.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
 - **4.2. Tactical-Level Domain-Driven Design** 
 - **4.2.1. Bounded Context: Inventory and Telemetry**
@@ -156,7 +156,7 @@
       | Domain Event | TelemetryReceived   | Evento publicado cada vez que el ESP32 envía una nueva lectura de sensores al backend y esta es validada correctamente.                 | Notificar al contexto de Notifications and Alerts que hay datos nuevos disponibles para evaluación de umbral. | Disparado por `Dispenser`. Escuchado por `TelemetryReceivedSubscriber`.  |
       | Domain Event | DispenserRegistered | Evento emitido cuando un usuario vincula exitosamente un nuevo dispensador a su cuenta por primera vez.                                 | Informar a otros contextos que existe un nuevo dispositivo activo en el ecosistema.                           | Publicado hacia el contexto Users and Access.                            |
 
-        <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
       **Sub-capa Service:**
 
@@ -169,7 +169,7 @@
 
       En la Interface Layer del bounded context Inventory and Telemetry se implementan los controladores, recursos y ensambladores que gestionan la comunicación entre los clientes externos (App Móvil, App Web y ESP32) y la lógica de dominio. Esta capa expone los endpoints REST necesarios para registrar dispensadores, consultar el estado del stock en tiempo real y recibir las lecturas de telemetría enviadas por el ESP32 mediante HTTP POST.
 
-        <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
       **Sub-capa REST:**
 
@@ -184,7 +184,7 @@
       | Assembler  | RegisterDispenserAssembler     | Convierte el `DispenserResource` recibido en un comando `RegisterDispenserCommand`.                  | Asegurar una transformación limpia entre los datos de la API y los comandos del dominio.                    | Usado por `DispenserController`.                         |
       | Assembler  | TelemetryFromResourceAssembler | Convierte el `TelemetryResource` recibido en un comando `ProcessTelemetryCommand`.                   | Prevenir inconsistencias al transformar los datos crudos del ESP32 a comandos de la Application Layer.     | Usado por `TelemetryController`.                         |
 
-      <div style="page-break-after: always;"></div>
+      <hr class="page-break">
 
     - **4.2.1.3. Application Layer**
 
@@ -199,7 +199,7 @@
       | CommandHandler | UpdateDispenserStatusHandler    | Ejecuta la actualización del estado operativo de un dispensador cuando el ESP32 reporta un cambio (ej. batería baja, sensor desconectado).              | Modificar el `DispenserStatus` del aggregate `Dispenser` y persistir el cambio en el repositorio.                               | Usa `DispenserRepository`.                                                           |
       | EventPublisher | DomainEventPublisher            | Componente encargado de publicar los eventos de dominio generados por los CommandHandlers hacia los contextos suscriptores.                             | Publicar eventos como `TelemetryReceived` y `DispenserRegistered` para que el contexto Notifications and Alerts pueda reaccionar.| Usado por todos los CommandHandlers de este contexto.                               |
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     - **4.2.1.4. Infrastructure Layer**
 
@@ -214,7 +214,7 @@
       | Interface | StockReadingRepository     | Interfaz que define los métodos de acceso y manipulación de datos para el aggregate `StockReading`. | Definir operaciones como `Save`, `FindByDispenserId` y `FindLatestByDispenserId` para el historial de stock.    | Definida en el dominio, implementada en esta capa.                            |
       | Class     | StockReadingRepositoryImpl | Implementación concreta de `StockReadingRepository` conectada al motor de base de datos.            | Ejecutar las operaciones de persistencia de cada lectura de sensores capturada por el ESP32.                    | Usada por `ProcessTelemetryCommandHandler`.                                   |
 
-        <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
       **Sub-capa External Services:**
 
@@ -230,21 +230,21 @@
       | EventHandler | TelemetryReceivedEventHandler   | Procesa el evento `TelemetryReceived` publicado por el `DomainEventPublisher` de este contexto.    | Retransmitir el evento hacia el contexto Notifications and Alerts para que evalúe si corresponde generar una alerta de stock. | Consume eventos del `DomainEventPublisher`. Notifica al contexto Notifications and Alerts. |
       | EventHandler | DispenserRegisteredEventHandler | Procesa el evento `DispenserRegistered` publicado al vincular un nuevo dispositivo al sistema.     | Registrar en el log de auditoría la vinculación del nuevo dispensador y notificar al contexto Users and Access si corresponde.| Consume eventos del `DomainEventPublisher`.                                         |
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     - **4.2.1.5. Bounded Context Software Architecture Component Level Diagrams**
 
       A nivel de componentes, este contexto actúa como el punto de entrada del mundo físico al sistema digital. El ESP32 envía las lecturas de los sensores al backend mediante HTTP POST cada 1-2 segundos, donde la `SensorDataACL` traduce el payload JSON crudo al modelo del dominio, protegiendo al sistema de cambios en el formato de datos del hardware. Los controladores REST reciben tanto la telemetría del ESP32 como las solicitudes de la App Móvil y Web, delegando la lógica a los CommandHandlers correspondientes. El `ProcessTelemetryCommandHandler` orquesta el cálculo de porcentaje de stock mediante el `StockLevelCalculatorService`, persiste la lectura en el repositorio y finaliza publicando el evento `TelemetryReceived` hacia el contexto de Notifications and Alerts.
       ![Domain Class Diagram Inventory and Telemetry](./feature/chapter-4/ComponentDiagramInventory.png)
 
-        <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
         - **4.2.1.6. Bounded Context Software Architecture Code Level Diagrams**
             - **4.2.1.6.1. Bounded Context Domain Layer Class Diagrams**
               En esta sección se presenta el diagrama de clases del bounded context Inventory and Telemetry. La clase `Dispenser` cumple el rol central como aggregate raíz, encapsulando el estado operativo del dispositivo físico y su relación con las lecturas de sensores. La clase `StockReading` registra cada captura de datos del ESP32, compuesta por el Value Object `SensorData` que agrupa los tres valores medidos: peso, nivel y flujo. Los Domain Events `TelemetryReceived` y `DispenserRegistered` son publicados por el aggregate `Dispenser` al detectar cambios de estado relevantes.
               ![Domain Class Diagram Inventory and Telemetry](./feature/chapter-4/ClassDiagramInventory.png)
               
-            <div style="page-break-after: always;"></div>
+            <hr class="page-break">
 
             - **4.2.1.6.2. Bounded Context Database Design Diagram**
 
@@ -301,7 +301,7 @@
               | min_flow_threshold_gs     | FLOAT     | Flujo mínimo detectable en g/s antes de considerar que el insumo está siendo dispensado.            |
               | updated_at                | TIMESTAMP | Última vez que el usuario modificó la configuración desde la app.                                    |
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     - **4.2.2. Bounded Context: Notifications and Alerts** 
 
@@ -327,7 +327,7 @@
           | Interface       | PushNotificationService  | Contrato para el envío de mensajes.           | Definir el método SendPush(targetToken, message).                     |
           | Domain Service  | AlertEvaluationService   | Compara telemetría vs umbrales.               | Lógica para decidir si una lectura de sensor merece una alerta.       |
 
-        <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
         - **4.2.2.2. Interface Layer** 
 
@@ -372,14 +372,14 @@
           | Class | AlertRepositoryImpl        | Persistencia de las alertas históricas generadas en SQL Server/PostgreSQL.     |
           | Class | NotificationRepositoryImpl | Gestión de la bandeja de entrada de mensajes del usuario.                      |
 
-        <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
         - **4.2.2.5. Bounded Context Software Architecture Component Level Diagrams**   
 
           A nivel de componentes, este contexto actúa como un Reactor. Recibe datos de telemetría (Input), los procesa contra las reglas de umbral en la base de datos (Logic) y genera una salida hacia Firebase Cloud Messaging (Output).
                      <img src="https://i.imgur.com/iltVL9e.png">
 
-        <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
         - **4.2.2.6. Bounded Context Software Architecture Code Level Diagrams** 
             - **4.2.2.6.1. Bounded Context Domain Layer Class Diagrams** 
@@ -387,7 +387,7 @@
               Modela las reglas del negocio: cómo se validan los umbrales de cada grano y cómo se vinculan las alertas con los usuarios. Es el mapa que dicta quién debe ser notificado (propietario o cuidador) ante un nivel crítico.
                      <img src="https://i.imgur.com/qGKbMLF.png">
 
-            <div style="page-break-after: always;"></div>
+            <hr class="page-break">
 
             - **4.2.2.6.2. Bounded Context Database Design Diagram**
 
@@ -448,12 +448,12 @@
               | is_active          | BOOLEAN    | Define si el cuidador tiene el permiso de monitoreo activo actualmente.    |
 
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     - **4.2.3. Bounded Context: Users and Access**    
     <br> En el bounded context User se aborda la gestión de identidad y acceso de los usuarios dentro del sistema. Este módulo garantiza la autenticación, autorización y registro seguro, mediante el manejo de credenciales, roles, tokens JWT y auditoría de eventos críticos, asegurando la integridad y trazabilidad del acceso a los servicios. <br>
       
-      - **4.2.3.1. Domain Layer**
+        - **4.2.3.1. Domain Layer**
         <br> En la Domain Layer del bounded context Users and Access se definen los modelos, comandos, eventos y servicios que encapsulan la lógica principal de identidad y autenticación. <br>
         **Sub-capa Model:**
 
@@ -474,9 +474,9 @@
           | Interface   | AuthCommandService  | Interfaz para manejar autenticación  | Establecer contrato para la lógica de autenticación      | Implementado en la capa de aplicación               |
           | Interface   | TokenService        | Interfaz para manejo de tokens       | Definir operaciones de generación y validación de tokens | Implementado en infraestructura como JwtServiceImpl |
 
-      <div style="page-break-after: always;"></div>
+            <hr class="page-break">
 
-      - **4.2.3.2. Interface Layer**
+          - **4.2.3.2. Interface Layer**
             <br> En la Interface Layer del bounded context Users and Access se implementan los controladores, recursos y validadores que gestionan la comunicación entre el cliente y la lógica de dominio mediante servicios REST. <br>
             **Sub-capa REST**
 
@@ -492,9 +492,9 @@
           | Assembler  | SignInCommandFromResourceAssembler | Convierte AuthRequestResource en SignInCommand     | Asegurar una transformación limpia entre recursos y comandos             | Usado por AuthController                    |
           | Assembler  | SignUpCommandFromResourceAssembler | Convierte RegisterRequestResource en SignUpCommand | Prevenir inconsistencias al transformar datos de recursos a comandos     | Usado por AuthController                    |
 
-      <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
-      - **4.2.3.3. Application Layer**
+        - **4.2.3.3. Application Layer**
           <br> En la Application Layer del bounded context Users and Access se gestionan los comandos y eventos que coordinan la ejecución de la lógica de autenticación y registro de usuarios dentro del sistema. <br>
           **Sub-capa Internal**
 
@@ -504,9 +504,9 @@
           | CommandHandler  | SignUpCommandHandler  | Ejecuta la lógica de registro, creando un nuevo UserAggregate, aplicando hash a la contraseña y persistiendo el usuario             | Ejecutar la lógica de registro de un usuario                                                  | Usa UserRepository                 |
           | EventPublisher  | DomainEventPublisher  | Publica eventos de dominio                                                                                                          | Publicar eventos como UserRegistered y UserSignedIn tras la ejecución de los CommandHandlers  | Usado por CommandHandlers          |
 
-      <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
-      - **4.2.3.4. Infrastructure Layer**
+        - **4.2.3.4. Infrastructure Layer**
           <br> En la Infrastructure Layer del bounded context Users and Access se implementan los componentes técnicos que soportan la persistencia, seguridad, manejo de tokens JWT, eventos y auditoría, garantizando la integración del dominio con los servicios externos y la base de datos. <br>
           **Sub-capa Repository**
 
@@ -541,9 +541,9 @@
           |-----------|----------------|-----------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------------|
           | Service   | AuditService   | Registra eventos críticos   | Mantener un registro de auditoría para trazabilidad   | Usado por CommandHandlers para registrar eventos como inicio de sesión y registro |
 
-      <div style="page-break-after: always;"></div>
+        <hr class="page-break">
 
-      - **4.2.3.5. Bounded Context Software Architecture Component Level Diagrams**
+        - **4.2.3.5. Bounded Context Software Architecture Component Level Diagrams**
           <br> En esta sección se presentan los diagramas a nivel de código del bounded context Users and Access, mostrando la estructura de clases del dominio y el diseño de la base de datos. Estos elementos reflejan cómo se modelan las entidades, relaciones y tablas que sustentan la gestión de usuarios, roles y auditoría del sistema. <br>
           
          <img src="https://imgur.com/dsxpuei.png">
@@ -555,7 +555,7 @@
               <br> En esta imagen, la clase User cumple un rol central al gestionar los atributos predeterminados del usuario, asegurando la integridad de la información básica como identificadores, credenciales y datos personales necesarios para el sistema
               <img src="https://imgur.com/wcoM6j9.png">
 
-                <div style="page-break-after: always;"></div>
+                <hr class="page-break">
 
               - **4.2.3.6.2. Bounded Context Database Design Diagram**
               <br> En esta imagen se muestra el diseño de la base de datos correspondiente al bounded context Users and Access, donde se estructuran las tablas principales para la gestión de usuarios, roles y auditorías. Este diagrama garantiza la correcta relación entre las entidades y la trazabilidad de las operaciones dentro del sistema. <br>

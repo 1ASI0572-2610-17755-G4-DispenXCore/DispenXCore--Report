@@ -1,5 +1,3 @@
-<div style="page-break-after: always;"></div>
-
 # Project Report Collaboration Insights
 
 Enlace de la organización para el reporte del proyecto: [https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report](https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Report)
