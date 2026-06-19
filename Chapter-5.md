@@ -160,7 +160,8 @@ Principios de interacción:
 - **Accesibilidad:** contrastes que cumplen WCAG AA, tamaños de toque mínimos de 44 px en móvil, soporte para lectores de pantalla en la app de cuidadores.
     
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
+
 
 - **5.2. Information Architecture**
 
@@ -178,7 +179,8 @@ Principios de interacción:
     
     <br>
     
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
     - **5.2.2. Labeling Systems**
 
@@ -210,7 +212,8 @@ Principios de interacción:
     
     <br>
     
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
     - **5.2.3. SEO Tags and Meta Tags**
     
@@ -241,7 +244,8 @@ Principios de interacción:
     4. **Planes:** Opciones de almacenamiento en la nube para el historial de inventario.
     5. **Soporte:** Ayuda técnica para la configuración del dispositivo IoT.
 
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
 - **5.3. Landing Page UI Design**
     - **5.3.1. Landing Page Wireframe**
@@ -250,33 +254,49 @@ Principios de interacción:
 
         ![Hero Banner](./feature/chapter5/landing_page/wireframes/1_Hero_Section.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### Features Section
 
         ![Features](./feature/chapter5/landing_page/wireframes/2_Section_Problem.png)
+
+        <div style="page-break-after: always;"></div>
 
         ##### Services Section
 
         ![Services](./feature/chapter5/landing_page/wireframes/3_Section_Solution.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### Product Overview Section
 
         ![Product Overview](./feature/chapter5/landing_page/wireframes/4_Section_Carac.png)
+
+        <div style="page-break-after: always;"></div>
 
         ##### Target Users Section
 
         ![Target Users](./feature/chapter5/landing_page/wireframes/5_Section_Carac.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### Team Section
 
         ![Team](./feature/chapter5/landing_page/wireframes/6_Section_Team.png)
+
+        <div style="page-break-after: always;"></div>
 
         ##### FAQ Section
 
         ![FAQ](./feature/chapter5/landing_page/wireframes/7_Section_Faq.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### Contact Us Section
 
         ![Contact Us](./feature/chapter5/landing_page/wireframes/8_Section_Contact.png)
+
+        <div style="page-break-after: always;"></div>
 
         ##### Footer Section
 
@@ -284,7 +304,8 @@ Principios de interacción:
 
 
 
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
     - **5.3.2. Landing Page Mock-up**
 
@@ -296,13 +317,19 @@ Principios de interacción:
 
         ![Features](./feature/chapter5/landing_page/muckups/2_Section_Problem.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### Services Section
 
         ![Services](./feature/chapter5/landing_page/muckups/3_Section_Solution.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### Product Overview Section
 
         ![Product Overview](./feature/chapter5/landing_page/muckups/4_Section_Carac.png)
+
+        <div style="page-break-after: always;"></div>
 
         ##### Target Users Section
 
@@ -312,19 +339,26 @@ Principios de interacción:
 
         ![Team](./feature/chapter5/landing_page/muckups/6_Section_Team.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### FAQ Section
 
         ![FAQ](./feature/chapter5/landing_page/muckups/7_Section_Faq.png)
+
+        <div style="page-break-after: always;"></div>
 
         ##### Contact Us Section
 
         ![Contact Us](./feature/chapter5/landing_page/muckups/8_Section_Contact.png)
 
+        <div style="page-break-after: always;"></div>
+
         ##### Footer Section
 
         ![Footer](./feature/chapter5/landing_page/muckups/9_Section_Footer.png)
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
+
 
 - **5.4. Applications UX/UI Design**
     - **5.4.1. Applications Wireframes**
@@ -339,7 +373,8 @@ Principios de interacción:
 
         ![Wireframe3](./feature/chapter5/Applications_Wireframes/2_Register.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Dashboard
 
@@ -349,7 +384,8 @@ Principios de interacción:
 
         ![Wireframe5](./feature/chapter5/Applications_Wireframes/4_Schedule.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### History
 
@@ -359,13 +395,15 @@ Principios de interacción:
 
         ![Wireframe7](./feature/chapter5/Applications_Wireframes/6_Settings.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Support
 
         ![Wireframe8](./feature/chapter5/Applications_Wireframes/7_Support.png)
 
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
     - **5.4.2. Applications Wireflow Diagrams**
 
@@ -387,7 +425,8 @@ Principios de interacción:
 
         ![WireflowHistory](./feature/chapter5/Applications_Wireflow_Diagrams/4_History.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Settings
 
@@ -397,7 +436,8 @@ Principios de interacción:
 
         ![WireflowSupport](./feature/chapter5/Applications_Wireflow_Diagrams/6_Support.png)
 
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
     - **5.4.3. Applications Mock-ups**
 
@@ -411,7 +451,8 @@ Principios de interacción:
 
         ![MockupRegister](./feature/chapter5/Applications_Mock-ups/2_Register.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Dashboard
 
@@ -421,7 +462,8 @@ Principios de interacción:
 
         ![MockupSchedule](./feature/chapter5/Applications_Mock-ups/4_Schedule.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Schedule Create
 
@@ -431,7 +473,8 @@ Principios de interacción:
 
         ![MockupHistory](./feature/chapter5/Applications_Mock-ups/6_History.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Settings
 
@@ -441,7 +484,8 @@ Principios de interacción:
 
         ![MockupSupport](./feature/chapter5/Applications_Mock-ups/8_Support.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Support Asked Questions
 
@@ -451,7 +495,8 @@ Principios de interacción:
 
         ![MockupSearchBox](./feature/chapter5/Applications_Mock-ups/10_Buscador.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### Perfil Configuration
 
@@ -461,7 +506,8 @@ Principios de interacción:
 
         ![MockupNotifications](./feature/chapter5/Applications_Mock-ups/12_NotificacionesLista.png)
 
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
     - **5.4.4. Applications User Flow Diagrams**
 
@@ -483,7 +529,8 @@ Principios de interacción:
 
         ![UserFlowUS003](./feature/chapter5/Applications_User_Flow_Diagrams/5_US03_Configuración_de_Umbral_de_Alerta_de_Stock_Bajo.png)
 
-        <hr class="page-break">
+        <div style="page-break-after: always;"></div>
+
 
         ##### US006 Visualizacion de Stock Actual en Panel Web
 
@@ -497,7 +544,8 @@ Principios de interacción:
 
         ![UserFlowUS015](./feature/chapter5/Applications_User_Flow_Diagrams/6_US15_Centro_de_Ayuda_y_Preguntas_Frecuentes_(FAQ).png)
 
-<hr class="page-break">
+<div style="page-break-after: always;"></div>
+
 
 - **5.5. Applications Prototyping**
 
@@ -510,7 +558,8 @@ Prototyping: https://www.figma.com/proto/9zfoLcEEgnm15cXfdElAv6/Prototyping?node
 
 Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc_edu_pe/IQD95BReG4PVTIdWSt4Xts5IATR2tJSg7a6IYBVbzCr34Po?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=OwGYah
 
- <hr class="page-break">
+ <div style="page-break-after: always;"></div>
+
 
 - **5.6. IoT Device Design**
 
@@ -518,7 +567,8 @@ Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc
     El sistema cuenta con un módulo de alertas mediante buzzer que se activa en dos condiciones críticas: cuando el peso desciende por debajo de 0.5 kg, indicando que el dispensador está casi vacío, y cuando la humedad supera el 70%, lo que podría comprometer la calidad del producto almacenado. <br>
     La simulación fue desarrollada en Wokwi con un ESP32, permitiendo validar el comportamiento del firmware antes de pasar a la implementación física del dispositivo.
 
-     <hr class="page-break">
+     <div style="page-break-after: always;"></div>
+
 
     ##### Prototipo en funcionamiento
     ![MockupScheduleCreate](./feature/chapter5/wokwi_1.png)
@@ -527,13 +577,15 @@ Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc
 
     ![MockupScheduleCreate](./feature/chapter5/wokwi_2.png)
 
-     <hr class="page-break">
+     <div style="page-break-after: always;"></div>
+
 
     ##### Cuando el peso es menor a 0.5 kg
 
     ![MockupScheduleCreate](./feature/chapter5/wokwi_3.png)
 
-    <hr class="page-break">
+    <div style="page-break-after: always;"></div>
+
 
     ##### Codigo de wokwi
 
@@ -634,3 +686,5 @@ Link del video: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202312318_upc
     ##### Wokwi link: 
 
     https://wokwi.com/projects/463881485998547969
+
+<div style="page-break-after: always;"></div>
