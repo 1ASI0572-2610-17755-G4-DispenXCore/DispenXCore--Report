@@ -775,26 +775,274 @@ Como mejora continua, se propone reforzar la planificación técnica del sprint,
 ##### 6.2.2.2. Aspect Leaders and Collaborators
 
 ##### 6.2.2.3. Sprint Backlog 2
+En el segundo sprint, el equipo se enfocó en el desarrollo de las funcionalidades principales de la Web Application, la implementación del módulo IoT con Wokwi y el edge computing, así como la integración completa con el backend. Las tareas se distribuyeron según la especialidad de cada miembro para asegurar el cumplimiento de los objetivos del sprint.
 
-##### 6.2.2.4. Development Evidence for Sprint Review
+
+| ID | Title | Description | Estimation (Hours) | Assigned To | Status |
+| --- | --- | --- | --- | --- | --- |
+| LPS01 | User Authentication Module | Implementación del registro e inicio de sesión de usuarios, con conexión al backend mediante JWT. | 5 | Bastidas Bastidas, Diego Martín | Done |
+| LPS02 | Dashboard & Dispenser List | Desarrollo del panel principal que muestra el listado de dispensadores registrados y su estado actual (conectado, nivel de grano, alertas). | 4 | Dominguez Vargas, Rafael | Done |
+| LPS03 | Dispenser Registration | Formulario para registrar un nuevo dispensador, incluyendo nombre, tipo de grano y capacidad máxima, conectado al endpoint del backend. | 3 | Cardenas Minaya, Ricardo | Done |
+| LPS04 | Real-time Telemetry View | Implementación de la vista de telemetría en tiempo real (peso, nivel y flujo) para un dispensador específico, consumiendo datos desde el backend. | 5 | Escobar Palomino, Sebastian | Done |
+| LPS05 | Alert Configuration UI | Desarrollo de la interfaz para configurar umbrales de alerta (bajo y crítico) por dispensador, conectada al endpoint de configuración. | 3 | Muñiz Huayanca, Percy | Done |
+| LPS06 | Caregiver Subscription | Pantalla para vincular un cuidador a un familiar, permitiendo la gestión de notificaciones compartidas. | 3 | Bastidas Bastidas, Diego Martín | Done |
+| LPS07 | IoT Simulation (Wokwi) | Implementación y configuración de la simulación del dispositivo IoT en Wokwi, generando datos de telemetría simulados para pruebas de integración. | 4 | Muñiz Huayanca, Percy | Done |
+| LPS08 | Edge Module Integration | Desarrollo del componente edge para procesamiento local de datos, incluyendo lógica de alertas tempranas y comunicación con el backend. | 4 | Dominguez Vargas, Rafael | Done |
+| LPS09 | Navigation & UI/UX Refinement | Mejora de la navegación entre módulos (Dashboard, Historial, Configuración, Soporte) y ajustes visuales basados en la guía de estilos. | 2 | Cardenas Minaya, Ricardo | Done |
+| LPS10 | Deployment Configuration | Configuración del despliegue continuo para la Web Application y el Landing Page en Netlify, asegurando la integración con el repositorio. | 2 | Escobar Palomino, Sebastian | Done |
+
+##### 6.2.2.4. Development Evidence for Sprint Review 
+<!-- Github -->
 
 ##### 6.2.2.5. Testing Suite Evidence for Sprint Review
+<!-- Github -->
 
 ##### 6.2.2.6. Execution Evidence for Sprint Review
+<!-- Imagenes LP, Back y ambos fronts -->
 
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
+**Documentación de Endpoints Backend**
+| Método | Endpoint | Descripción | ¿Requiere Auth? |
+|--------|----------|-------------|------------------|
+| `POST` | `/api/v1/auth/register` | Registra un nuevo usuario | No |
+| `POST` | `/api/v1/auth/login` | Inicia sesión y devuelve token JWT | No |
+| `POST` | `/api/v1/auth/logout` | Cierra sesión (simbólico) | Sí |
+| `GET` | `/api/v1/users/{id}` | Obtiene perfil de usuario por ID | Sí |
+| `PUT` | `/api/v1/users/{id}` | Actualiza nombre, apellido y foto del usuario | Sí |
+| `PATCH` | `/api/v1/users/{id}/password` | Cambia la contraseña del usuario | Sí |
+| `GET` | `/api/v1/inventario/estado` | Obtiene el estado de todos los contenedores (stock) | Sí |
+| `POST` | `/api/v1/inventario/medicion` | Registra una nueva medición (peso, nivel, flujo) | Sí |
+| `GET` | `/api/v1/alertas-stock/{contenedorId}` | Lista las alertas de un contenedor | Sí |
+| `POST` | `/api/v1/alertas-stock/evaluar` | Evalúa umbrales y envía push si aplica | Sí |
+| `GET` | `/api/v1/dispensators` | Lista todos los dispensadores | Sí |
+| `GET` | `/api/v1/dispensators/{id}` | Obtiene el estado dinámico de un dispensador (incluye `nextDispenseAt`) | Sí |
+| `POST` | `/api/v1/dispensators` | Crea un nuevo dispensador y su estado inicial | Sí |
+| `GET` | `/api/v1/schedules` | Lista horarios activos de un dispensador (query `dispensatorId`) | Sí |
+| `POST` | `/api/v1/schedules` | Crea un nuevo horario de dispensación | Sí |
+| `GET` | `/api/v1/schedules/{id}` | Obtiene un horario específico | Sí |
+| `PUT` | `/api/v1/schedules/{id}` | Actualiza un horario existente | Sí |
+| `DELETE` | `/api/v1/schedules/{id}` | Elimina un horario | Sí |
+| `PATCH` | `/api/v1/schedules/{id}/toggle` | Activa/desactiva un horario | Sí |
+| `GET` | `/api/v1/dispenser-events` | Lista eventos de dispensación (filtros: dispensatorId, from, to, supplyType) | Sí |
+| `POST` | `/api/v1/dispenser-events` | Registra un nuevo evento de dispensación | Sí |
+| `GET` | `/api/v1/device` | Obtiene información del dispositivo IoT | Sí |
+| `PATCH` | `/api/v1/device` | Actualiza nombre y ubicación del dispositivo | Sí |
+| `POST` | `/api/v1/device/ping` | Registra un latido (actualiza `lastSeen`) | Sí |
+| `GET` | `/api/v1/firmware` | Lista todas las versiones de firmware | Sí |
+| `GET` | `/api/v1/firmware/latest` | Obtiene la versión de firmware más reciente | Sí |
+| `POST` | `/api/v1/firmware/{id}/install` | Inicia la instalación de un firmware (simulado) | Sí |
+| `GET` | `/api/v1/notifications` | Obtiene notificaciones de un usuario (query `userId`) | Sí |
+| `PATCH` | `/api/v1/notifications/{id}/read` | Marca una notificación como leída | Sí |
+| `PATCH` | `/api/v1/notifications/read-all` | Marca todas las notificaciones de un usuario como leídas (`userId`) | Sí |
+
+
 ##### 6.2.2.8. Software Deployment Evidence for Sprint Review
+<!-- Github -->
 
 ##### 6.2.2.9. Team Collaboration Insights during Sprint
+<!-- Github -->
 
 ### 6.3. Validation Interviews
+En esta sección, nos enfocamos en identificar los principales puntos de mejora de nuestra solución IoT, DispenXCore, para lograr una mayor efectividad en el monitoreo inteligente de suministros en los hogares. Esta fase crucial del proyecto implica un diálogo directo con nuestros usuarios principales (adultos mayores, cuidadores y administradores de suministros) para recopilar sus opiniones, experiencias y sugerencias a través de entrevistas de validación.
+
+De esta manera, aseguramos que la plataforma no solo cumpla con los requisitos técnicos, sino que también se adapte a las necesidades y expectativas de los usuarios finales, mejorando la experiencia de gestión de inventarios, la prevención de desabastecimientos y la reducción del desperdicio de alimentos en el hogar.
 
 #### 6.3.1. Diseño de Entrevistas
+Para garantizar la efectividad de las entrevistas, se diseñó un guion que aborda aspectos clave de la usabilidad, la funcionalidad y la experiencia general con DispenXCore. El cuestionario se estructuró en las siguientes secciones:
+
+ **Preguntas para el Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+
+ 1. ¿Qué tan claro te resulta el propósito general de la aplicación al usarla por primera vez?
+
+1. ¿Consideras que la información mostrada te ayuda a entender mejor el estado general de tus insumos en casa?
+
+1. ¿Qué tan útil te parece tener una herramienta que te permita controlar y supervisar tus productos desde un solo lugar?
+
+1. ¿Cómo percibes el valor de recibir avisos o alertas sobre el estado de tus productos?
+
+1. En general, ¿qué tan fácil te parece usar la aplicación y moverte dentro de ella?
+
+ **Preguntas para el Segmento Objetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+
+1. ¿Qué tan sencillo te resulta entender para qué sirve la aplicación?
+
+1. ¿Consideras útil poder conocer el estado de los productos sin tener que estar físicamente presente?
+
+1. ¿Qué tan importante es para ti poder supervisar o controlar esta información a distancia?
+
+1. ¿Cómo te hace sentir la idea de recibir avisos cuando algo necesita ser repuesto?
+
+1. En general, ¿qué tan cómoda y fácil de usar te parece la aplicación?
 
 #### 6.3.2. Registro de Entrevistas
 
+  **Entrevistas Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+
+**Entrevista 1:**
+
+  Datos del entrevistado:
+  - Nombre: 
+  - Edad: 
+  - Distrito de residencia: 
+  - Enlace:
+
+  <img src="">
+
+  **Resumen de la entrevista:**
+
+
+**Entrevista 2:**
+
+  Datos del entrevistado:
+  - Nombre: 
+  - Edad: 
+  - Distrito de residencia: 
+  - Enlace:
+
+  <img src="">
+
+  **Resumen de la entrevista:**
+
+**Entrevista 3:**
+
+  Datos del entrevistado:
+  - Nombre: 
+  - Edad: 
+  - Distrito de residencia: 
+  - Enlace:
+
+  <img src="">
+
+  **Resumen de la entrevista:**
+
+  **Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+
+**Entrevista 1:**
+
+  Datos del entrevistado:
+  - Nombre: 
+  - Edad: 
+  - Distrito de residencia: 
+  - Enlace:
+
+  <img src="">
+
+  **Resumen de la entrevista:**
+
+
+**Entrevista 2:**
+
+  Datos del entrevistado:
+  - Nombre: 
+  - Edad: 
+  - Distrito de residencia: 
+  - Enlace:
+
+  <img src="">
+
+  **Resumen de la entrevista:**
+
+**Entrevista 3:**
+
+  Datos del entrevistado:
+  - Nombre: 
+  - Edad: 
+  - Distrito de residencia: 
+  - Enlace:
+
+  <img src="">
+
+  **Resumen de la entrevista:**
+
+
 #### 6.3.3. Evaluaciones según heurísticas
+
+Esta sección contiene el proceso de evaluación de las sesiones de validación basado en heurísticas, considerando heurísticas de usabilidad, arquitectura de información e Inclusive Design de la experiencia propuesta.
+
+# Evaluación de Usabilidad: DispenXCore - Web Application
+
+## TAREAS A EVALUAR
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+* Registro de un nuevo usuario.
+* Inicio de sesión (Login).
+* Registro de un nuevo dispensador.
+* Visualización de telemetría en tiempo real de un dispensador.
+* Configuración de umbrales de alerta.
+* Vinculación de un cuidador a un familiar.
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+
+* Exportación de reportes.
+* Integración con asistentes de voz.
+* Gestión de múltiples hogares.
+* Visualización de estadísticas predictivas.
+
+---
+
+## ESCALA DE SEVERIDAD
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| --- | --- |
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a menos que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+## TABLA RESUMEN
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| --- | --- | --- | --- |
+| 1 | No se indica claramente la acción de guardar después de registrar un dispensador. El usuario no sabe si el proceso finalizó correctamente. | 3 | Usability: Visibilidad del estado del sistema |
+| 2 | Las imágenes de los dispensadores no tienen un texto alternativo descriptivo. | 2 | Inclusive Design: Proporciona experiencias comparables |
+| 3 | En el Dashboard, el estado del dispensador ("Conectado/Desconectado") se muestra con un color no estándar, lo que genera confusión. | 3 | Usability: Consistencia y estándares |
+| 4 | El flujo para vincular a un cuidador requiere ingresar el ID del usuario, pero no hay una búsqueda o selector visual, lo que es poco intuitivo. | 4 | Information Architecture: Is it usable? |
+| 5 | Los gráficos de telemetría no tienen tooltips para explicar los picos de consumo, dificultando la interpretación de datos. | 2 | Information Architecture: Is it understandable? |
+| 6 | No hay un botón claro para "Cancelar" o "Volver" en el formulario de configuración de alertas, lo que atrapa al usuario en la tarea. | 3 | Usability: Libertad y control del usuario |
+
+---
+
+## DESCRIPCIÓN DE PROBLEMAS
+
+### PROBLEMA #1: No se indica claramente la acción de guardar después de registrar un dispensador.
+
+* **Severidad:** 3
+* **Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+* **Problema:** Después de completar el formulario de registro de un nuevo dispensador y presionar el botón "Enviar", la pantalla se queda igual sin mostrar un mensaje de confirmación o redirección. El usuario no sabe si el dispensador se registró correctamente o si debe volver a intentarlo, lo que genera incertidumbre y posibles duplicados.
+* **Recomendación:** Implementar un mensaje de éxito (toast o modal) que confirme el registro y redirija al usuario al listado de dispensadores. También se debe incluir un indicador de carga mientras se procesa la solicitud.
+<img src="">
+
+### PROBLEMA #2: Las imágenes de los dispensadores no tienen un texto alternativo descriptivo.
+
+* **Severidad:** 2
+* **Heurística violada:** Inclusive Design - Proporciona experiencias comparables
+* **Problema:** Las imágenes que ilustran los dispensadores en la sección "Mis Dispositivos" no incluyen un atributo alt. Esto dificulta la comprensión del contenido para usuarios con discapacidad visual que utilizan lectores de pantalla, limitando su experiencia.
+* **Recomendación:** Agregar un texto alternativo descriptivo a cada imagen, como "Dispensador de granos modelo X" o "Ilustración de dispensador inteligente".
+
+<img src="./feature/chapter-6/problema2.jpeg">
+
+### PROBLEMA #3: El flujo para vincular a un cuidador requiere ingresar el ID del usuario, pero no hay un selector visual.
+
+* **Severidad:** 4
+* **Heurística violada:** Information Architecture - Is it usable?
+* **Problema:** Para vincular un cuidador a un familiar, el usuario debe ingresar manualmente el ID del usuario a monitorear. Este campo es poco amigable, ya que la mayoría de los usuarios desconoce su ID y no hay una opción para buscarlo por nombre o correo electrónico. Esto puede bloquear completamente la tarea.
+* **Recomendación:** Reemplazar el campo de texto por un selector desplegable (combobox) o un campo de búsqueda con autocompletado que permita encontrar al usuario por nombre o correo. Si el usuario no está en el sistema, se podría permitir enviar una invitación por correo.
+
+<img src="./feature/chapter-6/problema3.jpg">
+
+
+### PROBLEMA #4: No hay un botón claro para "Cancelar" o "Volver" en el formulario de configuración de alertas.
+
+* **Severidad:** 3
+* **Heurística violada:** Usability - Libertad y control del usuario
+* **Problema:** Al acceder a la configuración de alertas, la única opción de salida es presionar "Guardar". No hay un enlace o botón para regresar al Dashboard sin guardar cambios, forzando al usuario a completar la tarea incluso si solo quería echar un vistazo.
+* **Recomendación:** Añadir un botón de "Cancelar" o una "X" de cierre que redirija al usuario a la pantalla anterior sin guardar cambios. También se puede implementar un mensaje de confirmación si el usuario cierra con cambios pendientes.
 
 ### 6.4. Video About-the-Product
 
