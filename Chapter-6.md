@@ -744,7 +744,7 @@ La siguiente sección detalla los resultados del Sprint #2 del proyecto DispenXC
     </td>
   </tr>
   <tr>
-    <td style="font-weight: bold;">Resumen de la Sprint Review 1</td>
+    <td style="font-weight: bold;">Resumen de la Sprint Review 2</td>
     <td>En el sprint anterior se desarrolló la landing page del proyecto, enfocada en la presentación visual y funcional de DispenXCore, permitiendo comunicar de manera clara su propuesta de valor. Asimismo, se avanzó parcialmente en la web application, implementando estructuras base de navegación y componentes iniciales. Como parte del progreso técnico del proyecto, también se incorporó el módulo de edge computing del sistema y se realizaron pruebas en Wokwi para la simulación del entorno IoT. Adicionalmente, se logró el despliegue del backend en un entorno funcional y su correcta integración con la aplicación web, permitiendo la comunicación entre servicios y validación de endpoints principales.</td>
   </tr>
   <tr>
