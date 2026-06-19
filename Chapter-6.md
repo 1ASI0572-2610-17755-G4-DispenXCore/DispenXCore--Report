@@ -863,6 +863,8 @@ En esta sección se muestra la evidencia de desarrollo realizada durante el spri
 
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
+En este Sprint se logró documentar mediante OpenAPI (Swagger) los endpoints correspondientes a las funcionalidades implementadas en el sistema DispenXCore. Esta documentación detalla los servicios consumidos por la aplicación web y móvil, incluyendo los verbos HTTP utilizados, los parámetros de entrada requeridos y las respuestas esperadas por cada operación. Esto facilita la comprensión del funcionamiento de la API y mejora la integración entre el backend y los distintos clientes del ecosistema IoT.
+
 **Documentación de Endpoints Backend**
 | Método | Endpoint | Descripción | ¿Requiere Auth? |
 |--------|----------|-------------|------------------|
@@ -1178,7 +1180,8 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 * **Heurística violada:** Usabilidad - Visibilidad del estado del sistema
 * **Problema:** Después de completar el formulario de registro de un nuevo dispensador y presionar el botón "Enviar", la pantalla se queda igual sin mostrar un mensaje de confirmación o redirección. El usuario no sabe si el dispensador se registró correctamente o si debe volver a intentarlo, lo que genera incertidumbre y posibles duplicados.
 * **Recomendación:** Implementar un mensaje de éxito (toast o modal) que confirme el registro y redirija al usuario al listado de dispensadores. También se debe incluir un indicador de carga mientras se procesa la solicitud.
-<img src="">
+
+<img src="https://i.imgur.com/IhgCL3W.png">
 
 ### PROBLEMA #2: Las imágenes de los dispensadores no tienen un texto alternativo descriptivo.
 
@@ -1206,7 +1209,11 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 * **Problema:** Al acceder a la configuración de alertas, la única opción de salida es presionar "Guardar". No hay un enlace o botón para regresar al Dashboard sin guardar cambios, forzando al usuario a completar la tarea incluso si solo quería echar un vistazo.
 * **Recomendación:** Añadir un botón de "Cancelar" o una "X" de cierre que redirija al usuario a la pantalla anterior sin guardar cambios. También se puede implementar un mensaje de confirmación si el usuario cierra con cambios pendientes.
 
+<img src="https://i.imgur.com/o4mfoey.png">
+
 ### 6.4. Video About-the-Product
+
+**VIDEO DEL ABOUT THE PRODUCT** [VIDEO](https://acortar.link/Dg3hwA)
 
 ## Bibliografía
 
@@ -1250,10 +1257,12 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
   **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
 
-  **Backend:** [BACKEND](https://dispenxcore-backend-production.up.railway.app/swagger/index.html)
+  **BACKEND:** [BACKEND](https://dispenxcore-backend-production.up.railway.app/swagger/index.html)
 
   **PPT DEL PROYECTO:** [PPT](https://www.canva.com/design/DAGzQEpBtMs/zjEr8_HDH_y-mSaGu_7O3A/edit) 
 
   **VIDEO DEL PROYECTO:** [VIDEO](https://acortar.link/se3cmV)
 
+  **VIDEO DEL ABOUT THE TEAM** [VIDEO](https://acortar.link/5je5Jg)
 
+  **VIDEO DEL ABOUT THE PRODUCT** [VIDEO](https://acortar.link/Dg3hwA)
