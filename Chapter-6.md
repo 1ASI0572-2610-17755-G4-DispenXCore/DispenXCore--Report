@@ -800,6 +800,7 @@ En el segundo sprint, el equipo se enfocó en el desarrollo de las funcionalidad
 | LPS09 | Navigation & UI/UX Refinement | Mejora de la navegación entre módulos (Dashboard, Historial, Configuración, Soporte) y ajustes visuales basados en la guía de estilos. | 2 | Cardenas Minaya, Ricardo | Done |
 | LPS10 | Deployment Configuration | Configuración del despliegue continuo para la Web Application y el Landing Page en Netlify, asegurando la integración con el repositorio. | 2 | Escobar Palomino, Sebastian | Done |
 
+
 ##### 6.2.2.4. Development Evidence for Sprint Review 
 En esta sección se muestra la evidencia de desarrollo realizada durante el sprint, evidenciando el trabajo funcional implementado y los incrementos del producto que están listos para su inspección y validación en la Sprint Review.
 
