@@ -806,57 +806,76 @@ En esta sección se muestra la evidencia de desarrollo realizada durante el spri
 
 | Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
 |------------|----------------|------------|----------------|---------------|------|
-| DispenXCore-Web-FrontEnd | develop | - | Merge pull request #16 from develop | Radv2005 | Jun 18, 2026 |
-| DispenXCore-Web-FrontEnd | feature/api-integration | - | Merge pull request #15 from feature/api-integration | Radv2005 | Jun 18, 2026 |
-| DispenXCore-Web-FrontEnd | feature/api-integration | - | feat(authentication, notifications, user): Refactor authentication flow and notifications handling | Radv2005 | Jun 18, 2026 |
-| DispenXCore-Web-FrontEnd | feature/notifications-alerts | - | Merge pull request #13 notifications-alerts | Radv2005 | May 28, 2026 |
-| DispenXCore-Web-FrontEnd | feature/dashboard | - | feat(dashboard): Enhance dashboard with metrics and responsive design | Radv2005 | May 28, 2026 |
-| DispenXCore-Web-FrontEnd | feature/profile | - | feat(profile): Add profile management and password update | Radv2005 | May 28, 2026 |
-| DispenXCore-Web-FrontEnd | feature/notifications | - | feat(notifications): Implement notifications UI and state management | Radv2005 | May 28, 2026 |
-| DispenXCore-Web-FrontEnd | feature/iam-user | - | feat(iamUser): Refactor components and add support pages | Radv2005 | May 12, 2026 |
-| DispenXCore-Web-FrontEnd | feature/iam-user | - | feat(iamUser): Update DB structure and supply types | Radv2005 | May 12, 2026 |
-| DispenXCore-Web-FrontEnd | feature/settings-support | - | feat: add settings and support modules | sebasepe | May 12, 2026 |
-| DispenXCore-Web-FrontEnd | feature/inventory-telemetry | - | feat: Add Schedule and History pages | Radv2005 | May 11, 2026 |
-| DispenXCore-Web-FrontEnd | main/init | - | Initial commit | Radv2005 | May 7, 2026 | 
+| DispenXCore-Web-FrontEnd | develop | 3660965 | Merge pull request #16 from develop | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Web-FrontEnd | feature/api-integration | b44df7b | Merge pull request #15 from feature/api-integration | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Web-FrontEnd | feature/api-integration | 871f8e8 | feat(authentication, notifications, user): Refactor authentication flow and notifications handling | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Web-FrontEnd | feature/notifications-alerts | 83890ab | Merge pull request #14 notifications-alerts | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/dashboard | 977b226 | feat(dashboard): Enhance dashboard with metrics and responsive design | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/profile | f4b46b9 | feat(profile): Add profile management and password update | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/notifications | 64c0a39 | feat(notifications): Implement notifications UI and state management | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/iam-user | 63fabe7 | feat(iamUser): Refactor components and add support pages | Radv2005 | May 12, 2026 |
+| DispenXCore-Web-FrontEnd | feature/iam-user | c7ba0e1 | feat(iamUser): Update DB structure and supply types | Radv2005 | May 12, 2026 |
+| DispenXCore-Web-FrontEnd | feature/settings-support | d6ab4df | feat: add settings and support modules | sebasepe | May 12, 2026 |
+| DispenXCore-Web-FrontEnd | feature/inventory-telemetry | 745388d | feat: Add Schedule and History pages | Radv2005 | May 11, 2026 |
+| DispenXCore-Web-FrontEnd | main/init | 352dfcc | Initial commit | Radv2005 | May 7, 2026 |
 
 **Backend Evidence**
 
 | Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
 |------------|----------------|------------|----------------|---------------|------|
-| DispenXCore-Backend | develop | - | fix: notifications error | Radv2005 | Jun 18, 2026 |
-| DispenXCore-Backend | develop | - | fix: HTTP error handling | Radv2005 | Jun 17, 2026 |
-| DispenXCore-Backend | develop | - | fix: EnableRetryOnFailure for MySQL (Railway) | Radv2005 | Jun 17, 2026 |
-| DispenXCore-Backend | develop | - | Add Dockerfile for Railway deployment | Radv2005 | Jun 17, 2026 |
-| DispenXCore-Backend | develop | - | fix: database migration synced | Radv2005 | Jun 17, 2026 |
-| DispenXCore-Backend | develop | - | update backend core services | Radv2005 | Jun 17, 2026 |
-| DispenXCore-Backend | feature/dispenser | - | feat: implement domain entities and schedule management | ghostnotfound404 | Jun 14, 2026 |
-| DispenXCore-Backend | feature/dispenser | - | feat: add dispenser events and controller fix | ghostnotfound404 | Jun 14, 2026 |
-| DispenXCore-Backend | develop | - | Update backend endpoints | ghostnotfound404 | Jun 8, 2026 |
-| DispenXCore-Backend | main/init | - | First version backend | ghostnotfound404 | May 11, 2026 |
+| DispenXCore-Backend | develop | 228d216 | fix: notifications error | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Backend | develop | 5bf5d54 | fix: HTTP error handling | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | 994ce19 | fix: EnableRetryOnFailure for MySQL (Railway) | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | 3624364 | fix: specify MySQL version instead of AutoDetect | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | cde6d69 | Add Dockerfile for Railway deployment | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | 0dd56a1 | fix: initial migration applied and database synced | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | c36e735 | update backend | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | feature/dispenser | 07718e9 | Add or update Azure App Service build and deployment workflow config | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | feature/dispenser | 4ff7fe3 | Added post dispenser | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | feature/dispenser | 53ee032 | feat: implement domain entities and database migration for Dispensator, DispenserEvent, and Schedule management | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | feature/dispenser | e97913a | Fix backend controller | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | develop | 488d6f7 | Update: New endpoints | ghostnotfound404 | Jun 8, 2026 |
+| DispenXCore-Backend | main/init | b0c3e59 | First version backend | ghostnotfound404 | May 11, 2026 |
 
 **Mobile Frontend Evidence**
-| Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
-|------------|----------------|------------|----------------|---------------|------|
-| DispenXCore-Mobile-FrontEnd | develop | - | feat: connect inventory and alerts to backend | alomsoo | Jun 18, 2026 |
-| DispenXCore-Mobile-FrontEnd | develop | - | feat: connect history with charts and filters | alomsoo | Jun 18, 2026 |
-| DispenXCore-Mobile-FrontEnd | develop | - | feat: connect schedules CRUD to backend | alomsoo | Jun 18, 2026 |
-| DispenXCore-Mobile-FrontEnd | develop | - | feat: connect notifications module | alomsoo | Jun 18, 2026 |
-| DispenXCore-Mobile-FrontEnd | develop | - | feat: connect auth (login/register) | alomsoo | Jun 18, 2026 |
-| DispenXCore-Mobile-FrontEnd | develop | - | feat: UI improvements (login/register/home) | alomsoo | Jun 18, 2026 |
-| DispenXCore-Mobile-FrontEnd | feature/home | - | feat: add home module | sebasepe | Jun 13, 2026 |
-| DispenXCore-Mobile-FrontEnd | feature/alerts | - | Add alerts feature and UI | RicardoCardenas | Jun 3, 2026 |
-| DispenXCore-Mobile-FrontEnd | main/init | - | Initial commit | Radv2005 | May 26, 2026 |
+| Repository                  | Branch / Module | Commit Id | Commit Message                                                           | Committed By    | Date         |
+| --------------------------- | --------------- | --------- | ------------------------------------------------------------------------ | --------------- | ------------ |
+| DispenXCore-Mobile-FrontEnd | develop         | a8093fb   | feat: connect inventory and alerts to backend                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 75663cf   | feat: connect inventory and alerts-stock to backend real                 | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | e8b93a0   | feat: connect history/dispenser-events with filters and weekly chart     | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | f95656c   | feat: connect schedules CRUD to backend (fix supplyType & frequencyDays) | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 940778c   | feat: connect notifications module to backend real                       | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | f042140   | feat: connect dispensators, device and home to backend real              | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 0b0f56d   | feat: edit profile fixed                                                 | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | b571562   | feat: connect user module (profile + edit + password change)             | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 4f9b514   | feat: connect auth backend (login + register)                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 7f0d010   | feat: UI improvements (login, register, home)                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/home    | 7fb3e35   | feat: add home module                                                    | sebasepe        | Jun 13, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/home    | 780d8f8   | feat: add home module (update)                                           | sebasepe        | Jun 13, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/alerts  | 93be51e   | Add alerts feature and UI                                                | RicardoCardenas | Jun 3, 2026  |
+| DispenXCore-Mobile-FrontEnd | main/init       | bb9a22d   | Fix clone repository URL in README.md                                    | Radv2005        | May 26, 2026 |
+| DispenXCore-Mobile-FrontEnd | main/init       | ae77f58   | Initial commit                                                           | Radv2005        | May 26, 2026 |
+
 
 **Edge Service Evidence**
-| Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
-|------------|----------------|------------|----------------|---------------|------|
-| DispenXCore-Edge-Service | develop | - | Refactor requirements.txt to root | RicardoCardenas | Jun 17, 2026 |
-| DispenXCore-Edge-Service | develop | - | Azure deployment workflow update | RicardoCardenas | Jun 17, 2026 |
-| DispenXCore-Edge-Service | develop | - | feat: backend async client notifications | RicardoCardenas | Jun 17, 2026 |
-| DispenXCore-Edge-Service | main/init | - | Add Edge service base setup | RicardoCardenas | Jun 13, 2026 |
+| Repository               | Branch / Module | Commit Id | Commit Message                                                           | Committed By    | Date         |
+| ------------------------ | --------------- | --------- | ------------------------------------------------------------------------ | --------------- | ------------ |
+| DispenXCore-Edge-Service | develop         | 896c88c   | Refactor move requirements.txt to project root                           | RicardoCardenas | Jun 17, 2026 |
+| DispenXCore-Edge-Service | develop         | b894af    | Add or update the Azure App Service build and deployment workflow config | RicardoCardenas | Jun 17, 2026 |
+| DispenXCore-Edge-Service | develop         | 2796899   | feat: backend async client notifications                                 | RicardoCardenas | Jun 17, 2026 |
+| DispenXCore-Edge-Service | main/init       | ef1e2c7   | Add DispenX Edge service base setup                                      | RicardoCardenas | Jun 13, 2026 |
+
 
 ##### 6.2.2.5. Testing Suite Evidence for Sprint Review
-<!-- Github -->
+Durante este Sprint, se presentan los commits asociados a la implementación de las épicas del sistema DispenXCore. Estas evidencias reflejan el avance incremental del desarrollo, donde se incorporaron las historias de usuario correspondientes a cada épica funcional del sistema.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|----------------------|
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | d8b5cca | feat: add epic story 05 | Implementación de la épica 05 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | 673a263 | feat: add epic story 04 | Implementación de la épica 04 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | c71ee8d | feat: add epic story 03 | Implementación de la épica 03 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | 893bf09 | feat: add epic story 02 | Implementación de la épica 02 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | cfd73e5 | feat: add epic story 01 | Implementación de la épica 01 del sistema DispenXCore. | 13/05/2026 |
 
 ##### 6.2.2.6. Execution Evidence for Sprint Review
 En esta sección se presenta la Evidencia de Ejecución del sprint, la cual muestra el incremento funcional desarrollado de la web application , backend y  aplicación móvil de DispenXCore, listo para su validación durante la Sprint Review.
