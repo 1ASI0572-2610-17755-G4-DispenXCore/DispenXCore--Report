@@ -706,6 +706,7 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
 <br>
 
 #### 6.2.2. Sprint 2
+La siguiente sección detalla los resultados del Sprint #2 del proyecto DispenXCore. En este incremento se logró la integración del backend con la aplicación web y la aplicación móvil, permitiendo la conexión completa de los servicios del sistema. Asimismo, se desarrolló el Edge , y se realizaron ajustes y mejoras en la simulación del entorno Wokwi, fortaleciendo la validación del comportamiento del dispositivo IoT dentro del ecosistema del proyecto.
 
 ##### 6.2.2.1. Sprint Planning 2
 <table>
