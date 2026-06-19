@@ -1467,4 +1467,6 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
   **VIDEO DEL PROYECTO:** [VIDEO](https://acortar.link/se3cmV)
 
-  **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
+  **VIDEO DEL ABOUT THE PRODUCT** [VIDEO](https://acortar.link/Dg3hwA)
+
+  **VIDEO DEL ABOUT THE TEAM:** [VIDEO](https://acortar.link/VqEPVW)
