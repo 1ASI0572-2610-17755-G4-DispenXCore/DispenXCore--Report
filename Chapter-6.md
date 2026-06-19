@@ -877,7 +877,7 @@ Para garantizar la efectividad de las entrevistas, se diseñó un guion que abor
 
 #### 6.3.2. Registro de Entrevistas
 
-  **Entrevistas Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+**Entrevistas Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
 **Entrevista 1:**
 
@@ -889,74 +889,55 @@ Para garantizar la efectividad de las entrevistas, se diseñó un guion que abor
 
   <img src="https://i.imgur.com/JK3YY9y.png">
 
-  **Resumen de la entrevista: Fabrisio Belahonia de 25 años estudiante de Ingeniería de Alimentos en la Universidad Agraria, se encarga del manejo y control de insumos alimenticios en contextos cotidianos, basándose actualmente en métodos manuales de revisión y supervisión del stock en el hogar.
-Considera que una solución como DispenXCore le permitiría tener una mejor visibilidad del estado de los productos en tiempo real, reduciendo la necesidad de verificaciones constantes y facilitando la planificación de compras. Esto le ayudaría a evitar el desabastecimiento y a organizar mejor su consumo.
-Además, valora positivamente la presencia de alertas automáticas, la visualización clara del inventario y la posibilidad de gestionar todo desde una plataforma centralizada, destacando que este tipo de sistema reduce la incertidumbre y mejora la toma de decisiones en el abastecimiento diario. **
-
+  **Resumen de la entrevista:** Fabrisio Belahonia de 25 años estudiante de Ingeniería de Alimentos en la Universidad Agraria, se encarga del manejo y control de insumos alimenticios en contextos cotidianos, basándose actualmente en métodos manuales de revisión y supervisión del stock en el hogar.
+  Considera que una solución como DispenXCore le permitiría tener una mejor visibilidad del estado de los productos en tiempo real, reduciendo la necesidad de verificaciones constantes y facilitando la planificación de compras. Esto le ayudaría a evitar el desabastecimiento y a organizar mejor su consumo.
+  Además, valora positivamente la presencia de alertas automáticas, la visualización clara del inventario y la posibilidad de gestionar todo desde una plataforma centralizada, destacando que este tipo de sistema reduce la incertidumbre y mejora la toma de decisiones en el abastecimiento diario.
 
 **Entrevista 2:**
 
   Datos del entrevistado:
-  - Nombre: 
-  - Edad: 
-  - Distrito de residencia: 
-  - Enlace:
+  - Nombre: Ángel García 
+  - Edad: 23 años
+  - Distrito de residencia: San Borja
+  - Enlace: https://acortar.link/iY22ga
 
-  <img src="">
+  <img src="https://i.imgur.com/1ABaQRz.png">
 
-  **Resumen de la entrevista:**
+  **Resumen de la entrevista:** Ángel Giovanni García Mota, estudiante de Ingeniería Mecatrónica en la UTEC.
+  Actualmente gestiona sus insumos de forma manual, lo que puede generar falta de control sobre el consumo diario debido a sus actividades académicas. Considera que DispenXCore le permitiría monitorear de forma más eficiente el estado de sus productos y tomar decisiones de compra de manera oportuna.
+  Valora especialmente las alertas automáticas, la visualización clara de datos y la posibilidad de acceder a la información desde distintos dispositivos, destacando la utilidad y practicidad del sistema para su rutina.
 
-**Entrevista 3:**
-
-  Datos del entrevistado:
-  - Nombre: 
-  - Edad: 
-  - Distrito de residencia: 
-  - Enlace:
-
-  <img src="">
-
-  **Resumen de la entrevista:**
-
-  **Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+**Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
 **Entrevista 1:**
 
   Datos del entrevistado:
-  - Nombre: 
-  - Edad: 
-  - Distrito de residencia: 
-  - Enlace:
+  - Nombre: Sebastian Silva
+  - Edad: 22 años
+  - Distrito de residencia: San Luis
+  - Enlace: https://acortar.link/QytoVZ
 
-  <img src="">
+  <img src="https://i.imgur.com/FHht9Ma.png">
 
-  **Resumen de la entrevista:**
-
+  **Resumen de la entrevista:** Sebastian Silva de 22 años, estudiante que combina sus estudios con trabajo parcial en horarios de tarde y noche, mostró interés en soluciones tecnológicas aplicadas a la automatización de procesos cotidianos.
+  Actualmente realiza el control de insumos de forma manual, confiando en revisiones visuales y compras periódicas sin información precisa del estado real de los productos. Esto puede generar compras innecesarias o falta de planificación en el abastecimiento.
+  Considera que el sistema DispenXCore sería útil para conocer el estado de los insumos sin necesidad de estar físicamente presente, lo que le permitiría optimizar su tiempo y reducir desplazamientos innecesarios. Destaca especialmente el valor de las notificaciones automáticas, ya que facilitan la toma de decisiones de compra en el momento adecuado.
+  Además, percibe la aplicación como intuitiva y fácil de usar, indicando que con el uso frecuente se volvería aún más sencilla de manejar y que la información presentada es clara y funcional para el usuario.
 
 **Entrevista 2:**
 
   Datos del entrevistado:
-  - Nombre: 
-  - Edad: 
-  - Distrito de residencia: 
-  - Enlace:
+  - Nombre: Jarol De La Fuente
+  - Edad: 25 años
+  - Distrito de residencia: La Molina
+  - Enlace: https://acortar.link/dqoPA9 
 
-  <img src="">
+  <img src="https://i.imgur.com/Ra9BNL5.png">
 
-  **Resumen de la entrevista:**
-
-**Entrevista 3:**
-
-  Datos del entrevistado:
-  - Nombre: 
-  - Edad: 
-  - Distrito de residencia: 
-  - Enlace: 
-
-  <img src="">
-
-  **Resumen de la entrevista:**
-
+  **Resumen de la entrevista:** Jarol De La Fuente ,estudiante universitario, mostró un perfil vinculado al cuidado de adultos mayores y a la gestión de actividades diarias con limitaciones de tiempo debido a sus responsabilidades académicas y laborales.
+  Actualmente realiza el control de insumos de manera manual, lo que le dificulta mantener una supervisión constante y oportuna del stock en el hogar o en los espacios donde apoya. Esto puede generar olvidos o compras poco planificadas.
+  Considera que DispenXCore sería una herramienta útil para automatizar el control de alimentos, permitiéndole conocer el estado de los productos en tiempo real y planificar mejor el reabastecimiento. Destaca especialmente el valor de la automatización, las notificaciones en tiempo real y la posibilidad de monitorear el inventario a distancia.
+  Además, percibe la plataforma como intuitiva, organizada y fácil de usar, resaltando que facilita la toma de decisiones sin necesidad de revisar físicamente los insumos.
 
 #### 6.3.3. Evaluaciones según heurísticas
 
