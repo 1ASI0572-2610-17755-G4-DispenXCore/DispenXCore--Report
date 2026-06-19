@@ -121,7 +121,7 @@
             - [**6.2.1.7. Services Documentation Evidence for Sprint Review**]()
             - [**6.2.1.8. Software Deployment Evidence for Sprint Review**]()
             - [**6.2.1.9. Team Collaboration Insights during Sprint**]()
-      - [**6.2.X. Sprint 2**]()
+    - [**6.2.X. Sprint 2**]()
             - [**6.2.2.1. Sprint Planning 2**]()
             - [**6.2.2.2. Aspect Leaders and Collaborators**]()
             - [**6.2.2.3. Sprint Backlog 2**]()
