@@ -1,5 +1,3 @@
-<div style="page-break-after: always;"></div>
-
 # Contenido
 - [**Registro de Versiones del Informe**](#registro-de-versiones-del-informe)
 - [**Project Report Collaboration Insights**](#project-report-collaboration-insights)
