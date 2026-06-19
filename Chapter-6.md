@@ -749,9 +749,9 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
   </tr>
   <tr>
     <td style="font-weight: bold;">Resumen de la Retrospectiva del Sprint 2</td>
-    <td> Durante este primer sprint, el equipo logró establecer una base funcional del sistema DispenXCore, completando el desarrollo de la landing page, avances iniciales en la web application, la integración del backend desplegado y la incorporación del entorno de simulación IoT mediante Wokwi, junto con el módulo edge del sistema. 
-A nivel de proceso, se identificó que la coordinación entre los componentes frontend, backend e IoT requiere una mayor sincronización para evitar retrabajos y asegurar una integración más fluida en futuras iteraciones. Asimismo, se evidenció la necesidad de mejorar la definición temprana de interfaces y contratos de API para reducir fricciones en la integración.
-Como mejora continua, se propone reforzar la planificación técnica del sprint, establecer puntos de integración más frecuentes y validar progresivamente los módulos (frontend, backend y edge) para garantizar estabilidad en cada incremento.</td>
+    <td> Durante este segundo sprint, el equipo logró establecer una base funcional del sistema DispenXCore, completando el desarrollo de la landing page, avances iniciales en la web application, la integración del backend desplegado y la incorporación del entorno de simulación IoT mediante Wokwi, junto con el módulo edge del sistema. 
+    A nivel de proceso, se identificó que la coordinación entre los componentes frontend, backend e IoT requiere una mayor sincronización para evitar retrabajos y asegurar una integración más fluida en futuras iteraciones. Asimismo, se evidenció la necesidad de mejorar la definición temprana de interfaces y contratos de API para reducir fricciones en la integración.
+    Como mejora continua, se propone reforzar la planificación técnica del sprint, establecer puntos de integración más frecuentes y validar progresivamente los módulos (frontend, backend y edge) para garantizar estabilidad en cada incremento.</td>
   </tr>
   <tr>
     <td colspan="2" style="font-weight: bold;">Objetivo del Sprint e Historias de Usuario</td>
@@ -773,6 +773,15 @@ Como mejora continua, se propone reforzar la planificación técnica del sprint,
 <br>
 
 ##### 6.2.2.2. Aspect Leaders and Collaborators
+
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **Capítulo I: Introduction** | **Capítulo II: Requirements Elicitation & Analysis** | **Capítulo III: Requirements Specification** | **Capítulo IV: Solution Software Design** | **Capítulo V: Solution UI/UX Design** | **Capítulo VI: Product Implementation, Validation & Deployment** |
+|----------------------------------------|---------------------|------------------------------|------------------------------------------------------|----------------------------------------------|------------------------------------------|--------------------------------------|------------------------------------------------------------------|
+| Bastidas Bastidas, Diego Martín       | ghostnotfound404    | **L**                        | C                                                    | C                                            | C                                        | C                                    | C                                                                |
+| Cárdenas Minaya, Ricardo Fernando     | RicardoCardenas     | C                            | **L**                                                | C                                            | C                                        | C                                    | C                                                                |
+| Domínguez Vargas, Rafael Alexander    | Radv2005            | C                            | C                                                    | **L**                                        | C                                        | C                                    | C                                                                |
+| Escobar Palomino, Sebastián Matías    | sebasepe            | C                            | C                                                    | C                                            | **L**                                    | C                                    | C                                                                |
+| Muñiz Huayanca, Percy Alonso          | alomsoo             | C                            | C                                                    | C                                            | C                                        | **L**                                | C                                                                |
+
 
 ##### 6.2.2.3. Sprint Backlog 2
 En el segundo sprint, el equipo se enfocó en el desarrollo de las funcionalidades principales de la Web Application, la implementación del módulo IoT con Wokwi y el edge computing, así como la integración completa con el backend. Las tareas se distribuyeron según la especialidad de cada miembro para asegurar el cumplimiento de los objetivos del sprint.
