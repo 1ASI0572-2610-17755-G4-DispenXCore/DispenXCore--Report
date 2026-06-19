@@ -1063,7 +1063,21 @@ Sección de configuración donde el usuario gestiona preferencias del sistema, i
 </div>
 
 ---
+### **WOKWI – DISPENXCORE**
 
+A continuación, se evidencian el prototipo de hardware simulado en Wokwi correspondiente al sistema DispenXCore, donde se integra el ESP32 con sensores y actuadores para el monitoreo y control del dispositivo inteligente de dispensación.
+
+---
+
+#### **WOK 01: Prototipo**
+
+Se muestra el prototipo en wokwi
+
+<div align="center">
+<img src="https://i.imgur.com/gXZSP62.png">
+</div>
+
+---
 
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
@@ -1462,6 +1476,10 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
   **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
 
   **BACKEND:** [BACKEND](https://dispenxcore-backend-production.up.railway.app/swagger/index.html)
+
+  **WOKWI:** [WOKWI](https://wokwi.com/projects/467193835763547137)
+
+  **EDGE:** [EDGE](https://dispenxcore-edge-agh9b0e7asakbdey.eastus-01.azurewebsites.net/)
 
   **PPT DEL PROYECTO:** [PPT](https://www.canva.com/design/DAGzQEpBtMs/zjEr8_HDH_y-mSaGu_7O3A/edit) 
 
