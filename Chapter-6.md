@@ -882,14 +882,16 @@ Para garantizar la efectividad de las entrevistas, se diseñó un guion que abor
 **Entrevista 1:**
 
   Datos del entrevistado:
-  - Nombre: 
-  - Edad: 
-  - Distrito de residencia: 
-  - Enlace:
+  - Nombre: Fabrisio Belahonia 
+  - Edad: 25 años
+  - Distrito de residencia: Ate
+  - Enlace: https://acortar.link/0C22bY 
 
-  <img src="">
+  <img src="https://i.imgur.com/JK3YY9y.png">
 
-  **Resumen de la entrevista:**
+  **Resumen de la entrevista: Fabrisio Belahonia de 25 años estudiante de Ingeniería de Alimentos en la Universidad Agraria, se encarga del manejo y control de insumos alimenticios en contextos cotidianos, basándose actualmente en métodos manuales de revisión y supervisión del stock en el hogar.
+Considera que una solución como DispenXCore le permitiría tener una mejor visibilidad del estado de los productos en tiempo real, reduciendo la necesidad de verificaciones constantes y facilitando la planificación de compras. Esto le ayudaría a evitar el desabastecimiento y a organizar mejor su consumo.
+Además, valora positivamente la presencia de alertas automáticas, la visualización clara del inventario y la posibilidad de gestionar todo desde una plataforma centralizada, destacando que este tipo de sistema reduce la incertidumbre y mejora la toma de decisiones en el abastecimiento diario. **
 
 
 **Entrevista 2:**
@@ -949,7 +951,7 @@ Para garantizar la efectividad de las entrevistas, se diseñó un guion que abor
   - Nombre: 
   - Edad: 
   - Distrito de residencia: 
-  - Enlace:
+  - Enlace: 
 
   <img src="">
 
