@@ -1,3 +1,5 @@
+<div style="page-break-after: always;"></div>
+
 ## Capítulo VI: Product Implementation & Validation
 
 ---
@@ -1465,6 +1467,4 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
   **VIDEO DEL PROYECTO:** [VIDEO](https://acortar.link/se3cmV)
 
-  **VIDEO DEL ABOUT THE TEAM** [VIDEO](https://acortar.link/5je5Jg)
-
-  **VIDEO DEL ABOUT THE PRODUCT** [VIDEO](https://acortar.link/Dg3hwA)
+  **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
