@@ -707,6 +707,718 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
 
 <br>
 
+#### 6.2.2. Sprint 2
+La siguiente sección detalla los resultados del Sprint #2 del proyecto DispenXCore. En este incremento se logró la integración del backend con la aplicación web y la aplicación móvil, permitiendo la conexión completa de los servicios del sistema. Asimismo, se desarrolló el Edge , y se realizaron ajustes y mejoras en la simulación del entorno Wokwi, fortaleciendo la validación del comportamiento del dispositivo IoT dentro del ecosistema del proyecto.
+
+##### 6.2.2.1. Sprint Planning 2
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 2</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Contexto de Planificación del Sprint</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Fecha</td>
+    <td>05/06/2026</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Hora</td>
+    <td>22:00 horas (GMT-5)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Lugar</td>
+    <td>Reunión virtual (Discord)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Elaborado por</td>
+    <td>Dominguez Vargas, Rafael Alexander</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Participantes</td>
+    <td>
+      Bastidas Bastidas, Diego Martin<br>
+      Cardenas Minaya, Ricardo Fernando<br>
+      Dominguez Vargas, Rafael Alexander<br>
+      Escobar Palomino, Sebastian Matias<br>
+      Muñiz Huayanca, Percy Alonso
+    </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Sprint Review 2</td>
+    <td>En el sprint anterior se desarrolló la landing page del proyecto, enfocada en la presentación visual y funcional de DispenXCore, permitiendo comunicar de manera clara su propuesta de valor. Asimismo, se avanzó parcialmente en la web application, implementando estructuras base de navegación y componentes iniciales. Como parte del progreso técnico del proyecto, también se incorporó el módulo de edge computing del sistema y se realizaron pruebas en Wokwi para la simulación del entorno IoT. Adicionalmente, se logró el despliegue del backend en un entorno funcional y su correcta integración con la aplicación web, permitiendo la comunicación entre servicios y validación de endpoints principales.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Retrospectiva del Sprint 2</td>
+    <td> Durante este segundo sprint, el equipo logró establecer una base funcional del sistema DispenXCore, completando el desarrollo de la landing page, avances iniciales en la web application, la integración del backend desplegado y la incorporación del entorno de simulación IoT mediante Wokwi, junto con el módulo edge del sistema. 
+    A nivel de proceso, se identificó que la coordinación entre los componentes frontend, backend e IoT requiere una mayor sincronización para evitar retrabajos y asegurar una integración más fluida en futuras iteraciones. Asimismo, se evidenció la necesidad de mejorar la definición temprana de interfaces y contratos de API para reducir fricciones en la integración.
+    Como mejora continua, se propone reforzar la planificación técnica del sprint, establecer puntos de integración más frecuentes y validar progresivamente los módulos (frontend, backend y edge) para garantizar estabilidad en cada incremento.</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Objetivo del Sprint e Historias de Usuario</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Objetivo del Sprint 2</td>
+    <td>El objetivo de este sprint fue implementar la base funcional y visual del sistema DispenXCore, iniciando con el desarrollo de la landing page como punto de entrada informativo del proyecto y avanzando en la construcción de la aplicación web. Asimismo, se integró el backend desplegado para habilitar la comunicación entre los distintos módulos del sistema. Como parte de la arquitectura IoT, se incorporó la simulación del entorno mediante Wokwi y el componente edge del sistema, permitiendo validar el flujo de datos entre dispositivos y la plataforma. Este sprint sienta las bases de la arquitectura completa del sistema, asegurando conectividad, despliegue y validación inicial de los servicios..</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Velocidad del Sprint 2</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Total de Story Points</td>
+    <td>20</td>
+  </tr>
+</table>
+
+<br>
+
+##### 6.2.2.2. Aspect Leaders and Collaborators
+
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **Capítulo I: Introduction** | **Capítulo II: Requirements Elicitation & Analysis** | **Capítulo III: Requirements Specification** | **Capítulo IV: Solution Software Design** | **Capítulo V: Solution UI/UX Design** | **Capítulo VI: Product Implementation, Validation & Deployment** |
+|----------------------------------------|---------------------|------------------------------|------------------------------------------------------|----------------------------------------------|------------------------------------------|--------------------------------------|------------------------------------------------------------------|
+| Bastidas Bastidas, Diego Martín       | ghostnotfound404    | **L**                        | C                                                    | C                                            | C                                        | C                                    | C                                                                |
+| Cárdenas Minaya, Ricardo Fernando     | RicardoCardenas     | C                            | **L**                                                | C                                            | C                                        | C                                    | C                                                                |
+| Domínguez Vargas, Rafael Alexander    | Radv2005            | C                            | C                                                    | **L**                                        | C                                        | C                                    | C                                                                |
+| Escobar Palomino, Sebastián Matías    | sebasepe            | C                            | C                                                    | C                                            | **L**                                    | C                                    | C                                                                |
+| Muñiz Huayanca, Percy Alonso          | alomsoo             | C                            | C                                                    | C                                            | C                                        | **L**                                | C                                                                |
+
+
+##### 6.2.2.3. Sprint Backlog 2
+En el segundo sprint, el equipo se enfocó en el desarrollo de las funcionalidades principales de la Web Application, la implementación del módulo IoT con Wokwi y el edge computing, así como la integración completa con el backend. Las tareas se distribuyeron según la especialidad de cada miembro para asegurar el cumplimiento de los objetivos del sprint.
+
+
+| ID | Title | Description | Estimation (Hours) | Assigned To | Status |
+| --- | --- | --- | --- | --- | --- |
+| LPS01 | User Authentication Module | Implementación del registro e inicio de sesión de usuarios, con conexión al backend mediante JWT. | 5 | Bastidas Bastidas, Diego Martín | Done |
+| LPS02 | Dashboard & Dispenser List | Desarrollo del panel principal que muestra el listado de dispensadores registrados y su estado actual (conectado, nivel de grano, alertas). | 4 | Dominguez Vargas, Rafael | Done |
+| LPS03 | Dispenser Registration | Formulario para registrar un nuevo dispensador, incluyendo nombre, tipo de grano y capacidad máxima, conectado al endpoint del backend. | 3 | Cardenas Minaya, Ricardo | Done |
+| LPS04 | Real-time Telemetry View | Implementación de la vista de telemetría en tiempo real (peso, nivel y flujo) para un dispensador específico, consumiendo datos desde el backend. | 5 | Escobar Palomino, Sebastian | Done |
+| LPS05 | Alert Configuration UI | Desarrollo de la interfaz para configurar umbrales de alerta (bajo y crítico) por dispensador, conectada al endpoint de configuración. | 3 | Muñiz Huayanca, Percy | Done |
+| LPS06 | Caregiver Subscription | Pantalla para vincular un cuidador a un familiar, permitiendo la gestión de notificaciones compartidas. | 3 | Bastidas Bastidas, Diego Martín | Done |
+| LPS07 | IoT Simulation (Wokwi) | Implementación y configuración de la simulación del dispositivo IoT en Wokwi, generando datos de telemetría simulados para pruebas de integración. | 4 | Muñiz Huayanca, Percy | Done |
+| LPS08 | Edge Module Integration | Desarrollo del componente edge para procesamiento local de datos, incluyendo lógica de alertas tempranas y comunicación con el backend. | 4 | Dominguez Vargas, Rafael | Done |
+| LPS09 | Navigation & UI/UX Refinement | Mejora de la navegación entre módulos (Dashboard, Historial, Configuración, Soporte) y ajustes visuales basados en la guía de estilos. | 2 | Cardenas Minaya, Ricardo | Done |
+| LPS10 | Deployment Configuration | Configuración del despliegue continuo para la Web Application y el Landing Page en Netlify, asegurando la integración con el repositorio. | 2 | Escobar Palomino, Sebastian | Done |
+
+
+##### 6.2.2.4. Development Evidence for Sprint Review 
+En esta sección se muestra la evidencia de desarrollo realizada durante el sprint, evidenciando el trabajo funcional implementado y los incrementos del producto que están listos para su inspección y validación en la Sprint Review.
+
+**Web Frontend Evidence**
+
+| Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
+|------------|----------------|------------|----------------|---------------|------|
+| DispenXCore-Web-FrontEnd | develop | 3660965 | Merge pull request #16 from develop | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Web-FrontEnd | feature/api-integration | b44df7b | Merge pull request #15 from feature/api-integration | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Web-FrontEnd | feature/api-integration | 871f8e8 | feat(authentication, notifications, user): Refactor authentication flow and notifications handling | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Web-FrontEnd | feature/notifications-alerts | 83890ab | Merge pull request #14 notifications-alerts | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/dashboard | 977b226 | feat(dashboard): Enhance dashboard with metrics and responsive design | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/profile | f4b46b9 | feat(profile): Add profile management and password update | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/notifications | 64c0a39 | feat(notifications): Implement notifications UI and state management | Radv2005 | May 28, 2026 |
+| DispenXCore-Web-FrontEnd | feature/iam-user | 63fabe7 | feat(iamUser): Refactor components and add support pages | Radv2005 | May 12, 2026 |
+| DispenXCore-Web-FrontEnd | feature/iam-user | c7ba0e1 | feat(iamUser): Update DB structure and supply types | Radv2005 | May 12, 2026 |
+| DispenXCore-Web-FrontEnd | feature/settings-support | d6ab4df | feat: add settings and support modules | sebasepe | May 12, 2026 |
+| DispenXCore-Web-FrontEnd | feature/inventory-telemetry | 745388d | feat: Add Schedule and History pages | Radv2005 | May 11, 2026 |
+| DispenXCore-Web-FrontEnd | main/init | 352dfcc | Initial commit | Radv2005 | May 7, 2026 |
+
+**Backend Evidence**
+
+| Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
+|------------|----------------|------------|----------------|---------------|------|
+| DispenXCore-Backend | develop | 228d216 | fix: notifications error | Radv2005 | Jun 18, 2026 |
+| DispenXCore-Backend | develop | 5bf5d54 | fix: HTTP error handling | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | 994ce19 | fix: EnableRetryOnFailure for MySQL (Railway) | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | 3624364 | fix: specify MySQL version instead of AutoDetect | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | cde6d69 | Add Dockerfile for Railway deployment | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | 0dd56a1 | fix: initial migration applied and database synced | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | develop | c36e735 | update backend | Radv2005 | Jun 17, 2026 |
+| DispenXCore-Backend | feature/dispenser | 07718e9 | Add or update Azure App Service build and deployment workflow config | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | feature/dispenser | 4ff7fe3 | Added post dispenser | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | feature/dispenser | 53ee032 | feat: implement domain entities and database migration for Dispensator, DispenserEvent, and Schedule management | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | feature/dispenser | e97913a | Fix backend controller | ghostnotfound404 | Jun 14, 2026 |
+| DispenXCore-Backend | develop | 488d6f7 | Update: New endpoints | ghostnotfound404 | Jun 8, 2026 |
+| DispenXCore-Backend | main/init | b0c3e59 | First version backend | ghostnotfound404 | May 11, 2026 |
+
+**Mobile Frontend Evidence**
+| Repository                  | Branch / Module | Commit Id | Commit Message                                                           | Committed By    | Date         |
+| --------------------------- | --------------- | --------- | ------------------------------------------------------------------------ | --------------- | ------------ |
+| DispenXCore-Mobile-FrontEnd | develop         | a8093fb   | feat: connect inventory and alerts to backend                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 75663cf   | feat: connect inventory and alerts-stock to backend real                 | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | e8b93a0   | feat: connect history/dispenser-events with filters and weekly chart     | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | f95656c   | feat: connect schedules CRUD to backend (fix supplyType & frequencyDays) | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 940778c   | feat: connect notifications module to backend real                       | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | f042140   | feat: connect dispensators, device and home to backend real              | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 0b0f56d   | feat: edit profile fixed                                                 | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | b571562   | feat: connect user module (profile + edit + password change)             | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 4f9b514   | feat: connect auth backend (login + register)                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 7f0d010   | feat: UI improvements (login, register, home)                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/home    | 7fb3e35   | feat: add home module                                                    | sebasepe        | Jun 13, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/home    | 780d8f8   | feat: add home module (update)                                           | sebasepe        | Jun 13, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/alerts  | 93be51e   | Add alerts feature and UI                                                | RicardoCardenas | Jun 3, 2026  |
+| DispenXCore-Mobile-FrontEnd | main/init       | bb9a22d   | Fix clone repository URL in README.md                                    | Radv2005        | May 26, 2026 |
+| DispenXCore-Mobile-FrontEnd | main/init       | ae77f58   | Initial commit                                                           | Radv2005        | May 26, 2026 |
+
+
+**Edge Service Evidence**
+| Repository               | Branch / Module | Commit Id | Commit Message                                                           | Committed By    | Date         |
+| ------------------------ | --------------- | --------- | ------------------------------------------------------------------------ | --------------- | ------------ |
+| DispenXCore-Edge-Service | develop         | 896c88c   | Refactor move requirements.txt to project root                           | RicardoCardenas | Jun 17, 2026 |
+| DispenXCore-Edge-Service | develop         | b894af    | Add or update the Azure App Service build and deployment workflow config | RicardoCardenas | Jun 17, 2026 |
+| DispenXCore-Edge-Service | develop         | 2796899   | feat: backend async client notifications                                 | RicardoCardenas | Jun 17, 2026 |
+| DispenXCore-Edge-Service | main/init       | ef1e2c7   | Add DispenX Edge service base setup                                      | RicardoCardenas | Jun 13, 2026 |
+
+
+##### 6.2.2.5. Testing Suite Evidence for Sprint Review
+Durante este Sprint, se presentan los commits asociados a la implementación de las épicas del sistema DispenXCore. Estas evidencias reflejan el avance incremental del desarrollo, donde se incorporaron las historias de usuario correspondientes a cada épica funcional del sistema.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|----------------------|
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | d8b5cca | feat: add epic story 05 | Implementación de la épica 05 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | 673a263 | feat: add epic story 04 | Implementación de la épica 04 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | c71ee8d | feat: add epic story 03 | Implementación de la épica 03 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | 893bf09 | feat: add epic story 02 | Implementación de la épica 02 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | cfd73e5 | feat: add epic story 01 | Implementación de la épica 01 del sistema DispenXCore. | 13/05/2026 |
+
+##### 6.2.2.6. Execution Evidence for Sprint Review
+En esta sección se presenta la Evidencia de Ejecución del sprint, la cual muestra el incremento funcional desarrollado de la web application , backend y  aplicación móvil de DispenXCore, listo para su validación durante la Sprint Review.
+
+### **WEB APPLICATION – DISPENXCORE**
+
+A continuación, se presentan las evidencias de ejecución del sistema web DispenXCore, el cual permite la gestión de usuarios, dispositivos IoT, programación de dispensación, monitoreo de inventario y soporte al usuario.
+
+---
+
+#### **WEB 01: Login del sistema**
+
+Se muestra la pantalla de autenticación donde el usuario puede iniciar sesión en la plataforma DispenXCore, con soporte multilenguaje (ES/EN) y acceso seguro al sistema.
+
+<div align="center">
+<img src="https://i.imgur.com/r56S1S6.png">
+</div>
+
+---
+
+#### **WEB 02: Registro de usuario**
+
+Interfaz de creación de cuenta donde el usuario puede registrarse ingresando datos personales como nombre, apellido, correo y contraseña, junto con aceptación de términos y condiciones.
+
+<div align="center">
+<img src="https://i.imgur.com/KMUawi9.png">
+</div>
+
+---
+
+#### **WEB 03: Dashboard principal**
+
+Se presenta el panel principal del sistema, donde se visualiza el estado general del dispositivo, nivel de inventario, dispensación automática, métricas de consumo y resumen operativo.
+
+<div align="center">
+<img src="https://i.imgur.com/396cRPI.png">
+</div>
+
+---
+
+#### **WEB 04: Programación de horarios**
+
+Módulo que permite configurar rutinas automáticas de dispensación, definiendo cantidades, horarios y días de ejecución para cada programación.
+
+<div align="center">
+<img src="https://i.imgur.com/I0jUYbi.png">
+</div>
+
+---
+
+#### **WEB 05: Historial de dispensación**
+
+Se muestra el registro de eventos de consumo, incluyendo análisis de tendencia, cantidad dispensada por día y métricas semanales del sistema.
+
+<div align="center">
+<img src="https://i.imgur.com/ZapgKic.png">
+</div>
+
+---
+
+#### **WEB 06: Configuración del sistema**
+
+Sección donde el usuario puede gestionar preferencias del dispositivo, notificaciones, conexión WiFi, protocolo MQTT, seguridad y ajustes de cuenta.
+
+<div align="center">
+<img src="https://i.imgur.com/LrE1OvU.png">
+</div>
+
+---
+
+#### **WEB 07: Centro de ayuda**
+
+Pantalla de soporte donde el usuario puede consultar preguntas frecuentes, acceder a chat en vivo o solicitar soporte por correo o teléfono.
+
+<div align="center">
+<img src="https://i.imgur.com/3hmzmqE.png">
+</div>
+
+---
+### **BACKEND – DISPENXCORE API**
+
+A continuación, se presentan las evidencias de ejecución del backend de DispenXCore, documentado mediante Swagger (OpenAPI 3.0), el cual expone los servicios REST utilizados por la aplicación web y móvil para la gestión del sistema IoT.
+
+---
+
+#### **BE 01: Documentación general de la API (Swagger – DispenX API v1)**
+
+Se muestra la interfaz principal de Swagger donde se centraliza la documentación de la API, permitiendo visualizar y ejecutar los endpoints del sistema DispenXCore bajo la versión v1.
+
+<div align="center">
+<img src="https://i.imgur.com/W0mmOgC.png">
+</div>
+
+---
+
+#### **BE 02: Módulos principales del sistema**
+
+Se evidencian los principales módulos funcionales del backend, incluyendo autenticación, dispositivos, dispensadores, eventos, firmware, inventario, notificaciones, programación de horarios y usuarios, todos estructurados bajo arquitectura REST.
+
+<div align="center">
+<img src="https://i.imgur.com/mBaGLJf.png">
+</div>
+
+---
+
+#### **BE 03: Definición de esquemas y modelos de datos**
+
+Se presenta la sección de schemas donde se definen los modelos utilizados por la API, tales como LoginRequest, RegisterRequest, ScheduleRequest, DeviceUpdateDto y otros DTOs necesarios para la comunicación entre cliente y servidor.
+
+<div align="center">
+<img src="https://i.imgur.com/skzIGVF.png">
+</div>
+
+---
+
+### **MOBILE APPLICATION – DISPENXCORE**
+
+A continuación, se evidencian las principales funcionalidades de la aplicación móvil del sistema DispenXCore, orientada al monitoreo de inventario, control de dispositivos IoT, historial de consumo, programación de dispensación y configuración del sistema.
+
+---
+
+#### **MOB 01: Login y registro de usuario**
+
+Se muestra la interfaz de autenticación del sistema, donde el usuario puede iniciar sesión o registrarse en la plataforma DispenXCore, incluyendo soporte para credenciales seguras.
+
+<div align="center">
+<img src="https://i.imgur.com/tyHMQST.png">
+</div>
+
+<div align="center">
+<img src="https://i.imgur.com/vks0WSg.png">
+</div>
+---
+
+#### **MOB 02: Dashboard principal (Home)**
+
+Pantalla principal donde el usuario visualiza el estado general del inventario, nivel de stock, dispositivos conectados y accesos rápidos a la función de dispensación automática.
+
+<div align="center">
+<img src="https://i.imgur.com/FAwLjBJ.png">
+</div>
+
+---
+
+#### **MOB 03: Gestión de dispositivo IoT**
+
+Se observa la sección de dispositivos conectados, donde el usuario puede visualizar el estado del dispensador, modelo del equipo, ubicación y realizar dispensación manual.
+
+<div align="center">
+<img src="https://i.imgur.com/IhgCL3W.png">
+</div>
+
+---
+
+#### **MOB 04: Historial de consumo**
+
+Pantalla donde se muestra el registro de dispensaciones realizadas, diferenciando entre consumo manual y programado, junto con métricas de cantidad y análisis de tendencia.
+
+<div align="center">
+<img src="https://i.imgur.com/v6xPS7m.png">
+</div>
+
+---
+
+#### **MOB 05: Programación de horarios**
+
+Módulo donde el usuario configura dispensaciones automáticas, definiendo cantidad, tipo de insumo y días de ejecución.
+
+<div align="center">
+<img src="https://i.imgur.com/2fX3aVR.png">
+</div>
+
+---
+
+#### **MOB 06: Configuración del sistema**
+
+Sección de configuración donde el usuario gestiona preferencias del sistema, incluyendo notificaciones de stock bajo, conexión Wi-Fi, protocolo MQTT y ajustes de cuenta.
+
+<div align="center">
+<img src="https://i.imgur.com/o4mfoey.png">
+</div>
+
+---
+
+
+##### 6.2.2.7. Services Documentation Evidence for Sprint Review
+
+En este Sprint se logró documentar mediante OpenAPI (Swagger) los endpoints correspondientes a las funcionalidades implementadas en el sistema DispenXCore. Esta documentación detalla los servicios consumidos por la aplicación web y móvil, incluyendo los verbos HTTP utilizados, los parámetros de entrada requeridos y las respuestas esperadas por cada operación. Esto facilita la comprensión del funcionamiento de la API y mejora la integración entre el backend y los distintos clientes del ecosistema IoT.
+
+**Documentación de Endpoints Backend**
+| Método | Endpoint | Descripción | ¿Requiere Auth? |
+|--------|----------|-------------|------------------|
+| `POST` | `/api/v1/auth/register` | Registra un nuevo usuario | No |
+| `POST` | `/api/v1/auth/login` | Inicia sesión y devuelve token JWT | No |
+| `POST` | `/api/v1/auth/logout` | Cierra sesión (simbólico) | Sí |
+| `GET` | `/api/v1/users/{id}` | Obtiene perfil de usuario por ID | Sí |
+| `PUT` | `/api/v1/users/{id}` | Actualiza nombre, apellido y foto del usuario | Sí |
+| `PATCH` | `/api/v1/users/{id}/password` | Cambia la contraseña del usuario | Sí |
+| `GET` | `/api/v1/inventario/estado` | Obtiene el estado de todos los contenedores (stock) | Sí |
+| `POST` | `/api/v1/inventario/medicion` | Registra una nueva medición (peso, nivel, flujo) | Sí |
+| `GET` | `/api/v1/alertas-stock/{contenedorId}` | Lista las alertas de un contenedor | Sí |
+| `POST` | `/api/v1/alertas-stock/evaluar` | Evalúa umbrales y envía push si aplica | Sí |
+| `GET` | `/api/v1/dispensators` | Lista todos los dispensadores | Sí |
+| `GET` | `/api/v1/dispensators/{id}` | Obtiene el estado dinámico de un dispensador (incluye `nextDispenseAt`) | Sí |
+| `POST` | `/api/v1/dispensators` | Crea un nuevo dispensador y su estado inicial | Sí |
+| `GET` | `/api/v1/schedules` | Lista horarios activos de un dispensador (query `dispensatorId`) | Sí |
+| `POST` | `/api/v1/schedules` | Crea un nuevo horario de dispensación | Sí |
+| `GET` | `/api/v1/schedules/{id}` | Obtiene un horario específico | Sí |
+| `PUT` | `/api/v1/schedules/{id}` | Actualiza un horario existente | Sí |
+| `DELETE` | `/api/v1/schedules/{id}` | Elimina un horario | Sí |
+| `PATCH` | `/api/v1/schedules/{id}/toggle` | Activa/desactiva un horario | Sí |
+| `GET` | `/api/v1/dispenser-events` | Lista eventos de dispensación (filtros: dispensatorId, from, to, supplyType) | Sí |
+| `POST` | `/api/v1/dispenser-events` | Registra un nuevo evento de dispensación | Sí |
+| `GET` | `/api/v1/device` | Obtiene información del dispositivo IoT | Sí |
+| `PATCH` | `/api/v1/device` | Actualiza nombre y ubicación del dispositivo | Sí |
+| `POST` | `/api/v1/device/ping` | Registra un latido (actualiza `lastSeen`) | Sí |
+| `GET` | `/api/v1/firmware` | Lista todas las versiones de firmware | Sí |
+| `GET` | `/api/v1/firmware/latest` | Obtiene la versión de firmware más reciente | Sí |
+| `POST` | `/api/v1/firmware/{id}/install` | Inicia la instalación de un firmware (simulado) | Sí |
+| `GET` | `/api/v1/notifications` | Obtiene notificaciones de un usuario (query `userId`) | Sí |
+| `PATCH` | `/api/v1/notifications/{id}/read` | Marca una notificación como leída | Sí |
+| `PATCH` | `/api/v1/notifications/read-all` | Marca todas las notificaciones de un usuario como leídas (`userId`) | Sí |
+
+
+##### 6.2.2.8. Software Deployment Evidence for Sprint Review
+<br>
+En esta sección se presenta la Evidencia de Despliegue del Software del sistema DispenXCore, detallando de forma secuencial cada etapa del proceso de despliegue en la plataforma Railway, así como la configuración de la base de datos y la validación del backend mediante Swagger.<br><br>
+
+<br>
+En esta sección se presenta la Evidencia de Despliegue del Software del sistema DispenXCore, mostrando el proceso completo de configuración y despliegue en la plataforma Railway, así como la validación del backend y la base de datos en entorno cloud.<br><br>
+
+---
+
+### **1. Creación del proyecto en Railway**
+
+Se observa la pantalla inicial de Railway donde se crea un nuevo proyecto. En esta etapa se selecciona el punto de inicio para el despliegue del sistema DispenXCore, habilitando la infraestructura cloud donde se alojarán los servicios del backend.
+
+
+<img src="https://i.imgur.com/NtLL49a.jpeg">
+
+---
+
+### **2. Selección del repositorio desde GitHub**
+
+Se muestra la conexión del proyecto Railway con el repositorio de GitHub del backend de DispenXCore.
+
+Esta integración permite habilitar el despliegue automático (CI/CD), asegurando que cada actualización del código se refleje en el entorno de producción.
+
+
+<img src="https://i.imgur.com/LiN7Lu7.jpeg">
+
+---
+
+### **3. Configuración del proyecto y servicios asociados**
+
+En esta etapa se visualiza la configuración del proyecto en Railway, incluyendo la selección del repositorio backend y la preparación del entorno de despliegue.
+
+Aquí se define la estructura inicial del servicio que será desplegado.
+
+
+<img src="https://i.imgur.com/hVqqud9.jpeg">
+
+---
+
+### **4. Configuración del backend (Variables y despliegue)**
+
+Se observa la configuración del backend del sistema DispenXCore, donde se definen variables de entorno y parámetros de ejecución.
+
+Esto permite la correcta comunicación entre el backend y la base de datos MySQL.
+
+
+<img src="https://i.imgur.com/HchhQA5.jpeg">
+
+---
+
+### **5. Configuración de MySQL (recursos del sistema)**
+
+Se evidencia la configuración del servicio MySQL dentro de Railway, donde se asignan recursos como CPU y memoria.
+
+Esta configuración garantiza el rendimiento adecuado del sistema en producción.
+
+
+<img src="https://i.imgur.com/P4WOdym.jpeg">
+
+---
+
+### **6. Configuración avanzada del servicio MySQL**
+
+Se muestra la configuración detallada del motor MySQL, incluyendo límites de recursos, parámetros de despliegue y opciones del contenedor.
+
+Esto asegura estabilidad en el almacenamiento de datos del sistema.
+
+
+<img src="https://i.imgur.com/W5C6sHg.jpeg">
+
+---
+
+### **7. Estado del despliegue del backend (Active)**
+
+Se observa el estado del backend desplegado en Railway, el cual se encuentra en estado **Active**, indicando que el servicio está correctamente funcionando.
+
+También se muestra la URL pública del backend, permitiendo el acceso externo a la API.
+
+
+<img src="https://i.imgur.com/RxdXVc0.jpeg">
+
+---
+
+### **8. Configuración de base de datos (MySQL Tables)**
+
+Se evidencia la estructura de la base de datos del sistema DispenXCore, donde se visualizan las principales tablas del sistema como usuarios, dispositivos, dispensadores, notificaciones y alertas.
+
+Esto confirma el correcto despliegue del modelo de datos.
+
+
+<img src="https://i.imgur.com/mw7e7an.jpeg">
+
+---
+
+### **9. Validación del backend mediante Swagger**
+
+Finalmente, se valida el despliegue del backend mediante Swagger UI, donde se exponen los endpoints del sistema DispenXCore.
+
+Se observan módulos como autenticación, dispositivos, alertas y dispensadores, confirmando que la API está completamente funcional y lista para consumo.
+
+
+<img src="https://i.imgur.com/JXTAE7k.jpeg">
+
+---
+
+##### 6.2.2.9. Team Collaboration Insights during Sprint
+En esta sección se presentan las reflexiones sobre la colaboración del equipo durante el sprint, describiendo las formas de trabajo adoptadas y las principales lecciones aprendidas que contribuyen a la mejora continua del proceso.
+
+**WEB APPLICATION**
+<img src="https://i.imgur.com/SqOj5sL.png">
+
+<img src="https://i.imgur.com/lVwy9sP.png">
+
+**BACKEND**
+<img src="https://i.imgur.com/6SiUeNw.png">
+
+<img src="https://i.imgur.com/yv3tHI7.png">
+
+**MOBILE FRONTEND**
+<img src="https://i.imgur.com/cjPxPO6.png">
+
+<img src="https://i.imgur.com/tBAimS0.png">
+
+### 6.3. Validation Interviews
+En esta sección, nos enfocamos en identificar los principales puntos de mejora de nuestra solución IoT, DispenXCore, para lograr una mayor efectividad en el monitoreo inteligente de suministros en los hogares. Esta fase crucial del proyecto implica un diálogo directo con nuestros usuarios principales (adultos mayores, cuidadores y administradores de suministros) para recopilar sus opiniones, experiencias y sugerencias a través de entrevistas de validación.
+
+De esta manera, aseguramos que la plataforma no solo cumpla con los requisitos técnicos, sino que también se adapte a las necesidades y expectativas de los usuarios finales, mejorando la experiencia de gestión de inventarios, la prevención de desabastecimientos y la reducción del desperdicio de alimentos en el hogar.
+
+#### 6.3.1. Diseño de Entrevistas
+Para garantizar la efectividad de las entrevistas, se diseñó un guion que aborda aspectos clave de la usabilidad, la funcionalidad y la experiencia general con DispenXCore. El cuestionario se estructuró en las siguientes secciones:
+
+ **Preguntas para el Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+
+ 1. ¿Qué tan claro te resulta el propósito general de la aplicación al usarla por primera vez?
+
+1. ¿Consideras que la información mostrada te ayuda a entender mejor el estado general de tus insumos en casa?
+
+1. ¿Qué tan útil te parece tener una herramienta que te permita controlar y supervisar tus productos desde un solo lugar?
+
+1. ¿Cómo percibes el valor de recibir avisos o alertas sobre el estado de tus productos?
+
+1. En general, ¿qué tan fácil te parece usar la aplicación y moverte dentro de ella?
+
+ **Preguntas para el Segmento Objetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+
+1. ¿Qué tan sencillo te resulta entender para qué sirve la aplicación?
+
+1. ¿Consideras útil poder conocer el estado de los productos sin tener que estar físicamente presente?
+
+1. ¿Qué tan importante es para ti poder supervisar o controlar esta información a distancia?
+
+1. ¿Cómo te hace sentir la idea de recibir avisos cuando algo necesita ser repuesto?
+
+1. En general, ¿qué tan cómoda y fácil de usar te parece la aplicación?
+
+#### 6.3.2. Registro de Entrevistas
+
+**Entrevistas Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
+
+**Entrevista 1:**
+
+  Datos del entrevistado:
+  - Nombre: Fabrisio Belahonia 
+  - Edad: 25 años
+  - Distrito de residencia: Ate
+  - Enlace: https://acortar.link/0C22bY 
+
+  <img src="https://i.imgur.com/JK3YY9y.png">
+
+  **Resumen de la entrevista:** Fabrisio Belahonia de 25 años estudiante de Ingeniería de Alimentos en la Universidad Agraria, se encarga del manejo y control de insumos alimenticios en contextos cotidianos, basándose actualmente en métodos manuales de revisión y supervisión del stock en el hogar.
+  Considera que una solución como DispenXCore le permitiría tener una mejor visibilidad del estado de los productos en tiempo real, reduciendo la necesidad de verificaciones constantes y facilitando la planificación de compras. Esto le ayudaría a evitar el desabastecimiento y a organizar mejor su consumo.
+  Además, valora positivamente la presencia de alertas automáticas, la visualización clara del inventario y la posibilidad de gestionar todo desde una plataforma centralizada, destacando que este tipo de sistema reduce la incertidumbre y mejora la toma de decisiones en el abastecimiento diario.
+
+**Entrevista 2:**
+
+  Datos del entrevistado:
+  - Nombre: Ángel García 
+  - Edad: 23 años
+  - Distrito de residencia: San Borja
+  - Enlace: https://acortar.link/iY22ga
+
+  <img src="https://i.imgur.com/1ABaQRz.png">
+
+  **Resumen de la entrevista:** Ángel Giovanni García Mota, estudiante de Ingeniería Mecatrónica en la UTEC.
+  Actualmente gestiona sus insumos de forma manual, lo que puede generar falta de control sobre el consumo diario debido a sus actividades académicas. Considera que DispenXCore le permitiría monitorear de forma más eficiente el estado de sus productos y tomar decisiones de compra de manera oportuna.
+  Valora especialmente las alertas automáticas, la visualización clara de datos y la posibilidad de acceder a la información desde distintos dispositivos, destacando la utilidad y practicidad del sistema para su rutina.
+
+**Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
+
+**Entrevista 1:**
+
+  Datos del entrevistado:
+  - Nombre: Sebastian Silva
+  - Edad: 22 años
+  - Distrito de residencia: San Luis
+  - Enlace: https://acortar.link/QytoVZ
+
+  <img src="https://i.imgur.com/FHht9Ma.png">
+
+  **Resumen de la entrevista:** Sebastian Silva de 22 años, estudiante que combina sus estudios con trabajo parcial en horarios de tarde y noche, mostró interés en soluciones tecnológicas aplicadas a la automatización de procesos cotidianos.
+  Actualmente realiza el control de insumos de forma manual, confiando en revisiones visuales y compras periódicas sin información precisa del estado real de los productos. Esto puede generar compras innecesarias o falta de planificación en el abastecimiento.
+  Considera que el sistema DispenXCore sería útil para conocer el estado de los insumos sin necesidad de estar físicamente presente, lo que le permitiría optimizar su tiempo y reducir desplazamientos innecesarios. Destaca especialmente el valor de las notificaciones automáticas, ya que facilitan la toma de decisiones de compra en el momento adecuado.
+  Además, percibe la aplicación como intuitiva y fácil de usar, indicando que con el uso frecuente se volvería aún más sencilla de manejar y que la información presentada es clara y funcional para el usuario.
+
+**Entrevista 2:**
+
+  Datos del entrevistado:
+  - Nombre: Jarol De La Fuente
+  - Edad: 25 años
+  - Distrito de residencia: La Molina
+  - Enlace: https://acortar.link/dqoPA9 
+
+  <img src="https://i.imgur.com/Ra9BNL5.png">
+
+  **Resumen de la entrevista:** Jarol De La Fuente ,estudiante universitario, mostró un perfil vinculado al cuidado de adultos mayores y a la gestión de actividades diarias con limitaciones de tiempo debido a sus responsabilidades académicas y laborales.
+  Actualmente realiza el control de insumos de manera manual, lo que le dificulta mantener una supervisión constante y oportuna del stock en el hogar o en los espacios donde apoya. Esto puede generar olvidos o compras poco planificadas.
+  Considera que DispenXCore sería una herramienta útil para automatizar el control de alimentos, permitiéndole conocer el estado de los productos en tiempo real y planificar mejor el reabastecimiento. Destaca especialmente el valor de la automatización, las notificaciones en tiempo real y la posibilidad de monitorear el inventario a distancia.
+  Además, percibe la plataforma como intuitiva, organizada y fácil de usar, resaltando que facilita la toma de decisiones sin necesidad de revisar físicamente los insumos.
+
+#### 6.3.3. Evaluaciones según heurísticas
+
+Esta sección contiene el proceso de evaluación de las sesiones de validación basado en heurísticas, considerando heurísticas de usabilidad, arquitectura de información e Inclusive Design de la experiencia propuesta.
+
+# Evaluación de Usabilidad: DispenXCore - Web Application
+
+## TAREAS A EVALUAR
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+* Registro de un nuevo usuario.
+* Inicio de sesión (Login).
+* Registro de un nuevo dispensador.
+* Visualización de telemetría en tiempo real de un dispensador.
+* Configuración de umbrales de alerta.
+* Vinculación de un cuidador a un familiar.
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+
+* Exportación de reportes.
+* Integración con asistentes de voz.
+* Gestión de múltiples hogares.
+* Visualización de estadísticas predictivas.
+
+---
+
+## ESCALA DE SEVERIDAD
+
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| --- | --- |
+| **1** | **Problema superficial:** puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a menos que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar. Se le debería asignar una prioridad baja resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+## TABLA RESUMEN
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| --- | --- | --- | --- |
+| 1 | No se indica claramente la acción de guardar después de registrar un dispensador. El usuario no sabe si el proceso finalizó correctamente. | 3 | Usability: Visibilidad del estado del sistema |
+| 2 | Las imágenes de los dispensadores no tienen un texto alternativo descriptivo. | 2 | Inclusive Design: Proporciona experiencias comparables |
+| 3 | En el Dashboard, el estado del dispensador ("Conectado/Desconectado") se muestra con un color no estándar, lo que genera confusión. | 3 | Usability: Consistencia y estándares |
+| 4 | El flujo para vincular a un cuidador requiere ingresar el ID del usuario, pero no hay una búsqueda o selector visual, lo que es poco intuitivo. | 4 | Information Architecture: Is it usable? |
+| 5 | Los gráficos de telemetría no tienen tooltips para explicar los picos de consumo, dificultando la interpretación de datos. | 2 | Information Architecture: Is it understandable? |
+| 6 | No hay un botón claro para "Cancelar" o "Volver" en el formulario de configuración de alertas, lo que atrapa al usuario en la tarea. | 3 | Usability: Libertad y control del usuario |
+
+---
+
+## DESCRIPCIÓN DE PROBLEMAS
+
+### PROBLEMA #1: No se indica claramente la acción de guardar después de registrar un dispensador.
+
+* **Severidad:** 3
+* **Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+* **Problema:** Después de completar el formulario de registro de un nuevo dispensador y presionar el botón "Enviar", la pantalla se queda igual sin mostrar un mensaje de confirmación o redirección. El usuario no sabe si el dispensador se registró correctamente o si debe volver a intentarlo, lo que genera incertidumbre y posibles duplicados.
+* **Recomendación:** Implementar un mensaje de éxito (toast o modal) que confirme el registro y redirija al usuario al listado de dispensadores. También se debe incluir un indicador de carga mientras se procesa la solicitud.
+
+<img src="https://i.imgur.com/IhgCL3W.png">
+
+### PROBLEMA #2: Las imágenes de los dispensadores no tienen un texto alternativo descriptivo.
+
+* **Severidad:** 2
+* **Heurística violada:** Inclusive Design - Proporciona experiencias comparables
+* **Problema:** Las imágenes que ilustran los dispensadores en la sección "Mis Dispositivos" no incluyen un atributo alt. Esto dificulta la comprensión del contenido para usuarios con discapacidad visual que utilizan lectores de pantalla, limitando su experiencia.
+* **Recomendación:** Agregar un texto alternativo descriptivo a cada imagen, como "Dispensador de granos modelo X" o "Ilustración de dispensador inteligente".
+
+<img src="./feature/chapter-6/problema2.jpeg">
+
+### PROBLEMA #3: El flujo para vincular a un cuidador requiere ingresar el ID del usuario, pero no hay un selector visual.
+
+* **Severidad:** 4
+* **Heurística violada:** Information Architecture - Is it usable?
+* **Problema:** Para vincular un cuidador a un familiar, el usuario debe ingresar manualmente el ID del usuario a monitorear. Este campo es poco amigable, ya que la mayoría de los usuarios desconoce su ID y no hay una opción para buscarlo por nombre o correo electrónico. Esto puede bloquear completamente la tarea.
+* **Recomendación:** Reemplazar el campo de texto por un selector desplegable (combobox) o un campo de búsqueda con autocompletado que permita encontrar al usuario por nombre o correo. Si el usuario no está en el sistema, se podría permitir enviar una invitación por correo.
+
+<img src="./feature/chapter-6/problema3.jpg">
+
+
+### PROBLEMA #4: No hay un botón claro para "Cancelar" o "Volver" en el formulario de configuración de alertas.
+
+* **Severidad:** 3
+* **Heurística violada:** Usability - Libertad y control del usuario
+* **Problema:** Al acceder a la configuración de alertas, la única opción de salida es presionar "Guardar". No hay un enlace o botón para regresar al Dashboard sin guardar cambios, forzando al usuario a completar la tarea incluso si solo quería echar un vistazo.
+* **Recomendación:** Añadir un botón de "Cancelar" o una "X" de cierre que redirija al usuario a la pantalla anterior sin guardar cambios. También se puede implementar un mensaje de confirmación si el usuario cierra con cambios pendientes.
+
+<img src="https://i.imgur.com/o4mfoey.png">
+
+### 6.4. Video About-the-Product
+
+**VIDEO DEL ABOUT THE PRODUCT** [VIDEO](https://acortar.link/Dg3hwA)
+
 ## Bibliografía
 
 - Gartner, Inc. (2025). *Forecast: Internet of Things — Endpoints and spending*. Gartner.
@@ -745,7 +1457,11 @@ En esta sección se exponen las **Reflexiones sobre la Colaboración del Equipo*
 
 ## **Anexos**
 
-  **LANDING PAGE:** [LANDING PAGE](https://comforting-pony-e834fe.netlify.app/)
+  **LANDING PAGE:** [LANDING PAGE](https://landing-dispenxcore.netlify.app/)
+
+  **WEB APPLICATION:** [WEB APPLICATION](https://dispenxcore.netlify.app/)
+
+  **BACKEND:** [BACKEND](https://dispenxcore-backend-production.up.railway.app/swagger/index.html)
 
   **PPT DEL PROYECTO:** [PPT](https://www.canva.com/design/DAGzQEpBtMs/zjEr8_HDH_y-mSaGu_7O3A/edit) 
 
