@@ -859,7 +859,188 @@ En esta sección se muestra la evidencia de desarrollo realizada durante el spri
 <!-- Github -->
 
 ##### 6.2.2.6. Execution Evidence for Sprint Review
-<!-- Imagenes LP, Back y ambos fronts -->
+En esta sección se presenta la Evidencia de Ejecución del sprint, la cual muestra el incremento funcional desarrollado de la web application , backend y  aplicación móvil de DispenXCore, listo para su validación durante la Sprint Review.
+
+### **WEB APPLICATION – DISPENXCORE**
+
+A continuación, se presentan las evidencias de ejecución del sistema web DispenXCore, el cual permite la gestión de usuarios, dispositivos IoT, programación de dispensación, monitoreo de inventario y soporte al usuario.
+
+---
+
+#### **WEB 01: Login del sistema**
+
+Se muestra la pantalla de autenticación donde el usuario puede iniciar sesión en la plataforma DispenXCore, con soporte multilenguaje (ES/EN) y acceso seguro al sistema.
+
+<div align="center">
+<img src="https://i.imgur.com/r56S1S6.png">
+</div>
+
+---
+
+#### **WEB 02: Registro de usuario**
+
+Interfaz de creación de cuenta donde el usuario puede registrarse ingresando datos personales como nombre, apellido, correo y contraseña, junto con aceptación de términos y condiciones.
+
+<div align="center">
+<img src="https://i.imgur.com/KMUawi9.png">
+</div>
+
+---
+
+#### **WEB 03: Dashboard principal**
+
+Se presenta el panel principal del sistema, donde se visualiza el estado general del dispositivo, nivel de inventario, dispensación automática, métricas de consumo y resumen operativo.
+
+<div align="center">
+<img src="https://i.imgur.com/396cRPI.png">
+</div>
+
+---
+
+#### **WEB 04: Programación de horarios**
+
+Módulo que permite configurar rutinas automáticas de dispensación, definiendo cantidades, horarios y días de ejecución para cada programación.
+
+<div align="center">
+<img src="https://i.imgur.com/I0jUYbi.png">
+</div>
+
+---
+
+#### **WEB 05: Historial de dispensación**
+
+Se muestra el registro de eventos de consumo, incluyendo análisis de tendencia, cantidad dispensada por día y métricas semanales del sistema.
+
+<div align="center">
+<img src="https://i.imgur.com/ZapgKic.png">
+</div>
+
+---
+
+#### **WEB 06: Configuración del sistema**
+
+Sección donde el usuario puede gestionar preferencias del dispositivo, notificaciones, conexión WiFi, protocolo MQTT, seguridad y ajustes de cuenta.
+
+<div align="center">
+<img src="https://i.imgur.com/LrE1OvU.png">
+</div>
+
+---
+
+#### **WEB 07: Centro de ayuda**
+
+Pantalla de soporte donde el usuario puede consultar preguntas frecuentes, acceder a chat en vivo o solicitar soporte por correo o teléfono.
+
+<div align="center">
+<img src="https://i.imgur.com/3hmzmqE.png">
+</div>
+
+---
+### **BACKEND – DISPENXCORE API**
+
+A continuación, se presentan las evidencias de ejecución del backend de DispenXCore, documentado mediante Swagger (OpenAPI 3.0), el cual expone los servicios REST utilizados por la aplicación web y móvil para la gestión del sistema IoT.
+
+---
+
+#### **BE 01: Documentación general de la API (Swagger – DispenX API v1)**
+
+Se muestra la interfaz principal de Swagger donde se centraliza la documentación de la API, permitiendo visualizar y ejecutar los endpoints del sistema DispenXCore bajo la versión v1.
+
+<div align="center">
+<img src="https://i.imgur.com/W0mmOgC.png">
+</div>
+
+---
+
+#### **BE 02: Módulos principales del sistema**
+
+Se evidencian los principales módulos funcionales del backend, incluyendo autenticación, dispositivos, dispensadores, eventos, firmware, inventario, notificaciones, programación de horarios y usuarios, todos estructurados bajo arquitectura REST.
+
+<div align="center">
+<img src="https://i.imgur.com/mBaGLJf.png">
+</div>
+
+---
+
+#### **BE 03: Definición de esquemas y modelos de datos**
+
+Se presenta la sección de schemas donde se definen los modelos utilizados por la API, tales como LoginRequest, RegisterRequest, ScheduleRequest, DeviceUpdateDto y otros DTOs necesarios para la comunicación entre cliente y servidor.
+
+<div align="center">
+<img src="https://i.imgur.com/skzIGVF.png">
+</div>
+
+---
+
+### **MOBILE APPLICATION – DISPENXCORE**
+
+A continuación, se evidencian las principales funcionalidades de la aplicación móvil del sistema DispenXCore, orientada al monitoreo de inventario, control de dispositivos IoT, historial de consumo, programación de dispensación y configuración del sistema.
+
+---
+
+#### **MOB 01: Login y registro de usuario**
+
+Se muestra la interfaz de autenticación del sistema, donde el usuario puede iniciar sesión o registrarse en la plataforma DispenXCore, incluyendo soporte para credenciales seguras.
+
+<div align="center">
+<img src="https://i.imgur.com/tyHMQST.png">
+</div>
+
+<div align="center">
+<img src="https://i.imgur.com/vks0WSg.png">
+</div>
+---
+
+#### **MOB 02: Dashboard principal (Home)**
+
+Pantalla principal donde el usuario visualiza el estado general del inventario, nivel de stock, dispositivos conectados y accesos rápidos a la función de dispensación automática.
+
+<div align="center">
+<img src="https://i.imgur.com/FAwLjBJ.png">
+</div>
+
+---
+
+#### **MOB 03: Gestión de dispositivo IoT**
+
+Se observa la sección de dispositivos conectados, donde el usuario puede visualizar el estado del dispensador, modelo del equipo, ubicación y realizar dispensación manual.
+
+<div align="center">
+<img src="https://i.imgur.com/IhgCL3W.png">
+</div>
+
+---
+
+#### **MOB 04: Historial de consumo**
+
+Pantalla donde se muestra el registro de dispensaciones realizadas, diferenciando entre consumo manual y programado, junto con métricas de cantidad y análisis de tendencia.
+
+<div align="center">
+<img src="https://i.imgur.com/v6xPS7m.png">
+</div>
+
+---
+
+#### **MOB 05: Programación de horarios**
+
+Módulo donde el usuario configura dispensaciones automáticas, definiendo cantidad, tipo de insumo y días de ejecución.
+
+<div align="center">
+<img src="https://i.imgur.com/2fX3aVR.png">
+</div>
+
+---
+
+#### **MOB 06: Configuración del sistema**
+
+Sección de configuración donde el usuario gestiona preferencias del sistema, incluyendo notificaciones de stock bajo, conexión Wi-Fi, protocolo MQTT y ajustes de cuenta.
+
+<div align="center">
+<img src="https://i.imgur.com/o4mfoey.png">
+</div>
+
+---
+
 
 ##### 6.2.2.7. Services Documentation Evidence for Sprint Review
 
