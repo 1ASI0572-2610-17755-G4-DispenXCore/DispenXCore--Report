@@ -1122,9 +1122,6 @@ En este Sprint se logró documentar mediante OpenAPI (Swagger) los endpoints cor
 <br>
 En esta sección se presenta la Evidencia de Despliegue del Software del sistema DispenXCore, detallando de forma secuencial cada etapa del proceso de despliegue en la plataforma Railway, así como la configuración de la base de datos y la validación del backend mediante Swagger.<br><br>
 
-<br>
-En esta sección se presenta la Evidencia de Despliegue del Software del sistema DispenXCore, mostrando el proceso completo de configuración y despliegue en la plataforma Railway, así como la validación del backend y la base de datos en entorno cloud.<br><br>
-
 ---
 
 ### **1. Creación del proyecto en Railway**
@@ -1338,7 +1335,45 @@ En el tercer sprint, el equipo se enfocó en cerrar la aplicación móvil, compl
 
 En esta sección se muestra la evidencia de desarrollo realizada durante el sprint, evidenciando el trabajo funcional implementado y los incrementos del producto que están listos para su inspección y validación en la Sprint Review.
 
+**Mobile Frontend Evidence**
+| Repository                  | Branch / Module | Commit Id | Commit Message                                                           | Committed By    | Date         |
+| --------------------------- | --------------- | --------- | ------------------------------------------------------------------------ | --------------- | ------------ |
+| DispenXCore-Mobile-FrontEnd | develop         | a8093fb   | feat: connect inventory and alerts to backend                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 75663cf   | feat: connect inventory and alerts-stock to backend real                 | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | e8b93a0   | feat: connect history/dispenser-events with filters and weekly chart     | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | f95656c   | feat: connect schedules CRUD to backend (fix supplyType & frequencyDays) | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 940778c   | feat: connect notifications module to backend real                       | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | f042140   | feat: connect dispensators, device and home to backend real              | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 0b0f56d   | feat: edit profile fixed                                                 | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | b571562   | feat: connect user module (profile + edit + password change)             | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 4f9b514   | feat: connect auth backend (login + register)                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | develop         | 7f0d010   | feat: UI improvements (login, register, home)                            | alomsoo         | Jun 18, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/home    | 7fb3e35   | feat: add home module                                                    | sebasepe        | Jun 13, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/home    | 780d8f8   | feat: add home module (update)                                           | sebasepe        | Jun 13, 2026 |
+| DispenXCore-Mobile-FrontEnd | feature/alerts  | 93be51e   | Add alerts feature and UI                                                | RicardoCardenas | Jun 3, 2026  |
+| DispenXCore-Mobile-FrontEnd | main/init       | bb9a22d   | Fix clone repository URL in README.md                                    | Radv2005        | May 26, 2026 |
+| DispenXCore-Mobile-FrontEnd | main/init       | ae77f58   | Initial commit                                                           | Radv2005        | May 26, 2026 |
 
+
+**Backend Evidence**
+
+| Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
+|------------|----------------|------------|----------------|---------------|------|
+| DispenXCore-Backend | main | 1f8bf40f | feat: add migration | sebasepe | Jul 6, 2026 |
+| DispenXCore-Backend | main | 3b74578 | feat: add comments | sebasepe | Jul 6, 2026 |
+| DispenXCore-Backend | main | effdf52 | feat: added dispense event to edge | RicardoCardenas | Jul 5, 2026 |
+| DispenXCore-Backend | main | cda8e1a | updated gitignore | RicardoCardenas | Jul 5, 2026 |
+| DispenXCore-Backend | main | 3dadd71 | updated gitignore | RicardoCardenas | Jul 5, 2026 |
+| DispenXCore-Backend | main | 173c697 | updated gitignore | RicardoCardenas | Jul 5, 2026 |
+| DispenXCore-Backend | main | 9b130d8 | feat: added values to connection to edge | RicardoCardenas | Jul 5, 2026 |
+
+
+**Edge Service Evidence**
+
+| Repository | Branch / Module | Commit Id | Commit Message | Committed By | Date |
+|------------|----------------|------------|----------------|---------------|------|
+| DispenXCore-Edge-Service | main | 5a49ffd | update: added backend url | RicardoCardenas | Jul 5, 2026 |
+| DispenXCore-Edge-Service | main | ab966ba | feat: now works with backend | RicardoCardenas | Jul 5, 2026 |
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
@@ -1354,8 +1389,7 @@ Durante este Sprint 3 , se presentan los commits asociados a la implementación 
 
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
-En esta sección se presenta la Evidencia de Ejecución del sprint, la cual muestra  el backend y aplicación móvil de DispenXCore, totalmente terminado.
-
+En esta sección se presenta la Evidencia de Ejecución del sprint, la cual muestra  el backend , aplicación móvil de DispenXCore y wokwi ,totalmente terminado cada parte.
 
 ### **BACKEND – DISPENXCORE API**
 
@@ -1475,16 +1509,110 @@ Se muestra el prototipo en wokwi final
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
+En esta sección se presenta la Evidencia de Despliegue del Software del sistema DispenXCore, detallando de forma secuencial cada etapa del proceso de despliegue en la plataforma Railway, así como la configuración de la base de datos y la validación del backend mediante Swagger para este sprint 3 terminado.
 
+---
+
+### **1. Creación del proyecto en Railway**
+
+Se observa la pantalla inicial de Railway donde se crea un nuevo proyecto. En esta etapa se selecciona el punto de inicio para el despliegue del sistema DispenXCore, habilitando la infraestructura cloud donde se alojarán los servicios del backend.
+
+
+<img src="https://i.imgur.com/NtLL49a.jpeg">
+
+---
+
+### **2. Selección del repositorio desde GitHub**
+
+Se muestra la conexión del proyecto Railway con el repositorio de GitHub del backend de DispenXCore.
+
+Esta integración permite habilitar el despliegue automático (CI/CD), asegurando que cada actualización del código se refleje en el entorno de producción.
+
+
+<img src="https://i.imgur.com/LiN7Lu7.jpeg">
+
+---
+
+### **3. Configuración del proyecto y servicios asociados**
+
+En esta etapa se visualiza la configuración del proyecto en Railway, incluyendo la selección del repositorio backend y la preparación del entorno de despliegue.
+
+Aquí se define la estructura inicial del servicio que será desplegado.
+
+
+<img src="https://i.imgur.com/hVqqud9.jpeg">
+
+---
+
+### **4. Configuración del backend (Variables y despliegue)**
+
+Se observa la configuración del backend del sistema DispenXCore, donde se definen variables de entorno y parámetros de ejecución.
+
+Esto permite la correcta comunicación entre el backend y la base de datos MySQL.
+
+
+<img src="https://i.imgur.com/HchhQA5.jpeg">
+
+---
+
+### **5. Configuración de MySQL (recursos del sistema)**
+
+Se evidencia la configuración del servicio MySQL dentro de Railway, donde se asignan recursos como CPU y memoria.
+
+Esta configuración garantiza el rendimiento adecuado del sistema en producción.
+
+
+<img src="https://i.imgur.com/P4WOdym.jpeg">
+
+---
+
+### **6. Configuración avanzada del servicio MySQL**
+
+Se muestra la configuración detallada del motor MySQL, incluyendo límites de recursos, parámetros de despliegue y opciones del contenedor.
+
+Esto asegura estabilidad en el almacenamiento de datos del sistema.
+
+
+<img src="https://i.imgur.com/W5C6sHg.jpeg">
+
+---
+
+### **7. Estado del despliegue del backend (Active)**
+
+Se observa el estado del backend desplegado en Railway, el cual se encuentra en estado **Active**, indicando que el servicio está correctamente funcionando.
+
+También se muestra la URL pública del backend, permitiendo el acceso externo a la API.
+
+
+<img src="https://i.imgur.com/RxdXVc0.jpeg">
+
+---
+
+### **8. Configuración de base de datos (MySQL Tables)**
+
+Se evidencia la estructura de la base de datos del sistema DispenXCore, donde se visualizan las principales tablas del sistema como usuarios, dispositivos, dispensadores, notificaciones y alertas.
+
+Esto confirma el correcto despliegue del modelo de datos.
+
+
+<img src="https://i.imgur.com/mw7e7an.jpeg">
+
+---
+
+### **9. Validación del backend mediante Swagger**
+
+Finalmente, se valida el despliegue del backend mediante Swagger UI, donde se exponen los endpoints del sistema DispenXCore.
+
+Se observan módulos como autenticación, dispositivos, alertas y dispensadores, confirmando que la API está completamente funcional y lista para consumo.
+
+
+<img src="https://i.imgur.com/JXTAE7k.jpeg">
+
+---
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
 En esta sección se presentan las reflexiones sobre la colaboración del equipo durante el sprint, describiendo las formas de trabajo adoptadas y las principales lecciones aprendidas que contribuyen a la mejora continua del proceso.
-
-**WEB APPLICATION**
-<img src="https://i.imgur.com/GvcXWF1.png">
-
-<img src="https://i.imgur.com/eljbFm0.png">
 
 **BACKEND**
 <img src="https://i.imgur.com/rc447qV.png">
