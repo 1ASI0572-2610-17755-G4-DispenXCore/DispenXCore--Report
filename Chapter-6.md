@@ -1355,7 +1355,27 @@ En el tercer sprint, el equipo se enfocó en cerrar la aplicación móvil, compl
 
 #### 6.2.3.9. Team Collaboration Insights during Sprint
 
----
+En esta sección se presentan las reflexiones sobre la colaboración del equipo durante el sprint, describiendo las formas de trabajo adoptadas y las principales lecciones aprendidas que contribuyen a la mejora continua del proceso.
+
+**WEB APPLICATION**
+<img src="https://i.imgur.com/GvcXWF1.png">
+
+<img src="https://i.imgur.com/eljbFm0.png">
+
+**BACKEND**
+<img src="https://i.imgur.com/rc447qV.png">
+
+<img src="https://i.imgur.com/OWVWRNT.png">
+
+**MOBILE FRONTEND**
+<img src="https://i.imgur.com/cjPxPO6.png">
+
+<img src="https://i.imgur.com/tBAimS0.png">
+
+**Edge Service**
+<img src="https://i.imgur.com/eAGTJ0A.png">
+
+<img src="https://i.imgur.com/96motfh.png">
 
 ### 6.3. Validation Interviews
 En esta sección, nos enfocamos en identificar los principales puntos de mejora de nuestra solución IoT, DispenXCore, para lograr una mayor efectividad en el monitoreo inteligente de suministros en los hogares. Esta fase crucial del proyecto implica un diálogo directo con nuestros usuarios principales (adultos mayores, cuidadores y administradores de suministros) para recopilar sus opiniones, experiencias y sugerencias a través de entrevistas de validación.
