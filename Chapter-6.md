@@ -1342,6 +1342,15 @@ En esta sección se muestra la evidencia de desarrollo realizada durante el spri
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
 
+Durante este Sprint 3 , se presentan los commits asociados a la implementación de las épicas del sistema DispenXCore. Estas evidencias reflejan el desarrollo de todo el proyecto.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|------------|-----------------|---------------------|----------------------|
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | d8b5cca | feat: add epic story 05 | Implementación de la épica 05 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | 673a263 | feat: add epic story 04 | Implementación de la épica 04 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | c71ee8d | feat: add epic story 03 | Implementación de la épica 03 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | 893bf09 | feat: add epic story 02 | Implementación de la épica 02 del sistema DispenXCore. | 13/05/2026 |
+| https://github.com/1ASI0572-2610-17755-G4-DispenXCore/DispenXCore--Features | main | cfd73e5 | feat: add epic story 01 | Implementación de la épica 01 del sistema DispenXCore. | 13/05/2026 |
 
 #### 6.2.3.6. Execution Evidence for Sprint Review
 
@@ -1450,6 +1459,15 @@ Sección de configuración donde el usuario gestiona preferencias del sistema, i
 <img src="https://i.imgur.com/o4mfoey.png">
 </div>
 
+---
+
+#### **WOK 01: Prototipo**
+
+Se muestra el prototipo en wokwi final
+
+<div align="center">
+<img src="https://i.imgur.com/Z335P3w.png">
+</div>
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
 
