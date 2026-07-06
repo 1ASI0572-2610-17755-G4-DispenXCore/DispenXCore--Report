@@ -1242,6 +1242,121 @@ En esta sección se presentan las reflexiones sobre la colaboración del equipo 
 
 <img src="https://i.imgur.com/tBAimS0.png">
 
+#### 6.2.3. Sprint 3
+La siguiente sección detalla los resultados del Sprint #3 del proyecto DispenXCore. En este incremento se priorizó el cierre de la aplicación móvil, la implementación del dispositivo IoT físico y el avance de una parte del backend necesaria para consolidar la integración del sistema. Asimismo, se realizaron ajustes de validación sobre la comunicación entre la app móvil, el backend y el dispositivo, fortaleciendo la estabilidad del flujo de datos dentro del ecosistema del proyecto.
+
+#### 6.2.3.1. Sprint Planning 3
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 3</th>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Contexto de Planificación del Sprint</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Fecha</td>
+    <td>18/06/2026</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Hora</td>
+    <td>21:30 horas (GMT-5)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Lugar</td>
+    <td>Reunión virtual (Discord)</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Elaborado por</td>
+    <td>Muñiz Huayanca, Percy Alonso</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Participantes</td>
+    <td>
+      Bastidas Bastidas, Diego Martin<br>
+      Cardenas Minaya, Ricardo Fernando<br>
+      Dominguez Vargas, Rafael Alexander<br>
+      Escobar Palomino, Sebastian Matias<br>
+      Muñiz Huayanca, Percy Alonso
+    </td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Sprint Review 3</td>
+    <td>En el sprint anterior se consolidó una parte importante de la aplicación móvil, cerrando pantallas clave y mejorando la experiencia de navegación. Asimismo, se avanzó en el backend con endpoints y ajustes necesarios para sostener la integración del sistema, mientras que el dispositivo IoT físico quedó implementado y validado en escenarios de prueba. Estos resultados permitieron verificar la continuidad del flujo entre el móvil, el backend y el dispositivo, dejando una base más estable para la entrega final.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Resumen de la Retrospectiva del Sprint 3</td>
+    <td>Durante este tercer sprint, el equipo logró concentrarse en el cierre de la aplicación móvil, la puesta a punto del dispositivo IoT físico y el desarrollo de componentes puntuales del backend. A nivel de proceso, se identificó que el trabajo final de integración requiere validaciones más cortas y frecuentes para asegurar compatibilidad entre la app móvil, la API y el hardware. También se observó la necesidad de documentar con mayor precisión los cambios de backend para reducir retrabajos y facilitar pruebas de integración. Como mejora continua, se propone reforzar la coordinación entre las ramas de móvil, backend e IoT físico, manteniendo entregas incrementales y verificaciones técnicas más cercanas al cierre del proyecto.</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font-weight: bold;">Objetivo del Sprint e Historias de Usuario</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Objetivo del Sprint 3</td>
+    <td>El objetivo de este sprint fue finalizar la aplicación móvil de DispenXCore, completar la implementación del dispositivo IoT físico y desarrollar la parte del backend necesaria para soportar la integración final del sistema. Con ello, se buscó asegurar que el flujo de información entre la app móvil, el backend y el dispositivo funcione de manera estable y consistente, permitiendo validar la solución completa antes del cierre del proyecto. Este sprint deja la plataforma en una etapa de integración y estabilización final.</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Velocidad del Sprint 3</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td style="font-weight: bold;">Total de Story Points</td>
+    <td>20</td>
+  </tr>
+</table>
+
+<br>
+
+#### 6.2.3.2. Aspect Leaders and Collaborators
+
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **Capítulo I: Introduction** | **Capítulo II: Requirements Elicitation & Analysis** | **Capítulo III: Requirements Specification** | **Capítulo IV: Solution Software Design** | **Capítulo V: Solution UI/UX Design** | **Capítulo VI: Product Implementation, Validation & Deployment** |
+|----------------------------------------|---------------------|------------------------------|------------------------------------------------------|----------------------------------------------|------------------------------------------|--------------------------------------|------------------------------------------------------------------|
+| Bastidas Bastidas, Diego Martín       | ghostnotfound404    | **L**                        | C                                                    | C                                            | C                                        | C                                    | C                                                                |
+| Cárdenas Minaya, Ricardo Fernando     | RicardoCardenas     | C                            | **L**                                                | C                                            | C                                        | C                                    | C                                                                |
+| Domínguez Vargas, Rafael Alexander    | Radv2005            | C                            | C                                                    | **L**                                        | C                                        | C                                    | C                                                                |
+| Escobar Palomino, Sebastián Matías    | sebasepe            | C                            | C                                                    | C                                            | **L**                                    | C                                    | C                                                                |
+| Muñiz Huayanca, Percy Alonso          | alomsoo             | C                            | C                                                    | C                                            | C                                        | **L**                                | C                                                                |
+
+
+#### 6.2.3.3. Sprint Backlog 3
+En el tercer sprint, el equipo se enfocó en cerrar la aplicación móvil, completar el dispositivo IoT físico y avanzar en componentes específicos del backend para consolidar la integración final. Las tareas se distribuyeron según la especialidad de cada miembro para asegurar el cumplimiento de los objetivos del sprint y mantener una entrega estable al cierre del proyecto.
+
+
+| ID | Title | Description | Estimation (Hours) | Assigned To | Status |
+| --- | --- | --- | --- | --- | --- |
+| MOB01 | App Navigation Finalization | Ajustes finales de navegación, accesos rápidos y consistencia visual en la aplicación móvil. | 3 | Cardenas Minaya, Ricardo | Done |
+| MOB02 | User Account Closing | Cierre del flujo de registro, inicio de sesión y perfil de usuario en la aplicación móvil. | 4 | Bastidas Bastidas, Diego Martín | Done |
+| MOB03 | Dispenser Management | Finalización de pantallas de dispensadores, detalle y edición de información del dispositivo. | 4 | Escobar Palomino, Sebastian | Done |
+| MOB04 | Inventory and Alerts | Cierre de la visualización de inventario, alertas y estados de stock en la aplicación móvil. | 4 | Muñiz Huayanca, Percy | Done |
+| IOT01 | Physical Device Assembly | Ensamblaje y puesta en funcionamiento del dispositivo IoT físico con sensores y actuadores. | 5 | Muñiz Huayanca, Percy | Done |
+| IOT02 | Device Communication | Validación de la comunicación del dispositivo físico con el backend y la lectura de datos. | 4 | Dominguez Vargas, Rafael | Done |
+| BE01 | Backend Support Endpoints | Desarrollo de endpoints complementarios para soportar el cierre de la aplicación móvil. | 4 | Bastidas Bastidas, Diego Martín | Done |
+| BE02 | Integration Fixes | Corrección de respuestas y ajustes de integración entre backend, móvil y dispositivo físico. | 3 | Dominguez Vargas, Rafael | Done |
+| BE03 | Deployment Stabilization | Estabilización del backend y verificación de funcionamiento en entorno de prueba. | 2 | Cardenas Minaya, Ricardo | Done |
+
+
+#### 6.2.3.4. Development Evidence for Sprint Review 
+
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+
+#### 6.2.3.6. Execution Evidence for Sprint Review
+
+
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review
+
+
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review
+
+
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint
+
+---
+
 ### 6.3. Validation Interviews
 En esta sección, nos enfocamos en identificar los principales puntos de mejora de nuestra solución IoT, DispenXCore, para lograr una mayor efectividad en el monitoreo inteligente de suministros en los hogares. Esta fase crucial del proyecto implica un diálogo directo con nuestros usuarios principales (adultos mayores, cuidadores y administradores de suministros) para recopilar sus opiniones, experiencias y sugerencias a través de entrevistas de validación.
 
