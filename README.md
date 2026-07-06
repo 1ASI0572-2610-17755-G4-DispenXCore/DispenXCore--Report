@@ -34,7 +34,7 @@
         <td>Dominguez Vargas, Rafael Alexander</td>
     </tr>
     <tr>
-        <td align="center">U202220219</td>
+        <td align="center">U202125968</td>
         <td>Escobar Palomino, Sebastian Matias</td>
     </tr>
     <tr>
