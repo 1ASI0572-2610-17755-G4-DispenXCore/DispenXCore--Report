@@ -4,16 +4,35 @@ Enlace de la organización para el reporte del proyecto: [https://github.com/1AS
 
 AV1:
 
-<img src="./Collaboration-Insights/Insight1.png">
+<img src="./Collaboration-Insights/Insight1.png" alt="" width="70%">
 
-<img src="./Collaboration-Insights/Insight2.png">
+<img src="./Collaboration-Insights/Insight2.png" alt="" width="70%">
 
-<img src="./Collaboration-Insights/Insight3.png">
+<img src="./Collaboration-Insights/Insight3.png" alt="" width="70%">
 
 TB1:
 
-<img src="./Collaboration-Insights/Insight4.png">
+<img src="./Collaboration-Insights/Insight4.png" alt="" width="70%">
 
-<img src="./Collaboration-Insights/Insight5.png">
+<img src="./Collaboration-Insights/Insight5.png" alt="" width="70%">
 
-<img src="./Collaboration-Insights/Insight6.png">
+<img src="./Collaboration-Insights/Insight6.png" alt="" width="70%">
+<div style="page-break-after: always;"></div>
+
+
+AV2:
+
+<img src="https://i.imgur.com/yOuEdtE.png" alt="" width="70%">
+
+<img src="https://i.imgur.com/khwejGs.png" alt="" width="70%">
+
+<img src="https://i.imgur.com/wUitRjk.png" alt="" width="70%">
+
+
+TB2:
+
+<img src="https://i.imgur.com/XcvHdOq.png" alt="" width="70%">
+
+<img src="https://i.imgur.com/21UsgNJ.png[" alt="" width="70%">
+
+<img src="https://i.imgur.com/yNLrYJp.png" alt="" width="70%">
