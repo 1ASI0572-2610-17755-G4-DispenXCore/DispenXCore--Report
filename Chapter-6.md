@@ -1505,7 +1505,43 @@ Se muestra el prototipo en wokwi final
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review
 
+En este Sprint se completó la documentación final de endpoints del backend mediante OpenAPI/Swagger. Esta documentación organiza y describe los servicios disponibles de DispenXCore, incluyendo métodos HTTP, rutas, propósito de cada endpoint y requisitos de autenticación. Con ello, se facilita la integración del backend con la aplicación web, la aplicación móvil y el servicio Edge.
 
+**Documentación de Endpoints Backend**
+
+| Método | Endpoint | Descripción | ¿Requiere Auth? |
+|--------|----------|-------------|------------------|
+| `POST` | `/api/v1/alertas-stock/evaluar` | Evalúa los umbrales de stock y genera alertas si corresponde | Sí |
+| `GET` | `/api/v1/alertas-stock/{contenedorId}` | Obtiene las alertas de stock asociadas a un contenedor específico | Sí |
+| `POST` | `/api/v1/auth/register` | Registra un nuevo usuario en el sistema | No |
+| `POST` | `/api/v1/auth/login` | Inicia sesión y devuelve un token de autenticación JWT | No |
+| `POST` | `/api/v1/auth/logout` | Cierra la sesión del usuario autenticado | Sí |
+| `GET` | `/api/v1/device` | Obtiene la información del dispositivo IoT registrado | Sí |
+| `PATCH` | `/api/v1/device` | Actualiza la información del dispositivo IoT | Sí |
+| `POST` | `/api/v1/device/ping` | Registra un ping del dispositivo para actualizar su estado de conexión | Sí |
+| `POST` | `/api/v1/device/register` | Registra un nuevo dispositivo IoT en el sistema | Sí |
+| `GET` | `/api/v1/dispensators` | Lista todos los dispensadores registrados | Sí |
+| `POST` | `/api/v1/dispensators` | Crea un nuevo dispensador | Sí |
+| `GET` | `/api/v1/dispensators/{id}` | Obtiene la información de un dispensador específico por ID | Sí |
+| `GET` | `/api/v1/dispenser-events` | Lista los eventos de dispensación registrados | Sí |
+| `POST` | `/api/v1/dispenser-events` | Registra un nuevo evento de dispensación | Sí |
+| `GET` | `/api/v1/firmware` | Lista las versiones de firmware disponibles | Sí |
+| `GET` | `/api/v1/firmware/latest` | Obtiene la versión más reciente del firmware | Sí |
+| `POST` | `/api/v1/firmware/{id}/install` | Inicia la instalación de una versión de firmware específica | Sí |
+| `POST` | `/api/v1/inventario/medicion` | Registra una nueva medición del inventario enviada por el dispositivo | Sí |
+| `GET` | `/api/v1/inventario/estado` | Obtiene el estado actual del inventario y stock disponible | Sí |
+| `GET` | `/api/v1/notifications` | Obtiene las notificaciones del usuario | Sí |
+| `PATCH` | `/api/v1/notifications/{id}/read` | Marca una notificación específica como leída | Sí |
+| `PATCH` | `/api/v1/notifications/read-all` | Marca todas las notificaciones del usuario como leídas | Sí |
+| `GET` | `/api/v1/schedules` | Lista los horarios de dispensación registrados | Sí |
+| `POST` | `/api/v1/schedules` | Crea un nuevo horario de dispensación | Sí |
+| `GET` | `/api/v1/schedules/{id}` | Obtiene la información de un horario específico | Sí |
+| `PUT` | `/api/v1/schedules/{id}` | Actualiza un horario de dispensación existente | Sí |
+| `DELETE` | `/api/v1/schedules/{id}` | Elimina un horario de dispensación | Sí |
+| `PATCH` | `/api/v1/schedules/{id}/toggle` | Activa o desactiva un horario de dispensación | Sí |
+| `GET` | `/api/v1/users/{id}` | Obtiene la información de un usuario específico | Sí |
+| `PUT` | `/api/v1/users/{id}` | Actualiza los datos de un usuario específico | Sí |
+| `PATCH` | `/api/v1/users/{id}/password` | Cambia la contraseña de un usuario específico | Sí |
 
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review
 
