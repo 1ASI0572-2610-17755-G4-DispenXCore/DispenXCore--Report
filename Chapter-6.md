@@ -1570,6 +1570,19 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 **VIDEO DEL ABOUT THE PRODUCT** [VIDEO](https://acortar.link/Dg3hwA)
 
+## Conclusiones
+1. DispenXCore demuestra que la integración de tecnologías IoT puede brindar una solución práctica a un problema cotidiano: la falta de control sobre los insumos básicos almacenados en el hogar o en pequeños negocios. Mediante el uso de sensores de peso, nivel y flujo, el proyecto permite transformar una alacena tradicional en un sistema inteligente capaz de monitorear el stock y anticipar situaciones de desabastecimiento.
+
+2. El proyecto responde a una necesidad real de los usuarios: evitar compras de emergencia, reducir la incertidumbre sobre la cantidad disponible de productos y mejorar la planificación del consumo. Esta necesidad se vuelve más importante en hogares tecnológicos y en casos donde cuidadores necesitan supervisar de forma remota el estado de los insumos de familiares o personas con movilidad reducida.
+
+3. Desde el punto de vista técnico, la solución logra integrar distintos componentes dentro de un mismo ecosistema: hardware con sensores, comunicación Wi-Fi, backend desarrollado en C#, aplicación web en Angular, aplicación móvil en Flutter y un servicio Edge para la interacción con el dispositivo físico. Esta integración permite validar el flujo de datos entre el dispensador IoT y las plataformas digitales del usuario.
+
+4. La aplicación web y móvil fortalecen la experiencia del usuario, ya que permiten visualizar el estado actual del stock, recibir alertas, gestionar dispensadores y revisar información relevante de consumo. Además, el diseño de la solución prioriza la simplicidad, la claridad visual y la facilidad de uso, permitiendo que el sistema sea accesible tanto para usuarios con experiencia tecnológica como para usuarios menos familiarizados con herramientas digitales.
+
+5. El desarrollo del proyecto por sprints permitió avanzar de manera ordenada e incremental, incorporando progresivamente la landing page, el backend, la aplicación web, la aplicación móvil y la conexión con el dispositivo IoT. Esto permitió organizar mejor las tareas del equipo, validar funcionalidades por etapas y mantener una trazabilidad del avance del producto.
+
+6. Finalmente, DispenXCore se presenta como una propuesta con potencial de crecimiento, ya que puede iniciar como una solución doméstica para el monitoreo de granos y luego ampliarse hacia pequeños negocios, reportes avanzados, predicción de compras y analítica de consumo. Como mejora futura, se recomienda reforzar las pruebas con usuarios reales, optimizar la precisión de los sensores y fortalecer la estabilidad de la integración entre hardware, backend y aplicaciones.
+
 ## Bibliografía
 
 - Gartner, Inc. (2025). *Forecast: Internet of Things — Endpoints and spending*. Gartner.
