@@ -1334,8 +1334,10 @@ En el tercer sprint, el equipo se enfocó en cerrar la aplicación móvil, compl
 | BE02 | Integration Fixes | Corrección de respuestas y ajustes de integración entre backend, móvil y dispositivo físico. | 3 | Dominguez Vargas, Rafael | Done |
 | BE03 | Deployment Stabilization | Estabilización del backend y verificación de funcionamiento en entorno de prueba. | 2 | Cardenas Minaya, Ricardo | Done |
 
-
 #### 6.2.3.4. Development Evidence for Sprint Review 
+
+En esta sección se muestra la evidencia de desarrollo realizada durante el sprint, evidenciando el trabajo funcional implementado y los incrementos del producto que están listos para su inspección y validación en la Sprint Review.
+
 
 
 #### 6.2.3.5. Testing Suite Evidence for Sprint Review
