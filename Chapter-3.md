@@ -1,5 +1,3 @@
-<div style="page-break-after: always;"></div>
-
 ## **Capítulo III: Requirements Specification**
 - **3.1. User Stories**
     ### Epic Story
@@ -89,7 +87,7 @@
 | **US14** | Sección de Testimonios y Casos de Éxito | Cuando evalúo la compra del dispositivo, quiero leer testimonios de otros usuarios (hogares y cuidadores), para confirmar la fiabilidad de la triple validación de los sensores. | Dado que navego por la landing page, cuando llego a la sección de testimonios, entonces puedo visualizar historias reales clasificadas por los dos segmentos objetivo.<br><br>Dado que los testimonios tienen imágenes, cuando hago clic en una, entonces se amplía para mostrar el dispositivo DispenXCore en un entorno real. | EP05 |
 | **US15** | Centro de Ayuda y Preguntas Frecuentes (FAQ) | Cuando tengo dudas técnicas sobre el hardware (ESP32), quiero acceder a una sección de preguntas frecuentes, para resolver mis inquietudes sobre la instalación y el Wi-Fi sin contactar a soporte. | Dado que tengo dudas sobre la conectividad, cuando selecciono una categoría en el FAQ, entonces el sistema despliega las respuestas correspondientes de forma clara.<br><br>Dado que no encuentro mi duda en la lista, cuando hago clic en "Contactar Soporte", entonces el sistema me redirige al canal de atención directa. | EP05 |
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
 - **3.2. Impact Mapping**
   <br><br>
@@ -98,13 +96,13 @@
   <img src="https://imgur.com/S4yEY1o.png">
   <br><br>
   
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
   **Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
   <img src="https://imgur.com/4b1Ihgm.png">
   <br>
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
 - **3.3. Product Backlog**
 

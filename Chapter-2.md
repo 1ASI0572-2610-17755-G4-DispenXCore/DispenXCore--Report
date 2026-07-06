@@ -8,7 +8,7 @@
   | **PantryOn**    | Sistema de estantería inteligente con sensores de peso para monitoreo de despensa en tiempo real.  | Alertas de stock bajo, creación de listas de compras y visualización por app móvil. | <img src="./feature/Chapter-2/pantryon.webp"/>  |
   | **Amazon Dash Smart Shelf**  | Balanza IoT de bajo perfil que automatiza la compra y reposición de suministros por peso.                 | Integración total con distribución/compras automáticas y notificaciones preventivas.                      | <img src="./feature/Chapter-2/amazon.jpg"/>  |
 
-  <div style="page-break-after: always;"></div>
+  <hr class="page-break">
 
     - **2.1.1. Análisis competitivo**
       <br>En esta sección se identifica y compara a los principales competidores en el mercado de servicios técnicos, evaluando sus fortalezas, debilidades, alcance geográfico, estrategias de marketing y propuesta de valor.<br><br>
@@ -122,7 +122,7 @@
 
       **Generación de confianza:** Implementar una política de transparencia de datos y precisión garantizada, mostrando en la aplicación el estado de salud de los sensores y utilizando testimonios de usuarios reales que lograron optimizar sus compras y evitar olvidos críticos gracias a las alertas.
       
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
 - **2.2. Entrevistas**
   <br> Esta sección agrupa todo el proceso relacionado con la realización de entrevistas a los segmentos objetivo de DispenXCore, incluyendo el registro de las mismas y el análisis de la información obtenida. Permite identificar necesidades, expectativas y puntos de dolor de los usuarios respecto a la gestión de su alacena e inventario de granos, sirviendo como insumo principal para el diseño y validación del producto IoT.<br><br>
@@ -158,7 +158,7 @@
         9. ¿Crees que una herramienta como esta ayudaría a que tu familiar mantenga su independencia por más tiempo sin que tú tengas que estar físicamente presente para revisar la cocina?
         10. Pensando en DispenXCore, ¿qué función te resultaría más útil para reducir tu carga mental como cuidador?
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
 - **2.2.2. Registro de entrevistas**
   <br> En esta sección se recopilan las entrevistas realizadas a los dos segmentos objetivo: Profesionales Técnicos y Clientes. Se registran las respuestas, observaciones y comentarios clave de cada participante, sirviendo como base para el análisis de necesidades y la posterior definición de requisitos del sistema.<br><br>
@@ -178,7 +178,7 @@
 
   No utiliza herramientas tecnológicas, pero ve con interés un sistema inteligente que le avise sobre niveles de insumos. Le gustaría que incluya historial, gráficos y predicciones de consumo. Valora la precisión del sistema y consideraría pagar una suscripción solo si demuestra un ahorro real. También espera que sea fácil de usar y funcione en tiempo real.
 
- <div style="page-break-after: always;"></div>
+ <hr class="page-break">
 
   **Entrevista 2:**
 
@@ -194,7 +194,7 @@
 
   Utiliza asistentes y dispositivos inteligentes, pero identifica la ausencia de una solución integrada para inventario. Valora altamente un sistema con alertas predictivas, dashboards claros y automatización de compras. Considera fundamental la precisión de los sensores y estaría dispuesto a pagar una suscripción si realmente optimiza su tiempo. También espera una configuración sencilla, integración fluida y un diseño acorde a un ecosistema smart.
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
   **Entrevista 3:**
 
@@ -210,7 +210,7 @@
 
   Utiliza varios dispositivos inteligentes, pero percibe una clara falta de integración en la gestión de inventario de alimentos. Valora especialmente las alertas anticipadas, la visualización clara de datos y la integración con otros dispositivos del hogar. Considera fundamental la precisión del sistema para poder confiar en la automatización y estaría dispuesto a pagar por una suscripción si las predicciones son realmente útiles. También espera que el dispositivo sea fácil de configurar y tenga un diseño minimalista acorde a su entorno.
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
   **Entrevistas Segmento 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
@@ -228,7 +228,7 @@
 
   Considera que un sistema con alertas en tiempo real le ayudaría a planificar mejor, evitar viajes innecesarios y reducir su carga mental. Además, valora funciones como historial de consumo, listas automáticas de compra y alta precisión en las mediciones.
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
   **Entrevista 2:**
 
@@ -244,7 +244,7 @@
 
   Indica que una alerta automática al 15% y al 10% de stock cambiaría su organización semanal, permitiéndole comprar con anticipación y evitar urgencias. Prioriza funcionalidades como notificaciones críticas, historial de reposición y una lista de compras sugerida. También considera clave que el sistema sea preciso y fácil de usar para generar confianza en el monitoreo remoto.
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
   **Entrevista 3:**
 
@@ -260,7 +260,7 @@
 
   Valora especialmente recibir alertas remotas confiables, visualizar tendencias de consumo y poder configurar umbrales por producto. Considera que la validación con múltiples sensores aportaría tranquilidad y reduciría errores en la toma de decisiones. Afirma que una solución como DispenXCore le permitiría mantener el abastecimiento de forma preventiva y disminuir su carga mental como cuidador.
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
 - **2.2.3. Análisis de entrevistas**
   <br> En este apartado se documenta el análisis de las entrevistas realizadas a los dos segmentos objetivo: Hogares Tecnológicos y Cuidadores de Adultos Mayores. El propósito es identificar patrones, necesidades, frustraciones y expectativas de cada grupo para fundamentar el diseño del sistema y priorizar funcionalidades en el ecosistema de DispenXCore. <br><br>
@@ -318,7 +318,7 @@
     - Enfocar UX en reducción de ansiedad y toma de decisiones rápida.
     - Reforzar funciones orientadas a cuidado preventivo y autonomía del familiar.
 
-<div style="page-break-after: always;"></div>
+<hr class="page-break">
 
 - **2.3. Needfinding**
   El Needfinding es una metodología cualitativa enfocada en recoger las opiniones y emociones de los usuarios. Su objetivo, como indica su nombre, es identificar, explorar, analizar, descubrir y evaluar de forma clara las necesidades que pueden guiar el desarrollo y diseño de cualquier proyecto.
@@ -329,12 +329,12 @@
     **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
           ![User Persona Segmento 1](./feature/Chapter-2/User_persona_1.png)
 
-  <div style="page-break-after: always;"></div>
+  <hr class="page-break">
 
     **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
           ![User Persona Segmento 1](./feature/Chapter-2/User_persona_2.png)
 
-  <div style="page-break-after: always;"></div>
+  <hr class="page-break">
   
     - **2.3.2. User Task Matrix**
 
@@ -358,7 +358,7 @@
 
       - Finalmente, la capacidad de gestionar múltiples dispositivos es una tarea de importancia alta para ambos, permitiendo que la plataforma escale de un solo dispensador de arroz a un sistema completo de alacena inteligente.
         
-      <div style="page-break-after: always;"></div>
+      <hr class="page-break">
       
     - **2.3.3. User Journey Mapping**
     <br> En esta seccion describiremos visualmente las interacciones de los usuarios con el sistema, mostrando los pasos, emociones y puntos de contacto clave.<br><br>
@@ -366,32 +366,32 @@
 
       ![User Journey Mapping Segmento 1](./feature/Chapter-2/Journey-Mapping-1.png)
       
-      <div style="page-break-after: always;"></div>
+      <hr class="page-break">
 
       **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
       ![User Journey Mapping Segmento 2](./feature/Chapter-2/Journey-Mapping-2.png)
 
-    <div style="page-break-after: always;"></div>
+    <hr class="page-break">
 
     - **2.3.4. Empathy Mapping**<br><br>
       **Segmento Objetivo 1: Entusiastas de la Automatización y Hogares Inteligentes**
 
     ![Empathy Mapping Segmento 1](./feature/Chapter-2/Empathy-map-1.png)
 
-  <div style="page-break-after: always;"></div>
+  <hr class="page-break">
     
     **Segmento Obvetivo 2: Cuidadores de Adultos Mayores o Personas con Movilidad Reducida**
 
     ![Empathy Mapping Segmento 2](./feature/Chapter-2/Empathy-map-2.png)
 
-  <div style="page-break-after: always;"></div>
+  <hr class="page-break">
   
 - **2.4. Big Picture EventStorming**
 
     ![Big Picture EventStorming](./feature/Chapter-2/Big-Picture-EventStorming.jpg)
 
-  <div style="page-break-after: always;"></div>
+  <hr class="page-break">
   
 - **2.5. Ubiquitous Language**<br>
   - Smart Dispenser (Dispensador Inteligente): Dispositivo físico encargado de almacenar, proteger y medir la cantidad de granos o insumos secos en su interior.
